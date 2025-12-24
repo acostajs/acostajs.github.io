@@ -4,13 +4,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun --hot src/index.ts",
-    "build": "bun build ./src/index.html --outdir=dist --sourcemap --target=browser --minify --define:process.env.NODE_ENV='\"production\"' --env='BUN_PUBLIC_*'",
-    "start": "NODE_ENV=production bun src/index.ts"
+    "dev": "bun src/index.html",
+    "lint": "bun oxlint",
+    "fmt": "bun dprint fmt",
+    "typecheck": "bun tsc --noEmit"
   },
   "dependencies": {
+    "dprint": "^0.50.2",
+    "oxlint": "^1.35.0",
     "react": "^19",
-    "react-dom": "^19"
+    "react-dom": "^19",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
     "@types/react": "^19",
