@@ -7,7 +7,9 @@
     "dev": "bun src/index.html",
     "lint": "bun oxlint",
     "fmt": "bun dprint fmt",
-    "typecheck": "bun tsc --noEmit"
+    "typecheck": "bun tsc --noEmit",
+    "build": "bun build ./src/index.tsx --outdir ./dist",
+    "start": "serve ./dist"
   },
   "dependencies": {
     "dprint": "^0.50.2",
