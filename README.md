@@ -1,21 +1,55 @@
-# bun-react-template
+# Portfolio (React + TypeScript + Bun)
 
-To install dependencies:
+Personal portfolio site built with React and TypeScript, using Bun as the runtime, package manager, and dev/build toolchain.
+
+## Tech stack
+
+- React
+- TypeScript
+- Bun (runtime + package manager + scripts)
+
+## Requirements
+
+- Bun installed: https://bun.sh
+
+## Getting started
+
+Install dependencies:
 
 ```bash
 bun install
 ```
 
-To start a development server:
+Run the dev server:
 
 ```bash
 bun dev
 ```
 
-To run for production:
+Open the URL printed in your terminal http://localhost:3000
 
-```bash
-bun start
-```
+## Scripts
 
-This project was created using `bun init` in bun v1.3.3. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+Common scripts (see `package.json` for details):
+
+- `bun dev` — serve `src/index.html` for local development
+- `bun lint` — lint the codebase with oxlint
+- `bun fmt` — format files using dprint
+- `bun run build` — bundle the React app from `src/index.tsx` into the `dist/` folder
+- `bun start` — serve the production build from `dist/`
+- `bun run typecheck` — run TypeScript type checking without emitting files
+
+## Project goals
+
+- GitHub-inspired UI and design tokens (CSS variables)
+- Responsive layout (aside profile + main content)
+- Public GitHub API integration (user + repos)
+- Highlighted projects section and contact CTA
+
+## Environment variables
+
+This project is designed to use **only public GitHub endpoints** (no secrets).
+
+## License
+
+MIT
