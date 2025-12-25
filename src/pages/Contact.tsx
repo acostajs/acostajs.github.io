@@ -1,3 +1,3 @@
 export function Contact() {
-  return <h1>This is a test its working</h1>;
+  return <h1>Contact</h1>;
 }
