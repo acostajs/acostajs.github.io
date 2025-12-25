@@ -17,7 +17,7 @@ export function Link({ to, children }: LinkProps) {
     navigate(to);
   }
   return (
-    <a href={to} onClick={handleClick}>
+    <a className="flex-center gap-sm" href={to} onClick={handleClick}>
       {children}
     </a>
   );
