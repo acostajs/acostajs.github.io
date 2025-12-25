@@ -1,10 +1,10 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import type { ReactElement } from "react";
 import { NavigationContext, RouteContext } from "./context.ts";
 import type { RouteProps } from "./Route.tsx";
 import type { Params } from "./types.ts";
 
-type Route = {
+type RouteConfig = {
   path: string;
   element: ReactElement<RouteProps>;
   params: Params;
@@ -20,22 +20,34 @@ type RouterProps = {
  * another page.
  */
 export function Router({ children }: RouterProps) {
-  const initialPath = useContext(NavigationContext).pathname;
-  const [pathname, setPathname] = useState(initialPath);
+  const [pathname, setPathname] = useState(window.location.pathname);
+
   const childrenArray = Array.isArray(children) ? children : [children];
-  const routes = childrenArray.map((child) => ({
+  const routes: Array<RouteConfig> = childrenArray.map((child) => ({
     path: child.props.path,
     element: child,
     params: {},
   }));
+
   const routeToRender = match(pathname, routes);
-  if (routeToRender === null) return "404";
+  if (routeToRender === null) return <>404</>;
+
   return (
-    <NavigationContext value={{ pathname, setPathname }}>
-      <RouteContext value={routeToRender.params}>
+    <NavigationContext.Provider
+      value={{
+        pathname,
+        setPathname: (to: string) => {
+          // update URL bar
+          window.history.pushState({}, "", to);
+          // update React state -> rerender Router
+          setPathname(to);
+        },
+      }}
+    >
+      <RouteContext.Provider value={routeToRender.params}>
         {routeToRender.element}
-      </RouteContext>
-    </NavigationContext>
+      </RouteContext.Provider>
+    </NavigationContext.Provider>
   );
 }
 
@@ -43,7 +55,10 @@ export function Router({ children }: RouterProps) {
  * Match the given path to a route. Return null if no matching route
  * is found.
  */
-function match(currentPath: string, routes: Array<Route>): Route | null {
+function match(
+  currentPath: string,
+  routes: Array<RouteConfig>,
+): RouteConfig | null {
   const currentSegments = segment(currentPath);
   for (const route of routes) {
     if (matchesRoute(currentSegments, route)) return route;
@@ -62,37 +77,30 @@ function segment(path: string): Array<string> {
  * Return true if the path segments matches the given route.
  * Also populate the route's params.
  */
-function matchesRoute(currentSegments: Array<string>, route: Route): boolean {
+function matchesRoute(
+  currentSegments: Array<string>,
+  route: RouteConfig,
+): boolean {
   const routeSegments = segment(route.path);
 
-  // If the path and the route don't have the same number of segments,
-  // then the route is not a match.
   if (currentSegments.length !== routeSegments.length) return false;
 
   for (let i = 0; i < currentSegments.length; i++) {
     const routeSegment = routeSegments[i];
     const pathSegment = currentSegments[i];
 
-    // Narrow type
     if (routeSegment === undefined || pathSegment === undefined) {
       throw new Error();
     }
 
-    // If route segment is a param (i.e., it starts with ":"), then
-    // add new param. E.g., route segment is ":postId" and path
-    // segment is "12".
     const isParam = routeSegment.startsWith(":");
     if (isParam) {
       route.params[routeSegment.slice(1)] = pathSegment;
       continue;
     }
 
-    // Route segment and path segment don't match,
-    // so this route is not a match.
     if (routeSegment !== pathSegment) return false;
   }
 
-  // If there is the same number of path segments as route segments,
-  // and no segments don't match, the route matches the path.
   return true;
 }
