@@ -1,0 +1,27 @@
+header {
+  background-color: var(--color-bg-elevated);
+  border-bottom: 1px solid var(--color-border);
+
+  & nav {
+    padding: var(--pad-xs) 0;
+  }
+}
+
+.avatar-small {
+  width: 35px;
+  height: 35px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.nav-top,
+.nav-bottom {
+  padding: var(--pad-sm) 0;
+}
+
+.username {
+  font-weight: 700;
+  font-size: var(--text-base);
+}
