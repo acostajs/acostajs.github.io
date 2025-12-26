@@ -17101,7 +17101,7 @@ var require_jsx_dev_runtime = __commonJS((exports, module) => {
 });
 
 // src/index.tsx
-var import_react8 = __toESM(require_react(), 1);
+var import_react9 = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
 
 // config_github_user.ts
@@ -17109,7 +17109,7 @@ var GITHUB_USER = "acostajs";
 var GITHUB_URL = `https://api.github.com/users/${GITHUB_USER}`;
 
 // src/AppLayout.tsx
-var import_react7 = __toESM(require_react(), 1);
+var import_react6 = __toESM(require_react(), 1);
 
 // src/components/layout/ErrorMessage.tsx
 var jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
@@ -17321,7 +17321,41 @@ function Footer() {
   }, undefined, false, undefined, this);
 }
 
-// src/lib/router/hooks.ts
+// src/components/layout/header/HiddenMenu.tsx
+var import_react5 = __toESM(require_react(), 1);
+
+// node_modules/react-icons/rx/index.mjs
+function RxHamburgerMenu(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 15 15", fill: "none" }, child: [{ tag: "path", attr: { fillRule: "evenodd", clipRule: "evenodd", d: "M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z", fill: "currentColor" }, child: [] }] })(props);
+}
+
+// src/components/layout/header/Burger.tsx
+var jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime(), 1);
+function Burger({ onClick }) {
+  return /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("button", {
+    className: "burger",
+    onClick,
+    children: /* @__PURE__ */ jsx_dev_runtime3.jsxDEV(RxHamburgerMenu, {
+      size: 20
+    }, undefined, false, undefined, this)
+  }, undefined, false, undefined, this);
+}
+
+// node_modules/react-icons/fi/index.mjs
+function FiBookOpen(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" }, child: [] }, { tag: "path", attr: { d: "M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" }, child: [] }] })(props);
+}
+function FiBox(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" }, child: [] }, { tag: "polyline", attr: { points: "3.27 6.96 12 12.01 20.73 6.96" }, child: [] }, { tag: "line", attr: { x1: "12", y1: "22.08", x2: "12", y2: "12" }, child: [] }] })(props);
+}
+function FiFolder(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" }, child: [] }] })(props);
+}
+function FiStar(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "polygon", attr: { points: "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" }, child: [] }] })(props);
+}
+
+// src/lib/router/Link.tsx
 var import_react4 = __toESM(require_react(), 1);
 
 // src/lib/router/context.ts
@@ -17331,31 +17365,238 @@ var NavigationContext = import_react3.createContext({
   setPathname: (_) => {}
 });
 var RouteContext = import_react3.createContext({});
+
 // src/lib/router/Link.tsx
-var import_react5 = __toESM(require_react(), 1);
-var jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime(), 1);
-function Link({ to, children }) {
-  const { setPathname: navigate } = import_react5.useContext(NavigationContext);
+var jsx_dev_runtime4 = __toESM(require_jsx_dev_runtime(), 1);
+function Link({ to, children, onClick }) {
+  const { setPathname: navigate } = import_react4.useContext(NavigationContext);
   function handleClick(e) {
     e.preventDefault();
     navigate(to);
+    onClick?.();
   }
-  return /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("a", {
-    className: "flex-center gap-sm",
+  return /* @__PURE__ */ jsx_dev_runtime4.jsxDEV("a", {
+    className: "flex-left gap-sm",
     href: to,
     onClick: handleClick,
     children
   }, undefined, false, undefined, this);
 }
+
+// src/components/layout/header/NavLinks.tsx
+var jsx_dev_runtime5 = __toESM(require_jsx_dev_runtime(), 1);
+function NavLinks({
+  ul_classes,
+  handleClick
+}) {
+  const ulClassName = ul_classes?.join(" ") ?? "";
+  return /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("ul", {
+    className: ulClassName,
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("li", {
+        children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(Link, {
+          to: "/",
+          onClick: handleClick,
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(FiBookOpen, {
+              size: 20
+            }, undefined, false, undefined, this),
+            " Overview"
+          ]
+        }, undefined, true, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("li", {
+        children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("a", {
+          className: "flex-left gap-sm",
+          href: "#projects",
+          onClick: handleClick,
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(FiFolder, {
+              size: 20
+            }, undefined, false, undefined, this),
+            "Projects"
+          ]
+        }, undefined, true, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("li", {
+        children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(Link, {
+          to: "/about",
+          onClick: handleClick,
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(FiBox, {
+              size: 20
+            }, undefined, false, undefined, this),
+            " About Me"
+          ]
+        }, undefined, true, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("li", {
+        children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(Link, {
+          to: "/contact",
+          onClick: handleClick,
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(FiStar, {
+              size: 20
+            }, undefined, false, undefined, this),
+            " Contact"
+          ]
+        }, undefined, true, undefined, this)
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+
+// src/components/layout/header/HiddenMenu.tsx
+var jsx_dev_runtime6 = __toESM(require_jsx_dev_runtime(), 1);
+function HiddenMenu() {
+  const [toggle, setToggle] = import_react5.useState(true);
+  function handleClick() {
+    setToggle((prev) => !prev);
+  }
+  return /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("div", {
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(Burger, {
+        onClick: handleClick
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("div", {
+        className: toggle ? "hidden" : "",
+        id: "overlay",
+        children: /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("div", {
+          id: "menu",
+          className: toggle ? "hidden" : "",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("div", {
+              className: "flex-between hidden-menu-top",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(FaGithub, {
+                  size: 24
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("button", {
+                  onClick: handleClick,
+                  children: "X"
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("hr", {}, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(NavLinks, {
+              ul_classes: ["hidden-menu-links"],
+              handleClick
+            }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this)
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+
+// src/components/layout/Header.tsx
+var jsx_dev_runtime7 = __toESM(require_jsx_dev_runtime(), 1);
+function Header({
+  github_user_url,
+  github_username,
+  github_img_profile_url
+}) {
+  return /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("header", {
+    children: /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("nav", {
+      children: [
+        /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
+          className: "nav-top flex-between",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
+              className: "flex-center gap-md",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(HiddenMenu, {}, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("a", {
+                  className: "username flex-center gap-sm",
+                  href: github_user_url,
+                  children: [
+                    /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(FaGithub, {
+                      size: 30
+                    }, undefined, false, undefined, this),
+                    github_username
+                  ]
+                }, undefined, true, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
+              children: /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("figure", {
+                className: "avatar-small",
+                children: /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("img", {
+                  src: github_img_profile_url,
+                  alt: ""
+                }, undefined, false, undefined, this)
+              }, undefined, false, undefined, this)
+            }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(NavLinks, {
+          ul_classes: ["nav-bottom", "flex-left", "gap-sm"]
+        }, undefined, false, undefined, this)
+      ]
+    }, undefined, true, undefined, this)
+  }, undefined, false, undefined, this);
+}
+
+// src/AppLayout.tsx
+var jsx_dev_runtime8 = __toESM(require_jsx_dev_runtime(), 1);
+function AppLayout({ children }) {
+  const [github, setGithub] = import_react6.useState(null);
+  const [loading, setLoading] = import_react6.useState(true);
+  const [error, setError] = import_react6.useState("");
+  import_react6.useEffect(() => {
+    async function loadGitHubProfile() {
+      try {
+        setLoading(true);
+        const response = await fetch(GITHUB_URL);
+        if (!response.ok)
+          setError("Error fetching GitHub User Profile");
+        const data = await response.json();
+        setGithub(data);
+      } catch {
+        setError("Error fetching GitHub User Profile");
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadGitHubProfile();
+  }, []);
+  if (loading || !github)
+    return /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("span", {
+      children: "Loading GitHub profile..."
+    }, undefined, false, undefined, this);
+  return /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("div", {
+    className: "app-root",
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime8.jsxDEV(Header, {
+        github_user_url: github.html_url,
+        github_username: github.login,
+        github_img_profile_url: github.avatar_url
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("main", {
+        className: "container",
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime8.jsxDEV(ErrorMessage, {
+            error_message: error
+          }, undefined, false, undefined, this),
+          children
+        ]
+      }, undefined, true, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime8.jsxDEV(Footer, {}, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+
+// src/lib/router/hooks.ts
+var import_react7 = __toESM(require_react(), 1);
 // src/lib/router/Route.tsx
 function Route({ element }) {
   return element;
 }
 // src/lib/router/Router.tsx
-var import_react6 = __toESM(require_react(), 1);
-var jsx_dev_runtime4 = __toESM(require_jsx_dev_runtime(), 1);
+var import_react8 = __toESM(require_react(), 1);
+var jsx_dev_runtime9 = __toESM(require_jsx_dev_runtime(), 1);
 function Router({ children }) {
-  const [pathname, setPathname] = import_react6.useState(window.location.pathname);
+  const [pathname, setPathname] = import_react8.useState(window.location.pathname);
   const childrenArray = Array.isArray(children) ? children : [children];
   const routes = childrenArray.map((child) => ({
     path: child.props.path,
@@ -17364,10 +17605,10 @@ function Router({ children }) {
   }));
   const routeToRender = match(pathname, routes);
   if (routeToRender === null)
-    return /* @__PURE__ */ jsx_dev_runtime4.jsxDEV(jsx_dev_runtime4.Fragment, {
+    return /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(jsx_dev_runtime9.Fragment, {
       children: "404"
     }, undefined, false, undefined, this);
-  return /* @__PURE__ */ jsx_dev_runtime4.jsxDEV(NavigationContext.Provider, {
+  return /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(NavigationContext.Provider, {
     value: {
       pathname,
       setPathname: (to) => {
@@ -17375,7 +17616,7 @@ function Router({ children }) {
         setPathname(to);
       }
     },
-    children: /* @__PURE__ */ jsx_dev_runtime4.jsxDEV(RouteContext.Provider, {
+    children: /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(RouteContext.Provider, {
       value: routeToRender.params,
       children: routeToRender.element
     }, undefined, false, undefined, this)
@@ -17412,210 +17653,51 @@ function matchesRoute(currentSegments, route) {
   }
   return true;
 }
-// node_modules/react-icons/fi/index.mjs
-function FiBookOpen(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" }, child: [] }, { tag: "path", attr: { d: "M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" }, child: [] }] })(props);
-}
-function FiBox(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" }, child: [] }, { tag: "polyline", attr: { points: "3.27 6.96 12 12.01 20.73 6.96" }, child: [] }, { tag: "line", attr: { x1: "12", y1: "22.08", x2: "12", y2: "12" }, child: [] }] })(props);
-}
-function FiFolder(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" }, child: [] }] })(props);
-}
-function FiStar(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "polygon", attr: { points: "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" }, child: [] }] })(props);
-}
-
-// node_modules/react-icons/rx/index.mjs
-function RxHamburgerMenu(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 15 15", fill: "none" }, child: [{ tag: "path", attr: { fillRule: "evenodd", clipRule: "evenodd", d: "M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z", fill: "currentColor" }, child: [] }] })(props);
-}
-
-// src/components/layout/Header.tsx
-var jsx_dev_runtime5 = __toESM(require_jsx_dev_runtime(), 1);
-function Header({
-  github_user_url,
-  github_username,
-  github_img_profile_url
-}) {
-  return /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("header", {
-    children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("nav", {
-      className: "container",
-      children: [
-        /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("div", {
-          className: "nav-top flex-between",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("div", {
-              className: "flex-center gap-lg",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("button", {
-                  className: "burger",
-                  children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(RxHamburgerMenu, {
-                    size: 20
-                  }, undefined, false, undefined, this)
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(FaGithub, {
-                  size: 30
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("a", {
-                  className: "username",
-                  href: github_user_url,
-                  children: github_username
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("div", {
-              children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("figure", {
-                className: "avatar-small",
-                children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("img", {
-                  src: github_img_profile_url,
-                  alt: ""
-                }, undefined, false, undefined, this)
-              }, undefined, false, undefined, this)
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("div", {
-          className: "nav-bottom flex-left gap-xl",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(Link, {
-              to: "/",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(FiBookOpen, {
-                  size: 20
-                }, undefined, false, undefined, this),
-                " Overview"
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("a", {
-              className: "flex-center gap-sm",
-              href: "#projects",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(FiFolder, {
-                  size: 20
-                }, undefined, false, undefined, this),
-                "Projects"
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(Link, {
-              to: "/about",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(FiBox, {
-                  size: 20
-                }, undefined, false, undefined, this),
-                " About Me"
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(Link, {
-              to: "/contact",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(FiStar, {
-                  size: 20
-                }, undefined, false, undefined, this),
-                " Contact"
-              ]
-            }, undefined, true, undefined, this)
-          ]
-        }, undefined, true, undefined, this)
-      ]
-    }, undefined, true, undefined, this)
-  }, undefined, false, undefined, this);
-}
-
-// src/AppLayout.tsx
-var jsx_dev_runtime6 = __toESM(require_jsx_dev_runtime(), 1);
-function AppLayout({ children }) {
-  const [github, setGithub] = import_react7.useState(null);
-  const [loading, setLoading] = import_react7.useState(true);
-  const [error, setError] = import_react7.useState("");
-  import_react7.useEffect(() => {
-    async function loadGitHubProfile() {
-      try {
-        setLoading(true);
-        const response = await fetch(GITHUB_URL);
-        if (!response.ok)
-          setError("Error fetching GitHub User Profile");
-        const data = await response.json();
-        setGithub(data);
-      } catch {
-        setError("Error fetching GitHub User Profile");
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadGitHubProfile();
-  }, []);
-  if (loading || !github)
-    return /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("span", {
-      children: "Loading GitHub profile..."
-    }, undefined, false, undefined, this);
-  return /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("div", {
-    className: "app-root",
-    children: [
-      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(Header, {
-        github_user_url: github.html_url,
-        github_username: github.login,
-        github_img_profile_url: github.avatar_url
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("main", {
-        className: "container",
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(ErrorMessage, {
-            error_message: error
-          }, undefined, false, undefined, this),
-          children
-        ]
-      }, undefined, true, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(Footer, {}, undefined, false, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
-}
-
 // src/pages/About.tsx
-var jsx_dev_runtime7 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime10 = __toESM(require_jsx_dev_runtime(), 1);
 function About() {
-  return /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("h1", {
+  return /* @__PURE__ */ jsx_dev_runtime10.jsxDEV("h1", {
     children: "About"
   }, undefined, false, undefined, this);
 }
 
 // src/pages/Contact.tsx
-var jsx_dev_runtime8 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime11 = __toESM(require_jsx_dev_runtime(), 1);
 function Contact() {
-  return /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("h1", {
+  return /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("h1", {
     children: "Contact"
   }, undefined, false, undefined, this);
 }
 
 // src/pages/Overview.tsx
-var jsx_dev_runtime9 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime12 = __toESM(require_jsx_dev_runtime(), 1);
 function Overview() {
-  return /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("h1", {
+  return /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("h1", {
     children: "Overview"
   }, undefined, false, undefined, this);
 }
 
 // src/App.tsx
-var jsx_dev_runtime10 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime13 = __toESM(require_jsx_dev_runtime(), 1);
 function App() {
-  return /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(Router, {
+  return /* @__PURE__ */ jsx_dev_runtime13.jsxDEV(Router, {
     children: [
-      /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(Route, {
+      /* @__PURE__ */ jsx_dev_runtime13.jsxDEV(Route, {
         path: "/",
-        element: /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(AppLayout, {
-          children: /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(Overview, {}, undefined, false, undefined, this)
+        element: /* @__PURE__ */ jsx_dev_runtime13.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime13.jsxDEV(Overview, {}, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(Route, {
+      /* @__PURE__ */ jsx_dev_runtime13.jsxDEV(Route, {
         path: "/about",
-        element: /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(AppLayout, {
-          children: /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(About, {}, undefined, false, undefined, this)
+        element: /* @__PURE__ */ jsx_dev_runtime13.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime13.jsxDEV(About, {}, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(Route, {
+      /* @__PURE__ */ jsx_dev_runtime13.jsxDEV(Route, {
         path: "/contact",
-        element: /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(AppLayout, {
-          children: /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(Contact, {}, undefined, false, undefined, this)
+        element: /* @__PURE__ */ jsx_dev_runtime13.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime13.jsxDEV(Contact, {}, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this)
     ]
@@ -17623,10 +17705,10 @@ function App() {
 }
 
 // src/index.tsx
-var jsx_dev_runtime11 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime14 = __toESM(require_jsx_dev_runtime(), 1);
 var rootNode = document.querySelector("#root");
 if (!rootNode)
   throw new Error("cannot find root element");
-import_client.createRoot(rootNode).render(/* @__PURE__ */ jsx_dev_runtime11.jsxDEV(import_react8.StrictMode, {
-  children: /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(App, {}, undefined, false, undefined, this)
+import_client.createRoot(rootNode).render(/* @__PURE__ */ jsx_dev_runtime14.jsxDEV(import_react9.StrictMode, {
+  children: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(App, {}, undefined, false, undefined, this)
 }, undefined, false, undefined, this));
