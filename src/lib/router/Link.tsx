@@ -5,19 +5,18 @@ import { NavigationContext } from "./context.ts";
 type LinkProps = {
   to: string;
   children: ReactNode;
+  onClick?: () => void;
 };
 
-/**
- * When clicked, navigate `to` the given pathname.
- */
-export function Link({ to, children }: LinkProps) {
+export function Link({ to, children, onClick }: LinkProps) {
   const { setPathname: navigate } = useContext(NavigationContext);
   function handleClick(e: MouseEvent): void {
     e.preventDefault();
     navigate(to);
+    onClick?.();
   }
   return (
-    <a className="flex-center gap-sm" href={to} onClick={handleClick}>
+    <a className="flex-left gap-sm" href={to} onClick={handleClick}>
       {children}
     </a>
   );

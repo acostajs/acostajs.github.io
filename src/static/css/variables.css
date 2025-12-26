@@ -9,8 +9,8 @@
   --color-border-strong: #3d4349;
 
   /* Overlays */
-  --overlay-bg: rgba(33, 42, 51, 0.9);
-  --overlay-blur: 8px;
+  --overlay-bg: rgba(33, 42, 51, 0.5);
+  --overlay-blur: 1px;
 
   /* Text */
   --color-text: #d0d5df;
@@ -118,7 +118,7 @@
   --shadow-strong: 0 12px 28px rgba(1, 4, 9, 0.75);
 
   /* Layout helpers */
-  --container-width: 95%;
+  --container-width: 98%;
   --container-max-width: 1400px;
   --nav-height: 64px;
 }

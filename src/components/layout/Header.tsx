@@ -1,8 +1,7 @@
-import { Link } from "@/lib/router";
 import type { ReactElement } from "react";
 import { FaGithub } from "react-icons/fa";
-import { FiBookOpen, FiBox, FiFolder, FiStar } from "react-icons/fi";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { HiddenMenu } from "./header/HiddenMenu";
+import { NavLinks } from "./header/NavLinks";
 
 type HeaderProps = {
   github_user_url: string;
@@ -17,14 +16,13 @@ export function Header({
 }: HeaderProps): ReactElement {
   return (
     <header>
-      <nav className="container">
+      <nav>
         <div className="nav-top flex-between">
-          <div className="flex-center gap-lg">
-            <button className="burger">
-              <RxHamburgerMenu size={20} />
-            </button>
-            <FaGithub size={30} />
-            <a className="username" href={github_user_url}>
+          <div className="flex-center gap-md">
+            <HiddenMenu />
+
+            <a className="username flex-center gap-sm" href={github_user_url}>
+              <FaGithub size={30} />
               {github_username}
             </a>
           </div>
@@ -36,21 +34,7 @@ export function Header({
           </div>
         </div>
 
-        <div className="nav-bottom flex-left gap-xl">
-          <Link to={"/"}>
-            <FiBookOpen size={20} /> Overview
-          </Link>
-          <a className="flex-center gap-sm" href="#projects">
-            <FiFolder size={20} />
-            Projects
-          </a>
-          <Link to={"/about"}>
-            <FiBox size={20} /> About Me
-          </Link>
-          <Link to={"/contact"}>
-            <FiStar size={20} /> Contact
-          </Link>
-        </div>
+        <NavLinks ul_classes={["nav-bottom", "flex-left", "gap-sm"]} />
       </nav>
     </header>
   );
