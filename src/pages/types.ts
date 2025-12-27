@@ -36,9 +36,56 @@ export type GithubUserProfile = {
 export type GitHubRepo = {
   id: number;
   name: string;
+  full_name: string;
   html_url: string;
+
   description: string | null;
   language: string | null;
+  topics: string[];
+
   stargazers_count: number;
+  watchers_count: number;
+  forks_count: number;
+  open_issues_count: number;
+
   fork: boolean;
+  archived: boolean;
+  disabled: boolean;
+  has_issues: boolean;
+  has_pages: boolean;
+
+  homepage: string | null;
+
+  created_at: string;
+  updated_at: string;
+  pushed_at: string;
+
+  default_branch: string;
+
+  license: {
+    key: string;
+    name: string;
+    spdx_id: string;
+    url: string | null;
+    node_id: string;
+  } | null;
+};
+
+export type GitHubReadmeFile = {
+  name: string;
+  path: string;
+  sha: string;
+  size: number;
+  url: string;
+  html_url: string;
+  git_url: string;
+  download_url: string;
+  type: "file";
+  content: string;
+  encoding: "base64";
+  _links: {
+    self: string;
+    git: string;
+    html: string;
+  };
 };

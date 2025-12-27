@@ -1,0 +1,20 @@
+.main-content {
+  padding: var(--pad-xl);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+}
+
+.markdown-body {
+  margin-bottom: var(--space-2xl);
+
+  & p {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.repo-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
