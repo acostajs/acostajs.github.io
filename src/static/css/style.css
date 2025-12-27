@@ -1,9 +1,10 @@
 @import "./variables.css";
 @import "./layout/header.css";
 @import "./layout/footer.css";
+@import "./overview/overview.css";
+@import "./layout/loading.css";
 
 /* Base reset / normalize */
-
 *,
 *::before,
 *::after {
@@ -143,6 +144,10 @@ body > #root {
   flex-direction: column;
 }
 
+section {
+  padding: var(--space-xl) 0;
+}
+
 .container {
   max-width: var(--container-max-width);
   width: var(--container-width);
@@ -155,32 +160,10 @@ body > #root {
   color: var(--color-text-muted);
 }
 
-.badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.125rem 0.5rem;
-  border-radius: var(--radius-full);
-  background-color: var(--badge-bg);
-  border: 1px solid var(--badge-border);
-  font-size: var(--text-xs);
-}
-
 .card {
-  background-color: var(--color-bg-elevated);
-  border: 1px solid var(--color-border-muted);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--pad-md);
-  box-shadow: var(--shadow-soft);
-}
-
-.card--subtle {
-  background-color: var(--color-bg-subtle);
-  border-color: var(--color-border);
-  box-shadow: var(--shadow-subtle);
-}
-
-.section {
-  margin-bottom: var(--space-xl);
 }
 
 .section-title {
