@@ -3,6 +3,7 @@
 @import "./layout/footer.css";
 @import "./overview/overview.css";
 @import "./layout/loading.css";
+@import "./overview//aside.css";
 
 /* Base reset / normalize */
 *,
@@ -38,8 +39,6 @@ h4,
 h5,
 h6 {
   font-weight: var(--weight-semibold);
-  line-height: var(--leading-tight);
-  margin-bottom: var(--space-sm);
 }
 
 h1 {
@@ -198,6 +197,11 @@ section {
 
 .flex-column {
   flex-direction: column;
+}
+
+/* Grid helpers */
+.grid {
+  display: grid;
 }
 
 .gap-sm {

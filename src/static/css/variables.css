@@ -117,6 +117,5 @@
 
   /* Layout helpers */
   --container-width: 98%;
-  --container-max-width: 1400px;
-  --nav-height: 64px;
+  --container-max-width: 1250px;
 }
