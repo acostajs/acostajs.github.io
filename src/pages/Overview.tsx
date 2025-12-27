@@ -1,3 +1,15 @@
+import { AsideProfile } from "../components/overview/AsideProfile";
+import { MainContent } from "../components/overview/MainContent";
+
 export function Overview() {
-  return <h1>Overview</h1>;
+  return (
+    <section>
+      <div className="container">
+        <div className="overview-main grid">
+          <AsideProfile />
+          <MainContent />
+        </div>
+      </div>
+    </section>
+  );
 }
