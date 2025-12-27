@@ -1,19 +1,21 @@
 // AppLayout.tsx
-import type { GithubUserProfile } from "@/pages/types";
-import { GITHUB_URL } from "config_github_user";
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
+import { GITHUB_REPOS, GITHUB_URL } from "../config";
 import { ErrorMessage } from "./components/layout/ErrorMessage";
 import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
 import { Loading } from "./components/layout/Loading";
+import { GitHubProvider } from "./context/GitHubContext";
+import type { GitHubRepo, GithubUserProfile } from "./pages/types";
 
 type AppLayoutProps = {
   children: ReactNode;
 };
 
 export function AppLayout({ children }: AppLayoutProps) {
-  const [github, setGithub] = useState<GithubUserProfile | null>(null);
+  const [profile, setProfile] = useState<GithubUserProfile | null>(null);
+  const [repos, setRepos] = useState<GitHubRepo[]>([]);
   const [fadeOut, setFadeOut] = useState(false);
   const [showLoader, setShowLoader] = useState(true);
   const [error, setError] = useState("");
@@ -21,13 +23,18 @@ export function AppLayout({ children }: AppLayoutProps) {
   useEffect(() => {
     async function loadGitHubProfile() {
       try {
-        const response = await fetch(GITHUB_URL);
-        if (!response.ok) {
-          setError("Error fetching GitHub User Profile");
+        const [userRes, reposRes] = await Promise.all([
+          fetch(GITHUB_URL),
+          fetch(GITHUB_REPOS),
+        ]);
+        if (!userRes.ok || !reposRes.ok) {
+          setError("Error fetching GitHub data");
           return;
         }
-        const data = await response.json();
-        setGithub(data);
+        const userData = await userRes.json();
+        const reposData = await reposRes.json();
+        setProfile(userData);
+        setRepos(reposData);
       } catch {
         setError("Error fetching GitHub User Profile");
       } finally {
@@ -43,15 +50,17 @@ export function AppLayout({ children }: AppLayoutProps) {
     <div className="app-root">
       <div className={`app-content ${showLoader ? "hidden" : ""}`}>
         <Header
-          github_user_url={github?.html_url || ""}
-          github_username={github?.login || ""}
-          github_img_profile_url={github?.avatar_url || ""}
+          github_user_url={profile?.html_url || ""}
+          github_username={profile?.login || ""}
+          github_img_profile_url={profile?.avatar_url || ""}
         />
         <main className="container">
           <ErrorMessage error_message={error} />
-          {children}
+          <GitHubProvider github={profile} repos={repos}>
+            {children}
+          </GitHubProvider>
         </main>
-        <Footer github_user_name={github?.name || ""} />
+        <Footer github_user_name={profile?.name || ""} />
       </div>
       {showLoader && <Loading fadeOut={fadeOut} />}
     </div>
