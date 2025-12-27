@@ -1,13 +1,13 @@
 // AppLayout.tsx
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
-import { GITHUB_REPOS, GITHUB_URL } from "../config";
+import { GITHUB_README, GITHUB_REPOS, GITHUB_URL } from "../config";
 import { ErrorMessage } from "./components/layout/ErrorMessage";
 import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
 import { Loading } from "./components/layout/Loading";
 import { GitHubProvider } from "./context/GitHubContext";
-import type { GitHubRepo, GithubUserProfile } from "./pages/types";
+import type { GitHubReadmeFile, GitHubRepo, GithubUserProfile } from "./pages/types";
 
 type AppLayoutProps = {
   children: ReactNode;
@@ -16,6 +16,7 @@ type AppLayoutProps = {
 export function AppLayout({ children }: AppLayoutProps) {
   const [profile, setProfile] = useState<GithubUserProfile | null>(null);
   const [repos, setRepos] = useState<GitHubRepo[]>([]);
+  const [readme, setReadme] = useState<GitHubReadmeFile | null>(null);
   const [fadeOut, setFadeOut] = useState(false);
   const [showLoader, setShowLoader] = useState(true);
   const [error, setError] = useState("");
@@ -23,18 +24,21 @@ export function AppLayout({ children }: AppLayoutProps) {
   useEffect(() => {
     async function loadGitHubProfile() {
       try {
-        const [userRes, reposRes] = await Promise.all([
+        const [userRes, reposRes, readmeRes] = await Promise.all([
           fetch(GITHUB_URL),
           fetch(GITHUB_REPOS),
+          fetch(GITHUB_README),
         ]);
-        if (!userRes.ok || !reposRes.ok) {
+        if (!userRes.ok || !reposRes.ok || !readmeRes.ok) {
           setError("Error fetching GitHub data");
           return;
         }
         const userData = await userRes.json();
         const reposData = await reposRes.json();
+        const readmeData = await readmeRes.json();
         setProfile(userData);
         setRepos(reposData);
+        setReadme(readmeData);
       } catch {
         setError("Error fetching GitHub User Profile");
       } finally {
@@ -56,7 +60,7 @@ export function AppLayout({ children }: AppLayoutProps) {
         />
         <main className="container">
           <ErrorMessage error_message={error} />
-          <GitHubProvider github={profile} repos={repos}>
+          <GitHubProvider github={profile} repos={repos} readme={readme}>
             {children}
           </GitHubProvider>
         </main>

@@ -1,16 +1,18 @@
 // contexts/GitHubContext.tsx
 import { createContext, useContext } from "react";
 import type { ReactNode } from "react";
-import type { GitHubRepo, GithubUserProfile } from "../pages/types";
+import type { GitHubReadmeFile, GitHubRepo, GithubUserProfile } from "../pages/types";
 
 type GitHubContextType = {
   github: GithubUserProfile | null;
   repos: GitHubRepo[];
+  readme: GitHubReadmeFile | null;
 };
 
 type GitHubProviderProps = {
   github: GithubUserProfile | null;
   repos: GitHubRepo[];
+  readme: GitHubReadmeFile | null;
   children: ReactNode;
 };
 
@@ -19,10 +21,11 @@ const GitHubContext = createContext<GitHubContextType | null>(null);
 export function GitHubProvider({
   github,
   repos,
+  readme,
   children,
 }: GitHubProviderProps) {
   return (
-    <GitHubContext.Provider value={{ github, repos }}>
+    <GitHubContext.Provider value={{ github, repos, readme }}>
       {children}
     </GitHubContext.Provider>
   );
