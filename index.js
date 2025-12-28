@@ -18792,8 +18792,8 @@ function MdEmail(props) {
 var jsx_dev_runtime14 = __toESM(require_jsx_dev_runtime(), 1);
 function AsideProfile({ profile }) {
   if (!profile)
-    return /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("h1", {
-      children: "Profile not found ..."
+    return /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(ErrorMessage, {
+      error_message: "profile not found..."
     }, undefined, false, undefined, this);
   return /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("aside", {
     children: [
@@ -30561,6 +30561,15 @@ function MainContent({
   content: content3,
   repos
 }) {
+  if (!content3)
+    return /* @__PURE__ */ jsx_dev_runtime16.jsxDEV(ErrorMessage, {
+      error_message: "content not found..."
+    }, undefined, false, undefined, this);
+  if (!repos) {
+    return /* @__PURE__ */ jsx_dev_runtime16.jsxDEV(ErrorMessage, {
+      error_message: "repositories not found..."
+    }, undefined, false, undefined, this);
+  }
   const readmeMarkdown = atob(content3.content);
   return /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("section", {
     className: "main-content",
