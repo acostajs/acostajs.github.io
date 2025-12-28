@@ -1,9 +1,9 @@
-import { profile_email, profile_github_url, profile_linkedin, profile_linkedin_url } from "config";
 import type { ReactElement } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { ImLinkedin } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
+import { profile_email, profile_github_url, profile_linkedin, profile_linkedin_url } from "../../../api";
 import type { GithubUserProfile } from "../../pages/types";
 
 type AsideProfileProps = {
