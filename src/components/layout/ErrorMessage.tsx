@@ -10,10 +10,10 @@ export function ErrorMessage({
   if (!error_message) return null;
 
   return (
-    <div className="error-overlay">
-      <div className="error-container">
-        <span className="error-message">{error_message}</span>
+    <section>
+      <div className="container">
+        <h1 className="error-message">{error_message}</h1>
       </div>
-    </div>
+    </section>
   );
 }
