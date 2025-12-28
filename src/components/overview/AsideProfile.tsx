@@ -5,13 +5,14 @@ import { ImLinkedin } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
 import { profile_email, profile_github_url, profile_linkedin, profile_linkedin_url } from "../../../api";
 import type { GithubUserProfile } from "../../pages/types";
+import { ErrorMessage } from "../layout/ErrorMessage";
 
 type AsideProfileProps = {
   profile?: GithubUserProfile;
 };
 
 export function AsideProfile({ profile }: AsideProfileProps): ReactElement {
-  if (!profile) return <h1>Profile not found ...</h1>;
+  if (!profile) return <ErrorMessage error_message={"profile not found..."} />;
 
   return (
     <aside>
