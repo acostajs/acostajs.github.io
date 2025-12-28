@@ -18104,20 +18104,6 @@ var require_extend = __commonJS((exports, module) => {
 var import_react11 = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
 
-// src/AppLayout.tsx
-var import_react7 = __toESM(require_react(), 1);
-
-// config.ts
-var GITHUB_USER = "acostajs";
-var GITHUB_URL = `https://api.github.com/users/${GITHUB_USER}`;
-var GITHUB_REPOS = `https://api.github.com/users/${GITHUB_USER}/repos?sort=updated&direction=desc&per_page=6`;
-var GITHUB_README = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_USER}/readme`;
-var GITHUB_JSON = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_USER}/portfolio.json`;
-var profile_email = "acosta.juan@icloud.com";
-var profile_linkedin = "juan-acosta-pinilla";
-var profile_linkedin_url = `https://www.linkedin.com/in/${profile_linkedin}/`;
-var profile_github_url = `https://github.com/${GITHUB_USER}/`;
-
 // src/components/layout/ErrorMessage.tsx
 var jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
 function ErrorMessage({
@@ -18125,11 +18111,10 @@ function ErrorMessage({
 }) {
   if (!error_message)
     return null;
-  return /* @__PURE__ */ jsx_dev_runtime.jsxDEV("div", {
-    className: "error-overlay",
+  return /* @__PURE__ */ jsx_dev_runtime.jsxDEV("section", {
     children: /* @__PURE__ */ jsx_dev_runtime.jsxDEV("div", {
-      className: "error-container",
-      children: /* @__PURE__ */ jsx_dev_runtime.jsxDEV("span", {
+      className: "container",
+      children: /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h1", {
         className: "error-message",
         children: error_message
       }, undefined, false, undefined, this)
@@ -18595,9 +18580,37 @@ function useGitHub() {
   return context;
 }
 
-// src/AppLayout.tsx
-var jsx_dev_runtime10 = __toESM(require_jsx_dev_runtime(), 1);
-function AppLayout({ children }) {
+// src/hooks/useGitHubData.ts
+var import_react7 = __toESM(require_react(), 1);
+
+// profile.config.ts
+var CONFIG = {
+  github: {
+    username: "acostajs",
+    repos: {
+      number_of_repos_to_display: 6,
+      sort_by: "updated",
+      direction: "desc"
+    }
+  },
+  profile: {
+    email: "acosta.juan@icloud.com",
+    linkedin: "juan-acosta-pinilla"
+  }
+};
+
+// api.ts
+var GITHUB_URL = `https://api.github.com/users/${CONFIG.github.username}`;
+var GITHUB_REPOS = `https://api.github.com/users/${CONFIG.github.username}/repos?sort=${CONFIG.github.repos.sort_by}&direction=${CONFIG.github.repos.direction}&per_page=${CONFIG.github.repos.number_of_repos_to_display}`;
+var GITHUB_README = `https://api.github.com/repos/${CONFIG.github.username}/${CONFIG.github.username}/readme`;
+var GITHUB_JSON = `https://api.github.com/repos/${CONFIG.github.username}/${CONFIG.github.username}/portfolio.json`;
+var profile_email = CONFIG.profile.email;
+var profile_linkedin = CONFIG.profile.linkedin;
+var profile_linkedin_url = `https://www.linkedin.com/in/${CONFIG.profile.linkedin}/`;
+var profile_github_url = `https://github.com/${CONFIG.github.username}/`;
+
+// src/hooks/useGitHubData.ts
+function useGitHubData() {
   const [profile, setProfile] = import_react7.useState(null);
   const [repos, setRepos] = import_react7.useState([]);
   const [readme, setReadme] = import_react7.useState(null);
@@ -18605,7 +18618,7 @@ function AppLayout({ children }) {
   const [showLoader, setShowLoader] = import_react7.useState(true);
   const [error, setError] = import_react7.useState("");
   import_react7.useEffect(() => {
-    async function loadGitHubProfile() {
+    async function load() {
       try {
         const [userRes, reposRes, readmeRes] = await Promise.all([
           fetch(GITHUB_URL),
@@ -18614,6 +18627,7 @@ function AppLayout({ children }) {
         ]);
         if (!userRes.ok || !reposRes.ok || !readmeRes.ok) {
           setError("Error fetching GitHub data");
+          setShowLoader(false);
           return;
         }
         const userData = await userRes.json();
@@ -18624,13 +18638,21 @@ function AppLayout({ children }) {
         setReadme(readmeData);
       } catch {
         setError("Error fetching GitHub User Profile");
+        setShowLoader(false);
       } finally {
         setFadeOut(true);
         setTimeout(() => setShowLoader(false), 600);
       }
     }
-    loadGitHubProfile();
+    load();
   }, []);
+  return { profile, repos, readme, fadeOut, error, showLoader };
+}
+
+// src/AppLayout.tsx
+var jsx_dev_runtime10 = __toESM(require_jsx_dev_runtime(), 1);
+function AppLayout({ children }) {
+  const { profile, repos, readme, fadeOut, error, showLoader } = useGitHubData();
   return /* @__PURE__ */ jsx_dev_runtime10.jsxDEV("div", {
     className: "app-root",
     children: [
