@@ -18101,7 +18101,7 @@ var require_extend = __commonJS((exports, module) => {
 });
 
 // src/index.tsx
-var import_react11 = __toESM(require_react(), 1);
+var import_react12 = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
 
 // src/components/layout/ErrorMessage.tsx
@@ -18410,9 +18410,8 @@ function NavLinks({
         }, undefined, true, undefined, this)
       }, undefined, false, undefined, this),
       /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("li", {
-        children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("a", {
-          className: "flex-left gap-sm",
-          href: "#projects",
+        children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(Link, {
+          to: "/projects",
           onClick: handleClick,
           children: [
             /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(FiFolder, {
@@ -18543,12 +18542,12 @@ function Header({
 
 // src/components/layout/Loading.tsx
 var jsx_dev_runtime8 = __toESM(require_jsx_dev_runtime(), 1);
-function Loading({ fadeOut }) {
+function Loading({ loading_message, fadeOut }) {
   return /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("div", {
     className: `loading-overlay ${fadeOut ? "loading-fade-out" : ""}`,
     children: [
       /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("h1", {
-        children: "Loading GitHub Profile...."
+        children: loading_message
       }, undefined, false, undefined, this),
       /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("span", {
         className: "muted",
@@ -18558,30 +18557,20 @@ function Loading({ fadeOut }) {
   }, undefined, true, undefined, this);
 }
 
-// src/context/GitHubContext.tsx
-var import_react6 = __toESM(require_react(), 1);
-var jsx_dev_runtime9 = __toESM(require_jsx_dev_runtime(), 1);
-var GitHubContext = import_react6.createContext(null);
-function GitHubProvider({
-  github,
-  repos,
-  readme,
-  children
-}) {
-  return /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(GitHubContext.Provider, {
-    value: { github, repos, readme },
-    children
-  }, undefined, false, undefined, this);
-}
-function useGitHub() {
-  const context = import_react6.useContext(GitHubContext);
-  if (!context)
-    throw new Error("useGitHub must be used within GitHubProvider");
-  return context;
+// node_modules/react-icons/fa6/index.mjs
+function FaLocationDot(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 384 512" }, child: [{ tag: "path", attr: { d: "M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" }, child: [] }] })(props);
 }
 
-// src/hooks/useGitHubData.ts
-var import_react7 = __toESM(require_react(), 1);
+// node_modules/react-icons/im/index.mjs
+function ImLinkedin(props) {
+  return GenIcon({ tag: "svg", attr: { version: "1.1", viewBox: "0 0 16 16" }, child: [{ tag: "path", attr: { d: "M14.5 0h-13c-0.825 0-1.5 0.675-1.5 1.5v13c0 0.825 0.675 1.5 1.5 1.5h13c0.825 0 1.5-0.675 1.5-1.5v-13c0-0.825-0.675-1.5-1.5-1.5zM6 13h-2v-7h2v7zM5 5c-0.553 0-1-0.447-1-1s0.447-1 1-1c0.553 0 1 0.447 1 1s-0.447 1-1 1zM13 13h-2v-4c0-0.553-0.447-1-1-1s-1 0.447-1 1v4h-2v-7h2v1.241c0.412-0.566 1.044-1.241 1.75-1.241 1.244 0 2.25 1.119 2.25 2.5v4.5z" }, child: [] }] })(props);
+}
+
+// node_modules/react-icons/md/index.mjs
+function MdEmail(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24" }, child: [{ tag: "path", attr: { fill: "none", d: "M0 0h24v24H0z" }, child: [] }, { tag: "path", attr: { d: "M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" }, child: [] }] })(props);
+}
 
 // profile.config.ts
 var CONFIG = {
@@ -18602,14 +18591,136 @@ var CONFIG = {
 // api.ts
 var GITHUB_URL = `https://api.github.com/users/${CONFIG.github.username}`;
 var GITHUB_REPOS = `https://api.github.com/users/${CONFIG.github.username}/repos?sort=${CONFIG.github.repos.sort_by}&direction=${CONFIG.github.repos.direction}&per_page=${CONFIG.github.repos.number_of_repos_to_display}`;
+function GITHUB_PORTFOLIO_FOLDER(repoName, folderPath = "portfolio") {
+  return `https://api.github.com/repos/${CONFIG.github.username}/${repoName}/contents/${folderPath}?ref=main`;
+}
 var GITHUB_README = `https://api.github.com/repos/${CONFIG.github.username}/${CONFIG.github.username}/readme`;
-var GITHUB_JSON = `https://api.github.com/repos/${CONFIG.github.username}/${CONFIG.github.username}/portfolio.json`;
 var profile_email = CONFIG.profile.email;
 var profile_linkedin = CONFIG.profile.linkedin;
 var profile_linkedin_url = `https://www.linkedin.com/in/${CONFIG.profile.linkedin}/`;
 var profile_github_url = `https://github.com/${CONFIG.github.username}/`;
 
+// src/components/overview/AsideProfile.tsx
+var jsx_dev_runtime9 = __toESM(require_jsx_dev_runtime(), 1);
+function AsideProfile({ profile }) {
+  if (!profile)
+    return /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(ErrorMessage, {
+      error_message: "profile not found..."
+    }, undefined, false, undefined, this);
+  return /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("aside", {
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("div", {
+        className: "profile-img flex-center",
+        children: /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("figure", {
+          children: /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("img", {
+            src: profile.avatar_url,
+            alt: ""
+          }, undefined, false, undefined, this)
+        }, undefined, false, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("div", {
+        className: "profile-text",
+        children: /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("ul", {
+          className: "profile-list flex-column flex gap-md",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
+              children: /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("h1", {
+                children: profile.name
+              }, undefined, false, undefined, this)
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
+              className: "profile-bio",
+              children: profile.bio
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
+              className: "flex-left gap-md",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(FaLocationDot, {
+                  size: 20
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("a", {
+                  href: `https://www.google.com/maps?q=${profile.location}`,
+                  children: profile.location
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
+              className: "flex-left gap-md",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(MdEmail, {
+                  size: 20
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("a", {
+                  href: "mailto:" + profile_email,
+                  children: profile_email
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
+              className: "flex-left gap-md",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(ImLinkedin, {
+                  size: 20
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("a", {
+                  href: profile_linkedin_url,
+                  children: profile_linkedin
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
+              className: "flex-left gap-md",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(FaGithub, {
+                  size: 20
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("a", {
+                  href: profile_github_url,
+                  children: profile.login
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
+              className: "flex-left gap-md",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
+                  className: "profile-item",
+                  children: "Availability:"
+                }, undefined, false, undefined, this),
+                profile.hireable ? "Open to work" : "Not available"
+              ]
+            }, undefined, true, undefined, this)
+          ]
+        }, undefined, true, undefined, this)
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+
+// src/context/GitHubContext.tsx
+var import_react6 = __toESM(require_react(), 1);
+var jsx_dev_runtime10 = __toESM(require_jsx_dev_runtime(), 1);
+var GitHubContext = import_react6.createContext(null);
+function GitHubProvider({
+  github,
+  repos,
+  readme,
+  children
+}) {
+  return /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(GitHubContext.Provider, {
+    value: { github, repos, readme },
+    children
+  }, undefined, false, undefined, this);
+}
+function useGitHub() {
+  const context = import_react6.useContext(GitHubContext);
+  if (!context)
+    throw new Error("useGitHub must be used within GitHubProvider");
+  return context;
+}
+
 // src/hooks/useGitHubData.ts
+var import_react7 = __toESM(require_react(), 1);
 function useGitHubData() {
   const [profile, setProfile] = import_react7.useState(null);
   const [repos, setRepos] = import_react7.useState([]);
@@ -18617,6 +18728,7 @@ function useGitHubData() {
   const [fadeOut, setFadeOut] = import_react7.useState(false);
   const [showLoader, setShowLoader] = import_react7.useState(true);
   const [error, setError] = import_react7.useState("");
+  const [loadingMessage, setLoadingMessage] = import_react7.useState("Loading profile...");
   import_react7.useEffect(() => {
     async function load() {
       try {
@@ -18636,54 +18748,67 @@ function useGitHubData() {
         setProfile(userData);
         setRepos(reposData);
         setReadme(readmeData);
+        setLoadingMessage("Almost ready...");
       } catch {
         setError("Error fetching GitHub User Profile");
         setShowLoader(false);
       } finally {
         setFadeOut(true);
-        setTimeout(() => setShowLoader(false), 600);
+        setTimeout(() => setShowLoader(false), 800);
       }
     }
     load();
   }, []);
-  return { profile, repos, readme, fadeOut, error, showLoader };
+  return { profile, repos, readme, fadeOut, error, showLoader, loadingMessage };
 }
 
 // src/AppLayout.tsx
-var jsx_dev_runtime10 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime11 = __toESM(require_jsx_dev_runtime(), 1);
 function AppLayout({ children }) {
-  const { profile, repos, readme, fadeOut, error, showLoader } = useGitHubData();
-  return /* @__PURE__ */ jsx_dev_runtime10.jsxDEV("div", {
+  const { profile, repos, readme, fadeOut, error, showLoader, loadingMessage } = useGitHubData();
+  return /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("div", {
     className: "app-root",
     children: [
-      /* @__PURE__ */ jsx_dev_runtime10.jsxDEV("div", {
+      /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("div", {
         className: `app-content ${showLoader ? "hidden" : ""}`,
         children: [
-          /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(Header, {
+          /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(Header, {
             github_user_url: profile?.html_url || "",
             github_username: profile?.login || "",
             github_img_profile_url: profile?.avatar_url || ""
           }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime10.jsxDEV("main", {
+          /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("main", {
             className: "container",
             children: [
-              /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(ErrorMessage, {
+              /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(ErrorMessage, {
                 error_message: error
               }, undefined, false, undefined, this),
-              /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(GitHubProvider, {
+              /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(GitHubProvider, {
                 github: profile,
                 repos,
                 readme,
-                children
+                children: /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("section", {
+                  className: "page-grid",
+                  children: [
+                    /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(AsideProfile, {
+                      profile
+                    }, undefined, false, undefined, this),
+                    /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("div", {
+                      className: "main-content",
+                      children
+                    }, undefined, false, undefined, this)
+                  ]
+                }, undefined, true, undefined, this)
               }, undefined, false, undefined, this)
             ]
           }, undefined, true, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(Footer, {
+          /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(Footer, {
             github_user_name: profile?.name || ""
           }, undefined, false, undefined, this)
         ]
       }, undefined, true, undefined, this),
-      showLoader && /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(Loading, {
+      showLoader && /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(Loading, {
+        loading_message: loadingMessage,
         fadeOut
       }, undefined, false, undefined, this)
     ]
@@ -18698,7 +18823,7 @@ function Route({ element }) {
 }
 // src/lib/router/Router.tsx
 var import_react9 = __toESM(require_react(), 1);
-var jsx_dev_runtime11 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime12 = __toESM(require_jsx_dev_runtime(), 1);
 function Router({ children }) {
   const [pathname, setPathname] = import_react9.useState(window.location.pathname);
   const childrenArray = Array.isArray(children) ? children : [children];
@@ -18709,10 +18834,10 @@ function Router({ children }) {
   }));
   const routeToRender = match(pathname, routes);
   if (routeToRender === null)
-    return /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(jsx_dev_runtime11.Fragment, {
+    return /* @__PURE__ */ jsx_dev_runtime12.jsxDEV(jsx_dev_runtime12.Fragment, {
       children: "404"
     }, undefined, false, undefined, this);
-  return /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(NavigationContext.Provider, {
+  return /* @__PURE__ */ jsx_dev_runtime12.jsxDEV(NavigationContext.Provider, {
     value: {
       pathname,
       setPathname: (to) => {
@@ -18720,7 +18845,7 @@ function Router({ children }) {
         setPathname(to);
       }
     },
-    children: /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(RouteContext.Provider, {
+    children: /* @__PURE__ */ jsx_dev_runtime12.jsxDEV(RouteContext.Provider, {
       value: routeToRender.params,
       children: routeToRender.element
     }, undefined, false, undefined, this)
@@ -18757,132 +18882,190 @@ function matchesRoute(currentSegments, route) {
   }
   return true;
 }
+// src/hooks/usePortfolioData.ts
+var import_react10 = __toESM(require_react(), 1);
+function usePortfolioData(repoName) {
+  const [data, setData] = import_react10.useState(null);
+  const [loading, setLoading] = import_react10.useState(true);
+  const [error, setError] = import_react10.useState("");
+  import_react10.useEffect(() => {
+    async function load() {
+      try {
+        setLoading(true);
+        const res = await fetch(GITHUB_PORTFOLIO_FOLDER(repoName));
+        if (!res.ok)
+          throw new Error(`HTTP ${res.status}`);
+        const files = await res.json();
+        const jsonFile = files.find((f) => f.name === "portfolio.json");
+        if (!jsonFile?.download_url)
+          throw new Error("portfolio.json missing");
+        const jsonRes = await fetch(jsonFile.download_url);
+        const rawJson = await jsonRes.json();
+        const isProfile = repoName === CONFIG.github.username;
+        const jsonData = isProfile ? { about: rawJson } : { repo: rawJson };
+        const imgFiles = files.filter((f) => f.name.startsWith("portfolio-img-") && f.download_url);
+        const images = imgFiles.map((f) => f.download_url).filter((url) => url !== null).slice(0, 2);
+        setData({
+          json: jsonData,
+          images: images.length ? images : undefined,
+          isProfile
+        });
+      } catch {
+        setError("portfolio.json missing");
+      } finally {
+        setLoading(false);
+      }
+    }
+    if (repoName)
+      load();
+  }, [repoName]);
+  return { data, loading, error };
+}
+
 // src/pages/About.tsx
-var jsx_dev_runtime12 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime13 = __toESM(require_jsx_dev_runtime(), 1);
 function About() {
-  return /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("h1", {
-    children: "About"
+  const { data, loading, error } = usePortfolioData(`${CONFIG.github.username}`);
+  if (error)
+    return /* @__PURE__ */ jsx_dev_runtime13.jsxDEV(ErrorMessage, {
+      error_message: error
+    }, undefined, false, undefined, this);
+  if (loading || !data?.json) {
+    return /* @__PURE__ */ jsx_dev_runtime13.jsxDEV(Loading, {
+      loading_message: "Loading data..."
+    }, undefined, false, undefined, this);
+  }
+  if ("about" in data.json) {
+    const aboutData = data.json.about;
+    return /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("section", {
+      children: [
+        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
+          className: `section-title `,
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h1", {
+              children: aboutData.about.headline
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("span", {
+              className: "muted",
+              children: aboutData.about.tagline
+            }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
+          className: "about-text",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h2", {
+              children: "A little bit about me..."
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("p", {
+              children: aboutData.story.intro
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("p", {
+              children: aboutData.story.transition
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("p", {
+              children: aboutData.story.passions
+            }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
+          className: "about-softskills",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h2", {
+              children: "Soft skills"
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("ul", {
+              children: aboutData.softSkills.map((skill, i) => /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("li", {
+                children: skill
+              }, i, false, undefined, this))
+            }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
+          className: "about-personal",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h2", {
+              children: "Personal Interests"
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("ul", {
+              children: aboutData.personal.interests.map((interest, i) => /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("li", {
+                children: interest
+              }, i, false, undefined, this))
+            }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
+          className: "about-languages",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h2", {
+              children: "Languages"
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("ul", {
+              children: aboutData.personal.languages.map((language, i) => /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("li", {
+                children: [
+                  language.name,
+                  " - ",
+                  language.level
+                ]
+              }, i, true, undefined, this))
+            }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
+          className: "about-funfacts",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h2", {
+              children: "Fun Facts"
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("ul", {
+              children: aboutData.personal.funFacts.map((fact, i) => /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("li", {
+                children: fact
+              }, i, false, undefined, this))
+            }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
+          className: "about-values",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h2", {
+              children: "Values"
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("ul", {
+              children: aboutData.values.map((value, i) => /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("li", {
+                children: value
+              }, i, false, undefined, this))
+            }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
+          className: "about-img",
+          children: /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("figure", {
+            children: data.images && data.images.length > 0 ? /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("img", {
+              src: data.images[0],
+              alt: `${aboutData.about.headline} - Profile photo`,
+              loading: "lazy"
+            }, undefined, false, undefined, this) : /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
+              className: "placeholder-img",
+              children: /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("span", {
+                children: "No image available"
+              }, undefined, false, undefined, this)
+            }, undefined, false, undefined, this)
+          }, undefined, false, undefined, this)
+        }, undefined, false, undefined, this)
+      ]
+    }, undefined, true, undefined, this);
+  }
+  return /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
+    children: "Invalid portfolio data"
   }, undefined, false, undefined, this);
 }
 
 // src/pages/Contact.tsx
-var jsx_dev_runtime13 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime14 = __toESM(require_jsx_dev_runtime(), 1);
 function Contact() {
-  return /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h1", {
+  return /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("h1", {
     children: "Contact"
   }, undefined, false, undefined, this);
-}
-
-// node_modules/react-icons/fa6/index.mjs
-function FaLocationDot(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 384 512" }, child: [{ tag: "path", attr: { d: "M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" }, child: [] }] })(props);
-}
-
-// node_modules/react-icons/im/index.mjs
-function ImLinkedin(props) {
-  return GenIcon({ tag: "svg", attr: { version: "1.1", viewBox: "0 0 16 16" }, child: [{ tag: "path", attr: { d: "M14.5 0h-13c-0.825 0-1.5 0.675-1.5 1.5v13c0 0.825 0.675 1.5 1.5 1.5h13c0.825 0 1.5-0.675 1.5-1.5v-13c0-0.825-0.675-1.5-1.5-1.5zM6 13h-2v-7h2v7zM5 5c-0.553 0-1-0.447-1-1s0.447-1 1-1c0.553 0 1 0.447 1 1s-0.447 1-1 1zM13 13h-2v-4c0-0.553-0.447-1-1-1s-1 0.447-1 1v4h-2v-7h2v1.241c0.412-0.566 1.044-1.241 1.75-1.241 1.244 0 2.25 1.119 2.25 2.5v4.5z" }, child: [] }] })(props);
-}
-
-// node_modules/react-icons/md/index.mjs
-function MdEmail(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24" }, child: [{ tag: "path", attr: { fill: "none", d: "M0 0h24v24H0z" }, child: [] }, { tag: "path", attr: { d: "M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" }, child: [] }] })(props);
-}
-
-// src/components/overview/AsideProfile.tsx
-var jsx_dev_runtime14 = __toESM(require_jsx_dev_runtime(), 1);
-function AsideProfile({ profile }) {
-  if (!profile)
-    return /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(ErrorMessage, {
-      error_message: "profile not found..."
-    }, undefined, false, undefined, this);
-  return /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("aside", {
-    children: [
-      /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
-        className: "profile-img flex-center",
-        children: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("figure", {
-          children: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("img", {
-            src: profile.avatar_url,
-            alt: ""
-          }, undefined, false, undefined, this)
-        }, undefined, false, undefined, this)
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
-        className: "profile-text",
-        children: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("ul", {
-          className: "profile-list flex-column flex gap-md",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("li", {
-              children: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("h1", {
-                children: profile.name
-              }, undefined, false, undefined, this)
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("li", {
-              className: "profile-bio",
-              children: profile.bio
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("li", {
-              className: "flex-left gap-md",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(FaLocationDot, {
-                  size: 20
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("a", {
-                  href: `https://www.google.com/maps?q=${profile.location}`,
-                  children: profile.location
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("li", {
-              className: "flex-left gap-md",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(MdEmail, {
-                  size: 20
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("a", {
-                  href: "mailto:" + profile_email,
-                  children: profile_email
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("li", {
-              className: "flex-left gap-md",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(ImLinkedin, {
-                  size: 20
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("a", {
-                  href: profile_linkedin_url,
-                  children: profile_linkedin
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("li", {
-              className: "flex-left gap-md",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(FaGithub, {
-                  size: 20
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("a", {
-                  href: profile_github_url,
-                  children: profile.login
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("li", {
-              className: "flex-left gap-md",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("span", {
-                  className: "profile-item",
-                  children: "Availability:"
-                }, undefined, false, undefined, this),
-                profile.hireable ? "Open to work" : "Not available"
-              ]
-            }, undefined, true, undefined, this)
-          ]
-        }, undefined, true, undefined, this)
-      }, undefined, false, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
 }
 
 // node_modules/devlop/lib/development.js
@@ -20582,7 +20765,7 @@ var urlAttributes = {
 };
 // node_modules/react-markdown/lib/index.js
 var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
-var import_react10 = __toESM(require_react(), 1);
+var import_react11 = __toESM(require_react(), 1);
 
 // node_modules/mdast-util-to-string/lib/index.js
 var emptyOptions2 = {};
@@ -30477,173 +30660,179 @@ function remarkGfm(options) {
   fromMarkdownExtensions.push(gfmFromMarkdown());
   toMarkdownExtensions.push(gfmToMarkdown(settings));
 }
-// src/components/overview/Projects.tsx
+// src/components/overview/ContactSection.tsx
 var jsx_dev_runtime15 = __toESM(require_jsx_dev_runtime(), 1);
-function Projects({ repos }) {
-  return /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("ul", {
-    className: "repo-grid",
-    id: "projects",
-    children: repos.map((repo) => /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("li", {
-      children: /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("article", {
-        className: "card",
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("div", {
-            className: "card-title",
-            children: [
-              /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("a", {
-                href: repo.html_url,
-                target: "_blank",
-                rel: "noreferrer",
-                children: /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("h3", {
-                  children: repo.name
-                }, undefined, false, undefined, this)
-              }, undefined, false, undefined, this),
-              /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("span", {
-                className: "muted",
-                children: [
-                  "Updated ",
-                  new Date(repo.pushed_at).toLocaleDateString()
-                ]
-              }, undefined, true, undefined, this)
-            ]
-          }, undefined, true, undefined, this),
-          repo.description && /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("p", {
-            className: "repo-card__description",
-            children: repo.description
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("div", {
-            className: "repo-card__footer",
-            children: /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("div", {
-              className: "repo-card__stats",
-              children: [
-                repo.language && /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("span", {
-                  className: "repo-card__stat",
-                  children: [
-                    /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("span", {
-                      className: "repo-card__language-dot"
-                    }, undefined, false, undefined, this),
-                    repo.language
-                  ]
-                }, undefined, true, undefined, this),
-                repo.open_issues_count > 0 && /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("span", {
-                  className: "repo-card__stat",
-                  children: [
-                    "Issues: ",
-                    repo.open_issues_count
-                  ]
-                }, undefined, true, undefined, this),
-                repo.license && /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("span", {
-                  className: "repo-card__stat",
-                  children: [
-                    "License: ",
-                    repo.license.spdx_id
-                  ]
-                }, undefined, true, undefined, this)
-              ]
-            }, undefined, true, undefined, this)
-          }, undefined, false, undefined, this),
-          repo.topics && repo.topics.length > 0 && /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("ul", {
-            className: "repo-card__topics",
-            children: repo.topics.slice(0, 3).map((topic) => /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("li", {
-              className: "repo-card__topic",
-              children: topic
-            }, topic, false, undefined, this))
-          }, undefined, false, undefined, this)
-        ]
-      }, undefined, true, undefined, this)
-    }, repo.id, false, undefined, this))
+function ContactSection() {
+  return /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("h1", {
+    children: "Contact Me"
   }, undefined, false, undefined, this);
 }
 
-// src/components/overview/MainContent.tsx
+// src/components/overview/ProjectCard.tsx
 var jsx_dev_runtime16 = __toESM(require_jsx_dev_runtime(), 1);
-function MainContent({
-  content: content3,
-  repos
-}) {
-  if (!content3)
-    return /* @__PURE__ */ jsx_dev_runtime16.jsxDEV(ErrorMessage, {
-      error_message: "content not found..."
-    }, undefined, false, undefined, this);
-  if (!repos) {
-    return /* @__PURE__ */ jsx_dev_runtime16.jsxDEV(ErrorMessage, {
-      error_message: "repositories not found..."
-    }, undefined, false, undefined, this);
-  }
-  const readmeMarkdown = atob(content3.content);
-  return /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("section", {
-    className: "main-content",
+function ProjectCard({ repo }) {
+  return /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("article", {
+    className: "card flex flex-column gap-sm",
     children: [
-      /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("article", {
-        className: "markdown-body flex flex-column gap-md",
-        children: /* @__PURE__ */ jsx_dev_runtime16.jsxDEV(Markdown, {
-          remarkPlugins: [remarkGfm],
-          children: readmeMarkdown
+      /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("div", {
+        className: "flex-between",
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("a", {
+            href: repo.html_url,
+            className: "card-title",
+            children: /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("h3", {
+              children: repo.name
+            }, undefined, false, undefined, this)
+          }, undefined, false, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("span", {
+            className: "card-visibility muted",
+            children: repo.visibility
+          }, undefined, false, undefined, this)
+        ]
+      }, undefined, true, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("div", {
+        className: "card-text",
+        children: /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("p", {
+          children: repo.description
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime16.jsxDEV(Projects, {
-        repos
+      /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("span", {
+        className: "card-language flex-left gap-sm",
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("div", {
+            className: "card-language-decorator"
+          }, undefined, false, undefined, this),
+          repo.language
+        ]
+      }, undefined, true, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("ul", {
+        className: "card-topics muted flex gap-sm",
+        children: repo.topics.slice(0, 3).map((topic) => /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("li", {
+          className: "repo-card__topic",
+          children: topic
+        }, topic, false, undefined, this))
       }, undefined, false, undefined, this)
     ]
   }, undefined, true, undefined, this);
 }
 
-// src/pages/Overview.tsx
+// src/components/overview/ProjectSection.tsx
 var jsx_dev_runtime17 = __toESM(require_jsx_dev_runtime(), 1);
+function ProjectSection({ repos }) {
+  return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("ul", {
+    className: "repo-grid",
+    id: "projects",
+    children: repos.map((repo) => /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("li", {
+      children: /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(ProjectCard, {
+        repo
+      }, undefined, false, undefined, this)
+    }, repo.id, false, undefined, this))
+  }, undefined, false, undefined, this);
+}
+
+// src/components/overview/MainContent.tsx
+var jsx_dev_runtime18 = __toESM(require_jsx_dev_runtime(), 1);
+function MainContent({
+  content: content3,
+  repos
+}) {
+  if (!content3)
+    return /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(ErrorMessage, {
+      error_message: "content not found..."
+    }, undefined, false, undefined, this);
+  if (!repos) {
+    return /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(ErrorMessage, {
+      error_message: "repositories not found..."
+    }, undefined, false, undefined, this);
+  }
+  const readmeMarkdown = atob(content3.content);
+  return /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(jsx_dev_runtime18.Fragment, {
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime18.jsxDEV("article", {
+        className: "markdown-body flex flex-column gap-md",
+        children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(Markdown, {
+          remarkPlugins: [remarkGfm],
+          children: readmeMarkdown
+        }, undefined, false, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime18.jsxDEV("div", {
+        className: "section-title",
+        children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV("h2", {
+          children: "Top Projects"
+        }, undefined, false, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(ProjectSection, {
+        repos
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime18.jsxDEV("div", {
+        className: "section-title",
+        children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV("h2", {
+          children: "Contact Me"
+        }, undefined, false, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(ContactSection, {}, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+
+// src/pages/Overview.tsx
+var jsx_dev_runtime19 = __toESM(require_jsx_dev_runtime(), 1);
 function Overview() {
   const { github, repos, readme } = useGitHub();
   if (!github)
-    return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("h1", {
-      children: "Loading profile..."
+    return /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(Loading, {
+      loading_message: "Loading profile..."
     }, undefined, false, undefined, this);
   if (!readme)
-    return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("h1", {
-      children: "Loading readme..."
+    return /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(Loading, {
+      loading_message: "Loading data..."
     }, undefined, false, undefined, this);
-  if (repos.length === 0)
-    return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("h1", {
-      children: "No repositories found"
+  if (repos.length === 0) {
+    return /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(Loading, {
+      loading_message: "No repositories found"
     }, undefined, false, undefined, this);
-  return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("section", {
-    children: /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
-      className: "container",
-      children: /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
-        className: "overview-main grid",
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(AsideProfile, {
-            profile: github
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(MainContent, {
-            content: readme,
-            repos
-          }, undefined, false, undefined, this)
-        ]
-      }, undefined, true, undefined, this)
-    }, undefined, false, undefined, this)
+  }
+  return /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(MainContent, {
+    content: readme,
+    repos
+  }, undefined, false, undefined, this);
+}
+
+// src/pages/Projects.tsx
+var jsx_dev_runtime20 = __toESM(require_jsx_dev_runtime(), 1);
+function Projects() {
+  return /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("h1", {
+    children: "Projects..."
   }, undefined, false, undefined, this);
 }
 
 // src/App.tsx
-var jsx_dev_runtime18 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime21 = __toESM(require_jsx_dev_runtime(), 1);
 function App() {
-  return /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(Router, {
+  return /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Router, {
     children: [
-      /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(Route, {
+      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Route, {
         path: "/",
-        element: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(AppLayout, {
-          children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(Overview, {}, undefined, false, undefined, this)
+        element: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Overview, {}, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(Route, {
+      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Route, {
         path: "/about",
-        element: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(AppLayout, {
-          children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(About, {}, undefined, false, undefined, this)
+        element: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(About, {}, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(Route, {
+      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Route, {
         path: "/contact",
-        element: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(AppLayout, {
-          children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(Contact, {}, undefined, false, undefined, this)
+        element: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Contact, {}, undefined, false, undefined, this)
+        }, undefined, false, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Route, {
+        path: "/projects",
+        element: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Projects, {}, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this)
     ]
@@ -30651,10 +30840,10 @@ function App() {
 }
 
 // src/index.tsx
-var jsx_dev_runtime19 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime22 = __toESM(require_jsx_dev_runtime(), 1);
 var rootNode = document.querySelector("#root");
 if (!rootNode)
   throw new Error("cannot find root element");
-import_client.createRoot(rootNode).render(/* @__PURE__ */ jsx_dev_runtime19.jsxDEV(import_react11.StrictMode, {
-  children: /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(App, {}, undefined, false, undefined, this)
+import_client.createRoot(rootNode).render(/* @__PURE__ */ jsx_dev_runtime22.jsxDEV(import_react12.StrictMode, {
+  children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV(App, {}, undefined, false, undefined, this)
 }, undefined, false, undefined, this));

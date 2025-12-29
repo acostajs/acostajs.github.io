@@ -1,4 +1,4 @@
-.overview-main {
+.page-grid {
   display: grid;
   grid-template-columns: 0.5fr 2fr;
   gap: var(--gap-xl);
@@ -6,7 +6,7 @@
 }
 
 @media (max-width: 800px) {
-  .overview-main {
+  .page-grid {
     grid-template-columns: 1fr;
     gap: var(--gap-md);
   }
