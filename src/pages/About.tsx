@@ -18,17 +18,36 @@ export function About() {
     const aboutData: AboutPortfolioJson = data.json.about;
 
     return (
-      <section>
-        <div className={`section-title `}>
+      <>
+        <div>
           <h1>{aboutData.about.headline}</h1>
           <span className="muted">{aboutData.about.tagline}</span>
         </div>
 
-        <div className="about-text">
-          <h2>A little bit about me...</h2>
-          <p>{aboutData.story.intro}</p>
-          <p>{aboutData.story.transition}</p>
-          <p>{aboutData.story.passions}</p>
+        <div className="about-text flex-between">
+          <div>
+            <h2>A little bit about me...</h2>
+            <p>{aboutData.story.shortBio}</p>
+            <p>{aboutData.story.passions}</p>
+          </div>
+
+          <div className="about-img">
+            <figure>
+              {data.images && data.images.length > 0
+                ? (
+                  <img
+                    src={data.images[0]}
+                    alt={`${aboutData.about.headline} - Profile photo`}
+                    loading="lazy"
+                  />
+                )
+                : (
+                  <div className="placeholder-img">
+                    <span>No image available</span>
+                  </div>
+                )}
+            </figure>
+          </div>
         </div>
 
         <div className="about-softskills">
@@ -69,25 +88,7 @@ export function About() {
             {aboutData.values.map((value, i) => <li key={i}>{value}</li>)}
           </ul>
         </div>
-
-        <div className="about-img">
-          <figure>
-            {data.images && data.images.length > 0
-              ? (
-                <img
-                  src={data.images[0]}
-                  alt={`${aboutData.about.headline} - Profile photo`}
-                  loading="lazy"
-                />
-              )
-              : (
-                <div className="placeholder-img">
-                  <span>No image available</span>
-                </div>
-              )}
-          </figure>
-        </div>
-      </section>
+      </>
     );
   }
 

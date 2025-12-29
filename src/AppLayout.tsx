@@ -1,9 +1,9 @@
 import type { ReactNode } from "react";
+import { AsideProfile } from "./components/layout/AsideProfile";
 import { ErrorMessage } from "./components/layout/ErrorMessage";
 import { Footer } from "./components/layout/Footer";
 import { Header } from "./components/layout/Header";
 import { Loading } from "./components/layout/Loading";
-import { AsideProfile } from "./components/overview/AsideProfile";
 import { GitHubProvider } from "./context/GitHubContext";
 import { useGitHubData } from "./hooks/useGitHubData";
 

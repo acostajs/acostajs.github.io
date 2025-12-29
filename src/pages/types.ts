@@ -99,8 +99,7 @@ export type AboutPortfolioJson = {
     location: string;
   };
   story: {
-    intro: string;
-    transition: string;
+    shortBio: string;
     passions: string;
   };
   softSkills: string[];

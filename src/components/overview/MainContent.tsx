@@ -35,10 +35,6 @@ export function MainContent({
       </div>
       <ProjectSection repos={repos} />
 
-      <div className="section-title">
-        <h2>Contact Me</h2>
-      </div>
-
       <ContactSection />
     </>
   );

@@ -11,13 +11,14 @@ export function Footer({ github_user_name }: FooterProps): ReactElement {
 
   return (
     <footer>
-      <div className="container flex-center gap-sm">
-        <div className="footer-text flex gap-sm">
+      <div className="container">
+        <div className="footer-grid grid gap-sm">
           <span className="muted flex-center gap-sm">
-            <FaGithub size={22} /> {year} {github_user_name} - Portfolio,
+            <FaGithub size={22} /> {year} {github_user_name} - Portfolio
           </span>
+
           <span className="muted flex-center gap-sm">
-            made with <FaReact size={20} /> React & <SiBun size={20} /> bun.
+            Made with <FaReact size={20} /> React & <SiBun size={20} /> bun.
           </span>
         </div>
       </div>
