@@ -21,10 +21,10 @@ export function NavLinks({
         </Link>
       </li>
       <li>
-        <a className="flex-left gap-sm" href="#projects" onClick={handleClick}>
+        <Link to={"/projects"} onClick={handleClick}>
           <FiFolder size={20} />
           Projects
-        </a>
+        </Link>
       </li>
       <li>
         <Link to={"/about"} onClick={handleClick}>

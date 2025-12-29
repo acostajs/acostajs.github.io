@@ -8,7 +8,7 @@ import type { GithubUserProfile } from "../../pages/types";
 import { ErrorMessage } from "../layout/ErrorMessage";
 
 type AsideProfileProps = {
-  profile?: GithubUserProfile;
+  profile: GithubUserProfile | null;
 };
 
 export function AsideProfile({ profile }: AsideProfileProps): ReactElement {

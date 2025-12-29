@@ -48,6 +48,7 @@ export type GitHubRepo = {
   forks_count: number;
   open_issues_count: number;
 
+  visibility: string;
   fork: boolean;
   archived: boolean;
   disabled: boolean;
@@ -89,3 +90,37 @@ export type GitHubReadmeFile = {
     html: string;
   };
 };
+
+export type AboutPortfolioJson = {
+  about: {
+    headline: string;
+    tagline: string;
+    currentRole: string;
+    location: string;
+  };
+  story: {
+    intro: string;
+    transition: string;
+    passions: string;
+  };
+  softSkills: string[];
+  personal: {
+    interests: string[];
+    languages: Array<{
+      name: string;
+      level: string;
+    }>;
+    funFacts: string[];
+  };
+  values: string[];
+};
+
+export type RepoPortfolioJson = {
+  title: string;
+  description: string;
+  technologies?: string[];
+};
+
+export type PortfolioJson =
+  | { about: AboutPortfolioJson }
+  | { repo: RepoPortfolioJson };

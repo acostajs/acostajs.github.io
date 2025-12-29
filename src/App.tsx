@@ -4,6 +4,7 @@ import { Route } from "./lib/router";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import { Overview } from "./pages/Overview";
+import { Projects } from "./pages/Projects";
 
 export default function App() {
   return (
@@ -29,6 +30,14 @@ export default function App() {
         element={
           <AppLayout>
             <Contact />
+          </AppLayout>
+        }
+      />
+      <Route
+        path="/projects"
+        element={
+          <AppLayout>
+            <Projects />
           </AppLayout>
         }
       />

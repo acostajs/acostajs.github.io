@@ -9,6 +9,7 @@ export function useGitHubData() {
   const [fadeOut, setFadeOut] = useState(false);
   const [showLoader, setShowLoader] = useState(true);
   const [error, setError] = useState("");
+  const [loadingMessage, setLoadingMessage] = useState("Loading profile...");
 
   useEffect(() => {
     async function load() {
@@ -29,17 +30,18 @@ export function useGitHubData() {
         setProfile(userData);
         setRepos(reposData);
         setReadme(readmeData);
+        setLoadingMessage("Almost ready...");
       } catch {
         setError("Error fetching GitHub User Profile");
         setShowLoader(false);
       } finally {
         setFadeOut(true);
-        setTimeout(() => setShowLoader(false), 600);
+        setTimeout(() => setShowLoader(false), 800);
       }
     }
 
     load();
   }, []);
 
-  return { profile, repos, readme, fadeOut, error, showLoader };
+  return { profile, repos, readme, fadeOut, error, showLoader, loadingMessage };
 }

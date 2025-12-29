@@ -3,7 +3,8 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { GitHubReadmeFile, GitHubRepo } from "../../pages/types";
 import { ErrorMessage } from "../layout/ErrorMessage";
-import { Projects } from "./Projects";
+import { ContactSection } from "./ContactSection";
+import { ProjectSection } from "./ProjectSection";
 
 type MainContentProps = {
   content?: GitHubReadmeFile;
@@ -22,14 +23,23 @@ export function MainContent({
   const readmeMarkdown = atob(content.content);
 
   return (
-    <section className="main-content">
+    <>
       <article className="markdown-body flex flex-column gap-md">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {readmeMarkdown}
         </ReactMarkdown>
       </article>
 
-      <Projects repos={repos} />
-    </section>
+      <div className="section-title">
+        <h2>Top Projects</h2>
+      </div>
+      <ProjectSection repos={repos} />
+
+      <div className="section-title">
+        <h2>Contact Me</h2>
+      </div>
+
+      <ContactSection />
+    </>
   );
 }
