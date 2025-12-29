@@ -5,6 +5,8 @@
 @import "./layout/loading.css";
 @import "./layout/aside.css";
 @import "./overview/maincontent.css";
+@import "./overview/contactSection.css";
+@import "./about/about.css";
 
 /* Base reset / normalize */
 *,
