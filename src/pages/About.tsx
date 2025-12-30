@@ -1,13 +1,15 @@
 import { ErrorMessage } from "@/components/layout/ErrorMessage";
 import { Loading } from "@/components/layout/Loading";
-import { CONFIG } from "profile.config";
+import { GITHUB_USERNAME } from "api";
 import { usePortfolioData } from "../hooks/usePortfolioData";
+
+import { AboutAccordion } from "@/components/about/AboutAccordion";
+import type { ReactElement } from "react";
+import { AboutImg } from "../components/about/AboutImg";
 import type { AboutPortfolioJson } from "../pages/types";
 
-export function About() {
-  const { data, loading, error } = usePortfolioData(
-    `${CONFIG.github.username}`,
-  );
+export function About(): ReactElement {
+  const { data, loading, error } = usePortfolioData(GITHUB_USERNAME);
 
   if (error) return <ErrorMessage error_message={error} />;
   if (loading || !data?.json) {
@@ -19,75 +21,32 @@ export function About() {
 
     return (
       <>
-        <div>
-          <h1>{aboutData.about.headline}</h1>
-          <span className="muted">{aboutData.about.tagline}</span>
-        </div>
-
-        <div className="about-text flex-between">
-          <div>
-            <h2>A little bit about me...</h2>
-            <p>{aboutData.story.shortBio}</p>
-            <p>{aboutData.story.passions}</p>
+        <div className="about-hero flex card">
+          <div className="left">
+            <h1 className="headline">{aboutData.bio.headline}</h1>
+            <p className="story">{aboutData.bio.story}</p>
           </div>
 
-          <div className="about-img">
-            <figure>
-              {data.images && data.images.length > 0
-                ? (
-                  <img
-                    src={data.images[0]}
-                    alt={`${aboutData.about.headline} - Profile photo`}
-                    loading="lazy"
-                  />
-                )
-                : (
-                  <div className="placeholder-img">
-                    <span>No image available</span>
-                  </div>
-                )}
-            </figure>
+          <div className="right flex-center">
+            <AboutImg data={data} img_number={0} classes={["about-hero-img"]} />
           </div>
         </div>
 
-        <div className="about-softskills">
-          <h2>Soft skills</h2>
-          <ul>
-            {aboutData.softSkills.map((skill, i) => <li key={i}>{skill}</li>)}
-          </ul>
+        <div className="about-personality flex">
+          <div className="left flex-center">
+            <AboutImg
+              data={data}
+              img_number={1}
+              classes={["about-personality-img"]}
+            />
+          </div>
+          <div className="right">
+            <h2 className="headline">{aboutData.personality.headline}</h2>
+            <p className="story">{aboutData.personality.story}</p>
+          </div>
         </div>
 
-        <div className="about-personal">
-          <h2>Personal Interests</h2>
-          <ul>
-            {aboutData.personal.interests.map((interest, i) => <li key={i}>{interest}</li>)}
-          </ul>
-        </div>
-
-        <div className="about-languages">
-          <h2>Languages</h2>
-          <ul>
-            {aboutData.personal.languages.map((language, i) => (
-              <li key={i}>
-                {language.name} - {language.level}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="about-funfacts">
-          <h2>Fun Facts</h2>
-          <ul>
-            {aboutData.personal.funFacts.map((fact, i) => <li key={i}>{fact}</li>)}
-          </ul>
-        </div>
-
-        <div className="about-values">
-          <h2>Values</h2>
-          <ul>
-            {aboutData.values.map((value, i) => <li key={i}>{value}</li>)}
-          </ul>
-        </div>
+        <AboutAccordion aboutData={aboutData} />
       </>
     );
   }

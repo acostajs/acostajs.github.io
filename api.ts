@@ -1,5 +1,7 @@
 import { CONFIG } from "profile.config";
 
+export const GITHUB_USERNAME = `${CONFIG.github.username}`;
+
 export const GITHUB_URL = `https://api.github.com/users/${CONFIG.github.username}`;
 
 export const GITHUB_REPOS =

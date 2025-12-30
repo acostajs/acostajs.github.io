@@ -28,7 +28,7 @@ export function NavLinks({
       </li>
       <li>
         <Link to={"/about"} onClick={handleClick}>
-          <FiBox size={20} /> About Me
+          <FiBox size={20} /> About
         </Link>
       </li>
       <li>

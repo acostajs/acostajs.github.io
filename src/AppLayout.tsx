@@ -22,14 +22,14 @@ export function AppLayout({ children }: AppLayoutProps) {
           github_username={profile?.login || ""}
           github_img_profile_url={profile?.avatar_url || ""}
         />
-        <main className="container">
+        <main className="main container">
           <ErrorMessage error_message={error} />
           <GitHubProvider github={profile} repos={repos} readme={readme}>
-            <section className="page-grid">
+            <div className="page-grid">
               <AsideProfile profile={profile} />
 
               <div className="main-content">{children}</div>
-            </section>
+            </div>
           </GitHubProvider>
         </main>
         <Footer github_user_name={profile?.name || ""} />

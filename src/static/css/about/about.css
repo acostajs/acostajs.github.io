@@ -1,6 +1,82 @@
-.about-img figure {
+.about-hero,
+.about-personality,
+.about-background {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-2xl);
+
+  & > .left,
+  > .right {
+    width: 50%;
+  }
+
+  & .story {
+    text-align: justify;
+  }
+}
+
+.about-hero {
+  flex-wrap: wrap-reverse;
+  margin-bottom: var(--space-2xl);
+
+  & .headline {
+    font-size: var(--page-title);
+  }
+
+  & .story {
+    font-size: var(--text-lg);
+  }
+}
+
+.about-hero-img {
+  max-width: 300px;
+  max-height: 300px;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
   overflow: hidden;
+}
+
+.about-personality {
+  flex-wrap: wrap;
+
+  & .headline {
+    text-align: center;
+  }
+}
+
+.about-personality-img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.about-background {
+  flex-wrap: wrap-reverse;
+
+  & .headline {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero,
+  .about-personality,
+  .about-background {
+    & > .left,
+    > .right {
+      width: 100%;
+    }
+  }
+
+  .about-personality {
+    & .headline,
+    .story {
+      text-align: left;
+      margin-bottom: var(--space-md);
+    }
+  }
+
+  .about-personality-img {
+    margin-bottom: var(--space-xl);
+  }
 }

@@ -24,18 +24,22 @@ export function MainContent({
 
   return (
     <>
-      <article className="markdown-body flex flex-column gap-md">
+      <section className="markdown-body flex flex-column gap-xl">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {readmeMarkdown}
         </ReactMarkdown>
-      </article>
+      </section>
 
-      <div className="section-title">
-        <h2>Top Projects</h2>
-      </div>
-      <ProjectSection repos={repos} />
+      <section className="project-section">
+        <div className="section-title">
+          <h2>Latest Projects</h2>
+        </div>
+        <ProjectSection repos={repos} />
+      </section>
 
-      <ContactSection />
+      <section className="contact-section">
+        <ContactSection />
+      </section>
     </>
   );
 }
