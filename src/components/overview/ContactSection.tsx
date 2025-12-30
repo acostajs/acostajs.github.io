@@ -6,29 +6,28 @@ import { profile_email, profile_github_url, profile_linkedin_url } from "../../.
 
 export function ContactSection(): ReactElement {
   return (
-    <div className="contact-section flex-between">
-      <div className="contact-direct flex flex-column gap-sm">
+    <div className="contact-grid grid">
+      <div className="flex flex-column gap-sm">
         <h2>Get in Touch</h2>
+        <div className="muted">I'll respond within 24-48 hours.</div>
+      </div>
+
+      <div className="flex flex-column gap-sm">
         <p>Email me directly:</p>
-        <a
-          href={`mailto:${profile_email}`}
-          className="contact-email flex gap-sm"
-        >
+        <a href={`mailto:${profile_email}`} className="flex gap-sm">
           <MdEmail size={20} /> {profile_email}
         </a>
       </div>
 
       <div className="flex flex-column gap-sm">
         <p>Or contact me through:</p>
-        <a href={profile_linkedin_url} className="contact-link flex gap-sm">
+        <a href={profile_linkedin_url} className="flex gap-sm">
           <ImLinkedin size={20} /> LinkedIn
         </a>
-        <a href={profile_github_url} className="contact-link flex gap-sm">
+        <a href={profile_github_url} className="flex gap-sm">
           <FaGithub size={20} /> GitHub
         </a>
       </div>
-
-      <div className="contact-note muted">I'll respond within 24-48 hours.</div>
     </div>
   );
 }

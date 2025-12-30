@@ -92,26 +92,41 @@ export type GitHubReadmeFile = {
 };
 
 export type AboutPortfolioJson = {
-  about: {
+  bio: {
     headline: string;
-    tagline: string;
-    currentRole: string;
-    location: string;
+    story: string;
   };
-  story: {
-    shortBio: string;
-    passions: string;
+  personality: {
+    headline: string;
+    story: string;
   };
-  softSkills: string[];
-  personal: {
-    interests: string[];
-    languages: Array<{
-      name: string;
-      level: string;
-    }>;
-    funFacts: string[];
+  background: {
+    headline: string;
+    story: string;
   };
-  values: string[];
+  key_projects: {
+    headline: string;
+    story: string;
+  };
+  core_skills: {
+    headline: string;
+    "front-end": Array<string>;
+    "back-end": Array<string>;
+    tools: Array<string>;
+    databases: Array<string>;
+  };
+  development_process: {
+    headline: string;
+    story: string;
+  };
+  influences: {
+    headline: string;
+    story: string;
+  };
+  career_goals: {
+    headline: string;
+    story: string;
+  };
 };
 
 export type RepoPortfolioJson = {

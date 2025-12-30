@@ -9,7 +9,7 @@ type PortfolioFolderItem = {
   type: "file";
 };
 
-type PortfolioData = {
+export type PortfolioData = {
   json: PortfolioJson;
   images?: string[];
   isProfile: boolean;
@@ -45,8 +45,7 @@ export function usePortfolioData(repoName: string) {
         );
         const images = imgFiles
           .map((f) => f.download_url)
-          .filter((url): url is string => url !== null)
-          .slice(0, 2);
+          .filter((url): url is string => url !== null);
 
         setData({
           json: jsonData,

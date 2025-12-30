@@ -6,7 +6,9 @@
 @import "./layout/aside.css";
 @import "./overview/maincontent.css";
 @import "./overview/contactSection.css";
+@import "./overview/projectSection.css";
 @import "./about/about.css";
+@import "./about/accordion.css";
 
 /* Base reset / normalize */
 *,
@@ -26,7 +28,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-sans);
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   line-height: var(--leading-normal);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -102,11 +104,6 @@ button {
   justify-content: center;
 }
 
-button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
 /* Images & media */
 
 img,
@@ -117,37 +114,7 @@ video {
   max-width: 100%;
 }
 
-/* Forms */
-
-input,
-textarea,
-select {
-  font: inherit;
-  color: inherit;
-  background: var(--color-bg-elevated);
-  border: 1px solid var(--color-border-muted);
-  border-radius: var(--radius-sm);
-  padding: var(--pad-xs) var(--pad-sm);
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 1px;
-}
-
 /* Layout primitives */
-
-body > #root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-section {
-  padding: var(--space-xl) 0;
-}
 
 .container {
   max-width: var(--container-max-width);
@@ -168,7 +135,7 @@ section {
 }
 
 .section-title {
-  margin-bottom: var(--space-sm);
+  padding-bottom: var(--pad-xl);
   font-size: var(--h3-size);
   font-weight: var(--weight-semibold);
 }
