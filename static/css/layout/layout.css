@@ -1,3 +1,7 @@
+.main {
+  padding: var(--pad-2xl) 0;
+}
+
 .page-grid {
   display: grid;
   grid-template-columns: 0.5fr 2fr;
@@ -8,6 +12,6 @@
 @media (max-width: 800px) {
   .page-grid {
     grid-template-columns: 1fr;
-    gap: var(--gap-md);
+    gap: var(--gap-xl);
   }
 }

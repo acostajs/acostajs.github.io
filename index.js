@@ -16888,7 +16888,7 @@ var require_client = __commonJS((exports, module) => {
 
 // node_modules/react/cjs/react-jsx-dev-runtime.development.js
 var require_react_jsx_dev_runtime_development = __commonJS((exports) => {
-  var React = __toESM(require_react());
+  var React3 = __toESM(require_react());
   (function() {
     function getComponentNameFromType(type) {
       if (type == null)
@@ -17080,17 +17080,17 @@ React keys must be passed directly to JSX without using spread:
     function isValidElement(object) {
       return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
     }
-    var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
+    var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React3.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
       return null;
     };
-    React = {
+    React3 = {
       react_stack_bottom_frame: function(callStackForError) {
         return callStackForError();
       }
     };
     var specialPropKeyWarningShown;
     var didWarnAboutElementRef = {};
-    var unknownOwnerDebugStack = React.react_stack_bottom_frame.bind(React, UnknownOwner)();
+    var unknownOwnerDebugStack = React3.react_stack_bottom_frame.bind(React3, UnknownOwner)();
     var unknownOwnerDebugTask = createTask(getTaskName(UnknownOwner));
     var didWarnAboutKeySpread = {};
     exports.Fragment = REACT_FRAGMENT_TYPE;
@@ -18101,26 +18101,8 @@ var require_extend = __commonJS((exports, module) => {
 });
 
 // src/index.tsx
-var import_react12 = __toESM(require_react(), 1);
+var import_react13 = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
-
-// src/components/layout/ErrorMessage.tsx
-var jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
-function ErrorMessage({
-  error_message
-}) {
-  if (!error_message)
-    return null;
-  return /* @__PURE__ */ jsx_dev_runtime.jsxDEV("section", {
-    children: /* @__PURE__ */ jsx_dev_runtime.jsxDEV("div", {
-      className: "container",
-      children: /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h1", {
-        className: "error-message",
-        children: error_message
-      }, undefined, false, undefined, this)
-    }, undefined, false, undefined, this)
-  }, undefined, false, undefined, this);
-}
 
 // node_modules/react-icons/lib/iconBase.mjs
 var import_react2 = __toESM(require_react(), 1);
@@ -18277,286 +18259,6 @@ function FaReact(props) {
   return GenIcon({ tag: "svg", attr: { viewBox: "0 0 512 512" }, child: [{ tag: "path", attr: { d: "M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zM167.2 307.5c5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5 4.6 8.8 9.3 17.5 14.3 26.1zm-30.3-120.3c14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26-6.3-14.9-11.6-29.5-16-43.6zm27.4 68.9c6.6-13.8 13.8-27.3 21.4-40.6s15.8-26.2 24.4-38.9c15-1.1 30.3-1.7 45.9-1.7s31 .6 45.9 1.7c8.5 12.6 16.6 25.5 24.3 38.7s14.9 26.7 21.7 40.4c-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6s-30.9-.5-45.6-1.4c-8.7-12.7-16.9-25.7-24.6-39s-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zm-149.7-15c25.3 0 45.8-20.5 45.8-45.8s-20.5-45.8-45.8-45.8c-25.3 0-45.8 20.5-45.8 45.8s20.5 45.8 45.8 45.8z" }, child: [] }] })(props);
 }
 
-// node_modules/react-icons/si/index.mjs
-function SiBun(props) {
-  return GenIcon({ tag: "svg", attr: { role: "img", viewBox: "0 0 24 24" }, child: [{ tag: "path", attr: { d: "M12 22.596c6.628 0 12-4.338 12-9.688 0-3.318-2.057-6.248-5.219-7.986-1.286-.715-2.297-1.357-3.139-1.89C14.058 2.025 13.08 1.404 12 1.404c-1.097 0-2.334.785-3.966 1.821a49.92 49.92 0 0 1-2.816 1.697C2.057 6.66 0 9.59 0 12.908c0 5.35 5.372 9.687 12 9.687v.001ZM10.599 4.715c.334-.759.503-1.58.498-2.409 0-.145.202-.187.23-.029.658 2.783-.902 4.162-2.057 4.624-.124.048-.199-.121-.103-.209a5.763 5.763 0 0 0 1.432-1.977Zm2.058-.102a5.82 5.82 0 0 0-.782-2.306v-.016c-.069-.123.086-.263.185-.172 1.962 2.111 1.307 4.067.556 5.051-.082.103-.23-.003-.189-.126a5.85 5.85 0 0 0 .23-2.431Zm1.776-.561a5.727 5.727 0 0 0-1.612-1.806v-.014c-.112-.085-.024-.274.114-.218 2.595 1.087 2.774 3.18 2.459 4.407a.116.116 0 0 1-.049.071.11.11 0 0 1-.153-.026.122.122 0 0 1-.022-.083 5.891 5.891 0 0 0-.737-2.331Zm-5.087.561c-.617.546-1.282.76-2.063 1-.117 0-.195-.078-.156-.181 1.752-.909 2.376-1.649 2.999-2.778 0 0 .155-.118.188.085 0 .304-.349 1.329-.968 1.874Zm4.945 11.237a2.957 2.957 0 0 1-.937 1.553c-.346.346-.8.565-1.286.62a2.178 2.178 0 0 1-1.327-.62 2.955 2.955 0 0 1-.925-1.553.244.244 0 0 1 .064-.198.234.234 0 0 1 .193-.069h3.965a.226.226 0 0 1 .19.07c.05.053.073.125.063.197Zm-5.458-2.176a1.862 1.862 0 0 1-2.384-.245 1.98 1.98 0 0 1-.233-2.447c.207-.319.503-.566.848-.713a1.84 1.84 0 0 1 1.092-.11c.366.075.703.261.967.531a1.98 1.98 0 0 1 .408 2.114 1.931 1.931 0 0 1-.698.869v.001Zm8.495.005a1.86 1.86 0 0 1-2.381-.253 1.964 1.964 0 0 1-.547-1.366c0-.384.11-.76.32-1.079.207-.319.503-.567.849-.713a1.844 1.844 0 0 1 1.093-.108c.367.076.704.262.968.534a1.98 1.98 0 0 1 .4 2.117 1.932 1.932 0 0 1-.702.868Z" }, child: [] }] })(props);
-}
-
-// src/components/layout/Footer.tsx
-var jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1);
-function Footer({ github_user_name }) {
-  const year = String(new Date().getFullYear());
-  return /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("footer", {
-    children: /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("div", {
-      className: "container flex-center gap-sm",
-      children: /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("div", {
-        className: "footer-text flex gap-sm",
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("span", {
-            className: "muted flex-center gap-sm",
-            children: [
-              /* @__PURE__ */ jsx_dev_runtime2.jsxDEV(FaGithub, {
-                size: 22
-              }, undefined, false, undefined, this),
-              " ",
-              year,
-              " ",
-              github_user_name,
-              " - Portfolio,"
-            ]
-          }, undefined, true, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("span", {
-            className: "muted flex-center gap-sm",
-            children: [
-              "made with ",
-              /* @__PURE__ */ jsx_dev_runtime2.jsxDEV(FaReact, {
-                size: 20
-              }, undefined, false, undefined, this),
-              " React & ",
-              /* @__PURE__ */ jsx_dev_runtime2.jsxDEV(SiBun, {
-                size: 20
-              }, undefined, false, undefined, this),
-              " bun."
-            ]
-          }, undefined, true, undefined, this)
-        ]
-      }, undefined, true, undefined, this)
-    }, undefined, false, undefined, this)
-  }, undefined, false, undefined, this);
-}
-
-// src/components/layout/header/HiddenMenu.tsx
-var import_react5 = __toESM(require_react(), 1);
-
-// node_modules/react-icons/rx/index.mjs
-function RxHamburgerMenu(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 15 15", fill: "none" }, child: [{ tag: "path", attr: { fillRule: "evenodd", clipRule: "evenodd", d: "M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z", fill: "currentColor" }, child: [] }] })(props);
-}
-
-// src/components/layout/header/Burger.tsx
-var jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime(), 1);
-function Burger({ onClick }) {
-  return /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("button", {
-    className: "burger",
-    onClick,
-    children: /* @__PURE__ */ jsx_dev_runtime3.jsxDEV(RxHamburgerMenu, {
-      size: 20
-    }, undefined, false, undefined, this)
-  }, undefined, false, undefined, this);
-}
-
-// node_modules/react-icons/fi/index.mjs
-function FiBookOpen(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" }, child: [] }, { tag: "path", attr: { d: "M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" }, child: [] }] })(props);
-}
-function FiBox(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" }, child: [] }, { tag: "polyline", attr: { points: "3.27 6.96 12 12.01 20.73 6.96" }, child: [] }, { tag: "line", attr: { x1: "12", y1: "22.08", x2: "12", y2: "12" }, child: [] }] })(props);
-}
-function FiFolder(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" }, child: [] }] })(props);
-}
-function FiStar(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "polygon", attr: { points: "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" }, child: [] }] })(props);
-}
-
-// src/lib/router/Link.tsx
-var import_react4 = __toESM(require_react(), 1);
-
-// src/lib/router/context.ts
-var import_react3 = __toESM(require_react(), 1);
-var NavigationContext = import_react3.createContext({
-  pathname: window.location.pathname,
-  setPathname: (_) => {}
-});
-var RouteContext = import_react3.createContext({});
-
-// src/lib/router/Link.tsx
-var jsx_dev_runtime4 = __toESM(require_jsx_dev_runtime(), 1);
-function Link({ to, children, onClick }) {
-  const { setPathname: navigate } = import_react4.useContext(NavigationContext);
-  function handleClick(e) {
-    e.preventDefault();
-    navigate(to);
-    onClick?.();
-  }
-  return /* @__PURE__ */ jsx_dev_runtime4.jsxDEV("a", {
-    className: "flex-left gap-sm",
-    href: to,
-    onClick: handleClick,
-    children
-  }, undefined, false, undefined, this);
-}
-
-// src/components/layout/header/NavLinks.tsx
-var jsx_dev_runtime5 = __toESM(require_jsx_dev_runtime(), 1);
-function NavLinks({
-  ul_classes,
-  handleClick
-}) {
-  const ulClassName = ul_classes?.join(" ") ?? "";
-  return /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("ul", {
-    className: ulClassName,
-    children: [
-      /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("li", {
-        children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(Link, {
-          to: "/",
-          onClick: handleClick,
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(FiBookOpen, {
-              size: 20
-            }, undefined, false, undefined, this),
-            " Overview"
-          ]
-        }, undefined, true, undefined, this)
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("li", {
-        children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(Link, {
-          to: "/projects",
-          onClick: handleClick,
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(FiFolder, {
-              size: 20
-            }, undefined, false, undefined, this),
-            "Projects"
-          ]
-        }, undefined, true, undefined, this)
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("li", {
-        children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(Link, {
-          to: "/about",
-          onClick: handleClick,
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(FiBox, {
-              size: 20
-            }, undefined, false, undefined, this),
-            " About Me"
-          ]
-        }, undefined, true, undefined, this)
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("li", {
-        children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(Link, {
-          to: "/contact",
-          onClick: handleClick,
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime5.jsxDEV(FiStar, {
-              size: 20
-            }, undefined, false, undefined, this),
-            " Contact"
-          ]
-        }, undefined, true, undefined, this)
-      }, undefined, false, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
-}
-
-// src/components/layout/header/HiddenMenu.tsx
-var jsx_dev_runtime6 = __toESM(require_jsx_dev_runtime(), 1);
-function HiddenMenu() {
-  const [toggle, setToggle] = import_react5.useState(true);
-  function handleClick() {
-    setToggle((prev) => !prev);
-  }
-  return /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("div", {
-    children: [
-      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(Burger, {
-        onClick: handleClick
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("div", {
-        className: toggle ? "hidden" : "",
-        id: "overlay",
-        children: /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("div", {
-          id: "menu",
-          className: toggle ? "hidden" : "",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("div", {
-              className: "flex-between hidden-menu-top",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(FaGithub, {
-                  size: 24
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("button", {
-                  onClick: handleClick,
-                  children: "X"
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("hr", {}, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(NavLinks, {
-              ul_classes: ["hidden-menu-links"],
-              handleClick
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this)
-      }, undefined, false, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
-}
-
-// src/components/layout/Header.tsx
-var jsx_dev_runtime7 = __toESM(require_jsx_dev_runtime(), 1);
-function Header({
-  github_user_url,
-  github_username,
-  github_img_profile_url
-}) {
-  return /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("header", {
-    children: /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("nav", {
-      children: [
-        /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
-          className: "nav-top flex-between",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
-              className: "flex-center gap-md",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(HiddenMenu, {}, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("a", {
-                  className: "username flex-center gap-sm",
-                  href: github_user_url,
-                  children: [
-                    /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(FaGithub, {
-                      size: 30
-                    }, undefined, false, undefined, this),
-                    github_username
-                  ]
-                }, undefined, true, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
-              children: /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("figure", {
-                className: "avatar-small",
-                children: /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("img", {
-                  src: github_img_profile_url,
-                  alt: ""
-                }, undefined, false, undefined, this)
-              }, undefined, false, undefined, this)
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(NavLinks, {
-          ul_classes: ["nav-bottom", "flex-left", "gap-sm"]
-        }, undefined, false, undefined, this)
-      ]
-    }, undefined, true, undefined, this)
-  }, undefined, false, undefined, this);
-}
-
-// src/components/layout/Loading.tsx
-var jsx_dev_runtime8 = __toESM(require_jsx_dev_runtime(), 1);
-function Loading({ loading_message, fadeOut }) {
-  return /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("div", {
-    className: `loading-overlay ${fadeOut ? "loading-fade-out" : ""}`,
-    children: [
-      /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("h1", {
-        children: loading_message
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("span", {
-        className: "muted",
-        children: "Please remain seated..."
-      }, undefined, false, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
-}
-
 // node_modules/react-icons/fa6/index.mjs
 function FaLocationDot(props) {
   return GenIcon({ tag: "svg", attr: { viewBox: "0 0 384 512" }, child: [{ tag: "path", attr: { d: "M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" }, child: [] }] })(props);
@@ -18589,6 +18291,7 @@ var CONFIG = {
 };
 
 // api.ts
+var GITHUB_USERNAME = `${CONFIG.github.username}`;
 var GITHUB_URL = `https://api.github.com/users/${CONFIG.github.username}`;
 var GITHUB_REPOS = `https://api.github.com/users/${CONFIG.github.username}/repos?sort=${CONFIG.github.repos.sort_by}&direction=${CONFIG.github.repos.direction}&per_page=${CONFIG.github.repos.number_of_repos_to_display}`;
 function GITHUB_PORTFOLIO_FOLDER(repoName, folderPath = "portfolio") {
@@ -18600,90 +18303,108 @@ var profile_linkedin = CONFIG.profile.linkedin;
 var profile_linkedin_url = `https://www.linkedin.com/in/${CONFIG.profile.linkedin}/`;
 var profile_github_url = `https://github.com/${CONFIG.github.username}/`;
 
-// src/components/overview/AsideProfile.tsx
-var jsx_dev_runtime9 = __toESM(require_jsx_dev_runtime(), 1);
+// src/components/layout/ErrorMessage.tsx
+var jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
+function ErrorMessage({
+  error_message
+}) {
+  if (!error_message)
+    return null;
+  return /* @__PURE__ */ jsx_dev_runtime.jsxDEV("section", {
+    children: /* @__PURE__ */ jsx_dev_runtime.jsxDEV("div", {
+      className: "container",
+      children: /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h1", {
+        className: "error-message",
+        children: error_message
+      }, undefined, false, undefined, this)
+    }, undefined, false, undefined, this)
+  }, undefined, false, undefined, this);
+}
+
+// src/components/layout/AsideProfile.tsx
+var jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1);
 function AsideProfile({ profile }) {
   if (!profile)
-    return /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(ErrorMessage, {
+    return /* @__PURE__ */ jsx_dev_runtime2.jsxDEV(ErrorMessage, {
       error_message: "profile not found..."
     }, undefined, false, undefined, this);
-  return /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("aside", {
+  return /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("aside", {
     children: [
-      /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("div", {
+      /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("div", {
         className: "profile-img flex-center",
-        children: /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("figure", {
-          children: /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("img", {
+        children: /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("figure", {
+          children: /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("img", {
             src: profile.avatar_url,
             alt: ""
           }, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("div", {
+      /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("div", {
         className: "profile-text",
-        children: /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("ul", {
+        children: /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("ul", {
           className: "profile-list flex-column flex gap-md",
           children: [
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
-              children: /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("h1", {
+            /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
+              children: /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("h1", {
                 children: profile.name
               }, undefined, false, undefined, this)
             }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
+            /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
               className: "profile-bio",
               children: profile.bio
             }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
+            /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
               className: "flex-left gap-md",
               children: [
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(FaLocationDot, {
+                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV(FaLocationDot, {
                   size: 20
                 }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("a", {
+                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("a", {
                   href: `https://www.google.com/maps?q=${profile.location}`,
                   children: profile.location
                 }, undefined, false, undefined, this)
               ]
             }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
+            /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
               className: "flex-left gap-md",
               children: [
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(MdEmail, {
+                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV(MdEmail, {
                   size: 20
                 }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("a", {
+                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("a", {
                   href: "mailto:" + profile_email,
                   children: profile_email
                 }, undefined, false, undefined, this)
               ]
             }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
+            /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
               className: "flex-left gap-md",
               children: [
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(ImLinkedin, {
+                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV(ImLinkedin, {
                   size: 20
                 }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("a", {
+                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("a", {
                   href: profile_linkedin_url,
                   children: profile_linkedin
                 }, undefined, false, undefined, this)
               ]
             }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
+            /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
               className: "flex-left gap-md",
               children: [
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(FaGithub, {
+                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV(FaGithub, {
                   size: 20
                 }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("a", {
+                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("a", {
                   href: profile_github_url,
                   children: profile.login
                 }, undefined, false, undefined, this)
               ]
             }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("li", {
+            /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
               className: "flex-left gap-md",
               children: [
-                /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
+                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("span", {
                   className: "profile-item",
                   children: "Availability:"
                 }, undefined, false, undefined, this),
@@ -18692,6 +18413,286 @@ function AsideProfile({ profile }) {
             }, undefined, true, undefined, this)
           ]
         }, undefined, true, undefined, this)
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+
+// node_modules/react-icons/si/index.mjs
+function SiBun(props) {
+  return GenIcon({ tag: "svg", attr: { role: "img", viewBox: "0 0 24 24" }, child: [{ tag: "path", attr: { d: "M12 22.596c6.628 0 12-4.338 12-9.688 0-3.318-2.057-6.248-5.219-7.986-1.286-.715-2.297-1.357-3.139-1.89C14.058 2.025 13.08 1.404 12 1.404c-1.097 0-2.334.785-3.966 1.821a49.92 49.92 0 0 1-2.816 1.697C2.057 6.66 0 9.59 0 12.908c0 5.35 5.372 9.687 12 9.687v.001ZM10.599 4.715c.334-.759.503-1.58.498-2.409 0-.145.202-.187.23-.029.658 2.783-.902 4.162-2.057 4.624-.124.048-.199-.121-.103-.209a5.763 5.763 0 0 0 1.432-1.977Zm2.058-.102a5.82 5.82 0 0 0-.782-2.306v-.016c-.069-.123.086-.263.185-.172 1.962 2.111 1.307 4.067.556 5.051-.082.103-.23-.003-.189-.126a5.85 5.85 0 0 0 .23-2.431Zm1.776-.561a5.727 5.727 0 0 0-1.612-1.806v-.014c-.112-.085-.024-.274.114-.218 2.595 1.087 2.774 3.18 2.459 4.407a.116.116 0 0 1-.049.071.11.11 0 0 1-.153-.026.122.122 0 0 1-.022-.083 5.891 5.891 0 0 0-.737-2.331Zm-5.087.561c-.617.546-1.282.76-2.063 1-.117 0-.195-.078-.156-.181 1.752-.909 2.376-1.649 2.999-2.778 0 0 .155-.118.188.085 0 .304-.349 1.329-.968 1.874Zm4.945 11.237a2.957 2.957 0 0 1-.937 1.553c-.346.346-.8.565-1.286.62a2.178 2.178 0 0 1-1.327-.62 2.955 2.955 0 0 1-.925-1.553.244.244 0 0 1 .064-.198.234.234 0 0 1 .193-.069h3.965a.226.226 0 0 1 .19.07c.05.053.073.125.063.197Zm-5.458-2.176a1.862 1.862 0 0 1-2.384-.245 1.98 1.98 0 0 1-.233-2.447c.207-.319.503-.566.848-.713a1.84 1.84 0 0 1 1.092-.11c.366.075.703.261.967.531a1.98 1.98 0 0 1 .408 2.114 1.931 1.931 0 0 1-.698.869v.001Zm8.495.005a1.86 1.86 0 0 1-2.381-.253 1.964 1.964 0 0 1-.547-1.366c0-.384.11-.76.32-1.079.207-.319.503-.567.849-.713a1.844 1.844 0 0 1 1.093-.108c.367.076.704.262.968.534a1.98 1.98 0 0 1 .4 2.117 1.932 1.932 0 0 1-.702.868Z" }, child: [] }] })(props);
+}
+
+// src/components/layout/Footer.tsx
+var jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime(), 1);
+function Footer({ github_user_name }) {
+  const year = String(new Date().getFullYear());
+  return /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("footer", {
+    children: /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("div", {
+      className: "container",
+      children: /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("div", {
+        className: "footer-grid grid gap-sm",
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("span", {
+            className: "muted flex-center gap-sm",
+            children: [
+              /* @__PURE__ */ jsx_dev_runtime3.jsxDEV(FaGithub, {
+                size: 22
+              }, undefined, false, undefined, this),
+              " ",
+              year,
+              " ",
+              github_user_name,
+              " - Portfolio"
+            ]
+          }, undefined, true, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("span", {
+            className: "muted flex-center gap-sm",
+            children: [
+              "Made with ",
+              /* @__PURE__ */ jsx_dev_runtime3.jsxDEV(FaReact, {
+                size: 20
+              }, undefined, false, undefined, this),
+              " React & ",
+              /* @__PURE__ */ jsx_dev_runtime3.jsxDEV(SiBun, {
+                size: 20
+              }, undefined, false, undefined, this),
+              " bun."
+            ]
+          }, undefined, true, undefined, this)
+        ]
+      }, undefined, true, undefined, this)
+    }, undefined, false, undefined, this)
+  }, undefined, false, undefined, this);
+}
+
+// src/components/layout/header/HiddenMenu.tsx
+var import_react5 = __toESM(require_react(), 1);
+
+// node_modules/react-icons/rx/index.mjs
+function RxHamburgerMenu(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 15 15", fill: "none" }, child: [{ tag: "path", attr: { fillRule: "evenodd", clipRule: "evenodd", d: "M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z", fill: "currentColor" }, child: [] }] })(props);
+}
+
+// src/components/layout/header/Burger.tsx
+var jsx_dev_runtime4 = __toESM(require_jsx_dev_runtime(), 1);
+function Burger({ onClick }) {
+  return /* @__PURE__ */ jsx_dev_runtime4.jsxDEV("button", {
+    className: "burger",
+    onClick,
+    children: /* @__PURE__ */ jsx_dev_runtime4.jsxDEV(RxHamburgerMenu, {
+      size: 20
+    }, undefined, false, undefined, this)
+  }, undefined, false, undefined, this);
+}
+
+// node_modules/react-icons/fi/index.mjs
+function FiBookOpen(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" }, child: [] }, { tag: "path", attr: { d: "M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" }, child: [] }] })(props);
+}
+function FiBox(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" }, child: [] }, { tag: "polyline", attr: { points: "3.27 6.96 12 12.01 20.73 6.96" }, child: [] }, { tag: "line", attr: { x1: "12", y1: "22.08", x2: "12", y2: "12" }, child: [] }] })(props);
+}
+function FiFolder(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" }, child: [] }] })(props);
+}
+function FiStar(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "polygon", attr: { points: "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" }, child: [] }] })(props);
+}
+
+// src/lib/router/Link.tsx
+var import_react4 = __toESM(require_react(), 1);
+
+// src/lib/router/context.ts
+var import_react3 = __toESM(require_react(), 1);
+var NavigationContext = import_react3.createContext({
+  pathname: window.location.pathname,
+  setPathname: (_) => {}
+});
+var RouteContext = import_react3.createContext({});
+
+// src/lib/router/Link.tsx
+var jsx_dev_runtime5 = __toESM(require_jsx_dev_runtime(), 1);
+function Link({ to, children, onClick }) {
+  const { setPathname: navigate } = import_react4.useContext(NavigationContext);
+  function handleClick(e) {
+    e.preventDefault();
+    navigate(to);
+    onClick?.();
+  }
+  return /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("a", {
+    className: "flex-left gap-sm",
+    href: to,
+    onClick: handleClick,
+    children
+  }, undefined, false, undefined, this);
+}
+
+// src/components/layout/header/NavLinks.tsx
+var jsx_dev_runtime6 = __toESM(require_jsx_dev_runtime(), 1);
+function NavLinks({
+  ul_classes,
+  handleClick
+}) {
+  const ulClassName = ul_classes?.join(" ") ?? "";
+  return /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("ul", {
+    className: ulClassName,
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("li", {
+        children: /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(Link, {
+          to: "/",
+          onClick: handleClick,
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(FiBookOpen, {
+              size: 20
+            }, undefined, false, undefined, this),
+            " Overview"
+          ]
+        }, undefined, true, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("li", {
+        children: /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(Link, {
+          to: "/projects",
+          onClick: handleClick,
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(FiFolder, {
+              size: 20
+            }, undefined, false, undefined, this),
+            "Projects"
+          ]
+        }, undefined, true, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("li", {
+        children: /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(Link, {
+          to: "/about",
+          onClick: handleClick,
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(FiBox, {
+              size: 20
+            }, undefined, false, undefined, this),
+            " About"
+          ]
+        }, undefined, true, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("li", {
+        children: /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(Link, {
+          to: "/contact",
+          onClick: handleClick,
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(FiStar, {
+              size: 20
+            }, undefined, false, undefined, this),
+            " Contact"
+          ]
+        }, undefined, true, undefined, this)
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+
+// src/components/layout/header/HiddenMenu.tsx
+var jsx_dev_runtime7 = __toESM(require_jsx_dev_runtime(), 1);
+function HiddenMenu() {
+  const [toggle, setToggle] = import_react5.useState(true);
+  function handleClick() {
+    setToggle((prev) => !prev);
+  }
+  return /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(Burger, {
+        onClick: handleClick
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
+        className: toggle ? "hidden" : "",
+        id: "overlay",
+        children: /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
+          id: "menu",
+          className: toggle ? "hidden" : "",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
+              className: "flex-between hidden-menu-top",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(FaGithub, {
+                  size: 24
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("button", {
+                  onClick: handleClick,
+                  children: "X"
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("hr", {}, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(NavLinks, {
+              ul_classes: ["hidden-menu-links"],
+              handleClick
+            }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this)
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+
+// src/components/layout/Header.tsx
+var jsx_dev_runtime8 = __toESM(require_jsx_dev_runtime(), 1);
+function Header({
+  github_user_url,
+  github_username,
+  github_img_profile_url
+}) {
+  return /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("header", {
+    children: /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("nav", {
+      children: [
+        /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("div", {
+          className: "nav-top flex-between",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("div", {
+              className: "flex-center gap-md",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime8.jsxDEV(HiddenMenu, {}, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("a", {
+                  className: "username flex-center gap-sm",
+                  href: github_user_url,
+                  children: [
+                    /* @__PURE__ */ jsx_dev_runtime8.jsxDEV(FaGithub, {
+                      size: 30
+                    }, undefined, false, undefined, this),
+                    github_username
+                  ]
+                }, undefined, true, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("div", {
+              children: /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("figure", {
+                className: "avatar-small",
+                children: /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("img", {
+                  src: github_img_profile_url,
+                  alt: ""
+                }, undefined, false, undefined, this)
+              }, undefined, false, undefined, this)
+            }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime8.jsxDEV(NavLinks, {
+          ul_classes: ["nav-bottom", "flex-left", "gap-sm"]
+        }, undefined, false, undefined, this)
+      ]
+    }, undefined, true, undefined, this)
+  }, undefined, false, undefined, this);
+}
+
+// src/components/layout/Loading.tsx
+var jsx_dev_runtime9 = __toESM(require_jsx_dev_runtime(), 1);
+function Loading({ loading_message, fadeOut }) {
+  return /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("div", {
+    className: `loading-overlay ${fadeOut ? "loading-fade-out" : ""}`,
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("h1", {
+        children: loading_message
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
+        className: "muted",
+        children: "Please remain seated..."
       }, undefined, false, undefined, this)
     ]
   }, undefined, true, undefined, this);
@@ -18778,7 +18779,7 @@ function AppLayout({ children }) {
             github_img_profile_url: profile?.avatar_url || ""
           }, undefined, false, undefined, this),
           /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("main", {
-            className: "container",
+            className: "main container",
             children: [
               /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(ErrorMessage, {
                 error_message: error
@@ -18787,7 +18788,7 @@ function AppLayout({ children }) {
                 github: profile,
                 repos,
                 readme,
-                children: /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("section", {
+                children: /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("div", {
                   className: "page-grid",
                   children: [
                     /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(AsideProfile, {
@@ -18904,7 +18905,7 @@ function usePortfolioData(repoName) {
         const isProfile = repoName === CONFIG.github.username;
         const jsonData = isProfile ? { about: rawJson } : { repo: rawJson };
         const imgFiles = files.filter((f) => f.name.startsWith("portfolio-img-") && f.download_url);
-        const images = imgFiles.map((f) => f.download_url).filter((url) => url !== null).slice(0, 2);
+        const images = imgFiles.map((f) => f.download_url).filter((url) => url !== null);
         setData({
           json: jsonData,
           images: images.length ? images : undefined,
@@ -18922,148 +18923,338 @@ function usePortfolioData(repoName) {
   return { data, loading, error };
 }
 
-// src/pages/About.tsx
+// src/components/about/AboutAccordion.tsx
+var import_react11 = __toESM(require_react(), 1);
+
+// src/components/about/AboutList.tsx
 var jsx_dev_runtime13 = __toESM(require_jsx_dev_runtime(), 1);
+function AboutList({
+  array,
+  ul_classes,
+  li_classes
+}) {
+  const ulClasses = ul_classes?.join(" ") ?? "";
+  const liClasses = li_classes?.join(" ") ?? "";
+  return /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("ul", {
+    className: ulClasses,
+    children: array.map((item, i) => /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("li", {
+      className: liClasses,
+      children: item
+    }, i, false, undefined, this))
+  }, undefined, false, undefined, this);
+}
+
+// src/components/about/AboutAccordion.tsx
+var jsx_dev_runtime14 = __toESM(require_jsx_dev_runtime(), 1);
+function AboutAccordion({
+  aboutData
+}) {
+  const [openSections, setOpenSections] = import_react11.useState(new Set);
+  const sections = [
+    {
+      id: "background",
+      headline: aboutData.background.headline,
+      content: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("p", {
+        className: "story",
+        children: aboutData.background.story
+      }, undefined, false, undefined, this)
+    },
+    {
+      id: "key_projects",
+      headline: aboutData.key_projects.headline,
+      content: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("p", {
+        children: aboutData.key_projects.story
+      }, undefined, false, undefined, this)
+    },
+    {
+      id: "core_skills",
+      headline: aboutData.core_skills.headline,
+      content: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(jsx_dev_runtime14.Fragment, {
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
+            children: [
+              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("h3", {
+                children: "Front-end:"
+              }, undefined, false, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(AboutList, {
+                array: aboutData.core_skills["front-end"]
+              }, undefined, false, undefined, this)
+            ]
+          }, undefined, true, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
+            children: [
+              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("h3", {
+                children: "Back-end:"
+              }, undefined, false, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(AboutList, {
+                array: aboutData.core_skills["back-end"]
+              }, undefined, false, undefined, this)
+            ]
+          }, undefined, true, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
+            children: [
+              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("h3", {
+                children: "Tools:"
+              }, undefined, false, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(AboutList, {
+                array: aboutData.core_skills.tools
+              }, undefined, false, undefined, this)
+            ]
+          }, undefined, true, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
+            children: [
+              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("h3", {
+                children: "Databases:"
+              }, undefined, false, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(AboutList, {
+                array: aboutData.core_skills.databases
+              }, undefined, false, undefined, this)
+            ]
+          }, undefined, true, undefined, this)
+        ]
+      }, undefined, true, undefined, this)
+    },
+    {
+      id: "development_process",
+      headline: aboutData.development_process.headline,
+      content: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("p", {
+        children: aboutData.development_process.story
+      }, undefined, false, undefined, this)
+    },
+    {
+      id: "influences",
+      headline: aboutData.influences.headline,
+      content: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("p", {
+        children: aboutData.influences.story
+      }, undefined, false, undefined, this)
+    },
+    {
+      id: "career_goals",
+      headline: aboutData.career_goals.headline,
+      content: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("p", {
+        children: aboutData.career_goals.story
+      }, undefined, false, undefined, this)
+    }
+  ];
+  function toggleSection(id) {
+    const newSet = new Set(openSections);
+    if (newSet.has(id)) {
+      newSet.delete(id);
+    } else {
+      newSet.add(id);
+    }
+    setOpenSections(newSet);
+  }
+  return /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
+    className: "about-accordion",
+    children: sections.map((section) => /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("section", {
+      className: "accordion-item",
+      children: [
+        /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("button", {
+          className: "accordion-header",
+          onClick: () => toggleSection(section.id),
+          "aria-expanded": openSections.has(section.id),
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("h3", {
+              children: section.headline
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("span", {
+              className: "icon",
+              "aria-hidden": "true",
+              children: "▼"
+            }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
+          className: "accordion-content",
+          "aria-hidden": !openSections.has(section.id),
+          children: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
+            className: "content-wrapper flex flex-column gap-md",
+            children: section.content
+          }, undefined, false, undefined, this)
+        }, undefined, false, undefined, this)
+      ]
+    }, section.id, true, undefined, this))
+  }, undefined, false, undefined, this);
+}
+
+// src/components/overview/ContactSection.tsx
+var jsx_dev_runtime15 = __toESM(require_jsx_dev_runtime(), 1);
+function ContactSection() {
+  return /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("div", {
+    className: "contact-grid grid",
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("div", {
+        className: "flex flex-column gap-sm",
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("h2", {
+            children: "Get in Touch"
+          }, undefined, false, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("div", {
+            className: "muted",
+            children: "I'll respond within 24-48 hours."
+          }, undefined, false, undefined, this)
+        ]
+      }, undefined, true, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("div", {
+        className: "flex flex-column gap-sm",
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("p", {
+            children: "Email me directly:"
+          }, undefined, false, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("a", {
+            href: `mailto:${profile_email}`,
+            className: "flex gap-sm",
+            children: [
+              /* @__PURE__ */ jsx_dev_runtime15.jsxDEV(MdEmail, {
+                size: 20
+              }, undefined, false, undefined, this),
+              " ",
+              profile_email
+            ]
+          }, undefined, true, undefined, this)
+        ]
+      }, undefined, true, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("div", {
+        className: "flex flex-column gap-sm",
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("p", {
+            children: "Or contact me through:"
+          }, undefined, false, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("a", {
+            href: profile_linkedin_url,
+            className: "flex gap-sm",
+            children: [
+              /* @__PURE__ */ jsx_dev_runtime15.jsxDEV(ImLinkedin, {
+                size: 20
+              }, undefined, false, undefined, this),
+              " LinkedIn"
+            ]
+          }, undefined, true, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("a", {
+            href: profile_github_url,
+            className: "flex gap-sm",
+            children: [
+              /* @__PURE__ */ jsx_dev_runtime15.jsxDEV(FaGithub, {
+                size: 20
+              }, undefined, false, undefined, this),
+              " GitHub"
+            ]
+          }, undefined, true, undefined, this)
+        ]
+      }, undefined, true, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+
+// src/components/about/AboutImg.tsx
+var jsx_dev_runtime16 = __toESM(require_jsx_dev_runtime(), 1);
+function AboutImg({
+  data,
+  img_number,
+  classes
+}) {
+  const figureClassNames = classes?.join(" ") ?? "";
+  return /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("figure", {
+    className: figureClassNames,
+    children: data.images && data.images.length > 0 ? /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("img", {
+      src: data.images[`${img_number}`],
+      alt: `Profile photo ${img_number}`,
+      loading: "lazy"
+    }, undefined, false, undefined, this) : /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("div", {
+      className: "placeholder-img",
+      children: /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("span", {
+        children: "No image available"
+      }, undefined, false, undefined, this)
+    }, undefined, false, undefined, this)
+  }, undefined, false, undefined, this);
+}
+
+// src/pages/About.tsx
+var jsx_dev_runtime17 = __toESM(require_jsx_dev_runtime(), 1);
 function About() {
-  const { data, loading, error } = usePortfolioData(`${CONFIG.github.username}`);
+  const { data, loading, error } = usePortfolioData(GITHUB_USERNAME);
   if (error)
-    return /* @__PURE__ */ jsx_dev_runtime13.jsxDEV(ErrorMessage, {
+    return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(ErrorMessage, {
       error_message: error
     }, undefined, false, undefined, this);
   if (loading || !data?.json) {
-    return /* @__PURE__ */ jsx_dev_runtime13.jsxDEV(Loading, {
+    return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(Loading, {
       loading_message: "Loading data..."
     }, undefined, false, undefined, this);
   }
   if ("about" in data.json) {
     const aboutData = data.json.about;
-    return /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("section", {
+    return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(jsx_dev_runtime17.Fragment, {
       children: [
-        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
-          className: `section-title `,
+        /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
+          className: "about-hero flex card",
           children: [
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h1", {
-              children: aboutData.about.headline
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("span", {
-              className: "muted",
-              children: aboutData.about.tagline
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
-          className: "about-text",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h2", {
-              children: "A little bit about me..."
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("p", {
-              children: aboutData.story.intro
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("p", {
-              children: aboutData.story.transition
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("p", {
-              children: aboutData.story.passions
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
-          className: "about-softskills",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h2", {
-              children: "Soft skills"
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("ul", {
-              children: aboutData.softSkills.map((skill, i) => /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("li", {
-                children: skill
-              }, i, false, undefined, this))
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
-          className: "about-personal",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h2", {
-              children: "Personal Interests"
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("ul", {
-              children: aboutData.personal.interests.map((interest, i) => /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("li", {
-                children: interest
-              }, i, false, undefined, this))
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
-          className: "about-languages",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h2", {
-              children: "Languages"
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("ul", {
-              children: aboutData.personal.languages.map((language, i) => /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("li", {
-                children: [
-                  language.name,
-                  " - ",
-                  language.level
-                ]
-              }, i, true, undefined, this))
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
-          className: "about-funfacts",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h2", {
-              children: "Fun Facts"
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("ul", {
-              children: aboutData.personal.funFacts.map((fact, i) => /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("li", {
-                children: fact
-              }, i, false, undefined, this))
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
-          className: "about-values",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h2", {
-              children: "Values"
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("ul", {
-              children: aboutData.values.map((value, i) => /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("li", {
-                children: value
-              }, i, false, undefined, this))
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
-          className: "about-img",
-          children: /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("figure", {
-            children: data.images && data.images.length > 0 ? /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("img", {
-              src: data.images[0],
-              alt: `${aboutData.about.headline} - Profile photo`,
-              loading: "lazy"
-            }, undefined, false, undefined, this) : /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
-              className: "placeholder-img",
-              children: /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("span", {
-                children: "No image available"
+            /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
+              className: "left",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("h1", {
+                  className: "headline",
+                  children: aboutData.bio.headline
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("p", {
+                  className: "story",
+                  children: aboutData.bio.story
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
+              className: "right flex-center",
+              children: /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(AboutImg, {
+                data,
+                img_number: 0,
+                classes: ["about-hero-img"]
               }, undefined, false, undefined, this)
             }, undefined, false, undefined, this)
-          }, undefined, false, undefined, this)
-        }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
+          className: "about-personality flex",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
+              className: "left flex-center",
+              children: /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(AboutImg, {
+                data,
+                img_number: 1,
+                classes: ["about-personality-img"]
+              }, undefined, false, undefined, this)
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
+              className: "right",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("h2", {
+                  className: "headline",
+                  children: aboutData.personality.headline
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("p", {
+                  className: "story",
+                  children: aboutData.personality.story
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(AboutAccordion, {
+          aboutData
+        }, undefined, false, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(ContactSection, {}, undefined, false, undefined, this)
       ]
     }, undefined, true, undefined, this);
   }
-  return /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
+  return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
     children: "Invalid portfolio data"
   }, undefined, false, undefined, this);
 }
 
 // src/pages/Contact.tsx
-var jsx_dev_runtime14 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime18 = __toESM(require_jsx_dev_runtime(), 1);
 function Contact() {
-  return /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("h1", {
+  return /* @__PURE__ */ jsx_dev_runtime18.jsxDEV("h1", {
     children: "Contact"
   }, undefined, false, undefined, this);
 }
@@ -20546,12 +20737,12 @@ function productionCreate(_, jsx, jsxs) {
     return key ? fn(type, props, key) : fn(type, props);
   }
 }
-function developmentCreate(filePath, jsxDEV15) {
+function developmentCreate(filePath, jsxDEV19) {
   return create2;
   function create2(node, type, props, key) {
     const isStaticChildren = Array.isArray(props.children);
     const point3 = pointStart(node);
-    return jsxDEV15(type, props, key, isStaticChildren, {
+    return jsxDEV19(type, props, key, isStaticChildren, {
       columnNumber: point3 ? point3.column - 1 : undefined,
       fileName: filePath,
       lineNumber: point3 ? point3.line : undefined
@@ -20765,7 +20956,7 @@ var urlAttributes = {
 };
 // node_modules/react-markdown/lib/index.js
 var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
-var import_react11 = __toESM(require_react(), 1);
+var import_react12 = __toESM(require_react(), 1);
 
 // node_modules/mdast-util-to-string/lib/index.js
 var emptyOptions2 = {};
@@ -30660,54 +30851,46 @@ function remarkGfm(options) {
   fromMarkdownExtensions.push(gfmFromMarkdown());
   toMarkdownExtensions.push(gfmToMarkdown(settings));
 }
-// src/components/overview/ContactSection.tsx
-var jsx_dev_runtime15 = __toESM(require_jsx_dev_runtime(), 1);
-function ContactSection() {
-  return /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("h1", {
-    children: "Contact Me"
-  }, undefined, false, undefined, this);
-}
-
 // src/components/overview/ProjectCard.tsx
-var jsx_dev_runtime16 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime19 = __toESM(require_jsx_dev_runtime(), 1);
 function ProjectCard({ repo }) {
-  return /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("article", {
+  return /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("article", {
     className: "card flex flex-column gap-sm",
     children: [
-      /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("div", {
+      /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("div", {
         className: "flex-between",
         children: [
-          /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("a", {
+          /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("a", {
             href: repo.html_url,
             className: "card-title",
-            children: /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("h3", {
+            children: /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("h3", {
               children: repo.name
             }, undefined, false, undefined, this)
           }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("span", {
+          /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("span", {
             className: "card-visibility muted",
             children: repo.visibility
           }, undefined, false, undefined, this)
         ]
       }, undefined, true, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("div", {
+      /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("div", {
         className: "card-text",
-        children: /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("p", {
+        children: /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("p", {
           children: repo.description
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("span", {
+      /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("span", {
         className: "card-language flex-left gap-sm",
         children: [
-          /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("div", {
+          /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("div", {
             className: "card-language-decorator"
           }, undefined, false, undefined, this),
           repo.language
         ]
       }, undefined, true, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("ul", {
+      /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("ul", {
         className: "card-topics muted flex gap-sm",
-        children: repo.topics.slice(0, 3).map((topic) => /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("li", {
+        children: repo.topics.slice(0, 3).map((topic) => /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("li", {
           className: "repo-card__topic",
           children: topic
         }, topic, false, undefined, this))
@@ -30717,13 +30900,13 @@ function ProjectCard({ repo }) {
 }
 
 // src/components/overview/ProjectSection.tsx
-var jsx_dev_runtime17 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime20 = __toESM(require_jsx_dev_runtime(), 1);
 function ProjectSection({ repos }) {
-  return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("ul", {
+  return /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("ul", {
     className: "repo-grid",
     id: "projects",
-    children: repos.map((repo) => /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("li", {
-      children: /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(ProjectCard, {
+    children: repos.map((repo) => /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("li", {
+      children: /* @__PURE__ */ jsx_dev_runtime20.jsxDEV(ProjectCard, {
         repo
       }, undefined, false, undefined, this)
     }, repo.id, false, undefined, this))
@@ -30731,108 +30914,110 @@ function ProjectSection({ repos }) {
 }
 
 // src/components/overview/MainContent.tsx
-var jsx_dev_runtime18 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime21 = __toESM(require_jsx_dev_runtime(), 1);
 function MainContent({
   content: content3,
   repos
 }) {
   if (!content3)
-    return /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(ErrorMessage, {
+    return /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(ErrorMessage, {
       error_message: "content not found..."
     }, undefined, false, undefined, this);
   if (!repos) {
-    return /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(ErrorMessage, {
+    return /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(ErrorMessage, {
       error_message: "repositories not found..."
     }, undefined, false, undefined, this);
   }
   const readmeMarkdown = atob(content3.content);
-  return /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(jsx_dev_runtime18.Fragment, {
+  return /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(jsx_dev_runtime21.Fragment, {
     children: [
-      /* @__PURE__ */ jsx_dev_runtime18.jsxDEV("article", {
-        className: "markdown-body flex flex-column gap-md",
-        children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(Markdown, {
+      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("section", {
+        className: "markdown-body flex flex-column gap-xl",
+        children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Markdown, {
           remarkPlugins: [remarkGfm],
           children: readmeMarkdown
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime18.jsxDEV("div", {
-        className: "section-title",
-        children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV("h2", {
-          children: "Top Projects"
-        }, undefined, false, undefined, this)
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(ProjectSection, {
-        repos
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime18.jsxDEV("div", {
-        className: "section-title",
-        children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV("h2", {
-          children: "Contact Me"
-        }, undefined, false, undefined, this)
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(ContactSection, {}, undefined, false, undefined, this)
+      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("section", {
+        className: "project-section",
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("div", {
+            className: "section-title",
+            children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("h2", {
+              children: "Latest Projects"
+            }, undefined, false, undefined, this)
+          }, undefined, false, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(ProjectSection, {
+            repos
+          }, undefined, false, undefined, this)
+        ]
+      }, undefined, true, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("section", {
+        className: "contact-section",
+        children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(ContactSection, {}, undefined, false, undefined, this)
+      }, undefined, false, undefined, this)
     ]
   }, undefined, true, undefined, this);
 }
 
 // src/pages/Overview.tsx
-var jsx_dev_runtime19 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime22 = __toESM(require_jsx_dev_runtime(), 1);
 function Overview() {
   const { github, repos, readme } = useGitHub();
   if (!github)
-    return /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(Loading, {
+    return /* @__PURE__ */ jsx_dev_runtime22.jsxDEV(Loading, {
       loading_message: "Loading profile..."
     }, undefined, false, undefined, this);
   if (!readme)
-    return /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(Loading, {
+    return /* @__PURE__ */ jsx_dev_runtime22.jsxDEV(Loading, {
       loading_message: "Loading data..."
     }, undefined, false, undefined, this);
   if (repos.length === 0) {
-    return /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(Loading, {
+    return /* @__PURE__ */ jsx_dev_runtime22.jsxDEV(Loading, {
       loading_message: "No repositories found"
     }, undefined, false, undefined, this);
   }
-  return /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(MainContent, {
+  return /* @__PURE__ */ jsx_dev_runtime22.jsxDEV(MainContent, {
     content: readme,
     repos
   }, undefined, false, undefined, this);
 }
 
 // src/pages/Projects.tsx
-var jsx_dev_runtime20 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime23 = __toESM(require_jsx_dev_runtime(), 1);
 function Projects() {
-  return /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("h1", {
+  return /* @__PURE__ */ jsx_dev_runtime23.jsxDEV("h1", {
     children: "Projects..."
   }, undefined, false, undefined, this);
 }
 
 // src/App.tsx
-var jsx_dev_runtime21 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime24 = __toESM(require_jsx_dev_runtime(), 1);
 function App() {
-  return /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Router, {
+  return /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Router, {
     children: [
-      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Route, {
+      /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Route, {
         path: "/",
-        element: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(AppLayout, {
-          children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Overview, {}, undefined, false, undefined, this)
+        element: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Overview, {}, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Route, {
+      /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Route, {
         path: "/about",
-        element: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(AppLayout, {
-          children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(About, {}, undefined, false, undefined, this)
+        element: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(About, {}, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Route, {
+      /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Route, {
         path: "/contact",
-        element: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(AppLayout, {
-          children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Contact, {}, undefined, false, undefined, this)
+        element: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Contact, {}, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Route, {
+      /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Route, {
         path: "/projects",
-        element: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(AppLayout, {
-          children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Projects, {}, undefined, false, undefined, this)
+        element: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Projects, {}, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this)
     ]
@@ -30840,10 +31025,10 @@ function App() {
 }
 
 // src/index.tsx
-var jsx_dev_runtime22 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime25 = __toESM(require_jsx_dev_runtime(), 1);
 var rootNode = document.querySelector("#root");
 if (!rootNode)
   throw new Error("cannot find root element");
-import_client.createRoot(rootNode).render(/* @__PURE__ */ jsx_dev_runtime22.jsxDEV(import_react12.StrictMode, {
-  children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV(App, {}, undefined, false, undefined, this)
+import_client.createRoot(rootNode).render(/* @__PURE__ */ jsx_dev_runtime25.jsxDEV(import_react13.StrictMode, {
+  children: /* @__PURE__ */ jsx_dev_runtime25.jsxDEV(App, {}, undefined, false, undefined, this)
 }, undefined, false, undefined, this));
