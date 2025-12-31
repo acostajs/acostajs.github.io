@@ -4,6 +4,7 @@ import { GITHUB_USERNAME } from "api";
 import { usePortfolioData } from "../hooks/usePortfolioData";
 
 import { AboutAccordion } from "@/components/about/AboutAccordion";
+import { ContactSection } from "@/components/overview/ContactSection";
 import type { ReactElement } from "react";
 import { AboutImg } from "../components/about/AboutImg";
 import type { AboutPortfolioJson } from "../pages/types";
@@ -47,6 +48,7 @@ export function About(): ReactElement {
         </div>
 
         <AboutAccordion aboutData={aboutData} />
+        <ContactSection />
       </>
     );
   }
