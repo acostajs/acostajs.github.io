@@ -20,16 +20,16 @@ Personal portfolio site built with React and TypeScript, using Bun as the runtim
 
 Each folder exports its public API via **`index.ts` barrel files**:
 
-- src/
-- - components/
-- - - about/
-- - - - index.ts → exports Bio, Personality, Accordion
-- - - ui/
-- - - - index.ts → exports Loading, Image, etc.
-- - - layout/
-- - - - index.ts → exports Header, Footer, etc.
+src/
+├── components/
+│ ├── about/
+│ │ └── index.ts → exports Bio, Personality, Accordion
+│ ├── ui/
+│ │ └── index.ts → exports Loading, Image, etc.
+│ └── layout/
+│ └── index.ts → exports Header, Footer, etc.
 
-  **Usage**: `import { Bio } from '@/components/about'`
+**Usage**: `import { Bio } from '@/components/about'`
 
 ## Requirements
 
