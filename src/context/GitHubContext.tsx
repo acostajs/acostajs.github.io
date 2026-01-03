@@ -1,18 +1,18 @@
 // contexts/GitHubContext.tsx
+import type { File, Repository, User } from "@/types";
 import { createContext, useContext } from "react";
 import type { ReactNode } from "react";
-import type { GitHubReadmeFile, GitHubRepo, GithubUserProfile } from "../pages/types";
 
 type GitHubContextType = {
-  github: GithubUserProfile | null;
-  repos: GitHubRepo[];
-  readme: GitHubReadmeFile | null;
+  github: User | null;
+  repos: Repository[];
+  readme: File | null;
 };
 
 type GitHubProviderProps = {
-  github: GithubUserProfile | null;
-  repos: GitHubRepo[];
-  readme: GitHubReadmeFile | null;
+  github: User | null;
+  repos: Repository[];
+  readme: File | null;
   children: ReactNode;
 };
 

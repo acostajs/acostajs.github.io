@@ -1,0 +1,72 @@
+@layer components {
+  /* Aside - Profile */
+  aside {
+    min-width: 300px;
+
+    & .avatar {
+      animation: avatarAni 2s ease-in-out 5s 1 normal none;
+    }
+  }
+
+  .profile-bio,
+  .profile-item {
+    font-weight: var(--weight-semibold);
+  }
+
+  /* Overview Sections */
+
+  .overview-section {
+    margin-bottom: var(--space-2xl);
+
+    & p {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: var(--text-lg);
+    }
+  }
+
+  .project-section {
+    & ul {
+      gap: var(--gap-md);
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+  }
+
+  /* About Sections */
+
+  .about-bio,
+  .about-personality {
+    gap: var(--gap-md);
+    margin-bottom: var(--space-2xl);
+
+    & .section-title {
+      flex: 1 1 60%;
+      min-width: 280px;
+    }
+
+    & h1,
+    h2 {
+      color: var(--color-accent-strong);
+    }
+  }
+
+  .about-bio {
+    flex-wrap: wrap-reverse;
+    background-color: var(--color-bg-dark);
+    padding: var(--pad-md);
+    border-radius: var(--radius-xl);
+  }
+
+  .about-bio-img,
+  .about-personality-img {
+    max-height: 300px;
+    flex: 0 0 300px;
+    overflow: hidden;
+    border-radius: var(--radius-xl);
+    margin: 0 auto;
+  }
+
+  .about-personality {
+    flex-wrap: wrap;
+  }
+}
