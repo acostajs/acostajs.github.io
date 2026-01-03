@@ -28,9 +28,8 @@ Each folder exports its public API via **`index.ts` barrel files**:
 - - - - index.ts → exports Loading, Image, etc.
 - - - layout/
 - - - - index.ts → exports Header, Footer, etc.
-        
 
-**Usage**: `import { Bio } from '@/components/about'`
+  **Usage**: `import { Bio } from '@/components/about'`
 
 ## Requirements
 
