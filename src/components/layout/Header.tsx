@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
-import { FaGithub } from "react-icons/fa";
-import { HiddenMenu } from "./header/HiddenMenu";
-import { NavLinks } from "./header/NavLinks";
+
+import { Avatar, GitHubProfileBadge } from "@/components/ui";
+import { HiddenMenu, NavLinks } from "./header/index";
 
 type HeaderProps = {
   github_user_url: string;
@@ -15,22 +15,25 @@ export function Header({
   github_img_profile_url,
 }: HeaderProps): ReactElement {
   return (
-    <header>
-      <nav>
+    <header className="navbar">
+      <nav className="navbar-container">
         <div className="nav-top flex-between">
-          <div className="flex-center gap-md">
+          <div className="flex-center gap-xl">
             <HiddenMenu />
 
-            <a className="username flex-center gap-sm" href={github_user_url}>
-              <FaGithub size={30} />
-              {github_username}
-            </a>
+            <GitHubProfileBadge
+              url={github_user_url}
+              username={github_username}
+            />
           </div>
 
           <div>
-            <figure className="avatar-small">
-              <img src={github_img_profile_url} alt="" />
-            </figure>
+            <Avatar
+              size={40}
+              className="avatar"
+              url={github_img_profile_url}
+              alt="avatar image profile"
+            />
           </div>
         </div>
 

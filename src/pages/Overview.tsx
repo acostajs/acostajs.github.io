@@ -1,17 +1,15 @@
+import { ContactSection, OverviewSection, ProjectSection } from "@/components/overview";
+import { useGitHub } from "@/context/GitHubContext";
 import type { ReactElement } from "react";
 
-import { Loading } from "@/components/layout/Loading";
-import { MainContent } from "../components/overview/MainContent";
-import { useGitHub } from "../context/GitHubContext";
-
 export function Overview(): ReactElement {
-  const { github, repos, readme } = useGitHub();
+  const { repos, readme } = useGitHub();
 
-  if (!github) return <Loading loading_message="Loading profile..." />;
-  if (!readme) return <Loading loading_message="Loading data..." />;
-  if (repos.length === 0) {
-    return <Loading loading_message="No repositories found" />;
-  }
-
-  return <MainContent content={readme} repos={repos} />;
+  return (
+    <>
+      <OverviewSection readme={readme} />
+      <ProjectSection repos={repos} />
+      <ContactSection />
+    </>
+  );
 }

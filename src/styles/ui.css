@@ -1,0 +1,80 @@
+@layer ui {
+  .navlink {
+    border-radius: var(--radius-md);
+    font-weight: var(--weight-semibold);
+    font-size: var(--text-sm);
+    padding: var(--pad-xs) var(--pad-md);
+  }
+
+  .burger {
+    padding: var(--pad-xs);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .avatar {
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+
+  .github-profile-badge {
+    font-weight: var(--weight-bold);
+    font-size: var(--text-base);
+  }
+
+  /* LOADING */
+
+  .loading-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--loading-bg);
+    backdrop-filter: blur(var(--loading-blur));
+    z-index: 20;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .loading-overlay.loading-fade-out {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* CARD */
+
+  .card-title {
+    color: var(--color-accent);
+
+    & h3 {
+      font-weight: var(--weight-bold);
+    }
+  }
+
+  .card-title:hover {
+    color: var(--color-accent-strong);
+  }
+  /* 
+  .card-visibility {
+  	border: 1px solid var(--color-border);
+  	border-radius: var(--radius-xl);
+  	padding: var(--pad-xs) var(--pad-sm);
+  }
+
+  .card-language-decorator {
+  	background-color: var(--color-decorator);
+  	height: 10px;
+  	width: 10px;
+  	border-radius: 50%;
+  } */
+}

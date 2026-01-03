@@ -1,19 +1,29 @@
+import { Card, Loading } from "@/components/ui";
+import { OVERVIEW_FEATURES } from "@/lib/api";
+import type { Repository } from "@/types";
 import type { ReactElement } from "react";
-import type { GitHubRepo } from "../../pages/types";
-import { ProjectCard } from "./ProjectCard";
 
 type ProjectSectionProps = {
-  repos: GitHubRepo[];
+  repos: Repository[];
 };
 
 export function ProjectSection({ repos }: ProjectSectionProps): ReactElement {
+  if (repos.length === 0) {
+    return <Loading loading_message="No repositories found" />;
+  }
+
   return (
-    <ul className="repo-grid" id="projects">
-      {repos.map((repo) => (
-        <li key={repo.id}>
-          <ProjectCard repo={repo} />
-        </li>
-      ))}
-    </ul>
+    <section className="project-section">
+      <div className="section-title">
+        <h2>Latest Projects</h2>
+      </div>
+      <ul className="grid">
+        {repos.slice(0, OVERVIEW_FEATURES.featuredReposCount).map((repo) => (
+          <li key={repo.id}>
+            <Card repo={repo} />
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }

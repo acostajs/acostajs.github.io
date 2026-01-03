@@ -18,7 +18,7 @@ export function Footer({ github_user_name }: FooterProps): ReactElement {
           </span>
 
           <span className="muted flex-center gap-sm">
-            Made with <FaReact size={20} /> React & <SiBun size={20} /> bun.
+            <FaReact size={20} /> - Made with React & Bun - <SiBun size={20} />
           </span>
         </div>
       </div>

@@ -1,6 +1,6 @@
+import { NavLink } from "@/components/ui";
 import type { ReactElement } from "react";
 import { FiBookOpen, FiBox, FiFolder, FiStar } from "react-icons/fi";
-import { Link } from "../../../lib/router/Link";
 
 type NavLinksProps = {
   ul_classes?: Array<string>;
@@ -16,25 +16,24 @@ export function NavLinks({
   return (
     <ul className={ulClassName}>
       <li>
-        <Link to={"/"} onClick={handleClick}>
-          <FiBookOpen size={20} /> Overview
-        </Link>
+        <NavLink text="Overview" to="/" onClick={handleClick}>
+          <FiBookOpen size={20} />
+        </NavLink>
       </li>
       <li>
-        <Link to={"/projects"} onClick={handleClick}>
+        <NavLink text="Projects" to="/projects" onClick={handleClick}>
           <FiFolder size={20} />
-          Projects
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link to={"/about"} onClick={handleClick}>
-          <FiBox size={20} /> About
-        </Link>
+        <NavLink text="About" to="/about" onClick={handleClick}>
+          <FiBox size={20} />
+        </NavLink>
       </li>
       <li>
-        <Link to={"/contact"} onClick={handleClick}>
-          <FiStar size={20} /> Contact
-        </Link>
+        <NavLink text="Contact" to="/contact" onClick={handleClick}>
+          <FiStar size={20} />
+        </NavLink>
       </li>
     </ul>
   );
