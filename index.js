@@ -16888,7 +16888,7 @@ var require_client = __commonJS((exports, module) => {
 
 // node_modules/react/cjs/react-jsx-dev-runtime.development.js
 var require_react_jsx_dev_runtime_development = __commonJS((exports) => {
-  var React3 = __toESM(require_react());
+  var React15 = __toESM(require_react());
   (function() {
     function getComponentNameFromType(type) {
       if (type == null)
@@ -17080,17 +17080,17 @@ React keys must be passed directly to JSX without using spread:
     function isValidElement(object) {
       return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
     }
-    var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React3.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
+    var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React15.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
       return null;
     };
-    React3 = {
+    React15 = {
       react_stack_bottom_frame: function(callStackForError) {
         return callStackForError();
       }
     };
     var specialPropKeyWarningShown;
     var didWarnAboutElementRef = {};
-    var unknownOwnerDebugStack = React3.react_stack_bottom_frame.bind(React3, UnknownOwner)();
+    var unknownOwnerDebugStack = React15.react_stack_bottom_frame.bind(React15, UnknownOwner)();
     var unknownOwnerDebugTask = createTask(getTaskName(UnknownOwner));
     var didWarnAboutKeySpread = {};
     exports.Fragment = REACT_FRAGMENT_TYPE;
@@ -17343,7 +17343,7 @@ var require_cjs3 = __commonJS((exports, module) => {
 
 // node_modules/react/cjs/react-jsx-runtime.development.js
 var require_react_jsx_runtime_development = __commonJS((exports) => {
-  var React3 = __toESM(require_react());
+  var React15 = __toESM(require_react());
   (function() {
     function getComponentNameFromType(type) {
       if (type == null)
@@ -17535,17 +17535,17 @@ React keys must be passed directly to JSX without using spread:
     function isValidElement(object) {
       return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
     }
-    var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React3.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
+    var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler"), REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = React15.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, isArrayImpl = Array.isArray, createTask = console.createTask ? console.createTask : function() {
       return null;
     };
-    React3 = {
+    React15 = {
       react_stack_bottom_frame: function(callStackForError) {
         return callStackForError();
       }
     };
     var specialPropKeyWarningShown;
     var didWarnAboutElementRef = {};
-    var unknownOwnerDebugStack = React3.react_stack_bottom_frame.bind(React3, UnknownOwner)();
+    var unknownOwnerDebugStack = React15.react_stack_bottom_frame.bind(React15, UnknownOwner)();
     var unknownOwnerDebugTask = createTask(getTaskName(UnknownOwner));
     var didWarnAboutKeySpread = {};
     exports.Fragment = REACT_FRAGMENT_TYPE;
@@ -18101,7 +18101,7 @@ var require_extend = __commonJS((exports, module) => {
 });
 
 // src/index.tsx
-var import_react13 = __toESM(require_react(), 1);
+var import_react23 = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
 
 // node_modules/react-icons/lib/iconBase.mjs
@@ -18258,575 +18258,241 @@ function FaGithub(props) {
 function FaReact(props) {
   return GenIcon({ tag: "svg", attr: { viewBox: "0 0 512 512" }, child: [{ tag: "path", attr: { d: "M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zM167.2 307.5c5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5 4.6 8.8 9.3 17.5 14.3 26.1zm-30.3-120.3c14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26-6.3-14.9-11.6-29.5-16-43.6zm27.4 68.9c6.6-13.8 13.8-27.3 21.4-40.6s15.8-26.2 24.4-38.9c15-1.1 30.3-1.7 45.9-1.7s31 .6 45.9 1.7c8.5 12.6 16.6 25.5 24.3 38.7s14.9 26.7 21.7 40.4c-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6s-30.9-.5-45.6-1.4c-8.7-12.7-16.9-25.7-24.6-39s-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zm-149.7-15c25.3 0 45.8-20.5 45.8-45.8s-20.5-45.8-45.8-45.8c-25.3 0-45.8 20.5-45.8 45.8s20.5 45.8 45.8 45.8z" }, child: [] }] })(props);
 }
-
 // node_modules/react-icons/fa6/index.mjs
 function FaLocationDot(props) {
   return GenIcon({ tag: "svg", attr: { viewBox: "0 0 384 512" }, child: [{ tag: "path", attr: { d: "M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" }, child: [] }] })(props);
 }
-
 // node_modules/react-icons/im/index.mjs
 function ImLinkedin(props) {
   return GenIcon({ tag: "svg", attr: { version: "1.1", viewBox: "0 0 16 16" }, child: [{ tag: "path", attr: { d: "M14.5 0h-13c-0.825 0-1.5 0.675-1.5 1.5v13c0 0.825 0.675 1.5 1.5 1.5h13c0.825 0 1.5-0.675 1.5-1.5v-13c0-0.825-0.675-1.5-1.5-1.5zM6 13h-2v-7h2v7zM5 5c-0.553 0-1-0.447-1-1s0.447-1 1-1c0.553 0 1 0.447 1 1s-0.447 1-1 1zM13 13h-2v-4c0-0.553-0.447-1-1-1s-1 0.447-1 1v4h-2v-7h2v1.241c0.412-0.566 1.044-1.241 1.75-1.241 1.244 0 2.25 1.119 2.25 2.5v4.5z" }, child: [] }] })(props);
 }
-
 // node_modules/react-icons/md/index.mjs
 function MdEmail(props) {
   return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24" }, child: [{ tag: "path", attr: { fill: "none", d: "M0 0h24v24H0z" }, child: [] }, { tag: "path", attr: { d: "M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" }, child: [] }] })(props);
 }
-
-// profile.config.ts
-var CONFIG = {
-  github: {
-    username: "acostajs",
-    repos: {
-      number_of_repos_to_display: 6,
-      sort_by: "updated",
-      direction: "desc"
-    }
-  },
-  profile: {
-    email: "acosta.juan@icloud.com",
-    linkedin: "juan-acosta-pinilla"
-  }
-};
-
-// api.ts
-var GITHUB_USERNAME = `${CONFIG.github.username}`;
-var GITHUB_URL = `https://api.github.com/users/${CONFIG.github.username}`;
-var GITHUB_REPOS = `https://api.github.com/users/${CONFIG.github.username}/repos?sort=${CONFIG.github.repos.sort_by}&direction=${CONFIG.github.repos.direction}&per_page=${CONFIG.github.repos.number_of_repos_to_display}`;
-function GITHUB_PORTFOLIO_FOLDER(repoName, folderPath = "portfolio") {
-  return `https://api.github.com/repos/${CONFIG.github.username}/${repoName}/contents/${folderPath}?ref=main`;
-}
-var GITHUB_README = `https://api.github.com/repos/${CONFIG.github.username}/${CONFIG.github.username}/readme`;
-var profile_email = CONFIG.profile.email;
-var profile_linkedin = CONFIG.profile.linkedin;
-var profile_linkedin_url = `https://www.linkedin.com/in/${CONFIG.profile.linkedin}/`;
-var profile_github_url = `https://github.com/${CONFIG.github.username}/`;
-
-// src/components/layout/ErrorMessage.tsx
-var jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
-function ErrorMessage({
-  error_message
-}) {
-  if (!error_message)
-    return null;
-  return /* @__PURE__ */ jsx_dev_runtime.jsxDEV("section", {
-    children: /* @__PURE__ */ jsx_dev_runtime.jsxDEV("div", {
-      className: "container",
-      children: /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h1", {
-        className: "error-message",
-        children: error_message
-      }, undefined, false, undefined, this)
-    }, undefined, false, undefined, this)
-  }, undefined, false, undefined, this);
-}
-
-// src/components/layout/AsideProfile.tsx
-var jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1);
-function AsideProfile({ profile }) {
-  if (!profile)
-    return /* @__PURE__ */ jsx_dev_runtime2.jsxDEV(ErrorMessage, {
-      error_message: "profile not found..."
-    }, undefined, false, undefined, this);
-  return /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("aside", {
-    children: [
-      /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("div", {
-        className: "profile-img flex-center",
-        children: /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("figure", {
-          children: /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("img", {
-            src: profile.avatar_url,
-            alt: ""
-          }, undefined, false, undefined, this)
-        }, undefined, false, undefined, this)
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("div", {
-        className: "profile-text",
-        children: /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("ul", {
-          className: "profile-list flex-column flex gap-md",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
-              children: /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("h1", {
-                children: profile.name
-              }, undefined, false, undefined, this)
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
-              className: "profile-bio",
-              children: profile.bio
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
-              className: "flex-left gap-md",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV(FaLocationDot, {
-                  size: 20
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("a", {
-                  href: `https://www.google.com/maps?q=${profile.location}`,
-                  children: profile.location
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
-              className: "flex-left gap-md",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV(MdEmail, {
-                  size: 20
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("a", {
-                  href: "mailto:" + profile_email,
-                  children: profile_email
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
-              className: "flex-left gap-md",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV(ImLinkedin, {
-                  size: 20
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("a", {
-                  href: profile_linkedin_url,
-                  children: profile_linkedin
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
-              className: "flex-left gap-md",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV(FaGithub, {
-                  size: 20
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("a", {
-                  href: profile_github_url,
-                  children: profile.login
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
-              className: "flex-left gap-md",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("span", {
-                  className: "profile-item",
-                  children: "Availability:"
-                }, undefined, false, undefined, this),
-                profile.hireable ? "Open to work" : "Not available"
-              ]
-            }, undefined, true, undefined, this)
-          ]
-        }, undefined, true, undefined, this)
-      }, undefined, false, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
-}
-
-// node_modules/react-icons/si/index.mjs
-function SiBun(props) {
-  return GenIcon({ tag: "svg", attr: { role: "img", viewBox: "0 0 24 24" }, child: [{ tag: "path", attr: { d: "M12 22.596c6.628 0 12-4.338 12-9.688 0-3.318-2.057-6.248-5.219-7.986-1.286-.715-2.297-1.357-3.139-1.89C14.058 2.025 13.08 1.404 12 1.404c-1.097 0-2.334.785-3.966 1.821a49.92 49.92 0 0 1-2.816 1.697C2.057 6.66 0 9.59 0 12.908c0 5.35 5.372 9.687 12 9.687v.001ZM10.599 4.715c.334-.759.503-1.58.498-2.409 0-.145.202-.187.23-.029.658 2.783-.902 4.162-2.057 4.624-.124.048-.199-.121-.103-.209a5.763 5.763 0 0 0 1.432-1.977Zm2.058-.102a5.82 5.82 0 0 0-.782-2.306v-.016c-.069-.123.086-.263.185-.172 1.962 2.111 1.307 4.067.556 5.051-.082.103-.23-.003-.189-.126a5.85 5.85 0 0 0 .23-2.431Zm1.776-.561a5.727 5.727 0 0 0-1.612-1.806v-.014c-.112-.085-.024-.274.114-.218 2.595 1.087 2.774 3.18 2.459 4.407a.116.116 0 0 1-.049.071.11.11 0 0 1-.153-.026.122.122 0 0 1-.022-.083 5.891 5.891 0 0 0-.737-2.331Zm-5.087.561c-.617.546-1.282.76-2.063 1-.117 0-.195-.078-.156-.181 1.752-.909 2.376-1.649 2.999-2.778 0 0 .155-.118.188.085 0 .304-.349 1.329-.968 1.874Zm4.945 11.237a2.957 2.957 0 0 1-.937 1.553c-.346.346-.8.565-1.286.62a2.178 2.178 0 0 1-1.327-.62 2.955 2.955 0 0 1-.925-1.553.244.244 0 0 1 .064-.198.234.234 0 0 1 .193-.069h3.965a.226.226 0 0 1 .19.07c.05.053.073.125.063.197Zm-5.458-2.176a1.862 1.862 0 0 1-2.384-.245 1.98 1.98 0 0 1-.233-2.447c.207-.319.503-.566.848-.713a1.84 1.84 0 0 1 1.092-.11c.366.075.703.261.967.531a1.98 1.98 0 0 1 .408 2.114 1.931 1.931 0 0 1-.698.869v.001Zm8.495.005a1.86 1.86 0 0 1-2.381-.253 1.964 1.964 0 0 1-.547-1.366c0-.384.11-.76.32-1.079.207-.319.503-.567.849-.713a1.844 1.844 0 0 1 1.093-.108c.367.076.704.262.968.534a1.98 1.98 0 0 1 .4 2.117 1.932 1.932 0 0 1-.702.868Z" }, child: [] }] })(props);
-}
-
-// src/components/layout/Footer.tsx
-var jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime(), 1);
-function Footer({ github_user_name }) {
-  const year = String(new Date().getFullYear());
-  return /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("footer", {
-    children: /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("div", {
-      className: "container",
-      children: /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("div", {
-        className: "footer-grid grid gap-sm",
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("span", {
-            className: "muted flex-center gap-sm",
-            children: [
-              /* @__PURE__ */ jsx_dev_runtime3.jsxDEV(FaGithub, {
-                size: 22
-              }, undefined, false, undefined, this),
-              " ",
-              year,
-              " ",
-              github_user_name,
-              " - Portfolio"
-            ]
-          }, undefined, true, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("span", {
-            className: "muted flex-center gap-sm",
-            children: [
-              "Made with ",
-              /* @__PURE__ */ jsx_dev_runtime3.jsxDEV(FaReact, {
-                size: 20
-              }, undefined, false, undefined, this),
-              " React & ",
-              /* @__PURE__ */ jsx_dev_runtime3.jsxDEV(SiBun, {
-                size: 20
-              }, undefined, false, undefined, this),
-              " bun."
-            ]
-          }, undefined, true, undefined, this)
-        ]
-      }, undefined, true, undefined, this)
-    }, undefined, false, undefined, this)
-  }, undefined, false, undefined, this);
-}
-
-// src/components/layout/header/HiddenMenu.tsx
-var import_react5 = __toESM(require_react(), 1);
-
 // node_modules/react-icons/rx/index.mjs
 function RxHamburgerMenu(props) {
   return GenIcon({ tag: "svg", attr: { viewBox: "0 0 15 15", fill: "none" }, child: [{ tag: "path", attr: { fillRule: "evenodd", clipRule: "evenodd", d: "M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z", fill: "currentColor" }, child: [] }] })(props);
 }
+// node_modules/react-loading-icons/dist/esm/components/audio.js
+var import_react3 = __toESM(require_react(), 1);
 
-// src/components/layout/header/Burger.tsx
+// node_modules/react-loading-icons/dist/esm/components/ball-triangle.js
+var import_react4 = __toESM(require_react(), 1);
+
+// node_modules/react-loading-icons/dist/esm/components/bars.js
+var import_react5 = __toESM(require_react(), 1);
+
+// node_modules/react-loading-icons/dist/esm/components/circles.js
+var import_react6 = __toESM(require_react(), 1);
+
+// node_modules/react-loading-icons/dist/esm/components/grid.js
+var import_react7 = __toESM(require_react(), 1);
+
+// node_modules/react-loading-icons/dist/esm/components/hearts.js
+var import_react8 = __toESM(require_react(), 1);
+
+// node_modules/react-loading-icons/dist/esm/components/oval.js
+var import_react9 = __toESM(require_react(), 1);
+
+// node_modules/react-loading-icons/dist/esm/components/puff.js
+var import_react10 = __toESM(require_react(), 1);
+
+// node_modules/react-loading-icons/dist/esm/components/rings.js
+var import_react11 = __toESM(require_react(), 1);
+
+// node_modules/react-loading-icons/dist/esm/components/spinning-circles.js
+var import_react12 = __toESM(require_react(), 1);
+var __assign = function() {
+  __assign = Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length;i < n; i++) {
+      s = arguments[i];
+      for (var p in s)
+        if (Object.prototype.hasOwnProperty.call(s, p))
+          t[p] = s[p];
+    }
+    return t;
+  };
+  return __assign.apply(this, arguments);
+};
+function SpinningCircles(props) {
+  var _a, _b, _c, _d;
+  var speed = Number(String((_a = props.speed) !== null && _a !== undefined ? _a : 1));
+  var fill = (_b = props.fill) !== null && _b !== undefined ? _b : "#fff";
+  var stroke = props.stroke;
+  var fillOpacity = props.fillOpacity;
+  var strokeOpacity = props.strokeOpacity;
+  return import_react12.default.createElement("svg", __assign({}, __assign(__assign({}, props), { className: props.className ? "icon-loading ".concat(props.className) : "icon-loading", fill: undefined, fillOpacity: undefined, height: (_c = props.height) !== null && _c !== undefined ? _c : 58, speed: undefined, stroke: undefined, strokeOpacity: undefined, strokeWidth: undefined, width: (_d = props.width) !== null && _d !== undefined ? _d : 58 }), { viewBox: "0 0 58 58" }), import_react12.default.createElement("g", __assign({ transform: "translate(2 1)", fillRule: "evenodd" }, { fill, stroke, fillOpacity, strokeOpacity }), import_react12.default.createElement("circle", { cx: 42.601, cy: 11.462, r: 5 }, import_react12.default.createElement("animate", { attributeName: "fill-opacity", begin: "0s", dur: "".concat(1.3 / speed, "s"), values: "1;0;0;0;0;0;0;0", calcMode: "linear", repeatCount: "indefinite" })), import_react12.default.createElement("circle", { cx: 49.063, cy: 27.063, r: 5, fillOpacity: 0 }, import_react12.default.createElement("animate", { attributeName: "fill-opacity", begin: "0s", dur: "".concat(1.3 / speed, "s"), values: "0;1;0;0;0;0;0;0", calcMode: "linear", repeatCount: "indefinite" })), import_react12.default.createElement("circle", { cx: 42.601, cy: 42.663, r: 5, fillOpacity: 0 }, import_react12.default.createElement("animate", { attributeName: "fill-opacity", begin: "0s", dur: "".concat(1.3 / speed, "s"), values: "0;0;1;0;0;0;0;0", calcMode: "linear", repeatCount: "indefinite" })), import_react12.default.createElement("circle", { cx: 27, cy: 49.125, r: 5, fillOpacity: 0 }, import_react12.default.createElement("animate", { attributeName: "fill-opacity", begin: "0s", dur: "".concat(1.3 / speed, "s"), values: "0;0;0;1;0;0;0;0", calcMode: "linear", repeatCount: "indefinite" })), import_react12.default.createElement("circle", { cx: 11.399, cy: 42.663, r: 5, fillOpacity: 0 }, import_react12.default.createElement("animate", { attributeName: "fill-opacity", begin: "0s", dur: "".concat(1.3 / speed, "s"), values: "0;0;0;0;1;0;0;0", calcMode: "linear", repeatCount: "indefinite" })), import_react12.default.createElement("circle", { cx: 4.938, cy: 27.063, r: 5, fillOpacity: 0 }, import_react12.default.createElement("animate", { attributeName: "fill-opacity", begin: "0s", dur: "".concat(1.3 / speed, "s"), values: "0;0;0;0;0;1;0;0", calcMode: "linear", repeatCount: "indefinite" })), import_react12.default.createElement("circle", { cx: 11.399, cy: 11.462, r: 5, fillOpacity: 0 }, import_react12.default.createElement("animate", { attributeName: "fill-opacity", begin: "0s", dur: "".concat(1.3 / speed, "s"), values: "0;0;0;0;0;0;1;0", calcMode: "linear", repeatCount: "indefinite" })), import_react12.default.createElement("circle", { cx: 27, cy: 5, r: 5, fillOpacity: 0 }, import_react12.default.createElement("animate", { attributeName: "fill-opacity", begin: "0s", dur: "".concat(1.3 / speed, "s"), values: "0;0;0;0;0;0;0;1", calcMode: "linear", repeatCount: "indefinite" }))));
+}
+
+// node_modules/react-loading-icons/dist/esm/components/tail-spin.js
+var import_react13 = __toESM(require_react(), 1);
+
+// node_modules/react-loading-icons/dist/esm/components/three-dots.js
+var import_react14 = __toESM(require_react(), 1);
+
+// node_modules/react-loading-icons/dist/esm/index.js
+var SpinningCircles2 = SpinningCircles;
+// src/components/ui/AccordionItem.tsx
+var jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
+function AccordionItem({
+  headline,
+  story
+}) {
+  return /* @__PURE__ */ jsx_dev_runtime.jsxDEV("details", {
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime.jsxDEV("summary", {
+        children: headline
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
+        children: story
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+// src/components/ui/AccordionList.tsx
+var jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1);
+function AccordionList({
+  array,
+  ul_classes,
+  li_classes
+}) {
+  const ulClasses = ul_classes?.join(" ") ?? "";
+  const liClasses = li_classes?.join(" ") ?? "";
+  return /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("ul", {
+    className: ulClasses,
+    children: array.map((item, i) => /* @__PURE__ */ jsx_dev_runtime2.jsxDEV("li", {
+      className: liClasses,
+      children: item
+    }, i, false, undefined, this))
+  }, undefined, false, undefined, this);
+}
+// src/components/ui/Avatar.tsx
+var jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime(), 1);
+function Avatar({
+  size,
+  className,
+  url,
+  alt
+}) {
+  return /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("figure", {
+    className,
+    children: /* @__PURE__ */ jsx_dev_runtime3.jsxDEV("img", {
+      src: url,
+      alt,
+      width: size,
+      height: size
+    }, undefined, false, undefined, this)
+  }, undefined, false, undefined, this);
+}
+// src/components/ui/Burger.tsx
 var jsx_dev_runtime4 = __toESM(require_jsx_dev_runtime(), 1);
 function Burger({ onClick }) {
   return /* @__PURE__ */ jsx_dev_runtime4.jsxDEV("button", {
     className: "burger",
+    popoverTarget: "menu",
     onClick,
     children: /* @__PURE__ */ jsx_dev_runtime4.jsxDEV(RxHamburgerMenu, {
       size: 20
     }, undefined, false, undefined, this)
   }, undefined, false, undefined, this);
 }
-
-// node_modules/react-icons/fi/index.mjs
-function FiBookOpen(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" }, child: [] }, { tag: "path", attr: { d: "M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" }, child: [] }] })(props);
-}
-function FiBox(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" }, child: [] }, { tag: "polyline", attr: { points: "3.27 6.96 12 12.01 20.73 6.96" }, child: [] }, { tag: "line", attr: { x1: "12", y1: "22.08", x2: "12", y2: "12" }, child: [] }] })(props);
-}
-function FiFolder(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" }, child: [] }] })(props);
-}
-function FiStar(props) {
-  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "polygon", attr: { points: "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" }, child: [] }] })(props);
-}
-
-// src/lib/router/Link.tsx
-var import_react4 = __toESM(require_react(), 1);
-
-// src/lib/router/context.ts
-var import_react3 = __toESM(require_react(), 1);
-var NavigationContext = import_react3.createContext({
-  pathname: window.location.pathname,
-  setPathname: (_) => {}
-});
-var RouteContext = import_react3.createContext({});
-
-// src/lib/router/Link.tsx
+// src/components/ui/Card.tsx
 var jsx_dev_runtime5 = __toESM(require_jsx_dev_runtime(), 1);
-function Link({ to, children, onClick }) {
-  const { setPathname: navigate } = import_react4.useContext(NavigationContext);
-  function handleClick(e) {
-    e.preventDefault();
-    navigate(to);
-    onClick?.();
-  }
-  return /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("a", {
-    className: "flex-left gap-sm",
-    href: to,
-    onClick: handleClick,
-    children
-  }, undefined, false, undefined, this);
-}
-
-// src/components/layout/header/NavLinks.tsx
-var jsx_dev_runtime6 = __toESM(require_jsx_dev_runtime(), 1);
-function NavLinks({
-  ul_classes,
-  handleClick
-}) {
-  const ulClassName = ul_classes?.join(" ") ?? "";
-  return /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("ul", {
-    className: ulClassName,
+function Card({ repo }) {
+  return /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("article", {
+    className: "card flex flex-column gap-sm",
     children: [
-      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("li", {
-        children: /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(Link, {
-          to: "/",
-          onClick: handleClick,
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(FiBookOpen, {
-              size: 20
-            }, undefined, false, undefined, this),
-            " Overview"
-          ]
-        }, undefined, true, undefined, this)
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("li", {
-        children: /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(Link, {
-          to: "/projects",
-          onClick: handleClick,
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(FiFolder, {
-              size: 20
-            }, undefined, false, undefined, this),
-            "Projects"
-          ]
-        }, undefined, true, undefined, this)
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("li", {
-        children: /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(Link, {
-          to: "/about",
-          onClick: handleClick,
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(FiBox, {
-              size: 20
-            }, undefined, false, undefined, this),
-            " About"
-          ]
-        }, undefined, true, undefined, this)
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("li", {
-        children: /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(Link, {
-          to: "/contact",
-          onClick: handleClick,
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(FiStar, {
-              size: 20
-            }, undefined, false, undefined, this),
-            " Contact"
-          ]
-        }, undefined, true, undefined, this)
-      }, undefined, false, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
-}
-
-// src/components/layout/header/HiddenMenu.tsx
-var jsx_dev_runtime7 = __toESM(require_jsx_dev_runtime(), 1);
-function HiddenMenu() {
-  const [toggle, setToggle] = import_react5.useState(true);
-  function handleClick() {
-    setToggle((prev) => !prev);
-  }
-  return /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
-    children: [
-      /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(Burger, {
-        onClick: handleClick
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
-        className: toggle ? "hidden" : "",
-        id: "overlay",
-        children: /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
-          id: "menu",
-          className: toggle ? "hidden" : "",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
-              className: "flex-between hidden-menu-top",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(FaGithub, {
-                  size: 24
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("button", {
-                  onClick: handleClick,
-                  children: "X"
-                }, undefined, false, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("hr", {}, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(NavLinks, {
-              ul_classes: ["hidden-menu-links"],
-              handleClick
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this)
-      }, undefined, false, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
-}
-
-// src/components/layout/Header.tsx
-var jsx_dev_runtime8 = __toESM(require_jsx_dev_runtime(), 1);
-function Header({
-  github_user_url,
-  github_username,
-  github_img_profile_url
-}) {
-  return /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("header", {
-    children: /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("nav", {
-      children: [
-        /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("div", {
-          className: "nav-top flex-between",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("div", {
-              className: "flex-center gap-md",
-              children: [
-                /* @__PURE__ */ jsx_dev_runtime8.jsxDEV(HiddenMenu, {}, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("a", {
-                  className: "username flex-center gap-sm",
-                  href: github_user_url,
-                  children: [
-                    /* @__PURE__ */ jsx_dev_runtime8.jsxDEV(FaGithub, {
-                      size: 30
-                    }, undefined, false, undefined, this),
-                    github_username
-                  ]
-                }, undefined, true, undefined, this)
-              ]
-            }, undefined, true, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("div", {
-              children: /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("figure", {
-                className: "avatar-small",
-                children: /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("img", {
-                  src: github_img_profile_url,
-                  alt: ""
-                }, undefined, false, undefined, this)
-              }, undefined, false, undefined, this)
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime8.jsxDEV(NavLinks, {
-          ul_classes: ["nav-bottom", "flex-left", "gap-sm"]
+      /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("a", {
+        href: repo.html_url,
+        className: "card-title",
+        children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("h3", {
+          children: repo.name
         }, undefined, false, undefined, this)
-      ]
-    }, undefined, true, undefined, this)
-  }, undefined, false, undefined, this);
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("p", {
+        children: repo.description
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
 }
-
-// src/components/layout/Loading.tsx
-var jsx_dev_runtime9 = __toESM(require_jsx_dev_runtime(), 1);
-function Loading({ loading_message, fadeOut }) {
-  return /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("div", {
+// src/components/ui/GitHubProfileBadge.tsx
+var jsx_dev_runtime6 = __toESM(require_jsx_dev_runtime(), 1);
+function GitHubProfileBadge({
+  url,
+  username
+}) {
+  return /* @__PURE__ */ jsx_dev_runtime6.jsxDEV("a", {
+    className: "github-profile-badge flex-center gap-sm",
+    href: url,
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime6.jsxDEV(FaGithub, {
+        size: 30
+      }, undefined, false, undefined, this),
+      username
+    ]
+  }, undefined, true, undefined, this);
+}
+// src/components/ui/Loading.tsx
+var jsx_dev_runtime7 = __toESM(require_jsx_dev_runtime(), 1);
+function Loading({
+  loading_message,
+  fadeOut
+}) {
+  return /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("div", {
     className: `loading-overlay ${fadeOut ? "loading-fade-out" : ""}`,
     children: [
-      /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("h1", {
+      /* @__PURE__ */ jsx_dev_runtime7.jsxDEV(SpinningCircles2, {
+        fill: "currentColor",
+        speed: 1
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("h1", {
         children: loading_message
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("span", {
+      /* @__PURE__ */ jsx_dev_runtime7.jsxDEV("span", {
         className: "muted",
         children: "Please remain seated..."
       }, undefined, false, undefined, this)
     ]
   }, undefined, true, undefined, this);
 }
+// src/lib/router/hooks.ts
+var import_react16 = __toESM(require_react(), 1);
 
-// src/context/GitHubContext.tsx
-var import_react6 = __toESM(require_react(), 1);
-var jsx_dev_runtime10 = __toESM(require_jsx_dev_runtime(), 1);
-var GitHubContext = import_react6.createContext(null);
-function GitHubProvider({
-  github,
-  repos,
-  readme,
-  children
-}) {
-  return /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(GitHubContext.Provider, {
-    value: { github, repos, readme },
+// src/lib/router/context.ts
+var import_react15 = __toESM(require_react(), 1);
+var NavigationContext = import_react15.createContext({
+  pathname: window.location.pathname,
+  setPathname: (_) => {}
+});
+var RouteContext = import_react15.createContext({});
+// src/lib/router/Link.tsx
+var import_react17 = __toESM(require_react(), 1);
+var jsx_dev_runtime8 = __toESM(require_jsx_dev_runtime(), 1);
+function Link({ classes, to, children, onClick }) {
+  const aClasses = classes?.join(" ") ?? "";
+  const { setPathname: navigate } = import_react17.useContext(NavigationContext);
+  function handleClick(e) {
+    e.preventDefault();
+    navigate(to);
+    onClick?.();
+  }
+  return /* @__PURE__ */ jsx_dev_runtime8.jsxDEV("a", {
+    className: aClasses,
+    href: to,
+    onClick: handleClick,
     children
   }, undefined, false, undefined, this);
 }
-function useGitHub() {
-  const context = import_react6.useContext(GitHubContext);
-  if (!context)
-    throw new Error("useGitHub must be used within GitHubProvider");
-  return context;
-}
-
-// src/hooks/useGitHubData.ts
-var import_react7 = __toESM(require_react(), 1);
-function useGitHubData() {
-  const [profile, setProfile] = import_react7.useState(null);
-  const [repos, setRepos] = import_react7.useState([]);
-  const [readme, setReadme] = import_react7.useState(null);
-  const [fadeOut, setFadeOut] = import_react7.useState(false);
-  const [showLoader, setShowLoader] = import_react7.useState(true);
-  const [error, setError] = import_react7.useState("");
-  const [loadingMessage, setLoadingMessage] = import_react7.useState("Loading profile...");
-  import_react7.useEffect(() => {
-    async function load() {
-      try {
-        const [userRes, reposRes, readmeRes] = await Promise.all([
-          fetch(GITHUB_URL),
-          fetch(GITHUB_REPOS),
-          fetch(GITHUB_README)
-        ]);
-        if (!userRes.ok || !reposRes.ok || !readmeRes.ok) {
-          setError("Error fetching GitHub data");
-          setShowLoader(false);
-          return;
-        }
-        const userData = await userRes.json();
-        const reposData = await reposRes.json();
-        const readmeData = await readmeRes.json();
-        setProfile(userData);
-        setRepos(reposData);
-        setReadme(readmeData);
-        setLoadingMessage("Almost ready...");
-      } catch {
-        setError("Error fetching GitHub User Profile");
-        setShowLoader(false);
-      } finally {
-        setFadeOut(true);
-        setTimeout(() => setShowLoader(false), 800);
-      }
-    }
-    load();
-  }, []);
-  return { profile, repos, readme, fadeOut, error, showLoader, loadingMessage };
-}
-
-// src/AppLayout.tsx
-var jsx_dev_runtime11 = __toESM(require_jsx_dev_runtime(), 1);
-function AppLayout({ children }) {
-  const { profile, repos, readme, fadeOut, error, showLoader, loadingMessage } = useGitHubData();
-  return /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("div", {
-    className: "app-root",
-    children: [
-      /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("div", {
-        className: `app-content ${showLoader ? "hidden" : ""}`,
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(Header, {
-            github_user_url: profile?.html_url || "",
-            github_username: profile?.login || "",
-            github_img_profile_url: profile?.avatar_url || ""
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("main", {
-            className: "main container",
-            children: [
-              /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(ErrorMessage, {
-                error_message: error
-              }, undefined, false, undefined, this),
-              /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(GitHubProvider, {
-                github: profile,
-                repos,
-                readme,
-                children: /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("div", {
-                  className: "page-grid",
-                  children: [
-                    /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(AsideProfile, {
-                      profile
-                    }, undefined, false, undefined, this),
-                    /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("div", {
-                      className: "main-content",
-                      children
-                    }, undefined, false, undefined, this)
-                  ]
-                }, undefined, true, undefined, this)
-              }, undefined, false, undefined, this)
-            ]
-          }, undefined, true, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(Footer, {
-            github_user_name: profile?.name || ""
-          }, undefined, false, undefined, this)
-        ]
-      }, undefined, true, undefined, this),
-      showLoader && /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(Loading, {
-        loading_message: loadingMessage,
-        fadeOut
-      }, undefined, false, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
-}
-
-// src/lib/router/hooks.ts
-var import_react8 = __toESM(require_react(), 1);
 // src/lib/router/Route.tsx
 function Route({ element }) {
   return element;
 }
 // src/lib/router/Router.tsx
-var import_react9 = __toESM(require_react(), 1);
-var jsx_dev_runtime12 = __toESM(require_jsx_dev_runtime(), 1);
+var import_react18 = __toESM(require_react(), 1);
+var jsx_dev_runtime9 = __toESM(require_jsx_dev_runtime(), 1);
 function Router({ children }) {
-  const [pathname, setPathname] = import_react9.useState(window.location.pathname);
+  const [pathname, setPathname] = import_react18.useState(window.location.pathname);
   const childrenArray = Array.isArray(children) ? children : [children];
   const routes = childrenArray.map((child) => ({
     path: child.props.path,
@@ -18835,10 +18501,10 @@ function Router({ children }) {
   }));
   const routeToRender = match(pathname, routes);
   if (routeToRender === null)
-    return /* @__PURE__ */ jsx_dev_runtime12.jsxDEV(jsx_dev_runtime12.Fragment, {
+    return /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(jsx_dev_runtime9.Fragment, {
       children: "404"
     }, undefined, false, undefined, this);
-  return /* @__PURE__ */ jsx_dev_runtime12.jsxDEV(NavigationContext.Provider, {
+  return /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(NavigationContext.Provider, {
     value: {
       pathname,
       setPathname: (to) => {
@@ -18846,7 +18512,7 @@ function Router({ children }) {
         setPathname(to);
       }
     },
-    children: /* @__PURE__ */ jsx_dev_runtime12.jsxDEV(RouteContext.Provider, {
+    children: /* @__PURE__ */ jsx_dev_runtime9.jsxDEV(RouteContext.Provider, {
       value: routeToRender.params,
       children: routeToRender.element
     }, undefined, false, undefined, this)
@@ -18883,382 +18549,833 @@ function matchesRoute(currentSegments, route) {
   }
   return true;
 }
-// src/hooks/usePortfolioData.ts
-var import_react10 = __toESM(require_react(), 1);
-function usePortfolioData(repoName) {
-  const [data, setData] = import_react10.useState(null);
-  const [loading, setLoading] = import_react10.useState(true);
-  const [error, setError] = import_react10.useState("");
-  import_react10.useEffect(() => {
-    async function load() {
-      try {
-        setLoading(true);
-        const res = await fetch(GITHUB_PORTFOLIO_FOLDER(repoName));
-        if (!res.ok)
-          throw new Error(`HTTP ${res.status}`);
-        const files = await res.json();
-        const jsonFile = files.find((f) => f.name === "portfolio.json");
-        if (!jsonFile?.download_url)
-          throw new Error("portfolio.json missing");
-        const jsonRes = await fetch(jsonFile.download_url);
-        const rawJson = await jsonRes.json();
-        const isProfile = repoName === CONFIG.github.username;
-        const jsonData = isProfile ? { about: rawJson } : { repo: rawJson };
-        const imgFiles = files.filter((f) => f.name.startsWith("portfolio-img-") && f.download_url);
-        const images = imgFiles.map((f) => f.download_url).filter((url) => url !== null);
-        setData({
-          json: jsonData,
-          images: images.length ? images : undefined,
-          isProfile
-        });
-      } catch {
-        setError("portfolio.json missing");
-      } finally {
-        setLoading(false);
-      }
-    }
-    if (repoName)
-      load();
-  }, [repoName]);
-  return { data, loading, error };
-}
-
-// src/components/about/AboutAccordion.tsx
-var import_react11 = __toESM(require_react(), 1);
-
-// src/components/about/AboutList.tsx
-var jsx_dev_runtime13 = __toESM(require_jsx_dev_runtime(), 1);
-function AboutList({
-  array,
-  ul_classes,
-  li_classes
+// src/components/ui/NavLink.tsx
+var jsx_dev_runtime10 = __toESM(require_jsx_dev_runtime(), 1);
+function NavLink({
+  text,
+  to,
+  children,
+  onClick
 }) {
-  const ulClasses = ul_classes?.join(" ") ?? "";
-  const liClasses = li_classes?.join(" ") ?? "";
-  return /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("ul", {
-    className: ulClasses,
-    children: array.map((item, i) => /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("li", {
-      className: liClasses,
-      children: item
-    }, i, false, undefined, this))
-  }, undefined, false, undefined, this);
-}
-
-// src/components/about/AboutAccordion.tsx
-var jsx_dev_runtime14 = __toESM(require_jsx_dev_runtime(), 1);
-function AboutAccordion({
-  aboutData
-}) {
-  const [openSections, setOpenSections] = import_react11.useState(new Set);
-  const sections = [
-    {
-      id: "background",
-      headline: aboutData.background.headline,
-      content: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("p", {
-        className: "story",
-        children: aboutData.background.story
-      }, undefined, false, undefined, this)
-    },
-    {
-      id: "key_projects",
-      headline: aboutData.key_projects.headline,
-      content: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("p", {
-        children: aboutData.key_projects.story
-      }, undefined, false, undefined, this)
-    },
-    {
-      id: "core_skills",
-      headline: aboutData.core_skills.headline,
-      content: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(jsx_dev_runtime14.Fragment, {
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
-            children: [
-              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("h3", {
-                children: "Front-end:"
-              }, undefined, false, undefined, this),
-              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(AboutList, {
-                array: aboutData.core_skills["front-end"]
-              }, undefined, false, undefined, this)
-            ]
-          }, undefined, true, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
-            children: [
-              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("h3", {
-                children: "Back-end:"
-              }, undefined, false, undefined, this),
-              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(AboutList, {
-                array: aboutData.core_skills["back-end"]
-              }, undefined, false, undefined, this)
-            ]
-          }, undefined, true, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
-            children: [
-              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("h3", {
-                children: "Tools:"
-              }, undefined, false, undefined, this),
-              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(AboutList, {
-                array: aboutData.core_skills.tools
-              }, undefined, false, undefined, this)
-            ]
-          }, undefined, true, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
-            children: [
-              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("h3", {
-                children: "Databases:"
-              }, undefined, false, undefined, this),
-              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(AboutList, {
-                array: aboutData.core_skills.databases
-              }, undefined, false, undefined, this)
-            ]
-          }, undefined, true, undefined, this)
-        ]
-      }, undefined, true, undefined, this)
-    },
-    {
-      id: "development_process",
-      headline: aboutData.development_process.headline,
-      content: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("p", {
-        children: aboutData.development_process.story
-      }, undefined, false, undefined, this)
-    },
-    {
-      id: "influences",
-      headline: aboutData.influences.headline,
-      content: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("p", {
-        children: aboutData.influences.story
-      }, undefined, false, undefined, this)
-    },
-    {
-      id: "career_goals",
-      headline: aboutData.career_goals.headline,
-      content: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("p", {
-        children: aboutData.career_goals.story
-      }, undefined, false, undefined, this)
-    }
-  ];
-  function toggleSection(id) {
-    const newSet = new Set(openSections);
-    if (newSet.has(id)) {
-      newSet.delete(id);
-    } else {
-      newSet.add(id);
-    }
-    setOpenSections(newSet);
-  }
-  return /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
-    className: "about-accordion",
-    children: sections.map((section) => /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("section", {
-      className: "accordion-item",
-      children: [
-        /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("button", {
-          className: "accordion-header",
-          onClick: () => toggleSection(section.id),
-          "aria-expanded": openSections.has(section.id),
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("h3", {
-              children: section.headline
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("span", {
-              className: "icon",
-              "aria-hidden": "true",
-              children: "▼"
-            }, undefined, false, undefined, this)
-          ]
-        }, undefined, true, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
-          className: "accordion-content",
-          "aria-hidden": !openSections.has(section.id),
-          children: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
-            className: "content-wrapper flex flex-column gap-md",
-            children: section.content
-          }, undefined, false, undefined, this)
-        }, undefined, false, undefined, this)
-      ]
-    }, section.id, true, undefined, this))
-  }, undefined, false, undefined, this);
-}
-
-// src/components/overview/ContactSection.tsx
-var jsx_dev_runtime15 = __toESM(require_jsx_dev_runtime(), 1);
-function ContactSection() {
-  return /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("div", {
-    className: "contact-grid grid",
+  return /* @__PURE__ */ jsx_dev_runtime10.jsxDEV(Link, {
+    classes: ["flex-left", "gap-md", "navlink"],
+    to,
+    onClick,
     children: [
-      /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("div", {
-        className: "flex flex-column gap-sm",
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("h2", {
-            children: "Get in Touch"
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("div", {
-            className: "muted",
-            children: "I'll respond within 24-48 hours."
-          }, undefined, false, undefined, this)
-        ]
-      }, undefined, true, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("div", {
-        className: "flex flex-column gap-sm",
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("p", {
-            children: "Email me directly:"
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("a", {
-            href: `mailto:${profile_email}`,
-            className: "flex gap-sm",
-            children: [
-              /* @__PURE__ */ jsx_dev_runtime15.jsxDEV(MdEmail, {
-                size: 20
-              }, undefined, false, undefined, this),
-              " ",
-              profile_email
-            ]
-          }, undefined, true, undefined, this)
-        ]
-      }, undefined, true, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("div", {
-        className: "flex flex-column gap-sm",
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("p", {
-            children: "Or contact me through:"
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("a", {
-            href: profile_linkedin_url,
-            className: "flex gap-sm",
-            children: [
-              /* @__PURE__ */ jsx_dev_runtime15.jsxDEV(ImLinkedin, {
-                size: 20
-              }, undefined, false, undefined, this),
-              " LinkedIn"
-            ]
-          }, undefined, true, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("a", {
-            href: profile_github_url,
-            className: "flex gap-sm",
-            children: [
-              /* @__PURE__ */ jsx_dev_runtime15.jsxDEV(FaGithub, {
-                size: 20
-              }, undefined, false, undefined, this),
-              " GitHub"
-            ]
-          }, undefined, true, undefined, this)
-        ]
-      }, undefined, true, undefined, this)
+      children,
+      text
     ]
   }, undefined, true, undefined, this);
 }
-
-// src/components/about/AboutImg.tsx
-var jsx_dev_runtime16 = __toESM(require_jsx_dev_runtime(), 1);
-function AboutImg({
-  data,
+// src/components/ui/RepoImg.tsx
+var jsx_dev_runtime11 = __toESM(require_jsx_dev_runtime(), 1);
+function RepoImg({
+  images,
   img_number,
   classes
 }) {
   const figureClassNames = classes?.join(" ") ?? "";
-  return /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("figure", {
+  return /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("figure", {
     className: figureClassNames,
-    children: data.images && data.images.length > 0 ? /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("img", {
-      src: data.images[`${img_number}`],
+    children: images && images.length > 0 ? /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("img", {
+      src: images[`${img_number}`],
       alt: `Profile photo ${img_number}`,
       loading: "lazy"
-    }, undefined, false, undefined, this) : /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("div", {
+    }, undefined, false, undefined, this) : /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("div", {
       className: "placeholder-img",
-      children: /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("span", {
+      children: /* @__PURE__ */ jsx_dev_runtime11.jsxDEV("span", {
         children: "No image available"
       }, undefined, false, undefined, this)
     }, undefined, false, undefined, this)
   }, undefined, false, undefined, this);
 }
-
-// src/pages/About.tsx
-var jsx_dev_runtime17 = __toESM(require_jsx_dev_runtime(), 1);
-function About() {
-  const { data, loading, error } = usePortfolioData(GITHUB_USERNAME);
-  if (error)
-    return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(ErrorMessage, {
-      error_message: error
-    }, undefined, false, undefined, this);
-  if (loading || !data?.json) {
-    return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(Loading, {
-      loading_message: "Loading data..."
-    }, undefined, false, undefined, this);
+// src/config/profile.ts
+var CONFIG = {
+  github: {
+    username: "acostajs",
+    repos: {
+      number_of_repos_to_display: 20,
+      sort_by: "updated",
+      direction: "desc"
+    }
+  },
+  profile: {
+    email: "acosta.juan@icloud.com",
+    linkedin: "juan-acosta-pinilla"
+  },
+  github_folder: "portfolio",
+  overview_features: {
+    repos_count: 2
   }
-  if ("about" in data.json) {
-    const aboutData = data.json.about;
-    return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(jsx_dev_runtime17.Fragment, {
+};
+
+// src/lib/api/constants.ts
+var PROFILE = {
+  github: {
+    username: CONFIG.github.username,
+    url: `https://github.com/${CONFIG.github.username}/`
+  },
+  email: CONFIG.profile.email,
+  linkedin: {
+    username: CONFIG.profile.linkedin,
+    url: `https://www.linkedin.com/in/${CONFIG.profile.linkedin}/`
+  }
+};
+var OVERVIEW_FEATURES = {
+  featuredReposCount: CONFIG.overview_features.repos_count
+};
+// src/lib/api/github.ts
+var GITHUB_USERNAME = CONFIG.github.username;
+var GITHUB_URL = `https://api.github.com/users/${CONFIG.github.username}`;
+var GITHUB_REPOS = `https://api.github.com/users/${CONFIG.github.username}/repos?sort=${CONFIG.github.repos.sort_by}&direction=${CONFIG.github.repos.direction}&per_page=${CONFIG.github.repos.number_of_repos_to_display}`;
+function GITHUB_PORTFOLIO_FOLDER(repoName) {
+  return `https://api.github.com/repos/${CONFIG.github.username}/${repoName}/contents/${CONFIG.github_folder}?ref=main`;
+}
+var GITHUB_README = `https://api.github.com/repos/${CONFIG.github.username}/${CONFIG.github.username}/readme`;
+// src/components/layout/AsideProfile.tsx
+var jsx_dev_runtime12 = __toESM(require_jsx_dev_runtime(), 1);
+function AsideProfile({ profile: profile2 }) {
+  if (!profile2)
+    return /* @__PURE__ */ jsx_dev_runtime12.jsxDEV(ErrorMessage, {
+      error_message: "profile not found..."
+    }, undefined, false, undefined, this);
+  return /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("aside", {
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("div", {
+        className: "profile-img flex-center",
+        children: /* @__PURE__ */ jsx_dev_runtime12.jsxDEV(Avatar, {
+          size: 250,
+          className: "avatar",
+          url: profile2.avatar_url,
+          alt: "Profile Avatar"
+        }, undefined, false, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("div", {
+        className: "profile-text",
+        children: /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("ul", {
+          className: "profile-list flex-column flex gap-md",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("li", {
+              children: /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("h1", {
+                children: profile2.name
+              }, undefined, false, undefined, this)
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("li", {
+              className: "profile-bio",
+              children: profile2.bio
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("li", {
+              className: "flex-left gap-md",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime12.jsxDEV(FaLocationDot, {
+                  size: 20
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("a", {
+                  href: `https://www.google.com/maps?q=${profile2.location}`,
+                  children: profile2.location
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("li", {
+              className: "flex-left gap-md",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime12.jsxDEV(MdEmail, {
+                  size: 20
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("a", {
+                  href: "mailto:" + PROFILE.email,
+                  children: PROFILE.email
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("li", {
+              className: "flex-left gap-md",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime12.jsxDEV(ImLinkedin, {
+                  size: 20
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("a", {
+                  href: PROFILE.linkedin.url,
+                  children: PROFILE.linkedin.username
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("li", {
+              className: "flex-left gap-md",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime12.jsxDEV(FaGithub, {
+                  size: 20
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("a", {
+                  href: PROFILE.github.username,
+                  children: profile2.login
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("li", {
+              className: "flex-left gap-md",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime12.jsxDEV("span", {
+                  className: "profile-item",
+                  children: "Availability:"
+                }, undefined, false, undefined, this),
+                profile2.hireable ? "Open to work" : "Not available"
+              ]
+            }, undefined, true, undefined, this)
+          ]
+        }, undefined, true, undefined, this)
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+// src/components/layout/ErrorMessage.tsx
+var jsx_dev_runtime13 = __toESM(require_jsx_dev_runtime(), 1);
+function ErrorMessage({
+  error_message
+}) {
+  if (!error_message)
+    return null;
+  return /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("section", {
+    children: /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("div", {
+      className: "container",
+      children: /* @__PURE__ */ jsx_dev_runtime13.jsxDEV("h1", {
+        className: "error-message",
+        children: error_message
+      }, undefined, false, undefined, this)
+    }, undefined, false, undefined, this)
+  }, undefined, false, undefined, this);
+}
+// node_modules/react-icons/si/index.mjs
+function SiBun(props) {
+  return GenIcon({ tag: "svg", attr: { role: "img", viewBox: "0 0 24 24" }, child: [{ tag: "path", attr: { d: "M12 22.596c6.628 0 12-4.338 12-9.688 0-3.318-2.057-6.248-5.219-7.986-1.286-.715-2.297-1.357-3.139-1.89C14.058 2.025 13.08 1.404 12 1.404c-1.097 0-2.334.785-3.966 1.821a49.92 49.92 0 0 1-2.816 1.697C2.057 6.66 0 9.59 0 12.908c0 5.35 5.372 9.687 12 9.687v.001ZM10.599 4.715c.334-.759.503-1.58.498-2.409 0-.145.202-.187.23-.029.658 2.783-.902 4.162-2.057 4.624-.124.048-.199-.121-.103-.209a5.763 5.763 0 0 0 1.432-1.977Zm2.058-.102a5.82 5.82 0 0 0-.782-2.306v-.016c-.069-.123.086-.263.185-.172 1.962 2.111 1.307 4.067.556 5.051-.082.103-.23-.003-.189-.126a5.85 5.85 0 0 0 .23-2.431Zm1.776-.561a5.727 5.727 0 0 0-1.612-1.806v-.014c-.112-.085-.024-.274.114-.218 2.595 1.087 2.774 3.18 2.459 4.407a.116.116 0 0 1-.049.071.11.11 0 0 1-.153-.026.122.122 0 0 1-.022-.083 5.891 5.891 0 0 0-.737-2.331Zm-5.087.561c-.617.546-1.282.76-2.063 1-.117 0-.195-.078-.156-.181 1.752-.909 2.376-1.649 2.999-2.778 0 0 .155-.118.188.085 0 .304-.349 1.329-.968 1.874Zm4.945 11.237a2.957 2.957 0 0 1-.937 1.553c-.346.346-.8.565-1.286.62a2.178 2.178 0 0 1-1.327-.62 2.955 2.955 0 0 1-.925-1.553.244.244 0 0 1 .064-.198.234.234 0 0 1 .193-.069h3.965a.226.226 0 0 1 .19.07c.05.053.073.125.063.197Zm-5.458-2.176a1.862 1.862 0 0 1-2.384-.245 1.98 1.98 0 0 1-.233-2.447c.207-.319.503-.566.848-.713a1.84 1.84 0 0 1 1.092-.11c.366.075.703.261.967.531a1.98 1.98 0 0 1 .408 2.114 1.931 1.931 0 0 1-.698.869v.001Zm8.495.005a1.86 1.86 0 0 1-2.381-.253 1.964 1.964 0 0 1-.547-1.366c0-.384.11-.76.32-1.079.207-.319.503-.567.849-.713a1.844 1.844 0 0 1 1.093-.108c.367.076.704.262.968.534a1.98 1.98 0 0 1 .4 2.117 1.932 1.932 0 0 1-.702.868Z" }, child: [] }] })(props);
+}
+
+// src/components/layout/Footer.tsx
+var jsx_dev_runtime14 = __toESM(require_jsx_dev_runtime(), 1);
+function Footer({ github_user_name }) {
+  const year = String(new Date().getFullYear());
+  return /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("footer", {
+    children: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
+      className: "container",
+      children: /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("div", {
+        className: "footer-grid grid gap-sm",
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("span", {
+            className: "muted flex-center gap-sm",
+            children: [
+              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(FaGithub, {
+                size: 22
+              }, undefined, false, undefined, this),
+              " ",
+              year,
+              " ",
+              github_user_name,
+              " - Portfolio"
+            ]
+          }, undefined, true, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime14.jsxDEV("span", {
+            className: "muted flex-center gap-sm",
+            children: [
+              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(FaReact, {
+                size: 20
+              }, undefined, false, undefined, this),
+              " - Made with React & Bun - ",
+              /* @__PURE__ */ jsx_dev_runtime14.jsxDEV(SiBun, {
+                size: 20
+              }, undefined, false, undefined, this)
+            ]
+          }, undefined, true, undefined, this)
+        ]
+      }, undefined, true, undefined, this)
+    }, undefined, false, undefined, this)
+  }, undefined, false, undefined, this);
+}
+// node_modules/react-icons/fi/index.mjs
+function FiBookOpen(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" }, child: [] }, { tag: "path", attr: { d: "M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" }, child: [] }] })(props);
+}
+function FiBox(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" }, child: [] }, { tag: "polyline", attr: { points: "3.27 6.96 12 12.01 20.73 6.96" }, child: [] }, { tag: "line", attr: { x1: "12", y1: "22.08", x2: "12", y2: "12" }, child: [] }] })(props);
+}
+function FiFolder(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "path", attr: { d: "M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" }, child: [] }] })(props);
+}
+function FiStar(props) {
+  return GenIcon({ tag: "svg", attr: { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }, child: [{ tag: "polygon", attr: { points: "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" }, child: [] }] })(props);
+}
+
+// src/components/layout/header/NavLinks.tsx
+var jsx_dev_runtime15 = __toESM(require_jsx_dev_runtime(), 1);
+function NavLinks({
+  ul_classes,
+  handleClick
+}) {
+  const ulClassName = ul_classes?.join(" ") ?? "";
+  return /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("ul", {
+    className: ulClassName,
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("li", {
+        children: /* @__PURE__ */ jsx_dev_runtime15.jsxDEV(NavLink, {
+          text: "Overview",
+          to: "/",
+          onClick: handleClick,
+          children: /* @__PURE__ */ jsx_dev_runtime15.jsxDEV(FiBookOpen, {
+            size: 20
+          }, undefined, false, undefined, this)
+        }, undefined, false, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("li", {
+        children: /* @__PURE__ */ jsx_dev_runtime15.jsxDEV(NavLink, {
+          text: "Projects",
+          to: "/projects",
+          onClick: handleClick,
+          children: /* @__PURE__ */ jsx_dev_runtime15.jsxDEV(FiFolder, {
+            size: 20
+          }, undefined, false, undefined, this)
+        }, undefined, false, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("li", {
+        children: /* @__PURE__ */ jsx_dev_runtime15.jsxDEV(NavLink, {
+          text: "About",
+          to: "/about",
+          onClick: handleClick,
+          children: /* @__PURE__ */ jsx_dev_runtime15.jsxDEV(FiBox, {
+            size: 20
+          }, undefined, false, undefined, this)
+        }, undefined, false, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime15.jsxDEV("li", {
+        children: /* @__PURE__ */ jsx_dev_runtime15.jsxDEV(NavLink, {
+          text: "Contact",
+          to: "/contact",
+          onClick: handleClick,
+          children: /* @__PURE__ */ jsx_dev_runtime15.jsxDEV(FiStar, {
+            size: 20
+          }, undefined, false, undefined, this)
+        }, undefined, false, undefined, this)
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+
+// src/components/layout/header/HiddenMenu.tsx
+var jsx_dev_runtime16 = __toESM(require_jsx_dev_runtime(), 1);
+function HiddenMenu() {
+  return /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("div", {
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime16.jsxDEV(Burger, {}, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("div", {
+        id: "menu",
+        popover: "auto",
+        children: /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("div", {
+          className: "overlay",
+          children: /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("div", {
+            className: "menu-items",
+            children: [
+              /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("div", {
+                className: "flex-between menu-top",
+                children: [
+                  /* @__PURE__ */ jsx_dev_runtime16.jsxDEV(FaGithub, {
+                    size: 24
+                  }, undefined, false, undefined, this),
+                  /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("button", {
+                    popoverTarget: "menu",
+                    children: "X"
+                  }, undefined, false, undefined, this)
+                ]
+              }, undefined, true, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("hr", {}, undefined, false, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime16.jsxDEV(NavLinks, {
+                ul_classes: ["menu-links"]
+              }, undefined, false, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("hr", {}, undefined, false, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("p", {
+                children: [
+                  "This ",
+                  /* @__PURE__ */ jsx_dev_runtime16.jsxDEV("strong", {
+                    children: "portfolio"
+                  }, undefined, false, undefined, this),
+                  " ",
+                  "dynamically pulls all the information directly from my GitHub via the GitHub API, automatically showcasing live repositories, commit activity, and contributions without manual updates. Built with React, TypeScript, and Bun for a static GitHub Pages deployment."
+                ]
+              }, undefined, true, undefined, this)
+            ]
+          }, undefined, true, undefined, this)
+        }, undefined, false, undefined, this)
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+// src/components/layout/Header.tsx
+var jsx_dev_runtime17 = __toESM(require_jsx_dev_runtime(), 1);
+function Header({
+  github_user_url,
+  github_username,
+  github_img_profile_url
+}) {
+  return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("header", {
+    className: "navbar",
+    children: /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("nav", {
+      className: "navbar-container",
       children: [
         /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
-          className: "about-hero flex card",
+          className: "nav-top flex-between",
           children: [
             /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
-              className: "left",
+              className: "flex-center gap-xl",
               children: [
-                /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("h1", {
-                  className: "headline",
-                  children: aboutData.bio.headline
-                }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("p", {
-                  className: "story",
-                  children: aboutData.bio.story
+                /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(HiddenMenu, {}, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(GitHubProfileBadge, {
+                  url: github_user_url,
+                  username: github_username
                 }, undefined, false, undefined, this)
               ]
             }, undefined, true, undefined, this),
             /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
-              className: "right flex-center",
-              children: /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(AboutImg, {
-                data,
-                img_number: 0,
-                classes: ["about-hero-img"]
+              children: /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(Avatar, {
+                size: 40,
+                className: "avatar",
+                url: github_img_profile_url,
+                alt: "avatar image profile"
               }, undefined, false, undefined, this)
             }, undefined, false, undefined, this)
           ]
         }, undefined, true, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
-          className: "about-personality flex",
-          children: [
-            /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
-              className: "left flex-center",
-              children: /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(AboutImg, {
-                data,
-                img_number: 1,
-                classes: ["about-personality-img"]
-              }, undefined, false, undefined, this)
-            }, undefined, false, undefined, this),
-            /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
-              className: "right",
+        /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(NavLinks, {
+          ul_classes: ["nav-bottom", "flex-left", "gap-sm"]
+        }, undefined, false, undefined, this)
+      ]
+    }, undefined, true, undefined, this)
+  }, undefined, false, undefined, this);
+}
+// src/context/GitHubContext.tsx
+var import_react19 = __toESM(require_react(), 1);
+var jsx_dev_runtime18 = __toESM(require_jsx_dev_runtime(), 1);
+var GitHubContext = import_react19.createContext(null);
+function GitHubProvider({
+  github: github2,
+  repos,
+  readme,
+  children
+}) {
+  return /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(GitHubContext.Provider, {
+    value: { github: github2, repos, readme },
+    children
+  }, undefined, false, undefined, this);
+}
+function useGitHub() {
+  const context = import_react19.useContext(GitHubContext);
+  if (!context)
+    throw new Error("useGitHub must be used within GitHubProvider");
+  return context;
+}
+// src/hooks/useGitHubData.ts
+var import_react20 = __toESM(require_react(), 1);
+function useGitHubData() {
+  const [profile2, setProfile] = import_react20.useState(null);
+  const [repos, setRepos] = import_react20.useState([]);
+  const [readme, setReadme] = import_react20.useState(null);
+  const [fadeOut, setFadeOut] = import_react20.useState(false);
+  const [error, setError] = import_react20.useState("");
+  const [loadingMessage, setLoadingMessage] = import_react20.useState("Loading profile...");
+  import_react20.useEffect(() => {
+    async function load() {
+      try {
+        const [userRes, reposRes, readmeRes] = await Promise.all([
+          fetch(GITHUB_URL),
+          fetch(GITHUB_REPOS),
+          fetch(GITHUB_README)
+        ]);
+        if (!userRes.ok) {
+          setError("Failed to load profile");
+          return;
+        }
+        if (!reposRes.ok) {
+          setError("Failed to load repositories");
+          return;
+        }
+        if (!readmeRes.ok) {
+          setError("Failed to load README");
+          return;
+        }
+        const userData = await userRes.json();
+        const reposData = await reposRes.json();
+        const readmeData = await readmeRes.json();
+        setProfile(userData);
+        setRepos(reposData);
+        setReadme(readmeData);
+      } catch {
+        setError("Error fetching GitHub User Profile");
+      } finally {
+        setFadeOut(true);
+        setTimeout(() => setLoadingMessage("Almost ready..."), 1000);
+      }
+    }
+    load();
+  }, []);
+  return { profile: profile2, repos, readme, fadeOut, error, loadingMessage };
+}
+// src/hooks/useRepositoryData.ts
+var import_react21 = __toESM(require_react(), 1);
+function useRepositoryData(repoName) {
+  const [json, setJson] = import_react21.useState(null);
+  const [images, setImages] = import_react21.useState([]);
+  const [fadeOut, setFadeOut] = import_react21.useState(false);
+  const [loadingMessage, setLoadingMessage] = import_react21.useState("Loading...");
+  const [error, setError] = import_react21.useState("");
+  import_react21.useEffect(() => {
+    async function load() {
+      try {
+        setLoadingMessage("Loading files...");
+        const res = await fetch(GITHUB_PORTFOLIO_FOLDER(repoName));
+        if (!res.ok)
+          setError("It was not possible to fetch information");
+        const files = await res.json();
+        if (!files)
+          setError("No Files where found");
+        const jsonFile = files.find((f) => f.name === "portfolio.json");
+        if (!jsonFile)
+          setError("portfolio.json not found");
+        if (!jsonFile?.download_url)
+          throw new Error("No portfolio.json");
+        setLoadingMessage("Loading project details...");
+        const jsonRes = await fetch(jsonFile.download_url);
+        const jsonData = await jsonRes.json();
+        const typedJson = repoName === PROFILE.github.username ? jsonData : jsonData;
+        setJson(typedJson);
+        const images2 = files.filter((f) => f.name.startsWith("portfolio-img-")).map((f) => f.download_url);
+        if (!images2)
+          setError("No images where found");
+        setImages(images2);
+      } catch {
+        setError("Failed to load project");
+      } finally {
+        setFadeOut(true);
+        setTimeout(() => setLoadingMessage("Ready!"), 1000);
+      }
+    }
+    if (repoName)
+      load();
+  }, [repoName]);
+  return {
+    json,
+    images,
+    fadeOut,
+    loadingMessage,
+    error
+  };
+}
+// src/AppLayout.tsx
+var jsx_dev_runtime19 = __toESM(require_jsx_dev_runtime(), 1);
+function AppLayout({ children }) {
+  const { profile: profile2, repos, readme, fadeOut, error, loadingMessage } = useGitHubData();
+  return /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(jsx_dev_runtime19.Fragment, {
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(Loading, {
+        loading_message: loadingMessage,
+        fadeOut
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(Header, {
+        github_user_url: profile2?.html_url || "",
+        github_username: profile2?.login || "",
+        github_img_profile_url: profile2?.avatar_url || ""
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("main", {
+        className: "container",
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(ErrorMessage, {
+            error_message: error
+          }, undefined, false, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(GitHubProvider, {
+            github: profile2,
+            repos,
+            readme,
+            children: /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("div", {
+              className: "page-grid",
               children: [
-                /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("h2", {
-                  className: "headline",
-                  children: aboutData.personality.headline
+                /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(AsideProfile, {
+                  profile: profile2
                 }, undefined, false, undefined, this),
-                /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("p", {
-                  className: "story",
-                  children: aboutData.personality.story
+                /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("div", {
+                  className: "main-content",
+                  children
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this)
+          }, undefined, false, undefined, this)
+        ]
+      }, undefined, true, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(Footer, {
+        github_user_name: profile2?.name || ""
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+
+// src/components/about/CoreSkills.tsx
+var jsx_dev_runtime20 = __toESM(require_jsx_dev_runtime(), 1);
+function CoreSkills({ about }) {
+  return /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("div", {
+    className: "core-skills",
+    children: /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("details", {
+      children: [
+        /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("summary", {
+          children: about.core_skills.headline
+        }, undefined, false, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("div", {
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("div", {
+              className: "skill",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("h4", {
+                  children: "Front-End"
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime20.jsxDEV(AccordionList, {
+                  array: about.core_skills["front-end"]
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("div", {
+              className: "skill",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("h4", {
+                  children: "Back-End"
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime20.jsxDEV(AccordionList, {
+                  array: about.core_skills["back-end"]
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("div", {
+              className: "skill",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("h4", {
+                  children: "Tools"
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime20.jsxDEV(AccordionList, {
+                  array: about.core_skills["tools"]
+                }, undefined, false, undefined, this)
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("div", {
+              className: "skill",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("h4", {
+                  children: "Data Bases"
+                }, undefined, false, undefined, this),
+                /* @__PURE__ */ jsx_dev_runtime20.jsxDEV(AccordionList, {
+                  array: about.core_skills["databases"]
                 }, undefined, false, undefined, this)
               ]
             }, undefined, true, undefined, this)
           ]
-        }, undefined, true, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(AboutAccordion, {
-          aboutData
-        }, undefined, false, undefined, this),
-        /* @__PURE__ */ jsx_dev_runtime17.jsxDEV(ContactSection, {}, undefined, false, undefined, this)
+        }, undefined, true, undefined, this)
       ]
-    }, undefined, true, undefined, this);
-  }
-  return /* @__PURE__ */ jsx_dev_runtime17.jsxDEV("div", {
-    children: "Invalid portfolio data"
+    }, undefined, true, undefined, this)
   }, undefined, false, undefined, this);
 }
 
+// src/components/about/Accordion.tsx
+var jsx_dev_runtime21 = __toESM(require_jsx_dev_runtime(), 1);
+function Accordion({ about }) {
+  return /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("section", {
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(AccordionItem, {
+        headline: about.background.headline,
+        story: about.background.story
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(AccordionItem, {
+        headline: about.key_projects.headline,
+        story: about.key_projects.story
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(CoreSkills, {
+        about
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(AccordionItem, {
+        headline: about.background.headline,
+        story: about.background.story
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(AccordionItem, {
+        headline: about.development_process.headline,
+        story: about.development_process.story
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(AccordionItem, {
+        headline: about.influences.headline,
+        story: about.influences.story
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(AccordionItem, {
+        headline: about.career_goals.headline,
+        story: about.career_goals.story
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+// src/components/about/Bio.tsx
+var jsx_dev_runtime22 = __toESM(require_jsx_dev_runtime(), 1);
+function Bio({ headline, story, images }) {
+  return /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
+    className: "about-bio flex-center",
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+        className: "section-title",
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h1", {
+            children: headline
+          }, undefined, false, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("p", {
+            children: story
+          }, undefined, false, undefined, this)
+        ]
+      }, undefined, true, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime22.jsxDEV(RepoImg, {
+        images,
+        img_number: 0,
+        classes: ["about-bio-img"]
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+// src/components/about/Personality.tsx
+var jsx_dev_runtime23 = __toESM(require_jsx_dev_runtime(), 1);
+function Personality({
+  headline,
+  story,
+  images
+}) {
+  return /* @__PURE__ */ jsx_dev_runtime23.jsxDEV("section", {
+    className: "about-personality flex",
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime23.jsxDEV(RepoImg, {
+        images,
+        img_number: 1,
+        classes: ["about-personality-img"]
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime23.jsxDEV("div", {
+        className: "section-title",
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime23.jsxDEV("h2", {
+            children: headline
+          }, undefined, false, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime23.jsxDEV("p", {
+            children: story
+          }, undefined, false, undefined, this)
+        ]
+      }, undefined, true, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+// src/pages/About.tsx
+var jsx_dev_runtime24 = __toESM(require_jsx_dev_runtime(), 1);
+function About() {
+  const { json, images, fadeOut, loadingMessage, error } = useRepositoryData(GITHUB_USERNAME);
+  if (error)
+    return /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(ErrorMessage, {
+      error_message: error
+    }, undefined, false, undefined, this);
+  if (!json || !("bio" in json)) {
+    return /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Loading, {
+      loading_message: loadingMessage,
+      fadeOut
+    }, undefined, false, undefined, this);
+  }
+  const about = json;
+  return /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(jsx_dev_runtime24.Fragment, {
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Bio, {
+        headline: about.bio.headline,
+        story: about.bio.story,
+        images
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Personality, {
+        headline: about.personality.headline,
+        story: about.personality.story,
+        images
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Accordion, {
+        about
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+
 // src/pages/Contact.tsx
-var jsx_dev_runtime18 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime25 = __toESM(require_jsx_dev_runtime(), 1);
 function Contact() {
-  return /* @__PURE__ */ jsx_dev_runtime18.jsxDEV("h1", {
+  return /* @__PURE__ */ jsx_dev_runtime25.jsxDEV("h1", {
     children: "Contact"
   }, undefined, false, undefined, this);
 }
 
+// src/components/overview/ContactSection.tsx
+var jsx_dev_runtime26 = __toESM(require_jsx_dev_runtime(), 1);
+function ContactSection() {
+  return /* @__PURE__ */ jsx_dev_runtime26.jsxDEV("section", {
+    className: "contact-section",
+    children: /* @__PURE__ */ jsx_dev_runtime26.jsxDEV("div", {
+      className: "contact-grid grid",
+      children: [
+        /* @__PURE__ */ jsx_dev_runtime26.jsxDEV("div", {
+          className: "flex flex-column gap-sm",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime26.jsxDEV("h2", {
+              children: "Get in Touch"
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime26.jsxDEV("div", {
+              className: "muted",
+              children: "I'll respond within 24-48 hours."
+            }, undefined, false, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime26.jsxDEV("div", {
+          className: "flex flex-column gap-sm",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime26.jsxDEV("p", {
+              children: "Email me directly:"
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime26.jsxDEV("a", {
+              href: "mailto:" + PROFILE.email,
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime26.jsxDEV(MdEmail, {
+                  size: 20
+                }, undefined, false, undefined, this),
+                " ",
+                PROFILE.email
+              ]
+            }, undefined, true, undefined, this)
+          ]
+        }, undefined, true, undefined, this),
+        /* @__PURE__ */ jsx_dev_runtime26.jsxDEV("div", {
+          className: "flex flex-column gap-sm",
+          children: [
+            /* @__PURE__ */ jsx_dev_runtime26.jsxDEV("p", {
+              children: "Or contact me through:"
+            }, undefined, false, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime26.jsxDEV("a", {
+              href: PROFILE.linkedin.url,
+              className: "flex gap-sm",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime26.jsxDEV(ImLinkedin, {
+                  size: 20
+                }, undefined, false, undefined, this),
+                " LinkedIn"
+              ]
+            }, undefined, true, undefined, this),
+            /* @__PURE__ */ jsx_dev_runtime26.jsxDEV("a", {
+              href: PROFILE.github.url,
+              className: "flex gap-sm",
+              children: [
+                /* @__PURE__ */ jsx_dev_runtime26.jsxDEV(FaGithub, {
+                  size: 20
+                }, undefined, false, undefined, this),
+                " GitHub"
+              ]
+            }, undefined, true, undefined, this)
+          ]
+        }, undefined, true, undefined, this)
+      ]
+    }, undefined, true, undefined, this)
+  }, undefined, false, undefined, this);
+}
 // node_modules/devlop/lib/development.js
 var codesWarned = new Set;
 
@@ -20737,12 +20854,12 @@ function productionCreate(_, jsx, jsxs) {
     return key ? fn(type, props, key) : fn(type, props);
   }
 }
-function developmentCreate(filePath, jsxDEV19) {
+function developmentCreate(filePath, jsxDEV27) {
   return create2;
   function create2(node, type, props, key) {
     const isStaticChildren = Array.isArray(props.children);
     const point3 = pointStart(node);
-    return jsxDEV19(type, props, key, isStaticChildren, {
+    return jsxDEV27(type, props, key, isStaticChildren, {
       columnNumber: point3 ? point3.column - 1 : undefined,
       fileName: filePath,
       lineNumber: point3 ? point3.line : undefined
@@ -20956,7 +21073,7 @@ var urlAttributes = {
 };
 // node_modules/react-markdown/lib/index.js
 var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
-var import_react12 = __toESM(require_react(), 1);
+var import_react22 = __toESM(require_react(), 1);
 
 // node_modules/mdast-util-to-string/lib/index.js
 var emptyOptions2 = {};
@@ -21146,7 +21263,7 @@ var codes = {
   replacementCharacter: 65533
 };
 // node_modules/micromark-util-symbol/lib/constants.js
-var constants = {
+var constants2 = {
   attentionSideAfter: 2,
   attentionSideBefore: 1,
   atxHeadingOpeningFenceSizeMax: 6,
@@ -21402,7 +21519,7 @@ function splice(list, start2, remove, items) {
     start2 = start2 > end ? end : start2;
   }
   remove = remove > 0 ? remove : 0;
-  if (items.length < constants.v8MaxSafeChunkSize) {
+  if (items.length < constants2.v8MaxSafeChunkSize) {
     parameters = Array.from(items);
     parameters.unshift(start2, remove);
     list.splice(...parameters);
@@ -21410,11 +21527,11 @@ function splice(list, start2, remove, items) {
     if (remove)
       list.splice(start2, remove);
     while (chunkStart < items.length) {
-      parameters = items.slice(chunkStart, chunkStart + constants.v8MaxSafeChunkSize);
+      parameters = items.slice(chunkStart, chunkStart + constants2.v8MaxSafeChunkSize);
       parameters.unshift(start2, 0);
       list.splice(...parameters);
-      chunkStart += constants.v8MaxSafeChunkSize;
-      start2 += constants.v8MaxSafeChunkSize;
+      chunkStart += constants2.v8MaxSafeChunkSize;
+      start2 += constants2.v8MaxSafeChunkSize;
     }
   }
 }
@@ -21589,7 +21706,7 @@ function initializeContent(effects) {
   }
   function lineStart(code) {
     const token = effects.enter(types.chunkText, {
-      contentType: constants.contentTypeText,
+      contentType: constants2.contentTypeText,
       previous
     });
     if (previous) {
@@ -21711,7 +21828,7 @@ function initializeDocument(effects) {
     childFlow = childFlow || self2.parser.flow(self2.now());
     effects.enter(types.chunkFlow, {
       _tokenizer: childFlow,
-      contentType: constants.contentTypeFlow,
+      contentType: constants2.contentTypeFlow,
       previous: childToken
     });
     return flowContinue(code);
@@ -21796,16 +21913,16 @@ function initializeDocument(effects) {
 }
 function tokenizeContainer(effects, ok2, nok) {
   ok(this.parser.constructs.disable.null, "expected `disable.null` to be populated");
-  return factorySpace(effects, effects.attempt(this.parser.constructs.document, ok2, nok), types.linePrefix, this.parser.constructs.disable.null.includes("codeIndented") ? undefined : constants.tabSize);
+  return factorySpace(effects, effects.attempt(this.parser.constructs.document, ok2, nok), types.linePrefix, this.parser.constructs.disable.null.includes("codeIndented") ? undefined : constants2.tabSize);
 }
 
 // node_modules/micromark-util-classify-character/dev/index.js
 function classifyCharacter(code) {
   if (code === codes.eof || markdownLineEndingOrSpace(code) || unicodeWhitespace(code)) {
-    return constants.characterGroupWhitespace;
+    return constants2.characterGroupWhitespace;
   }
   if (unicodePunctuation(code)) {
-    return constants.characterGroupPunctuation;
+    return constants2.characterGroupPunctuation;
   }
 }
 
@@ -21939,8 +22056,8 @@ function tokenizeAttention(effects, ok2) {
     const token = effects.exit("attentionSequence");
     const after = classifyCharacter(code);
     ok(attentionMarkers, "expected `attentionMarkers` to be populated");
-    const open = !after || after === constants.characterGroupPunctuation && before || attentionMarkers.includes(code);
-    const close = !before || before === constants.characterGroupPunctuation && after || attentionMarkers.includes(previous);
+    const open = !after || after === constants2.characterGroupPunctuation && before || attentionMarkers.includes(code);
+    const close = !before || before === constants2.characterGroupPunctuation && after || attentionMarkers.includes(previous);
     token._open = Boolean(marker === codes.asterisk ? open : open && (before || !close));
     token._close = Boolean(marker === codes.asterisk ? close : close && (after || !open));
     return ok2(code);
@@ -21988,7 +22105,7 @@ function tokenizeAutolink(effects, ok2, nok) {
       size = 0;
       return urlInside;
     }
-    if ((code === codes.plusSign || code === codes.dash || code === codes.dot || asciiAlphanumeric(code)) && size++ < constants.autolinkSchemeSizeMax) {
+    if ((code === codes.plusSign || code === codes.dash || code === codes.dot || asciiAlphanumeric(code)) && size++ < constants2.autolinkSchemeSizeMax) {
       effects.consume(code);
       return schemeInsideOrEmailAtext;
     }
@@ -22041,7 +22158,7 @@ function tokenizeAutolink(effects, ok2, nok) {
     return emailValue(code);
   }
   function emailValue(code) {
-    if ((code === codes.dash || asciiAlphanumeric(code)) && size++ < constants.autolinkDomainSizeMax) {
+    if ((code === codes.dash || asciiAlphanumeric(code)) && size++ < constants2.autolinkDomainSizeMax) {
       const next = code === codes.dash ? emailValue : emailLabel;
       effects.consume(code);
       return next;
@@ -22104,7 +22221,7 @@ function tokenizeBlockQuoteContinuation(effects, ok2, nok) {
   function contStart(code) {
     if (markdownSpace(code)) {
       ok(self2.parser.constructs.disable.null, "expected `disable.null` to be populated");
-      return factorySpace(effects, contBefore, types.linePrefix, self2.parser.constructs.disable.null.includes("codeIndented") ? undefined : constants.tabSize)(code);
+      return factorySpace(effects, contBefore, types.linePrefix, self2.parser.constructs.disable.null.includes("codeIndented") ? undefined : constants2.tabSize)(code);
     }
     return contBefore(code);
   }
@@ -22168,7 +22285,7 @@ function tokenizeCharacterReference(effects, ok2, nok) {
       return numeric;
     }
     effects.enter(types.characterReferenceValue);
-    max = constants.characterReferenceNamedSizeMax;
+    max = constants2.characterReferenceNamedSizeMax;
     test = asciiAlphanumeric;
     return value(code);
   }
@@ -22178,12 +22295,12 @@ function tokenizeCharacterReference(effects, ok2, nok) {
       effects.consume(code);
       effects.exit(types.characterReferenceMarkerHexadecimal);
       effects.enter(types.characterReferenceValue);
-      max = constants.characterReferenceHexadecimalSizeMax;
+      max = constants2.characterReferenceHexadecimalSizeMax;
       test = asciiHexDigit;
       return value;
     }
     effects.enter(types.characterReferenceValue);
-    max = constants.characterReferenceDecimalSizeMax;
+    max = constants2.characterReferenceDecimalSizeMax;
     test = asciiDigit;
     return value(code);
   }
@@ -22242,7 +22359,7 @@ function tokenizeCodeFenced(effects, ok2, nok) {
       effects.consume(code);
       return sequenceOpen;
     }
-    if (sizeOpen < constants.codeFencedSequenceSizeMin) {
+    if (sizeOpen < constants2.codeFencedSequenceSizeMin) {
       return nok(code);
     }
     effects.exit(types.codeFencedFenceSequence);
@@ -22254,7 +22371,7 @@ function tokenizeCodeFenced(effects, ok2, nok) {
       return self2.interrupt ? ok2(code) : effects.check(nonLazyContinuation, atNonLazyBreak, after)(code);
     }
     effects.enter(types.codeFencedFenceInfo);
-    effects.enter(types.chunkString, { contentType: constants.contentTypeString });
+    effects.enter(types.chunkString, { contentType: constants2.contentTypeString });
     return info(code);
   }
   function info(code) {
@@ -22279,7 +22396,7 @@ function tokenizeCodeFenced(effects, ok2, nok) {
       return infoBefore(code);
     }
     effects.enter(types.codeFencedFenceMeta);
-    effects.enter(types.chunkString, { contentType: constants.contentTypeString });
+    effects.enter(types.chunkString, { contentType: constants2.contentTypeString });
     return meta(code);
   }
   function meta(code) {
@@ -22340,7 +22457,7 @@ function tokenizeCodeFenced(effects, ok2, nok) {
     function start3(code) {
       ok(self2.parser.constructs.disable.null, "expected `disable.null` to be populated");
       effects2.enter(types.codeFencedFence);
-      return markdownSpace(code) ? factorySpace(effects2, beforeSequenceClose, types.linePrefix, self2.parser.constructs.disable.null.includes("codeIndented") ? undefined : constants.tabSize)(code) : beforeSequenceClose(code);
+      return markdownSpace(code) ? factorySpace(effects2, beforeSequenceClose, types.linePrefix, self2.parser.constructs.disable.null.includes("codeIndented") ? undefined : constants2.tabSize)(code) : beforeSequenceClose(code);
     }
     function beforeSequenceClose(code) {
       if (code === marker) {
@@ -22399,11 +22516,11 @@ function tokenizeCodeIndented(effects, ok2, nok) {
   function start2(code) {
     ok(markdownSpace(code));
     effects.enter(types.codeIndented);
-    return factorySpace(effects, afterPrefix, types.linePrefix, constants.tabSize + 1)(code);
+    return factorySpace(effects, afterPrefix, types.linePrefix, constants2.tabSize + 1)(code);
   }
   function afterPrefix(code) {
     const tail = self2.events[self2.events.length - 1];
-    return tail && tail[1].type === types.linePrefix && tail[2].sliceSerialize(tail[1], true).length >= constants.tabSize ? atBreak(code) : nok(code);
+    return tail && tail[1].type === types.linePrefix && tail[2].sliceSerialize(tail[1], true).length >= constants2.tabSize ? atBreak(code) : nok(code);
   }
   function atBreak(code) {
     if (code === codes.eof) {
@@ -22441,11 +22558,11 @@ function tokenizeFurtherStart(effects, ok2, nok) {
       effects.exit(types.lineEnding);
       return furtherStart2;
     }
-    return factorySpace(effects, afterPrefix, types.linePrefix, constants.tabSize + 1)(code);
+    return factorySpace(effects, afterPrefix, types.linePrefix, constants2.tabSize + 1)(code);
   }
   function afterPrefix(code) {
     const tail = self2.events[self2.events.length - 1];
-    return tail && tail[1].type === types.linePrefix && tail[2].sliceSerialize(tail[1], true).length >= constants.tabSize ? ok2(code) : markdownLineEnding(code) ? furtherStart2(code) : nok(code);
+    return tail && tail[1].type === types.linePrefix && tail[2].sliceSerialize(tail[1], true).length >= constants2.tabSize ? ok2(code) : markdownLineEnding(code) ? furtherStart2(code) : nok(code);
   }
 }
 // node_modules/micromark-core-commonmark/dev/lib/code-text.js
@@ -22637,12 +22754,12 @@ class SpliceBuffer {
 }
 function chunkedPush(list, right) {
   let chunkStart = 0;
-  if (right.length < constants.v8MaxSafeChunkSize) {
+  if (right.length < constants2.v8MaxSafeChunkSize) {
     list.push(...right);
   } else {
     while (chunkStart < right.length) {
-      list.push(...right.slice(chunkStart, chunkStart + constants.v8MaxSafeChunkSize));
-      chunkStart += constants.v8MaxSafeChunkSize;
+      list.push(...right.slice(chunkStart, chunkStart + constants2.v8MaxSafeChunkSize));
+      chunkStart += constants2.v8MaxSafeChunkSize;
     }
   }
 }
@@ -22814,7 +22931,7 @@ function tokenizeContent(effects, ok2) {
     ok(code !== codes.eof && !markdownLineEnding(code), "expected no eof or eol");
     effects.enter(types.content);
     previous2 = effects.enter(types.chunkContent, {
-      contentType: constants.contentTypeContent
+      contentType: constants2.contentTypeContent
     });
     return chunkInside(code);
   }
@@ -22839,7 +22956,7 @@ function tokenizeContent(effects, ok2) {
     effects.exit(types.chunkContent);
     ok(previous2, "expected previous token");
     previous2.next = effects.enter(types.chunkContent, {
-      contentType: constants.contentTypeContent,
+      contentType: constants2.contentTypeContent,
       previous: previous2
     });
     previous2 = previous2.next;
@@ -22863,7 +22980,7 @@ function tokenizeContinuation(effects, ok2, nok) {
     }
     ok(self2.parser.constructs.disable.null, "expected `disable.null` to be populated");
     const tail = self2.events[self2.events.length - 1];
-    if (!self2.parser.constructs.disable.null.includes("codeIndented") && tail && tail[1].type === types.linePrefix && tail[2].sliceSerialize(tail[1], true).length >= constants.tabSize) {
+    if (!self2.parser.constructs.disable.null.includes("codeIndented") && tail && tail[1].type === types.linePrefix && tail[2].sliceSerialize(tail[1], true).length >= constants2.tabSize) {
       return ok2(code);
     }
     return effects.interrupt(self2.parser.constructs.flow, nok, ok2)(code);
@@ -22889,7 +23006,7 @@ function factoryDestination(effects, ok2, nok, type, literalType, literalMarkerT
     effects.enter(type);
     effects.enter(rawType);
     effects.enter(stringType);
-    effects.enter(types.chunkString, { contentType: constants.contentTypeString });
+    effects.enter(types.chunkString, { contentType: constants2.contentTypeString });
     return raw(code);
   }
   function enclosedBefore(code) {
@@ -22902,7 +23019,7 @@ function factoryDestination(effects, ok2, nok, type, literalType, literalMarkerT
       return ok2;
     }
     effects.enter(stringType);
-    effects.enter(types.chunkString, { contentType: constants.contentTypeString });
+    effects.enter(types.chunkString, { contentType: constants2.contentTypeString });
     return enclosed(code);
   }
   function enclosed(code) {
@@ -22973,7 +23090,7 @@ function factoryLabel(effects, ok2, nok, type, markerType, stringType) {
     return atBreak;
   }
   function atBreak(code) {
-    if (size > constants.linkReferenceSizeMax || code === codes.eof || code === codes.leftSquareBracket || code === codes.rightSquareBracket && !seen || code === codes.caret && !size && "_hiddenFootnoteSupport" in self2.parser.constructs) {
+    if (size > constants2.linkReferenceSizeMax || code === codes.eof || code === codes.leftSquareBracket || code === codes.rightSquareBracket && !seen || code === codes.caret && !size && "_hiddenFootnoteSupport" in self2.parser.constructs) {
       return nok(code);
     }
     if (code === codes.rightSquareBracket) {
@@ -22990,11 +23107,11 @@ function factoryLabel(effects, ok2, nok, type, markerType, stringType) {
       effects.exit(types.lineEnding);
       return atBreak;
     }
-    effects.enter(types.chunkString, { contentType: constants.contentTypeString });
+    effects.enter(types.chunkString, { contentType: constants2.contentTypeString });
     return labelInside(code);
   }
   function labelInside(code) {
-    if (code === codes.eof || code === codes.leftSquareBracket || code === codes.rightSquareBracket || markdownLineEnding(code) || size++ > constants.linkReferenceSizeMax) {
+    if (code === codes.eof || code === codes.leftSquareBracket || code === codes.rightSquareBracket || markdownLineEnding(code) || size++ > constants2.linkReferenceSizeMax) {
       effects.exit(types.chunkString);
       return atBreak(code);
     }
@@ -23053,7 +23170,7 @@ function factoryTitle(effects, ok2, nok, type, markerType, stringType) {
       effects.exit(types.lineEnding);
       return factorySpace(effects, atBreak, types.linePrefix);
     }
-    effects.enter(types.chunkString, { contentType: constants.contentTypeString });
+    effects.enter(types.chunkString, { contentType: constants2.contentTypeString });
     return inside(code);
   }
   function inside(code) {
@@ -23204,7 +23321,7 @@ function resolveHeadingAtx(events, context) {
       type: types.chunkText,
       start: events[contentStart][1].start,
       end: events[contentEnd][1].end,
-      contentType: constants.contentTypeText
+      contentType: constants2.contentTypeText
     };
     splice(events, contentStart, contentEnd - contentStart + 1, [
       ["enter", content3, context],
@@ -23228,7 +23345,7 @@ function tokenizeHeadingAtx(effects, ok2, nok) {
     return sequenceOpen(code);
   }
   function sequenceOpen(code) {
-    if (code === codes.numberSign && size++ < constants.atxHeadingOpeningFenceSizeMax) {
+    if (code === codes.numberSign && size++ < constants2.atxHeadingOpeningFenceSizeMax) {
       effects.consume(code);
       return sequenceOpen;
     }
@@ -23393,7 +23510,7 @@ function tokenizeHtmlFlow(effects, ok2, nok) {
     }
     if (code === codes.questionMark) {
       effects.consume(code);
-      marker = constants.htmlInstruction;
+      marker = constants2.htmlInstruction;
       return self2.interrupt ? ok2 : continuationDeclarationInside;
     }
     if (asciiAlpha(code)) {
@@ -23407,18 +23524,18 @@ function tokenizeHtmlFlow(effects, ok2, nok) {
   function declarationOpen(code) {
     if (code === codes.dash) {
       effects.consume(code);
-      marker = constants.htmlComment;
+      marker = constants2.htmlComment;
       return commentOpenInside;
     }
     if (code === codes.leftSquareBracket) {
       effects.consume(code);
-      marker = constants.htmlCdata;
+      marker = constants2.htmlCdata;
       index2 = 0;
       return cdataOpenInside;
     }
     if (asciiAlpha(code)) {
       effects.consume(code);
-      marker = constants.htmlDeclaration;
+      marker = constants2.htmlDeclaration;
       return self2.interrupt ? ok2 : continuationDeclarationInside;
     }
     return nok(code);
@@ -23431,7 +23548,7 @@ function tokenizeHtmlFlow(effects, ok2, nok) {
     return nok(code);
   }
   function cdataOpenInside(code) {
-    const value = constants.cdataOpeningString;
+    const value = constants2.cdataOpeningString;
     if (code === value.charCodeAt(index2++)) {
       effects.consume(code);
       if (index2 === value.length) {
@@ -23455,18 +23572,18 @@ function tokenizeHtmlFlow(effects, ok2, nok) {
       const slash = code === codes.slash;
       const name2 = buffer.toLowerCase();
       if (!slash && !closingTag && htmlRawNames.includes(name2)) {
-        marker = constants.htmlRaw;
+        marker = constants2.htmlRaw;
         return self2.interrupt ? ok2(code) : continuation(code);
       }
       if (htmlBlockNames.includes(buffer.toLowerCase())) {
-        marker = constants.htmlBasic;
+        marker = constants2.htmlBasic;
         if (slash) {
           effects.consume(code);
           return basicSelfClosing;
         }
         return self2.interrupt ? ok2(code) : continuation(code);
       }
-      marker = constants.htmlComplete;
+      marker = constants2.htmlComplete;
       return self2.interrupt && !self2.parser.lazy[self2.now().line] ? nok(code) : closingTag ? completeClosingTagAfter(code) : completeAttributeNameBefore(code);
     }
     if (code === codes.dash || asciiAlphanumeric(code)) {
@@ -23581,27 +23698,27 @@ function tokenizeHtmlFlow(effects, ok2, nok) {
     return nok(code);
   }
   function continuation(code) {
-    if (code === codes.dash && marker === constants.htmlComment) {
+    if (code === codes.dash && marker === constants2.htmlComment) {
       effects.consume(code);
       return continuationCommentInside;
     }
-    if (code === codes.lessThan && marker === constants.htmlRaw) {
+    if (code === codes.lessThan && marker === constants2.htmlRaw) {
       effects.consume(code);
       return continuationRawTagOpen;
     }
-    if (code === codes.greaterThan && marker === constants.htmlDeclaration) {
+    if (code === codes.greaterThan && marker === constants2.htmlDeclaration) {
       effects.consume(code);
       return continuationClose;
     }
-    if (code === codes.questionMark && marker === constants.htmlInstruction) {
+    if (code === codes.questionMark && marker === constants2.htmlInstruction) {
       effects.consume(code);
       return continuationDeclarationInside;
     }
-    if (code === codes.rightSquareBracket && marker === constants.htmlCdata) {
+    if (code === codes.rightSquareBracket && marker === constants2.htmlCdata) {
       effects.consume(code);
       return continuationCdataInside;
     }
-    if (markdownLineEnding(code) && (marker === constants.htmlBasic || marker === constants.htmlComplete)) {
+    if (markdownLineEnding(code) && (marker === constants2.htmlBasic || marker === constants2.htmlComplete)) {
       effects.exit(types.htmlFlowData);
       return effects.check(blankLineBefore, continuationAfter, continuationStart)(code);
     }
@@ -23653,7 +23770,7 @@ function tokenizeHtmlFlow(effects, ok2, nok) {
       }
       return continuation(code);
     }
-    if (asciiAlpha(code) && buffer.length < constants.htmlRawSizeMax) {
+    if (asciiAlpha(code) && buffer.length < constants2.htmlRawSizeMax) {
       ok(code !== null);
       effects.consume(code);
       buffer += String.fromCharCode(code);
@@ -23673,7 +23790,7 @@ function tokenizeHtmlFlow(effects, ok2, nok) {
       effects.consume(code);
       return continuationClose;
     }
-    if (code === codes.dash && marker === constants.htmlComment) {
+    if (code === codes.dash && marker === constants2.htmlComment) {
       effects.consume(code);
       return continuationDeclarationInside;
     }
@@ -23801,7 +23918,7 @@ function tokenizeHtmlText(effects, ok2, nok) {
     return code === codes.greaterThan ? end(code) : code === codes.dash ? commentClose(code) : comment(code);
   }
   function cdataOpenInside(code) {
-    const value = constants.cdataOpeningString;
+    const value = constants2.cdataOpeningString;
     if (code === value.charCodeAt(index2++)) {
       effects.consume(code);
       return index2 === value.length ? cdata : cdataOpenInside;
@@ -24017,7 +24134,7 @@ function tokenizeHtmlText(effects, ok2, nok) {
   }
   function lineEndingAfter(code) {
     ok(self2.parser.constructs.disable.null, "expected `disable.null` to be populated");
-    return markdownSpace(code) ? factorySpace(effects, lineEndingAfterPrefix, types.linePrefix, self2.parser.constructs.disable.null.includes("codeIndented") ? undefined : constants.tabSize)(code) : lineEndingAfterPrefix(code);
+    return markdownSpace(code) ? factorySpace(effects, lineEndingAfterPrefix, types.linePrefix, self2.parser.constructs.disable.null.includes("codeIndented") ? undefined : constants2.tabSize)(code) : lineEndingAfterPrefix(code);
   }
   function lineEndingAfterPrefix(code) {
     effects.enter(types.htmlTextData);
@@ -24180,7 +24297,7 @@ function tokenizeResource(effects, ok2, nok) {
     if (code === codes.rightParenthesis) {
       return resourceEnd(code);
     }
-    return factoryDestination(effects, resourceDestinationAfter, resourceDestinationMissing, types.resourceDestination, types.resourceDestinationLiteral, types.resourceDestinationLiteralMarker, types.resourceDestinationRaw, types.resourceDestinationString, constants.linkResourceDestinationBalanceMax)(code);
+    return factoryDestination(effects, resourceDestinationAfter, resourceDestinationMissing, types.resourceDestination, types.resourceDestinationLiteral, types.resourceDestinationLiteralMarker, types.resourceDestinationRaw, types.resourceDestinationString, constants2.linkResourceDestinationBalanceMax)(code);
   }
   function resourceDestinationAfter(code) {
     return markdownLineEndingOrSpace(code) ? factoryWhitespace(effects, resourceBetween)(code) : resourceEnd(code);
@@ -24331,7 +24448,7 @@ function tokenizeThematicBreak(effects, ok2, nok) {
       effects.enter(types.thematicBreakSequence);
       return sequence(code);
     }
-    if (size >= constants.thematicBreakMarkerCountMin && (code === codes.eof || markdownLineEnding(code))) {
+    if (size >= constants2.thematicBreakMarkerCountMin && (code === codes.eof || markdownLineEnding(code))) {
       effects.exit(types.thematicBreak);
       return ok2(code);
     }
@@ -24388,7 +24505,7 @@ function tokenizeListStart(effects, ok2, nok) {
   }
   function inside(code) {
     ok(self2.containerState, "expected state");
-    if (asciiDigit(code) && ++size < constants.listItemValueSizeMax) {
+    if (asciiDigit(code) && ++size < constants2.listItemValueSizeMax) {
       effects.consume(code);
       return inside;
     }
@@ -24455,7 +24572,7 @@ function tokenizeListContinuation(effects, ok2, nok) {
     self2.containerState._closeFlow = true;
     self2.interrupt = undefined;
     ok(self2.parser.constructs.disable.null, "expected `disable.null` to be populated");
-    return factorySpace(effects, effects.attempt(list, ok2, nok), types.linePrefix, self2.parser.constructs.disable.null.includes("codeIndented") ? undefined : constants.tabSize)(code);
+    return factorySpace(effects, effects.attempt(list, ok2, nok), types.linePrefix, self2.parser.constructs.disable.null.includes("codeIndented") ? undefined : constants2.tabSize)(code);
   }
 }
 function tokenizeIndent(effects, ok2, nok) {
@@ -24477,7 +24594,7 @@ function tokenizeListEnd(effects) {
 function tokenizeListItemPrefixWhitespace(effects, ok2, nok) {
   const self2 = this;
   ok(self2.parser.constructs.disable.null, "expected `disable.null` to be populated");
-  return factorySpace(effects, afterPrefix, types.listItemPrefixWhitespace, self2.parser.constructs.disable.null.includes("codeIndented") ? undefined : constants.tabSize + 1);
+  return factorySpace(effects, afterPrefix, types.listItemPrefixWhitespace, self2.parser.constructs.disable.null.includes("codeIndented") ? undefined : constants2.tabSize + 1);
   function afterPrefix(code) {
     const tail = self2.events[self2.events.length - 1];
     return !markdownSpace(code) && tail && tail[1].type === types.listItemPrefixWhitespace ? ok2(code) : nok(code);
@@ -24715,7 +24832,7 @@ function resolveAllLineSuffixes(events, context) {
       }
       if (size) {
         const token = {
-          type: eventIndex === events.length || tabs || size < constants.hardBreakPrefixSizeMin ? types.lineSuffix : types.hardBreakTrailing,
+          type: eventIndex === events.length || tabs || size < constants2.hardBreakPrefixSizeMin ? types.lineSuffix : types.hardBreakTrailing,
           start: {
             _bufferIndex: index2 ? bufferIndex : data.start._bufferIndex + bufferIndex,
             _index: data.start._index + index2,
@@ -25205,7 +25322,7 @@ function preprocess() {
             break;
           }
           case codes.ht: {
-            next = Math.ceil(column / constants.tabSize) * constants.tabSize;
+            next = Math.ceil(column / constants2.tabSize) * constants2.tabSize;
             chunks.push(codes.horizontalTab);
             while (column++ < next)
               chunks.push(codes.virtualSpace);
@@ -25247,7 +25364,7 @@ function decode($0, $1, $2) {
   if (head === codes.numberSign) {
     const head2 = $2.charCodeAt(1);
     const hex = head2 === codes.lowercaseX || head2 === codes.uppercaseX;
-    return decodeNumericCharacterReference($2.slice(hex ? 2 : 1), hex ? constants.numericBaseHexadecimal : constants.numericBaseDecimal);
+    return decodeNumericCharacterReference($2.slice(hex ? 2 : 1), hex ? constants2.numericBaseHexadecimal : constants2.numericBaseDecimal);
   }
   return decodeNamedCharacterReference($2) || $0;
 }
@@ -25559,7 +25676,7 @@ function compiler(options) {
       const ancestor = this.stack[this.stack.length - 2];
       ok(ancestor, "expected nodes on stack");
       ok(ancestor.type === "list", "expected list on stack");
-      ancestor.start = Number.parseInt(this.sliceSerialize(token), constants.numericBaseDecimal);
+      ancestor.start = Number.parseInt(this.sliceSerialize(token), constants2.numericBaseDecimal);
       this.data.expectingFirstListItemValue = undefined;
     }
   }
@@ -25800,7 +25917,7 @@ function compiler(options) {
     const type = this.data.characterReferenceType;
     let value;
     if (type) {
-      value = decodeNumericCharacterReference(data2, type === types.characterReferenceMarkerNumeric ? constants.numericBaseDecimal : constants.numericBaseHexadecimal);
+      value = decodeNumericCharacterReference(data2, type === types.characterReferenceMarkerNumeric ? constants2.numericBaseDecimal : constants2.numericBaseHexadecimal);
       this.data.characterReferenceType = undefined;
     } else {
       const result = decodeNamedCharacterReference(data2);
@@ -28072,2952 +28189,103 @@ function defaultUrlTransform(value) {
   }
   return "";
 }
-// node_modules/ccount/index.js
-function ccount(value, character) {
-  const source = String(value);
-  if (typeof character !== "string") {
-    throw new TypeError("Expected character");
-  }
-  let count = 0;
-  let index2 = source.indexOf(character);
-  while (index2 !== -1) {
-    count++;
-    index2 = source.indexOf(character, index2 + character.length);
-  }
-  return count;
-}
-
-// node_modules/escape-string-regexp/index.js
-function escapeStringRegexp(string3) {
-  if (typeof string3 !== "string") {
-    throw new TypeError("Expected a string");
-  }
-  return string3.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&").replace(/-/g, "\\x2d");
-}
-
-// node_modules/mdast-util-find-and-replace/lib/index.js
-function findAndReplace(tree, list3, options) {
-  const settings = options || {};
-  const ignored = convert(settings.ignore || []);
-  const pairs = toPairs(list3);
-  let pairIndex = -1;
-  while (++pairIndex < pairs.length) {
-    visitParents(tree, "text", visitor);
-  }
-  function visitor(node2, parents) {
-    let index2 = -1;
-    let grandparent;
-    while (++index2 < parents.length) {
-      const parent = parents[index2];
-      const siblings = grandparent ? grandparent.children : undefined;
-      if (ignored(parent, siblings ? siblings.indexOf(parent) : undefined, grandparent)) {
-        return;
-      }
-      grandparent = parent;
-    }
-    if (grandparent) {
-      return handler(node2, parents);
-    }
-  }
-  function handler(node2, parents) {
-    const parent = parents[parents.length - 1];
-    const find2 = pairs[pairIndex][0];
-    const replace = pairs[pairIndex][1];
-    let start2 = 0;
-    const siblings = parent.children;
-    const index2 = siblings.indexOf(node2);
-    let change = false;
-    let nodes = [];
-    find2.lastIndex = 0;
-    let match2 = find2.exec(node2.value);
-    while (match2) {
-      const position3 = match2.index;
-      const matchObject = {
-        index: match2.index,
-        input: match2.input,
-        stack: [...parents, node2]
-      };
-      let value = replace(...match2, matchObject);
-      if (typeof value === "string") {
-        value = value.length > 0 ? { type: "text", value } : undefined;
-      }
-      if (value === false) {
-        find2.lastIndex = position3 + 1;
-      } else {
-        if (start2 !== position3) {
-          nodes.push({
-            type: "text",
-            value: node2.value.slice(start2, position3)
-          });
-        }
-        if (Array.isArray(value)) {
-          nodes.push(...value);
-        } else if (value) {
-          nodes.push(value);
-        }
-        start2 = position3 + match2[0].length;
-        change = true;
-      }
-      if (!find2.global) {
-        break;
-      }
-      match2 = find2.exec(node2.value);
-    }
-    if (change) {
-      if (start2 < node2.value.length) {
-        nodes.push({ type: "text", value: node2.value.slice(start2) });
-      }
-      parent.children.splice(index2, 1, ...nodes);
-    } else {
-      nodes = [node2];
-    }
-    return index2 + nodes.length;
-  }
-}
-function toPairs(tupleOrList) {
-  const result = [];
-  if (!Array.isArray(tupleOrList)) {
-    throw new TypeError("Expected find and replace tuple or list of tuples");
-  }
-  const list3 = !tupleOrList[0] || Array.isArray(tupleOrList[0]) ? tupleOrList : [tupleOrList];
-  let index2 = -1;
-  while (++index2 < list3.length) {
-    const tuple = list3[index2];
-    result.push([toExpression(tuple[0]), toFunction(tuple[1])]);
-  }
-  return result;
-}
-function toExpression(find2) {
-  return typeof find2 === "string" ? new RegExp(escapeStringRegexp(find2), "g") : find2;
-}
-function toFunction(replace) {
-  return typeof replace === "function" ? replace : function() {
-    return replace;
-  };
-}
-// node_modules/mdast-util-gfm-autolink-literal/lib/index.js
-var inConstruct = "phrasing";
-var notInConstruct = ["autolink", "link", "image", "label"];
-function gfmAutolinkLiteralFromMarkdown() {
-  return {
-    transforms: [transformGfmAutolinkLiterals],
-    enter: {
-      literalAutolink: enterLiteralAutolink,
-      literalAutolinkEmail: enterLiteralAutolinkValue,
-      literalAutolinkHttp: enterLiteralAutolinkValue,
-      literalAutolinkWww: enterLiteralAutolinkValue
-    },
-    exit: {
-      literalAutolink: exitLiteralAutolink,
-      literalAutolinkEmail: exitLiteralAutolinkEmail,
-      literalAutolinkHttp: exitLiteralAutolinkHttp,
-      literalAutolinkWww: exitLiteralAutolinkWww
-    }
-  };
-}
-function gfmAutolinkLiteralToMarkdown() {
-  return {
-    unsafe: [
-      {
-        character: "@",
-        before: "[+\\-.\\w]",
-        after: "[\\-.\\w]",
-        inConstruct,
-        notInConstruct
-      },
-      {
-        character: ".",
-        before: "[Ww]",
-        after: "[\\-.\\w]",
-        inConstruct,
-        notInConstruct
-      },
-      {
-        character: ":",
-        before: "[ps]",
-        after: "\\/",
-        inConstruct,
-        notInConstruct
-      }
-    ]
-  };
-}
-function enterLiteralAutolink(token) {
-  this.enter({ type: "link", title: null, url: "", children: [] }, token);
-}
-function enterLiteralAutolinkValue(token) {
-  this.config.enter.autolinkProtocol.call(this, token);
-}
-function exitLiteralAutolinkHttp(token) {
-  this.config.exit.autolinkProtocol.call(this, token);
-}
-function exitLiteralAutolinkWww(token) {
-  this.config.exit.data.call(this, token);
-  const node2 = this.stack[this.stack.length - 1];
-  ok(node2.type === "link");
-  node2.url = "http://" + this.sliceSerialize(token);
-}
-function exitLiteralAutolinkEmail(token) {
-  this.config.exit.autolinkEmail.call(this, token);
-}
-function exitLiteralAutolink(token) {
-  this.exit(token);
-}
-function transformGfmAutolinkLiterals(tree) {
-  findAndReplace(tree, [
-    [/(https?:\/\/|www(?=\.))([-.\w]+)([^ \t\r\n]*)/gi, findUrl],
-    [/(?<=^|\s|\p{P}|\p{S})([-.\w+]+)@([-\w]+(?:\.[-\w]+)+)/gu, findEmail]
-  ], { ignore: ["link", "linkReference"] });
-}
-function findUrl(_, protocol, domain, path, match2) {
-  let prefix = "";
-  if (!previous2(match2)) {
-    return false;
-  }
-  if (/^w/i.test(protocol)) {
-    domain = protocol + domain;
-    protocol = "";
-    prefix = "http://";
-  }
-  if (!isCorrectDomain(domain)) {
-    return false;
-  }
-  const parts = splitUrl(domain + path);
-  if (!parts[0])
-    return false;
-  const result = {
-    type: "link",
-    title: null,
-    url: prefix + protocol + parts[0],
-    children: [{ type: "text", value: protocol + parts[0] }]
-  };
-  if (parts[1]) {
-    return [result, { type: "text", value: parts[1] }];
-  }
-  return result;
-}
-function findEmail(_, atext, label, match2) {
-  if (!previous2(match2, true) || /[-\d_]$/.test(label)) {
-    return false;
-  }
-  return {
-    type: "link",
-    title: null,
-    url: "mailto:" + atext + "@" + label,
-    children: [{ type: "text", value: atext + "@" + label }]
-  };
-}
-function isCorrectDomain(domain) {
-  const parts = domain.split(".");
-  if (parts.length < 2 || parts[parts.length - 1] && (/_/.test(parts[parts.length - 1]) || !/[a-zA-Z\d]/.test(parts[parts.length - 1])) || parts[parts.length - 2] && (/_/.test(parts[parts.length - 2]) || !/[a-zA-Z\d]/.test(parts[parts.length - 2]))) {
-    return false;
-  }
-  return true;
-}
-function splitUrl(url) {
-  const trailExec = /[!"&'),.:;<>?\]}]+$/.exec(url);
-  if (!trailExec) {
-    return [url, undefined];
-  }
-  url = url.slice(0, trailExec.index);
-  let trail = trailExec[0];
-  let closingParenIndex = trail.indexOf(")");
-  const openingParens = ccount(url, "(");
-  let closingParens = ccount(url, ")");
-  while (closingParenIndex !== -1 && openingParens > closingParens) {
-    url += trail.slice(0, closingParenIndex + 1);
-    trail = trail.slice(closingParenIndex + 1);
-    closingParenIndex = trail.indexOf(")");
-    closingParens++;
-  }
-  return [url, trail];
-}
-function previous2(match2, email) {
-  const code2 = match2.input.charCodeAt(match2.index - 1);
-  return (match2.index === 0 || unicodeWhitespace(code2) || unicodePunctuation(code2)) && (!email || code2 !== 47);
-}
-// node_modules/mdast-util-gfm-footnote/lib/index.js
-footnoteReference2.peek = footnoteReferencePeek;
-function enterFootnoteCallString() {
-  this.buffer();
-}
-function enterFootnoteCall(token) {
-  this.enter({ type: "footnoteReference", identifier: "", label: "" }, token);
-}
-function enterFootnoteDefinitionLabelString() {
-  this.buffer();
-}
-function enterFootnoteDefinition(token) {
-  this.enter({ type: "footnoteDefinition", identifier: "", label: "", children: [] }, token);
-}
-function exitFootnoteCallString(token) {
-  const label = this.resume();
-  const node2 = this.stack[this.stack.length - 1];
-  ok(node2.type === "footnoteReference");
-  node2.identifier = normalizeIdentifier(this.sliceSerialize(token)).toLowerCase();
-  node2.label = label;
-}
-function exitFootnoteCall(token) {
-  this.exit(token);
-}
-function exitFootnoteDefinitionLabelString(token) {
-  const label = this.resume();
-  const node2 = this.stack[this.stack.length - 1];
-  ok(node2.type === "footnoteDefinition");
-  node2.identifier = normalizeIdentifier(this.sliceSerialize(token)).toLowerCase();
-  node2.label = label;
-}
-function exitFootnoteDefinition(token) {
-  this.exit(token);
-}
-function footnoteReferencePeek() {
-  return "[";
-}
-function footnoteReference2(node2, _, state, info) {
-  const tracker = state.createTracker(info);
-  let value = tracker.move("[^");
-  const exit2 = state.enter("footnoteReference");
-  const subexit = state.enter("reference");
-  value += tracker.move(state.safe(state.associationId(node2), { after: "]", before: value }));
-  subexit();
-  exit2();
-  value += tracker.move("]");
-  return value;
-}
-function gfmFootnoteFromMarkdown() {
-  return {
-    enter: {
-      gfmFootnoteCallString: enterFootnoteCallString,
-      gfmFootnoteCall: enterFootnoteCall,
-      gfmFootnoteDefinitionLabelString: enterFootnoteDefinitionLabelString,
-      gfmFootnoteDefinition: enterFootnoteDefinition
-    },
-    exit: {
-      gfmFootnoteCallString: exitFootnoteCallString,
-      gfmFootnoteCall: exitFootnoteCall,
-      gfmFootnoteDefinitionLabelString: exitFootnoteDefinitionLabelString,
-      gfmFootnoteDefinition: exitFootnoteDefinition
-    }
-  };
-}
-function gfmFootnoteToMarkdown(options) {
-  let firstLineBlank = false;
-  if (options && options.firstLineBlank) {
-    firstLineBlank = true;
-  }
-  return {
-    handlers: { footnoteDefinition, footnoteReference: footnoteReference2 },
-    unsafe: [{ character: "[", inConstruct: ["label", "phrasing", "reference"] }]
-  };
-  function footnoteDefinition(node2, _, state, info) {
-    const tracker = state.createTracker(info);
-    let value = tracker.move("[^");
-    const exit2 = state.enter("footnoteDefinition");
-    const subexit = state.enter("label");
-    value += tracker.move(state.safe(state.associationId(node2), { before: value, after: "]" }));
-    subexit();
-    value += tracker.move("]:");
-    if (node2.children && node2.children.length > 0) {
-      tracker.shift(4);
-      value += tracker.move((firstLineBlank ? `
-` : " ") + state.indentLines(state.containerFlow(node2, tracker.current()), firstLineBlank ? mapAll : mapExceptFirst));
-    }
-    exit2();
-    return value;
-  }
-}
-function mapExceptFirst(line, index2, blank) {
-  return index2 === 0 ? line : mapAll(line, index2, blank);
-}
-function mapAll(line, index2, blank) {
-  return (blank ? "" : "    ") + line;
-}
-// node_modules/mdast-util-gfm-strikethrough/lib/index.js
-var constructsWithoutStrikethrough = [
-  "autolink",
-  "destinationLiteral",
-  "destinationRaw",
-  "reference",
-  "titleQuote",
-  "titleApostrophe"
-];
-handleDelete.peek = peekDelete;
-function gfmStrikethroughFromMarkdown() {
-  return {
-    canContainEols: ["delete"],
-    enter: { strikethrough: enterStrikethrough },
-    exit: { strikethrough: exitStrikethrough }
-  };
-}
-function gfmStrikethroughToMarkdown() {
-  return {
-    unsafe: [
-      {
-        character: "~",
-        inConstruct: "phrasing",
-        notInConstruct: constructsWithoutStrikethrough
-      }
-    ],
-    handlers: { delete: handleDelete }
-  };
-}
-function enterStrikethrough(token) {
-  this.enter({ type: "delete", children: [] }, token);
-}
-function exitStrikethrough(token) {
-  this.exit(token);
-}
-function handleDelete(node2, _, state, info) {
-  const tracker = state.createTracker(info);
-  const exit2 = state.enter("strikethrough");
-  let value = tracker.move("~~");
-  value += state.containerPhrasing(node2, {
-    ...tracker.current(),
-    before: value,
-    after: "~"
-  });
-  value += tracker.move("~~");
-  exit2();
-  return value;
-}
-function peekDelete() {
-  return "~";
-}
-// node_modules/markdown-table/index.js
-function defaultStringLength(value) {
-  return value.length;
-}
-function markdownTable(table2, options) {
-  const settings = options || {};
-  const align = (settings.align || []).concat();
-  const stringLength = settings.stringLength || defaultStringLength;
-  const alignments = [];
-  const cellMatrix = [];
-  const sizeMatrix = [];
-  const longestCellByColumn = [];
-  let mostCellsPerRow = 0;
-  let rowIndex = -1;
-  while (++rowIndex < table2.length) {
-    const row2 = [];
-    const sizes2 = [];
-    let columnIndex2 = -1;
-    if (table2[rowIndex].length > mostCellsPerRow) {
-      mostCellsPerRow = table2[rowIndex].length;
-    }
-    while (++columnIndex2 < table2[rowIndex].length) {
-      const cell = serialize2(table2[rowIndex][columnIndex2]);
-      if (settings.alignDelimiters !== false) {
-        const size = stringLength(cell);
-        sizes2[columnIndex2] = size;
-        if (longestCellByColumn[columnIndex2] === undefined || size > longestCellByColumn[columnIndex2]) {
-          longestCellByColumn[columnIndex2] = size;
-        }
-      }
-      row2.push(cell);
-    }
-    cellMatrix[rowIndex] = row2;
-    sizeMatrix[rowIndex] = sizes2;
-  }
-  let columnIndex = -1;
-  if (typeof align === "object" && "length" in align) {
-    while (++columnIndex < mostCellsPerRow) {
-      alignments[columnIndex] = toAlignment(align[columnIndex]);
-    }
-  } else {
-    const code2 = toAlignment(align);
-    while (++columnIndex < mostCellsPerRow) {
-      alignments[columnIndex] = code2;
-    }
-  }
-  columnIndex = -1;
-  const row = [];
-  const sizes = [];
-  while (++columnIndex < mostCellsPerRow) {
-    const code2 = alignments[columnIndex];
-    let before = "";
-    let after = "";
-    if (code2 === 99) {
-      before = ":";
-      after = ":";
-    } else if (code2 === 108) {
-      before = ":";
-    } else if (code2 === 114) {
-      after = ":";
-    }
-    let size = settings.alignDelimiters === false ? 1 : Math.max(1, longestCellByColumn[columnIndex] - before.length - after.length);
-    const cell = before + "-".repeat(size) + after;
-    if (settings.alignDelimiters !== false) {
-      size = before.length + size + after.length;
-      if (size > longestCellByColumn[columnIndex]) {
-        longestCellByColumn[columnIndex] = size;
-      }
-      sizes[columnIndex] = size;
-    }
-    row[columnIndex] = cell;
-  }
-  cellMatrix.splice(1, 0, row);
-  sizeMatrix.splice(1, 0, sizes);
-  rowIndex = -1;
-  const lines = [];
-  while (++rowIndex < cellMatrix.length) {
-    const row2 = cellMatrix[rowIndex];
-    const sizes2 = sizeMatrix[rowIndex];
-    columnIndex = -1;
-    const line = [];
-    while (++columnIndex < mostCellsPerRow) {
-      const cell = row2[columnIndex] || "";
-      let before = "";
-      let after = "";
-      if (settings.alignDelimiters !== false) {
-        const size = longestCellByColumn[columnIndex] - (sizes2[columnIndex] || 0);
-        const code2 = alignments[columnIndex];
-        if (code2 === 114) {
-          before = " ".repeat(size);
-        } else if (code2 === 99) {
-          if (size % 2) {
-            before = " ".repeat(size / 2 + 0.5);
-            after = " ".repeat(size / 2 - 0.5);
-          } else {
-            before = " ".repeat(size / 2);
-            after = before;
-          }
-        } else {
-          after = " ".repeat(size);
-        }
-      }
-      if (settings.delimiterStart !== false && !columnIndex) {
-        line.push("|");
-      }
-      if (settings.padding !== false && !(settings.alignDelimiters === false && cell === "") && (settings.delimiterStart !== false || columnIndex)) {
-        line.push(" ");
-      }
-      if (settings.alignDelimiters !== false) {
-        line.push(before);
-      }
-      line.push(cell);
-      if (settings.alignDelimiters !== false) {
-        line.push(after);
-      }
-      if (settings.padding !== false) {
-        line.push(" ");
-      }
-      if (settings.delimiterEnd !== false || columnIndex !== mostCellsPerRow - 1) {
-        line.push("|");
-      }
-    }
-    lines.push(settings.delimiterEnd === false ? line.join("").replace(/ +$/, "") : line.join(""));
-  }
-  return lines.join(`
-`);
-}
-function serialize2(value) {
-  return value === null || value === undefined ? "" : String(value);
-}
-function toAlignment(value) {
-  const code2 = typeof value === "string" ? value.codePointAt(0) : 0;
-  return code2 === 67 || code2 === 99 ? 99 : code2 === 76 || code2 === 108 ? 108 : code2 === 82 || code2 === 114 ? 114 : 0;
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/blockquote.js
-function blockquote2(node2, _, state, info) {
-  const exit2 = state.enter("blockquote");
-  const tracker = state.createTracker(info);
-  tracker.move("> ");
-  tracker.shift(2);
-  const value = state.indentLines(state.containerFlow(node2, tracker.current()), map);
-  exit2();
-  return value;
-}
-function map(line, _, blank) {
-  return ">" + (blank ? "" : " ") + line;
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/pattern-in-scope.js
-function patternInScope(stack, pattern) {
-  return listInScope(stack, pattern.inConstruct, true) && !listInScope(stack, pattern.notInConstruct, false);
-}
-function listInScope(stack, list3, none) {
-  if (typeof list3 === "string") {
-    list3 = [list3];
-  }
-  if (!list3 || list3.length === 0) {
-    return none;
-  }
-  let index2 = -1;
-  while (++index2 < list3.length) {
-    if (stack.includes(list3[index2])) {
-      return true;
-    }
-  }
-  return false;
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/break.js
-function hardBreak2(_, _1, state, info) {
-  let index2 = -1;
-  while (++index2 < state.unsafe.length) {
-    if (state.unsafe[index2].character === `
-` && patternInScope(state.stack, state.unsafe[index2])) {
-      return /[ \t]/.test(info.before) ? "" : " ";
-    }
-  }
-  return "\\\n";
-}
-
-// node_modules/longest-streak/index.js
-function longestStreak(value, substring) {
-  const source = String(value);
-  let index2 = source.indexOf(substring);
-  let expected = index2;
-  let count = 0;
-  let max = 0;
-  if (typeof substring !== "string") {
-    throw new TypeError("Expected substring");
-  }
-  while (index2 !== -1) {
-    if (index2 === expected) {
-      if (++count > max) {
-        max = count;
-      }
-    } else {
-      count = 1;
-    }
-    expected = index2 + substring.length;
-    index2 = source.indexOf(substring, expected);
-  }
-  return max;
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/format-code-as-indented.js
-function formatCodeAsIndented(node2, state) {
-  return Boolean(state.options.fences === false && node2.value && !node2.lang && /[^ \r\n]/.test(node2.value) && !/^[\t ]*(?:[\r\n]|$)|(?:^|[\r\n])[\t ]*$/.test(node2.value));
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/check-fence.js
-function checkFence(state) {
-  const marker = state.options.fence || "`";
-  if (marker !== "`" && marker !== "~") {
-    throw new Error("Cannot serialize code with `" + marker + "` for `options.fence`, expected `` ` `` or `~`");
-  }
-  return marker;
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/code.js
-function code2(node2, _, state, info) {
-  const marker = checkFence(state);
-  const raw = node2.value || "";
-  const suffix = marker === "`" ? "GraveAccent" : "Tilde";
-  if (formatCodeAsIndented(node2, state)) {
-    const exit3 = state.enter("codeIndented");
-    const value2 = state.indentLines(raw, map2);
-    exit3();
-    return value2;
-  }
-  const tracker = state.createTracker(info);
-  const sequence = marker.repeat(Math.max(longestStreak(raw, marker) + 1, 3));
-  const exit2 = state.enter("codeFenced");
-  let value = tracker.move(sequence);
-  if (node2.lang) {
-    const subexit = state.enter(`codeFencedLang${suffix}`);
-    value += tracker.move(state.safe(node2.lang, {
-      before: value,
-      after: " ",
-      encode: ["`"],
-      ...tracker.current()
-    }));
-    subexit();
-  }
-  if (node2.lang && node2.meta) {
-    const subexit = state.enter(`codeFencedMeta${suffix}`);
-    value += tracker.move(" ");
-    value += tracker.move(state.safe(node2.meta, {
-      before: value,
-      after: `
-`,
-      encode: ["`"],
-      ...tracker.current()
-    }));
-    subexit();
-  }
-  value += tracker.move(`
-`);
-  if (raw) {
-    value += tracker.move(raw + `
-`);
-  }
-  value += tracker.move(sequence);
-  exit2();
-  return value;
-}
-function map2(line, _, blank) {
-  return (blank ? "" : "    ") + line;
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/check-quote.js
-function checkQuote(state) {
-  const marker = state.options.quote || '"';
-  if (marker !== '"' && marker !== "'") {
-    throw new Error("Cannot serialize title with `" + marker + "` for `options.quote`, expected `\"`, or `'`");
-  }
-  return marker;
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/definition.js
-function definition2(node2, _, state, info) {
-  const quote = checkQuote(state);
-  const suffix = quote === '"' ? "Quote" : "Apostrophe";
-  const exit2 = state.enter("definition");
-  let subexit = state.enter("label");
-  const tracker = state.createTracker(info);
-  let value = tracker.move("[");
-  value += tracker.move(state.safe(state.associationId(node2), {
-    before: value,
-    after: "]",
-    ...tracker.current()
-  }));
-  value += tracker.move("]: ");
-  subexit();
-  if (!node2.url || /[\0- \u007F]/.test(node2.url)) {
-    subexit = state.enter("destinationLiteral");
-    value += tracker.move("<");
-    value += tracker.move(state.safe(node2.url, { before: value, after: ">", ...tracker.current() }));
-    value += tracker.move(">");
-  } else {
-    subexit = state.enter("destinationRaw");
-    value += tracker.move(state.safe(node2.url, {
-      before: value,
-      after: node2.title ? " " : `
-`,
-      ...tracker.current()
-    }));
-  }
-  subexit();
-  if (node2.title) {
-    subexit = state.enter(`title${suffix}`);
-    value += tracker.move(" " + quote);
-    value += tracker.move(state.safe(node2.title, {
-      before: value,
-      after: quote,
-      ...tracker.current()
-    }));
-    value += tracker.move(quote);
-    subexit();
-  }
-  exit2();
-  return value;
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/check-emphasis.js
-function checkEmphasis(state) {
-  const marker = state.options.emphasis || "*";
-  if (marker !== "*" && marker !== "_") {
-    throw new Error("Cannot serialize emphasis with `" + marker + "` for `options.emphasis`, expected `*`, or `_`");
-  }
-  return marker;
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/encode-character-reference.js
-function encodeCharacterReference(code3) {
-  return "&#x" + code3.toString(16).toUpperCase() + ";";
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/encode-info.js
-function encodeInfo(outside, inside, marker) {
-  const outsideKind = classifyCharacter(outside);
-  const insideKind = classifyCharacter(inside);
-  if (outsideKind === undefined) {
-    return insideKind === undefined ? marker === "_" ? { inside: true, outside: true } : { inside: false, outside: false } : insideKind === 1 ? { inside: true, outside: true } : { inside: false, outside: true };
-  }
-  if (outsideKind === 1) {
-    return insideKind === undefined ? { inside: false, outside: false } : insideKind === 1 ? { inside: true, outside: true } : { inside: false, outside: false };
-  }
-  return insideKind === undefined ? { inside: false, outside: false } : insideKind === 1 ? { inside: true, outside: false } : { inside: false, outside: false };
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/emphasis.js
-emphasis2.peek = emphasisPeek;
-function emphasis2(node2, _, state, info) {
-  const marker = checkEmphasis(state);
-  const exit2 = state.enter("emphasis");
-  const tracker = state.createTracker(info);
-  const before = tracker.move(marker);
-  let between = tracker.move(state.containerPhrasing(node2, {
-    after: marker,
-    before,
-    ...tracker.current()
-  }));
-  const betweenHead = between.charCodeAt(0);
-  const open = encodeInfo(info.before.charCodeAt(info.before.length - 1), betweenHead, marker);
-  if (open.inside) {
-    between = encodeCharacterReference(betweenHead) + between.slice(1);
-  }
-  const betweenTail = between.charCodeAt(between.length - 1);
-  const close = encodeInfo(info.after.charCodeAt(0), betweenTail, marker);
-  if (close.inside) {
-    between = between.slice(0, -1) + encodeCharacterReference(betweenTail);
-  }
-  const after = tracker.move(marker);
-  exit2();
-  state.attentionEncodeSurroundingInfo = {
-    after: close.outside,
-    before: open.outside
-  };
-  return before + between + after;
-}
-function emphasisPeek(_, _1, state) {
-  return state.options.emphasis || "*";
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/format-heading-as-setext.js
-function formatHeadingAsSetext(node2, state) {
-  let literalWithBreak = false;
-  visit(node2, function(node3) {
-    if ("value" in node3 && /\r?\n|\r/.test(node3.value) || node3.type === "break") {
-      literalWithBreak = true;
-      return EXIT;
-    }
-  });
-  return Boolean((!node2.depth || node2.depth < 3) && toString(node2) && (state.options.setext || literalWithBreak));
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/heading.js
-function heading2(node2, _, state, info) {
-  const rank = Math.max(Math.min(6, node2.depth || 1), 1);
-  const tracker = state.createTracker(info);
-  if (formatHeadingAsSetext(node2, state)) {
-    const exit3 = state.enter("headingSetext");
-    const subexit2 = state.enter("phrasing");
-    const value2 = state.containerPhrasing(node2, {
-      ...tracker.current(),
-      before: `
-`,
-      after: `
-`
-    });
-    subexit2();
-    exit3();
-    return value2 + `
-` + (rank === 1 ? "=" : "-").repeat(value2.length - (Math.max(value2.lastIndexOf("\r"), value2.lastIndexOf(`
-`)) + 1));
-  }
-  const sequence = "#".repeat(rank);
-  const exit2 = state.enter("headingAtx");
-  const subexit = state.enter("phrasing");
-  tracker.move(sequence + " ");
-  let value = state.containerPhrasing(node2, {
-    before: "# ",
-    after: `
-`,
-    ...tracker.current()
-  });
-  if (/^[\t ]/.test(value)) {
-    value = encodeCharacterReference(value.charCodeAt(0)) + value.slice(1);
-  }
-  value = value ? sequence + " " + value : sequence;
-  if (state.options.closeAtx) {
-    value += " " + sequence;
-  }
-  subexit();
-  exit2();
-  return value;
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/html.js
-html4.peek = htmlPeek;
-function html4(node2) {
-  return node2.value || "";
-}
-function htmlPeek() {
-  return "<";
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/image.js
-image2.peek = imagePeek;
-function image2(node2, _, state, info) {
-  const quote = checkQuote(state);
-  const suffix = quote === '"' ? "Quote" : "Apostrophe";
-  const exit2 = state.enter("image");
-  let subexit = state.enter("label");
-  const tracker = state.createTracker(info);
-  let value = tracker.move("![");
-  value += tracker.move(state.safe(node2.alt, { before: value, after: "]", ...tracker.current() }));
-  value += tracker.move("](");
-  subexit();
-  if (!node2.url && node2.title || /[\0- \u007F]/.test(node2.url)) {
-    subexit = state.enter("destinationLiteral");
-    value += tracker.move("<");
-    value += tracker.move(state.safe(node2.url, { before: value, after: ">", ...tracker.current() }));
-    value += tracker.move(">");
-  } else {
-    subexit = state.enter("destinationRaw");
-    value += tracker.move(state.safe(node2.url, {
-      before: value,
-      after: node2.title ? " " : ")",
-      ...tracker.current()
-    }));
-  }
-  subexit();
-  if (node2.title) {
-    subexit = state.enter(`title${suffix}`);
-    value += tracker.move(" " + quote);
-    value += tracker.move(state.safe(node2.title, {
-      before: value,
-      after: quote,
-      ...tracker.current()
-    }));
-    value += tracker.move(quote);
-    subexit();
-  }
-  value += tracker.move(")");
-  exit2();
-  return value;
-}
-function imagePeek() {
-  return "!";
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/image-reference.js
-imageReference2.peek = imageReferencePeek;
-function imageReference2(node2, _, state, info) {
-  const type = node2.referenceType;
-  const exit2 = state.enter("imageReference");
-  let subexit = state.enter("label");
-  const tracker = state.createTracker(info);
-  let value = tracker.move("![");
-  const alt = state.safe(node2.alt, {
-    before: value,
-    after: "]",
-    ...tracker.current()
-  });
-  value += tracker.move(alt + "][");
-  subexit();
-  const stack = state.stack;
-  state.stack = [];
-  subexit = state.enter("reference");
-  const reference = state.safe(state.associationId(node2), {
-    before: value,
-    after: "]",
-    ...tracker.current()
-  });
-  subexit();
-  state.stack = stack;
-  exit2();
-  if (type === "full" || !alt || alt !== reference) {
-    value += tracker.move(reference + "]");
-  } else if (type === "shortcut") {
-    value = value.slice(0, -1);
-  } else {
-    value += tracker.move("]");
-  }
-  return value;
-}
-function imageReferencePeek() {
-  return "!";
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/inline-code.js
-inlineCode2.peek = inlineCodePeek;
-function inlineCode2(node2, _, state) {
-  let value = node2.value || "";
-  let sequence = "`";
-  let index2 = -1;
-  while (new RegExp("(^|[^`])" + sequence + "([^`]|$)").test(value)) {
-    sequence += "`";
-  }
-  if (/[^ \r\n]/.test(value) && (/^[ \r\n]/.test(value) && /[ \r\n]$/.test(value) || /^`|`$/.test(value))) {
-    value = " " + value + " ";
-  }
-  while (++index2 < state.unsafe.length) {
-    const pattern = state.unsafe[index2];
-    const expression = state.compilePattern(pattern);
-    let match2;
-    if (!pattern.atBreak)
-      continue;
-    while (match2 = expression.exec(value)) {
-      let position3 = match2.index;
-      if (value.charCodeAt(position3) === 10 && value.charCodeAt(position3 - 1) === 13) {
-        position3--;
-      }
-      value = value.slice(0, position3) + " " + value.slice(match2.index + 1);
-    }
-  }
-  return sequence + value + sequence;
-}
-function inlineCodePeek() {
-  return "`";
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/format-link-as-autolink.js
-function formatLinkAsAutolink(node2, state) {
-  const raw = toString(node2);
-  return Boolean(!state.options.resourceLink && node2.url && !node2.title && node2.children && node2.children.length === 1 && node2.children[0].type === "text" && (raw === node2.url || "mailto:" + raw === node2.url) && /^[a-z][a-z+.-]+:/i.test(node2.url) && !/[\0- <>\u007F]/.test(node2.url));
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/link.js
-link2.peek = linkPeek;
-function link2(node2, _, state, info) {
-  const quote = checkQuote(state);
-  const suffix = quote === '"' ? "Quote" : "Apostrophe";
-  const tracker = state.createTracker(info);
-  let exit2;
-  let subexit;
-  if (formatLinkAsAutolink(node2, state)) {
-    const stack = state.stack;
-    state.stack = [];
-    exit2 = state.enter("autolink");
-    let value2 = tracker.move("<");
-    value2 += tracker.move(state.containerPhrasing(node2, {
-      before: value2,
-      after: ">",
-      ...tracker.current()
-    }));
-    value2 += tracker.move(">");
-    exit2();
-    state.stack = stack;
-    return value2;
-  }
-  exit2 = state.enter("link");
-  subexit = state.enter("label");
-  let value = tracker.move("[");
-  value += tracker.move(state.containerPhrasing(node2, {
-    before: value,
-    after: "](",
-    ...tracker.current()
-  }));
-  value += tracker.move("](");
-  subexit();
-  if (!node2.url && node2.title || /[\0- \u007F]/.test(node2.url)) {
-    subexit = state.enter("destinationLiteral");
-    value += tracker.move("<");
-    value += tracker.move(state.safe(node2.url, { before: value, after: ">", ...tracker.current() }));
-    value += tracker.move(">");
-  } else {
-    subexit = state.enter("destinationRaw");
-    value += tracker.move(state.safe(node2.url, {
-      before: value,
-      after: node2.title ? " " : ")",
-      ...tracker.current()
-    }));
-  }
-  subexit();
-  if (node2.title) {
-    subexit = state.enter(`title${suffix}`);
-    value += tracker.move(" " + quote);
-    value += tracker.move(state.safe(node2.title, {
-      before: value,
-      after: quote,
-      ...tracker.current()
-    }));
-    value += tracker.move(quote);
-    subexit();
-  }
-  value += tracker.move(")");
-  exit2();
-  return value;
-}
-function linkPeek(node2, _, state) {
-  return formatLinkAsAutolink(node2, state) ? "<" : "[";
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/link-reference.js
-linkReference2.peek = linkReferencePeek;
-function linkReference2(node2, _, state, info) {
-  const type = node2.referenceType;
-  const exit2 = state.enter("linkReference");
-  let subexit = state.enter("label");
-  const tracker = state.createTracker(info);
-  let value = tracker.move("[");
-  const text5 = state.containerPhrasing(node2, {
-    before: value,
-    after: "]",
-    ...tracker.current()
-  });
-  value += tracker.move(text5 + "][");
-  subexit();
-  const stack = state.stack;
-  state.stack = [];
-  subexit = state.enter("reference");
-  const reference = state.safe(state.associationId(node2), {
-    before: value,
-    after: "]",
-    ...tracker.current()
-  });
-  subexit();
-  state.stack = stack;
-  exit2();
-  if (type === "full" || !text5 || text5 !== reference) {
-    value += tracker.move(reference + "]");
-  } else if (type === "shortcut") {
-    value = value.slice(0, -1);
-  } else {
-    value += tracker.move("]");
-  }
-  return value;
-}
-function linkReferencePeek() {
-  return "[";
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/check-bullet.js
-function checkBullet(state) {
-  const marker = state.options.bullet || "*";
-  if (marker !== "*" && marker !== "+" && marker !== "-") {
-    throw new Error("Cannot serialize items with `" + marker + "` for `options.bullet`, expected `*`, `+`, or `-`");
-  }
-  return marker;
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/check-bullet-other.js
-function checkBulletOther(state) {
-  const bullet = checkBullet(state);
-  const bulletOther = state.options.bulletOther;
-  if (!bulletOther) {
-    return bullet === "*" ? "-" : "*";
-  }
-  if (bulletOther !== "*" && bulletOther !== "+" && bulletOther !== "-") {
-    throw new Error("Cannot serialize items with `" + bulletOther + "` for `options.bulletOther`, expected `*`, `+`, or `-`");
-  }
-  if (bulletOther === bullet) {
-    throw new Error("Expected `bullet` (`" + bullet + "`) and `bulletOther` (`" + bulletOther + "`) to be different");
-  }
-  return bulletOther;
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/check-bullet-ordered.js
-function checkBulletOrdered(state) {
-  const marker = state.options.bulletOrdered || ".";
-  if (marker !== "." && marker !== ")") {
-    throw new Error("Cannot serialize items with `" + marker + "` for `options.bulletOrdered`, expected `.` or `)`");
-  }
-  return marker;
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/check-rule.js
-function checkRule(state) {
-  const marker = state.options.rule || "*";
-  if (marker !== "*" && marker !== "-" && marker !== "_") {
-    throw new Error("Cannot serialize rules with `" + marker + "` for `options.rule`, expected `*`, `-`, or `_`");
-  }
-  return marker;
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/list.js
-function list3(node2, parent, state, info) {
-  const exit2 = state.enter("list");
-  const bulletCurrent = state.bulletCurrent;
-  let bullet = node2.ordered ? checkBulletOrdered(state) : checkBullet(state);
-  const bulletOther = node2.ordered ? bullet === "." ? ")" : "." : checkBulletOther(state);
-  let useDifferentMarker = parent && state.bulletLastUsed ? bullet === state.bulletLastUsed : false;
-  if (!node2.ordered) {
-    const firstListItem = node2.children ? node2.children[0] : undefined;
-    if ((bullet === "*" || bullet === "-") && firstListItem && (!firstListItem.children || !firstListItem.children[0]) && state.stack[state.stack.length - 1] === "list" && state.stack[state.stack.length - 2] === "listItem" && state.stack[state.stack.length - 3] === "list" && state.stack[state.stack.length - 4] === "listItem" && state.indexStack[state.indexStack.length - 1] === 0 && state.indexStack[state.indexStack.length - 2] === 0 && state.indexStack[state.indexStack.length - 3] === 0) {
-      useDifferentMarker = true;
-    }
-    if (checkRule(state) === bullet && firstListItem) {
-      let index2 = -1;
-      while (++index2 < node2.children.length) {
-        const item = node2.children[index2];
-        if (item && item.type === "listItem" && item.children && item.children[0] && item.children[0].type === "thematicBreak") {
-          useDifferentMarker = true;
-          break;
-        }
-      }
-    }
-  }
-  if (useDifferentMarker) {
-    bullet = bulletOther;
-  }
-  state.bulletCurrent = bullet;
-  const value = state.containerFlow(node2, info);
-  state.bulletLastUsed = bullet;
-  state.bulletCurrent = bulletCurrent;
-  exit2();
-  return value;
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/check-list-item-indent.js
-function checkListItemIndent(state) {
-  const style = state.options.listItemIndent || "one";
-  if (style !== "tab" && style !== "one" && style !== "mixed") {
-    throw new Error("Cannot serialize items with `" + style + "` for `options.listItemIndent`, expected `tab`, `one`, or `mixed`");
-  }
-  return style;
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/list-item.js
-function listItem2(node2, parent, state, info) {
-  const listItemIndent = checkListItemIndent(state);
-  let bullet = state.bulletCurrent || checkBullet(state);
-  if (parent && parent.type === "list" && parent.ordered) {
-    bullet = (typeof parent.start === "number" && parent.start > -1 ? parent.start : 1) + (state.options.incrementListMarker === false ? 0 : parent.children.indexOf(node2)) + bullet;
-  }
-  let size = bullet.length + 1;
-  if (listItemIndent === "tab" || listItemIndent === "mixed" && (parent && parent.type === "list" && parent.spread || node2.spread)) {
-    size = Math.ceil(size / 4) * 4;
-  }
-  const tracker = state.createTracker(info);
-  tracker.move(bullet + " ".repeat(size - bullet.length));
-  tracker.shift(size);
-  const exit2 = state.enter("listItem");
-  const value = state.indentLines(state.containerFlow(node2, tracker.current()), map3);
-  exit2();
-  return value;
-  function map3(line, index2, blank) {
-    if (index2) {
-      return (blank ? "" : " ".repeat(size)) + line;
-    }
-    return (blank ? bullet : bullet + " ".repeat(size - bullet.length)) + line;
-  }
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/paragraph.js
-function paragraph2(node2, _, state, info) {
-  const exit2 = state.enter("paragraph");
-  const subexit = state.enter("phrasing");
-  const value = state.containerPhrasing(node2, info);
-  subexit();
-  exit2();
-  return value;
-}
-
-// node_modules/mdast-util-phrasing/lib/index.js
-var phrasing = convert([
-  "break",
-  "delete",
-  "emphasis",
-  "footnote",
-  "footnoteReference",
-  "image",
-  "imageReference",
-  "inlineCode",
-  "inlineMath",
-  "link",
-  "linkReference",
-  "mdxJsxTextElement",
-  "mdxTextExpression",
-  "strong",
-  "text",
-  "textDirective"
-]);
-// node_modules/mdast-util-to-markdown/lib/handle/root.js
-function root3(node2, _, state, info) {
-  const hasPhrasing = node2.children.some(function(d) {
-    return phrasing(d);
-  });
-  const container = hasPhrasing ? state.containerPhrasing : state.containerFlow;
-  return container.call(state, node2, info);
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/check-strong.js
-function checkStrong(state) {
-  const marker = state.options.strong || "*";
-  if (marker !== "*" && marker !== "_") {
-    throw new Error("Cannot serialize strong with `" + marker + "` for `options.strong`, expected `*`, or `_`");
-  }
-  return marker;
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/strong.js
-strong2.peek = strongPeek;
-function strong2(node2, _, state, info) {
-  const marker = checkStrong(state);
-  const exit2 = state.enter("strong");
-  const tracker = state.createTracker(info);
-  const before = tracker.move(marker + marker);
-  let between = tracker.move(state.containerPhrasing(node2, {
-    after: marker,
-    before,
-    ...tracker.current()
-  }));
-  const betweenHead = between.charCodeAt(0);
-  const open = encodeInfo(info.before.charCodeAt(info.before.length - 1), betweenHead, marker);
-  if (open.inside) {
-    between = encodeCharacterReference(betweenHead) + between.slice(1);
-  }
-  const betweenTail = between.charCodeAt(between.length - 1);
-  const close = encodeInfo(info.after.charCodeAt(0), betweenTail, marker);
-  if (close.inside) {
-    between = between.slice(0, -1) + encodeCharacterReference(betweenTail);
-  }
-  const after = tracker.move(marker + marker);
-  exit2();
-  state.attentionEncodeSurroundingInfo = {
-    after: close.outside,
-    before: open.outside
-  };
-  return before + between + after;
-}
-function strongPeek(_, _1, state) {
-  return state.options.strong || "*";
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/text.js
-function text5(node2, _, state, info) {
-  return state.safe(node2.value, info);
-}
-
-// node_modules/mdast-util-to-markdown/lib/util/check-rule-repetition.js
-function checkRuleRepetition(state) {
-  const repetition = state.options.ruleRepetition || 3;
-  if (repetition < 3) {
-    throw new Error("Cannot serialize rules with repetition `" + repetition + "` for `options.ruleRepetition`, expected `3` or more");
-  }
-  return repetition;
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/thematic-break.js
-function thematicBreak3(_, _1, state) {
-  const value = (checkRule(state) + (state.options.ruleSpaces ? " " : "")).repeat(checkRuleRepetition(state));
-  return state.options.ruleSpaces ? value.slice(0, -1) : value;
-}
-
-// node_modules/mdast-util-to-markdown/lib/handle/index.js
-var handle = {
-  blockquote: blockquote2,
-  break: hardBreak2,
-  code: code2,
-  definition: definition2,
-  emphasis: emphasis2,
-  hardBreak: hardBreak2,
-  heading: heading2,
-  html: html4,
-  image: image2,
-  imageReference: imageReference2,
-  inlineCode: inlineCode2,
-  link: link2,
-  linkReference: linkReference2,
-  list: list3,
-  listItem: listItem2,
-  paragraph: paragraph2,
-  root: root3,
-  strong: strong2,
-  text: text5,
-  thematicBreak: thematicBreak3
-};
-// node_modules/mdast-util-gfm-table/lib/index.js
-function gfmTableFromMarkdown() {
-  return {
-    enter: {
-      table: enterTable,
-      tableData: enterCell,
-      tableHeader: enterCell,
-      tableRow: enterRow
-    },
-    exit: {
-      codeText: exitCodeText,
-      table: exitTable,
-      tableData: exit2,
-      tableHeader: exit2,
-      tableRow: exit2
-    }
-  };
-}
-function enterTable(token) {
-  const align = token._align;
-  ok(align, "expected `_align` on table");
-  this.enter({
-    type: "table",
-    align: align.map(function(d) {
-      return d === "none" ? null : d;
-    }),
-    children: []
-  }, token);
-  this.data.inTable = true;
-}
-function exitTable(token) {
-  this.exit(token);
-  this.data.inTable = undefined;
-}
-function enterRow(token) {
-  this.enter({ type: "tableRow", children: [] }, token);
-}
-function exit2(token) {
-  this.exit(token);
-}
-function enterCell(token) {
-  this.enter({ type: "tableCell", children: [] }, token);
-}
-function exitCodeText(token) {
-  let value = this.resume();
-  if (this.data.inTable) {
-    value = value.replace(/\\([\\|])/g, replace);
-  }
-  const node2 = this.stack[this.stack.length - 1];
-  ok(node2.type === "inlineCode");
-  node2.value = value;
-  this.exit(token);
-}
-function replace($0, $1) {
-  return $1 === "|" ? $1 : $0;
-}
-function gfmTableToMarkdown(options) {
-  const settings = options || {};
-  const padding = settings.tableCellPadding;
-  const alignDelimiters = settings.tablePipeAlign;
-  const stringLength = settings.stringLength;
-  const around = padding ? " " : "|";
-  return {
-    unsafe: [
-      { character: "\r", inConstruct: "tableCell" },
-      { character: `
-`, inConstruct: "tableCell" },
-      { atBreak: true, character: "|", after: "[\t :-]" },
-      { character: "|", inConstruct: "tableCell" },
-      { atBreak: true, character: ":", after: "-" },
-      { atBreak: true, character: "-", after: "[:|-]" }
-    ],
-    handlers: {
-      inlineCode: inlineCodeWithTable,
-      table: handleTable,
-      tableCell: handleTableCell,
-      tableRow: handleTableRow
-    }
-  };
-  function handleTable(node2, _, state, info) {
-    return serializeData(handleTableAsData(node2, state, info), node2.align);
-  }
-  function handleTableRow(node2, _, state, info) {
-    const row = handleTableRowAsData(node2, state, info);
-    const value = serializeData([row]);
-    return value.slice(0, value.indexOf(`
-`));
-  }
-  function handleTableCell(node2, _, state, info) {
-    const exit3 = state.enter("tableCell");
-    const subexit = state.enter("phrasing");
-    const value = state.containerPhrasing(node2, {
-      ...info,
-      before: around,
-      after: around
-    });
-    subexit();
-    exit3();
-    return value;
-  }
-  function serializeData(matrix, align) {
-    return markdownTable(matrix, {
-      align,
-      alignDelimiters,
-      padding,
-      stringLength
-    });
-  }
-  function handleTableAsData(node2, state, info) {
-    const children = node2.children;
-    let index2 = -1;
-    const result = [];
-    const subexit = state.enter("table");
-    while (++index2 < children.length) {
-      result[index2] = handleTableRowAsData(children[index2], state, info);
-    }
-    subexit();
-    return result;
-  }
-  function handleTableRowAsData(node2, state, info) {
-    const children = node2.children;
-    let index2 = -1;
-    const result = [];
-    const subexit = state.enter("tableRow");
-    while (++index2 < children.length) {
-      result[index2] = handleTableCell(children[index2], node2, state, info);
-    }
-    subexit();
-    return result;
-  }
-  function inlineCodeWithTable(node2, parent, state) {
-    let value = handle.inlineCode(node2, parent, state);
-    if (state.stack.includes("tableCell")) {
-      value = value.replace(/\|/g, "\\$&");
-    }
-    return value;
-  }
-}
-// node_modules/mdast-util-gfm-task-list-item/lib/index.js
-function gfmTaskListItemFromMarkdown() {
-  return {
-    exit: {
-      taskListCheckValueChecked: exitCheck,
-      taskListCheckValueUnchecked: exitCheck,
-      paragraph: exitParagraphWithTaskListItem
-    }
-  };
-}
-function gfmTaskListItemToMarkdown() {
-  return {
-    unsafe: [{ atBreak: true, character: "-", after: "[:|-]" }],
-    handlers: { listItem: listItemWithTaskListItem }
-  };
-}
-function exitCheck(token) {
-  const node2 = this.stack[this.stack.length - 2];
-  ok(node2.type === "listItem");
-  node2.checked = token.type === "taskListCheckValueChecked";
-}
-function exitParagraphWithTaskListItem(token) {
-  const parent = this.stack[this.stack.length - 2];
-  if (parent && parent.type === "listItem" && typeof parent.checked === "boolean") {
-    const node2 = this.stack[this.stack.length - 1];
-    ok(node2.type === "paragraph");
-    const head = node2.children[0];
-    if (head && head.type === "text") {
-      const siblings = parent.children;
-      let index2 = -1;
-      let firstParaghraph;
-      while (++index2 < siblings.length) {
-        const sibling = siblings[index2];
-        if (sibling.type === "paragraph") {
-          firstParaghraph = sibling;
-          break;
-        }
-      }
-      if (firstParaghraph === node2) {
-        head.value = head.value.slice(1);
-        if (head.value.length === 0) {
-          node2.children.shift();
-        } else if (node2.position && head.position && typeof head.position.start.offset === "number") {
-          head.position.start.column++;
-          head.position.start.offset++;
-          node2.position.start = Object.assign({}, head.position.start);
-        }
-      }
-    }
-  }
-  this.exit(token);
-}
-function listItemWithTaskListItem(node2, parent, state, info) {
-  const head = node2.children[0];
-  const checkable = typeof node2.checked === "boolean" && head && head.type === "paragraph";
-  const checkbox = "[" + (node2.checked ? "x" : " ") + "] ";
-  const tracker = state.createTracker(info);
-  if (checkable) {
-    tracker.move(checkbox);
-  }
-  let value = handle.listItem(node2, parent, state, {
-    ...info,
-    ...tracker.current()
-  });
-  if (checkable) {
-    value = value.replace(/^(?:[*+-]|\d+\.)([\r\n]| {1,3})/, check);
-  }
-  return value;
-  function check($0) {
-    return $0 + checkbox;
-  }
-}
-// node_modules/mdast-util-gfm/lib/index.js
-function gfmFromMarkdown() {
-  return [
-    gfmAutolinkLiteralFromMarkdown(),
-    gfmFootnoteFromMarkdown(),
-    gfmStrikethroughFromMarkdown(),
-    gfmTableFromMarkdown(),
-    gfmTaskListItemFromMarkdown()
-  ];
-}
-function gfmToMarkdown(options) {
-  return {
-    extensions: [
-      gfmAutolinkLiteralToMarkdown(),
-      gfmFootnoteToMarkdown(options),
-      gfmStrikethroughToMarkdown(),
-      gfmTableToMarkdown(options),
-      gfmTaskListItemToMarkdown()
-    ]
-  };
-}
-// node_modules/micromark-extension-gfm-autolink-literal/dev/lib/syntax.js
-var wwwPrefix = { tokenize: tokenizeWwwPrefix, partial: true };
-var domain = { tokenize: tokenizeDomain, partial: true };
-var path = { tokenize: tokenizePath, partial: true };
-var trail = { tokenize: tokenizeTrail, partial: true };
-var emailDomainDotTrail = {
-  tokenize: tokenizeEmailDomainDotTrail,
-  partial: true
-};
-var wwwAutolink = {
-  name: "wwwAutolink",
-  tokenize: tokenizeWwwAutolink,
-  previous: previousWww
-};
-var protocolAutolink = {
-  name: "protocolAutolink",
-  tokenize: tokenizeProtocolAutolink,
-  previous: previousProtocol
-};
-var emailAutolink = {
-  name: "emailAutolink",
-  tokenize: tokenizeEmailAutolink,
-  previous: previousEmail
-};
-var text6 = {};
-function gfmAutolinkLiteral() {
-  return { text: text6 };
-}
-var code3 = codes.digit0;
-while (code3 < codes.leftCurlyBrace) {
-  text6[code3] = emailAutolink;
-  code3++;
-  if (code3 === codes.colon)
-    code3 = codes.uppercaseA;
-  else if (code3 === codes.leftSquareBracket)
-    code3 = codes.lowercaseA;
-}
-text6[codes.plusSign] = emailAutolink;
-text6[codes.dash] = emailAutolink;
-text6[codes.dot] = emailAutolink;
-text6[codes.underscore] = emailAutolink;
-text6[codes.uppercaseH] = [emailAutolink, protocolAutolink];
-text6[codes.lowercaseH] = [emailAutolink, protocolAutolink];
-text6[codes.uppercaseW] = [emailAutolink, wwwAutolink];
-text6[codes.lowercaseW] = [emailAutolink, wwwAutolink];
-function tokenizeEmailAutolink(effects, ok3, nok) {
-  const self2 = this;
-  let dot;
-  let data;
-  return start2;
-  function start2(code4) {
-    if (!gfmAtext(code4) || !previousEmail.call(self2, self2.previous) || previousUnbalanced(self2.events)) {
-      return nok(code4);
-    }
-    effects.enter("literalAutolink");
-    effects.enter("literalAutolinkEmail");
-    return atext(code4);
-  }
-  function atext(code4) {
-    if (gfmAtext(code4)) {
-      effects.consume(code4);
-      return atext;
-    }
-    if (code4 === codes.atSign) {
-      effects.consume(code4);
-      return emailDomain;
-    }
-    return nok(code4);
-  }
-  function emailDomain(code4) {
-    if (code4 === codes.dot) {
-      return effects.check(emailDomainDotTrail, emailDomainAfter, emailDomainDot)(code4);
-    }
-    if (code4 === codes.dash || code4 === codes.underscore || asciiAlphanumeric(code4)) {
-      data = true;
-      effects.consume(code4);
-      return emailDomain;
-    }
-    return emailDomainAfter(code4);
-  }
-  function emailDomainDot(code4) {
-    effects.consume(code4);
-    dot = true;
-    return emailDomain;
-  }
-  function emailDomainAfter(code4) {
-    if (data && dot && asciiAlpha(self2.previous)) {
-      effects.exit("literalAutolinkEmail");
-      effects.exit("literalAutolink");
-      return ok3(code4);
-    }
-    return nok(code4);
-  }
-}
-function tokenizeWwwAutolink(effects, ok3, nok) {
-  const self2 = this;
-  return wwwStart;
-  function wwwStart(code4) {
-    if (code4 !== codes.uppercaseW && code4 !== codes.lowercaseW || !previousWww.call(self2, self2.previous) || previousUnbalanced(self2.events)) {
-      return nok(code4);
-    }
-    effects.enter("literalAutolink");
-    effects.enter("literalAutolinkWww");
-    return effects.check(wwwPrefix, effects.attempt(domain, effects.attempt(path, wwwAfter), nok), nok)(code4);
-  }
-  function wwwAfter(code4) {
-    effects.exit("literalAutolinkWww");
-    effects.exit("literalAutolink");
-    return ok3(code4);
-  }
-}
-function tokenizeProtocolAutolink(effects, ok3, nok) {
-  const self2 = this;
-  let buffer = "";
-  let seen = false;
-  return protocolStart;
-  function protocolStart(code4) {
-    if ((code4 === codes.uppercaseH || code4 === codes.lowercaseH) && previousProtocol.call(self2, self2.previous) && !previousUnbalanced(self2.events)) {
-      effects.enter("literalAutolink");
-      effects.enter("literalAutolinkHttp");
-      buffer += String.fromCodePoint(code4);
-      effects.consume(code4);
-      return protocolPrefixInside;
-    }
-    return nok(code4);
-  }
-  function protocolPrefixInside(code4) {
-    if (asciiAlpha(code4) && buffer.length < 5) {
-      buffer += String.fromCodePoint(code4);
-      effects.consume(code4);
-      return protocolPrefixInside;
-    }
-    if (code4 === codes.colon) {
-      const protocol = buffer.toLowerCase();
-      if (protocol === "http" || protocol === "https") {
-        effects.consume(code4);
-        return protocolSlashesInside;
-      }
-    }
-    return nok(code4);
-  }
-  function protocolSlashesInside(code4) {
-    if (code4 === codes.slash) {
-      effects.consume(code4);
-      if (seen) {
-        return afterProtocol;
-      }
-      seen = true;
-      return protocolSlashesInside;
-    }
-    return nok(code4);
-  }
-  function afterProtocol(code4) {
-    return code4 === codes.eof || asciiControl(code4) || markdownLineEndingOrSpace(code4) || unicodeWhitespace(code4) || unicodePunctuation(code4) ? nok(code4) : effects.attempt(domain, effects.attempt(path, protocolAfter), nok)(code4);
-  }
-  function protocolAfter(code4) {
-    effects.exit("literalAutolinkHttp");
-    effects.exit("literalAutolink");
-    return ok3(code4);
-  }
-}
-function tokenizeWwwPrefix(effects, ok3, nok) {
-  let size = 0;
-  return wwwPrefixInside;
-  function wwwPrefixInside(code4) {
-    if ((code4 === codes.uppercaseW || code4 === codes.lowercaseW) && size < 3) {
-      size++;
-      effects.consume(code4);
-      return wwwPrefixInside;
-    }
-    if (code4 === codes.dot && size === 3) {
-      effects.consume(code4);
-      return wwwPrefixAfter;
-    }
-    return nok(code4);
-  }
-  function wwwPrefixAfter(code4) {
-    return code4 === codes.eof ? nok(code4) : ok3(code4);
-  }
-}
-function tokenizeDomain(effects, ok3, nok) {
-  let underscoreInLastSegment;
-  let underscoreInLastLastSegment;
-  let seen;
-  return domainInside;
-  function domainInside(code4) {
-    if (code4 === codes.dot || code4 === codes.underscore) {
-      return effects.check(trail, domainAfter, domainAtPunctuation)(code4);
-    }
-    if (code4 === codes.eof || markdownLineEndingOrSpace(code4) || unicodeWhitespace(code4) || code4 !== codes.dash && unicodePunctuation(code4)) {
-      return domainAfter(code4);
-    }
-    seen = true;
-    effects.consume(code4);
-    return domainInside;
-  }
-  function domainAtPunctuation(code4) {
-    if (code4 === codes.underscore) {
-      underscoreInLastSegment = true;
-    } else {
-      underscoreInLastLastSegment = underscoreInLastSegment;
-      underscoreInLastSegment = undefined;
-    }
-    effects.consume(code4);
-    return domainInside;
-  }
-  function domainAfter(code4) {
-    if (underscoreInLastLastSegment || underscoreInLastSegment || !seen) {
-      return nok(code4);
-    }
-    return ok3(code4);
-  }
-}
-function tokenizePath(effects, ok3) {
-  let sizeOpen = 0;
-  let sizeClose = 0;
-  return pathInside;
-  function pathInside(code4) {
-    if (code4 === codes.leftParenthesis) {
-      sizeOpen++;
-      effects.consume(code4);
-      return pathInside;
-    }
-    if (code4 === codes.rightParenthesis && sizeClose < sizeOpen) {
-      return pathAtPunctuation(code4);
-    }
-    if (code4 === codes.exclamationMark || code4 === codes.quotationMark || code4 === codes.ampersand || code4 === codes.apostrophe || code4 === codes.rightParenthesis || code4 === codes.asterisk || code4 === codes.comma || code4 === codes.dot || code4 === codes.colon || code4 === codes.semicolon || code4 === codes.lessThan || code4 === codes.questionMark || code4 === codes.rightSquareBracket || code4 === codes.underscore || code4 === codes.tilde) {
-      return effects.check(trail, ok3, pathAtPunctuation)(code4);
-    }
-    if (code4 === codes.eof || markdownLineEndingOrSpace(code4) || unicodeWhitespace(code4)) {
-      return ok3(code4);
-    }
-    effects.consume(code4);
-    return pathInside;
-  }
-  function pathAtPunctuation(code4) {
-    if (code4 === codes.rightParenthesis) {
-      sizeClose++;
-    }
-    effects.consume(code4);
-    return pathInside;
-  }
-}
-function tokenizeTrail(effects, ok3, nok) {
-  return trail2;
-  function trail2(code4) {
-    if (code4 === codes.exclamationMark || code4 === codes.quotationMark || code4 === codes.apostrophe || code4 === codes.rightParenthesis || code4 === codes.asterisk || code4 === codes.comma || code4 === codes.dot || code4 === codes.colon || code4 === codes.semicolon || code4 === codes.questionMark || code4 === codes.underscore || code4 === codes.tilde) {
-      effects.consume(code4);
-      return trail2;
-    }
-    if (code4 === codes.ampersand) {
-      effects.consume(code4);
-      return trailCharacterReferenceStart;
-    }
-    if (code4 === codes.rightSquareBracket) {
-      effects.consume(code4);
-      return trailBracketAfter;
-    }
-    if (code4 === codes.lessThan || code4 === codes.eof || markdownLineEndingOrSpace(code4) || unicodeWhitespace(code4)) {
-      return ok3(code4);
-    }
-    return nok(code4);
-  }
-  function trailBracketAfter(code4) {
-    if (code4 === codes.eof || code4 === codes.leftParenthesis || code4 === codes.leftSquareBracket || markdownLineEndingOrSpace(code4) || unicodeWhitespace(code4)) {
-      return ok3(code4);
-    }
-    return trail2(code4);
-  }
-  function trailCharacterReferenceStart(code4) {
-    return asciiAlpha(code4) ? trailCharacterReferenceInside(code4) : nok(code4);
-  }
-  function trailCharacterReferenceInside(code4) {
-    if (code4 === codes.semicolon) {
-      effects.consume(code4);
-      return trail2;
-    }
-    if (asciiAlpha(code4)) {
-      effects.consume(code4);
-      return trailCharacterReferenceInside;
-    }
-    return nok(code4);
-  }
-}
-function tokenizeEmailDomainDotTrail(effects, ok3, nok) {
-  return start2;
-  function start2(code4) {
-    effects.consume(code4);
-    return after;
-  }
-  function after(code4) {
-    return asciiAlphanumeric(code4) ? nok(code4) : ok3(code4);
-  }
-}
-function previousWww(code4) {
-  return code4 === codes.eof || code4 === codes.leftParenthesis || code4 === codes.asterisk || code4 === codes.underscore || code4 === codes.leftSquareBracket || code4 === codes.rightSquareBracket || code4 === codes.tilde || markdownLineEndingOrSpace(code4);
-}
-function previousProtocol(code4) {
-  return !asciiAlpha(code4);
-}
-function previousEmail(code4) {
-  return !(code4 === codes.slash || gfmAtext(code4));
-}
-function gfmAtext(code4) {
-  return code4 === codes.plusSign || code4 === codes.dash || code4 === codes.dot || code4 === codes.underscore || asciiAlphanumeric(code4);
-}
-function previousUnbalanced(events) {
-  let index2 = events.length;
-  let result = false;
-  while (index2--) {
-    const token = events[index2][1];
-    if ((token.type === "labelLink" || token.type === "labelImage") && !token._balanced) {
-      result = true;
-      break;
-    }
-    if (token._gfmAutolinkLiteralWalkedInto) {
-      result = false;
-      break;
-    }
-  }
-  if (events.length > 0 && !result) {
-    events[events.length - 1][1]._gfmAutolinkLiteralWalkedInto = true;
-  }
-  return result;
-}
-// node_modules/micromark-extension-gfm-footnote/dev/lib/syntax.js
-var indent = { tokenize: tokenizeIndent2, partial: true };
-function gfmFootnote() {
-  return {
-    document: {
-      [codes.leftSquareBracket]: {
-        name: "gfmFootnoteDefinition",
-        tokenize: tokenizeDefinitionStart,
-        continuation: { tokenize: tokenizeDefinitionContinuation },
-        exit: gfmFootnoteDefinitionEnd
-      }
-    },
-    text: {
-      [codes.leftSquareBracket]: {
-        name: "gfmFootnoteCall",
-        tokenize: tokenizeGfmFootnoteCall
-      },
-      [codes.rightSquareBracket]: {
-        name: "gfmPotentialFootnoteCall",
-        add: "after",
-        tokenize: tokenizePotentialGfmFootnoteCall,
-        resolveTo: resolveToPotentialGfmFootnoteCall
-      }
-    }
-  };
-}
-function tokenizePotentialGfmFootnoteCall(effects, ok3, nok) {
-  const self2 = this;
-  let index2 = self2.events.length;
-  const defined = self2.parser.gfmFootnotes || (self2.parser.gfmFootnotes = []);
-  let labelStart;
-  while (index2--) {
-    const token = self2.events[index2][1];
-    if (token.type === types.labelImage) {
-      labelStart = token;
-      break;
-    }
-    if (token.type === "gfmFootnoteCall" || token.type === types.labelLink || token.type === types.label || token.type === types.image || token.type === types.link) {
-      break;
-    }
-  }
-  return start2;
-  function start2(code4) {
-    ok(code4 === codes.rightSquareBracket, "expected `]`");
-    if (!labelStart || !labelStart._balanced) {
-      return nok(code4);
-    }
-    const id = normalizeIdentifier(self2.sliceSerialize({ start: labelStart.end, end: self2.now() }));
-    if (id.codePointAt(0) !== codes.caret || !defined.includes(id.slice(1))) {
-      return nok(code4);
-    }
-    effects.enter("gfmFootnoteCallLabelMarker");
-    effects.consume(code4);
-    effects.exit("gfmFootnoteCallLabelMarker");
-    return ok3(code4);
-  }
-}
-function resolveToPotentialGfmFootnoteCall(events, context) {
-  let index2 = events.length;
-  let labelStart;
-  while (index2--) {
-    if (events[index2][1].type === types.labelImage && events[index2][0] === "enter") {
-      labelStart = events[index2][1];
-      break;
-    }
-  }
-  ok(labelStart, "expected `labelStart` to resolve");
-  events[index2 + 1][1].type = types.data;
-  events[index2 + 3][1].type = "gfmFootnoteCallLabelMarker";
-  const call = {
-    type: "gfmFootnoteCall",
-    start: Object.assign({}, events[index2 + 3][1].start),
-    end: Object.assign({}, events[events.length - 1][1].end)
-  };
-  const marker = {
-    type: "gfmFootnoteCallMarker",
-    start: Object.assign({}, events[index2 + 3][1].end),
-    end: Object.assign({}, events[index2 + 3][1].end)
-  };
-  marker.end.column++;
-  marker.end.offset++;
-  marker.end._bufferIndex++;
-  const string3 = {
-    type: "gfmFootnoteCallString",
-    start: Object.assign({}, marker.end),
-    end: Object.assign({}, events[events.length - 1][1].start)
-  };
-  const chunk = {
-    type: types.chunkString,
-    contentType: "string",
-    start: Object.assign({}, string3.start),
-    end: Object.assign({}, string3.end)
-  };
-  const replacement = [
-    events[index2 + 1],
-    events[index2 + 2],
-    ["enter", call, context],
-    events[index2 + 3],
-    events[index2 + 4],
-    ["enter", marker, context],
-    ["exit", marker, context],
-    ["enter", string3, context],
-    ["enter", chunk, context],
-    ["exit", chunk, context],
-    ["exit", string3, context],
-    events[events.length - 2],
-    events[events.length - 1],
-    ["exit", call, context]
-  ];
-  events.splice(index2, events.length - index2 + 1, ...replacement);
-  return events;
-}
-function tokenizeGfmFootnoteCall(effects, ok3, nok) {
-  const self2 = this;
-  const defined = self2.parser.gfmFootnotes || (self2.parser.gfmFootnotes = []);
-  let size = 0;
-  let data;
-  return start2;
-  function start2(code4) {
-    ok(code4 === codes.leftSquareBracket, "expected `[`");
-    effects.enter("gfmFootnoteCall");
-    effects.enter("gfmFootnoteCallLabelMarker");
-    effects.consume(code4);
-    effects.exit("gfmFootnoteCallLabelMarker");
-    return callStart;
-  }
-  function callStart(code4) {
-    if (code4 !== codes.caret)
-      return nok(code4);
-    effects.enter("gfmFootnoteCallMarker");
-    effects.consume(code4);
-    effects.exit("gfmFootnoteCallMarker");
-    effects.enter("gfmFootnoteCallString");
-    effects.enter("chunkString").contentType = "string";
-    return callData;
-  }
-  function callData(code4) {
-    if (size > constants.linkReferenceSizeMax || code4 === codes.rightSquareBracket && !data || code4 === codes.eof || code4 === codes.leftSquareBracket || markdownLineEndingOrSpace(code4)) {
-      return nok(code4);
-    }
-    if (code4 === codes.rightSquareBracket) {
-      effects.exit("chunkString");
-      const token = effects.exit("gfmFootnoteCallString");
-      if (!defined.includes(normalizeIdentifier(self2.sliceSerialize(token)))) {
-        return nok(code4);
-      }
-      effects.enter("gfmFootnoteCallLabelMarker");
-      effects.consume(code4);
-      effects.exit("gfmFootnoteCallLabelMarker");
-      effects.exit("gfmFootnoteCall");
-      return ok3;
-    }
-    if (!markdownLineEndingOrSpace(code4)) {
-      data = true;
-    }
-    size++;
-    effects.consume(code4);
-    return code4 === codes.backslash ? callEscape : callData;
-  }
-  function callEscape(code4) {
-    if (code4 === codes.leftSquareBracket || code4 === codes.backslash || code4 === codes.rightSquareBracket) {
-      effects.consume(code4);
-      size++;
-      return callData;
-    }
-    return callData(code4);
-  }
-}
-function tokenizeDefinitionStart(effects, ok3, nok) {
-  const self2 = this;
-  const defined = self2.parser.gfmFootnotes || (self2.parser.gfmFootnotes = []);
-  let identifier;
-  let size = 0;
-  let data;
-  return start2;
-  function start2(code4) {
-    ok(code4 === codes.leftSquareBracket, "expected `[`");
-    effects.enter("gfmFootnoteDefinition")._container = true;
-    effects.enter("gfmFootnoteDefinitionLabel");
-    effects.enter("gfmFootnoteDefinitionLabelMarker");
-    effects.consume(code4);
-    effects.exit("gfmFootnoteDefinitionLabelMarker");
-    return labelAtMarker;
-  }
-  function labelAtMarker(code4) {
-    if (code4 === codes.caret) {
-      effects.enter("gfmFootnoteDefinitionMarker");
-      effects.consume(code4);
-      effects.exit("gfmFootnoteDefinitionMarker");
-      effects.enter("gfmFootnoteDefinitionLabelString");
-      effects.enter("chunkString").contentType = "string";
-      return labelInside;
-    }
-    return nok(code4);
-  }
-  function labelInside(code4) {
-    if (size > constants.linkReferenceSizeMax || code4 === codes.rightSquareBracket && !data || code4 === codes.eof || code4 === codes.leftSquareBracket || markdownLineEndingOrSpace(code4)) {
-      return nok(code4);
-    }
-    if (code4 === codes.rightSquareBracket) {
-      effects.exit("chunkString");
-      const token = effects.exit("gfmFootnoteDefinitionLabelString");
-      identifier = normalizeIdentifier(self2.sliceSerialize(token));
-      effects.enter("gfmFootnoteDefinitionLabelMarker");
-      effects.consume(code4);
-      effects.exit("gfmFootnoteDefinitionLabelMarker");
-      effects.exit("gfmFootnoteDefinitionLabel");
-      return labelAfter;
-    }
-    if (!markdownLineEndingOrSpace(code4)) {
-      data = true;
-    }
-    size++;
-    effects.consume(code4);
-    return code4 === codes.backslash ? labelEscape : labelInside;
-  }
-  function labelEscape(code4) {
-    if (code4 === codes.leftSquareBracket || code4 === codes.backslash || code4 === codes.rightSquareBracket) {
-      effects.consume(code4);
-      size++;
-      return labelInside;
-    }
-    return labelInside(code4);
-  }
-  function labelAfter(code4) {
-    if (code4 === codes.colon) {
-      effects.enter("definitionMarker");
-      effects.consume(code4);
-      effects.exit("definitionMarker");
-      if (!defined.includes(identifier)) {
-        defined.push(identifier);
-      }
-      return factorySpace(effects, whitespaceAfter, "gfmFootnoteDefinitionWhitespace");
-    }
-    return nok(code4);
-  }
-  function whitespaceAfter(code4) {
-    return ok3(code4);
-  }
-}
-function tokenizeDefinitionContinuation(effects, ok3, nok) {
-  return effects.check(blankLine, ok3, effects.attempt(indent, ok3, nok));
-}
-function gfmFootnoteDefinitionEnd(effects) {
-  effects.exit("gfmFootnoteDefinition");
-}
-function tokenizeIndent2(effects, ok3, nok) {
-  const self2 = this;
-  return factorySpace(effects, afterPrefix, "gfmFootnoteDefinitionIndent", constants.tabSize + 1);
-  function afterPrefix(code4) {
-    const tail = self2.events[self2.events.length - 1];
-    return tail && tail[1].type === "gfmFootnoteDefinitionIndent" && tail[2].sliceSerialize(tail[1], true).length === constants.tabSize ? ok3(code4) : nok(code4);
-  }
-}
-// node_modules/micromark-extension-gfm-strikethrough/dev/lib/syntax.js
-function gfmStrikethrough(options) {
-  const options_ = options || {};
-  let single = options_.singleTilde;
-  const tokenizer = {
-    name: "strikethrough",
-    tokenize: tokenizeStrikethrough,
-    resolveAll: resolveAllStrikethrough
-  };
-  if (single === null || single === undefined) {
-    single = true;
-  }
-  return {
-    text: { [codes.tilde]: tokenizer },
-    insideSpan: { null: [tokenizer] },
-    attentionMarkers: { null: [codes.tilde] }
-  };
-  function resolveAllStrikethrough(events, context) {
-    let index2 = -1;
-    while (++index2 < events.length) {
-      if (events[index2][0] === "enter" && events[index2][1].type === "strikethroughSequenceTemporary" && events[index2][1]._close) {
-        let open = index2;
-        while (open--) {
-          if (events[open][0] === "exit" && events[open][1].type === "strikethroughSequenceTemporary" && events[open][1]._open && events[index2][1].end.offset - events[index2][1].start.offset === events[open][1].end.offset - events[open][1].start.offset) {
-            events[index2][1].type = "strikethroughSequence";
-            events[open][1].type = "strikethroughSequence";
-            const strikethrough2 = {
-              type: "strikethrough",
-              start: Object.assign({}, events[open][1].start),
-              end: Object.assign({}, events[index2][1].end)
-            };
-            const text7 = {
-              type: "strikethroughText",
-              start: Object.assign({}, events[open][1].end),
-              end: Object.assign({}, events[index2][1].start)
-            };
-            const nextEvents = [
-              ["enter", strikethrough2, context],
-              ["enter", events[open][1], context],
-              ["exit", events[open][1], context],
-              ["enter", text7, context]
-            ];
-            const insideSpan2 = context.parser.constructs.insideSpan.null;
-            if (insideSpan2) {
-              splice(nextEvents, nextEvents.length, 0, resolveAll(insideSpan2, events.slice(open + 1, index2), context));
-            }
-            splice(nextEvents, nextEvents.length, 0, [
-              ["exit", text7, context],
-              ["enter", events[index2][1], context],
-              ["exit", events[index2][1], context],
-              ["exit", strikethrough2, context]
-            ]);
-            splice(events, open - 1, index2 - open + 3, nextEvents);
-            index2 = open + nextEvents.length - 2;
-            break;
-          }
-        }
-      }
-    }
-    index2 = -1;
-    while (++index2 < events.length) {
-      if (events[index2][1].type === "strikethroughSequenceTemporary") {
-        events[index2][1].type = types.data;
-      }
-    }
-    return events;
-  }
-  function tokenizeStrikethrough(effects, ok3, nok) {
-    const previous3 = this.previous;
-    const events = this.events;
-    let size = 0;
-    return start2;
-    function start2(code4) {
-      ok(code4 === codes.tilde, "expected `~`");
-      if (previous3 === codes.tilde && events[events.length - 1][1].type !== types.characterEscape) {
-        return nok(code4);
-      }
-      effects.enter("strikethroughSequenceTemporary");
-      return more(code4);
-    }
-    function more(code4) {
-      const before = classifyCharacter(previous3);
-      if (code4 === codes.tilde) {
-        if (size > 1)
-          return nok(code4);
-        effects.consume(code4);
-        size++;
-        return more;
-      }
-      if (size < 2 && !single)
-        return nok(code4);
-      const token = effects.exit("strikethroughSequenceTemporary");
-      const after = classifyCharacter(code4);
-      token._open = !after || after === constants.attentionSideAfter && Boolean(before);
-      token._close = !before || before === constants.attentionSideAfter && Boolean(after);
-      return ok3(code4);
-    }
-  }
-}
-// node_modules/micromark-extension-gfm-table/dev/lib/edit-map.js
-class EditMap {
-  constructor() {
-    this.map = [];
-  }
-  add(index2, remove, add) {
-    addImplementation(this, index2, remove, add);
-  }
-  consume(events) {
-    this.map.sort(function(a, b) {
-      return a[0] - b[0];
-    });
-    if (this.map.length === 0) {
-      return;
-    }
-    let index2 = this.map.length;
-    const vecs = [];
-    while (index2 > 0) {
-      index2 -= 1;
-      vecs.push(events.slice(this.map[index2][0] + this.map[index2][1]), this.map[index2][2]);
-      events.length = this.map[index2][0];
-    }
-    vecs.push(events.slice());
-    events.length = 0;
-    let slice = vecs.pop();
-    while (slice) {
-      for (const element3 of slice) {
-        events.push(element3);
-      }
-      slice = vecs.pop();
-    }
-    this.map.length = 0;
-  }
-}
-function addImplementation(editMap, at, remove, add) {
-  let index2 = 0;
-  if (remove === 0 && add.length === 0) {
-    return;
-  }
-  while (index2 < editMap.map.length) {
-    if (editMap.map[index2][0] === at) {
-      editMap.map[index2][1] += remove;
-      editMap.map[index2][2].push(...add);
-      return;
-    }
-    index2 += 1;
-  }
-  editMap.map.push([at, remove, add]);
-}
-
-// node_modules/micromark-extension-gfm-table/dev/lib/infer.js
-function gfmTableAlign(events, index2) {
-  ok(events[index2][1].type === "table", "expected table");
-  let inDelimiterRow = false;
-  const align = [];
-  while (index2 < events.length) {
-    const event = events[index2];
-    if (inDelimiterRow) {
-      if (event[0] === "enter") {
-        if (event[1].type === "tableContent") {
-          align.push(events[index2 + 1][1].type === "tableDelimiterMarker" ? "left" : "none");
-        }
-      } else if (event[1].type === "tableContent") {
-        if (events[index2 - 1][1].type === "tableDelimiterMarker") {
-          const alignIndex = align.length - 1;
-          align[alignIndex] = align[alignIndex] === "left" ? "center" : "right";
-        }
-      } else if (event[1].type === "tableDelimiterRow") {
-        break;
-      }
-    } else if (event[0] === "enter" && event[1].type === "tableDelimiterRow") {
-      inDelimiterRow = true;
-    }
-    index2 += 1;
-  }
-  return align;
-}
-
-// node_modules/micromark-extension-gfm-table/dev/lib/syntax.js
-function gfmTable() {
-  return {
-    flow: {
-      null: { name: "table", tokenize: tokenizeTable, resolveAll: resolveTable }
-    }
-  };
-}
-function tokenizeTable(effects, ok3, nok) {
-  const self2 = this;
-  let size = 0;
-  let sizeB = 0;
-  let seen;
-  return start2;
-  function start2(code4) {
-    let index2 = self2.events.length - 1;
-    while (index2 > -1) {
-      const type = self2.events[index2][1].type;
-      if (type === types.lineEnding || type === types.linePrefix)
-        index2--;
-      else
-        break;
-    }
-    const tail = index2 > -1 ? self2.events[index2][1].type : null;
-    const next = tail === "tableHead" || tail === "tableRow" ? bodyRowStart : headRowBefore;
-    if (next === bodyRowStart && self2.parser.lazy[self2.now().line]) {
-      return nok(code4);
-    }
-    return next(code4);
-  }
-  function headRowBefore(code4) {
-    effects.enter("tableHead");
-    effects.enter("tableRow");
-    return headRowStart(code4);
-  }
-  function headRowStart(code4) {
-    if (code4 === codes.verticalBar) {
-      return headRowBreak(code4);
-    }
-    seen = true;
-    sizeB += 1;
-    return headRowBreak(code4);
-  }
-  function headRowBreak(code4) {
-    if (code4 === codes.eof) {
-      return nok(code4);
-    }
-    if (markdownLineEnding(code4)) {
-      if (sizeB > 1) {
-        sizeB = 0;
-        self2.interrupt = true;
-        effects.exit("tableRow");
-        effects.enter(types.lineEnding);
-        effects.consume(code4);
-        effects.exit(types.lineEnding);
-        return headDelimiterStart;
-      }
-      return nok(code4);
-    }
-    if (markdownSpace(code4)) {
-      return factorySpace(effects, headRowBreak, types.whitespace)(code4);
-    }
-    sizeB += 1;
-    if (seen) {
-      seen = false;
-      size += 1;
-    }
-    if (code4 === codes.verticalBar) {
-      effects.enter("tableCellDivider");
-      effects.consume(code4);
-      effects.exit("tableCellDivider");
-      seen = true;
-      return headRowBreak;
-    }
-    effects.enter(types.data);
-    return headRowData(code4);
-  }
-  function headRowData(code4) {
-    if (code4 === codes.eof || code4 === codes.verticalBar || markdownLineEndingOrSpace(code4)) {
-      effects.exit(types.data);
-      return headRowBreak(code4);
-    }
-    effects.consume(code4);
-    return code4 === codes.backslash ? headRowEscape : headRowData;
-  }
-  function headRowEscape(code4) {
-    if (code4 === codes.backslash || code4 === codes.verticalBar) {
-      effects.consume(code4);
-      return headRowData;
-    }
-    return headRowData(code4);
-  }
-  function headDelimiterStart(code4) {
-    self2.interrupt = false;
-    if (self2.parser.lazy[self2.now().line]) {
-      return nok(code4);
-    }
-    effects.enter("tableDelimiterRow");
-    seen = false;
-    if (markdownSpace(code4)) {
-      ok(self2.parser.constructs.disable.null, "expected `disabled.null`");
-      return factorySpace(effects, headDelimiterBefore, types.linePrefix, self2.parser.constructs.disable.null.includes("codeIndented") ? undefined : constants.tabSize)(code4);
-    }
-    return headDelimiterBefore(code4);
-  }
-  function headDelimiterBefore(code4) {
-    if (code4 === codes.dash || code4 === codes.colon) {
-      return headDelimiterValueBefore(code4);
-    }
-    if (code4 === codes.verticalBar) {
-      seen = true;
-      effects.enter("tableCellDivider");
-      effects.consume(code4);
-      effects.exit("tableCellDivider");
-      return headDelimiterCellBefore;
-    }
-    return headDelimiterNok(code4);
-  }
-  function headDelimiterCellBefore(code4) {
-    if (markdownSpace(code4)) {
-      return factorySpace(effects, headDelimiterValueBefore, types.whitespace)(code4);
-    }
-    return headDelimiterValueBefore(code4);
-  }
-  function headDelimiterValueBefore(code4) {
-    if (code4 === codes.colon) {
-      sizeB += 1;
-      seen = true;
-      effects.enter("tableDelimiterMarker");
-      effects.consume(code4);
-      effects.exit("tableDelimiterMarker");
-      return headDelimiterLeftAlignmentAfter;
-    }
-    if (code4 === codes.dash) {
-      sizeB += 1;
-      return headDelimiterLeftAlignmentAfter(code4);
-    }
-    if (code4 === codes.eof || markdownLineEnding(code4)) {
-      return headDelimiterCellAfter(code4);
-    }
-    return headDelimiterNok(code4);
-  }
-  function headDelimiterLeftAlignmentAfter(code4) {
-    if (code4 === codes.dash) {
-      effects.enter("tableDelimiterFiller");
-      return headDelimiterFiller(code4);
-    }
-    return headDelimiterNok(code4);
-  }
-  function headDelimiterFiller(code4) {
-    if (code4 === codes.dash) {
-      effects.consume(code4);
-      return headDelimiterFiller;
-    }
-    if (code4 === codes.colon) {
-      seen = true;
-      effects.exit("tableDelimiterFiller");
-      effects.enter("tableDelimiterMarker");
-      effects.consume(code4);
-      effects.exit("tableDelimiterMarker");
-      return headDelimiterRightAlignmentAfter;
-    }
-    effects.exit("tableDelimiterFiller");
-    return headDelimiterRightAlignmentAfter(code4);
-  }
-  function headDelimiterRightAlignmentAfter(code4) {
-    if (markdownSpace(code4)) {
-      return factorySpace(effects, headDelimiterCellAfter, types.whitespace)(code4);
-    }
-    return headDelimiterCellAfter(code4);
-  }
-  function headDelimiterCellAfter(code4) {
-    if (code4 === codes.verticalBar) {
-      return headDelimiterBefore(code4);
-    }
-    if (code4 === codes.eof || markdownLineEnding(code4)) {
-      if (!seen || size !== sizeB) {
-        return headDelimiterNok(code4);
-      }
-      effects.exit("tableDelimiterRow");
-      effects.exit("tableHead");
-      return ok3(code4);
-    }
-    return headDelimiterNok(code4);
-  }
-  function headDelimiterNok(code4) {
-    return nok(code4);
-  }
-  function bodyRowStart(code4) {
-    effects.enter("tableRow");
-    return bodyRowBreak(code4);
-  }
-  function bodyRowBreak(code4) {
-    if (code4 === codes.verticalBar) {
-      effects.enter("tableCellDivider");
-      effects.consume(code4);
-      effects.exit("tableCellDivider");
-      return bodyRowBreak;
-    }
-    if (code4 === codes.eof || markdownLineEnding(code4)) {
-      effects.exit("tableRow");
-      return ok3(code4);
-    }
-    if (markdownSpace(code4)) {
-      return factorySpace(effects, bodyRowBreak, types.whitespace)(code4);
-    }
-    effects.enter(types.data);
-    return bodyRowData(code4);
-  }
-  function bodyRowData(code4) {
-    if (code4 === codes.eof || code4 === codes.verticalBar || markdownLineEndingOrSpace(code4)) {
-      effects.exit(types.data);
-      return bodyRowBreak(code4);
-    }
-    effects.consume(code4);
-    return code4 === codes.backslash ? bodyRowEscape : bodyRowData;
-  }
-  function bodyRowEscape(code4) {
-    if (code4 === codes.backslash || code4 === codes.verticalBar) {
-      effects.consume(code4);
-      return bodyRowData;
-    }
-    return bodyRowData(code4);
-  }
-}
-function resolveTable(events, context) {
-  let index2 = -1;
-  let inFirstCellAwaitingPipe = true;
-  let rowKind = 0;
-  let lastCell = [0, 0, 0, 0];
-  let cell = [0, 0, 0, 0];
-  let afterHeadAwaitingFirstBodyRow = false;
-  let lastTableEnd = 0;
-  let currentTable;
-  let currentBody;
-  let currentCell;
-  const map3 = new EditMap;
-  while (++index2 < events.length) {
-    const event = events[index2];
-    const token = event[1];
-    if (event[0] === "enter") {
-      if (token.type === "tableHead") {
-        afterHeadAwaitingFirstBodyRow = false;
-        if (lastTableEnd !== 0) {
-          ok(currentTable, "there should be a table opening");
-          flushTableEnd(map3, context, lastTableEnd, currentTable, currentBody);
-          currentBody = undefined;
-          lastTableEnd = 0;
-        }
-        currentTable = {
-          type: "table",
-          start: Object.assign({}, token.start),
-          end: Object.assign({}, token.end)
-        };
-        map3.add(index2, 0, [["enter", currentTable, context]]);
-      } else if (token.type === "tableRow" || token.type === "tableDelimiterRow") {
-        inFirstCellAwaitingPipe = true;
-        currentCell = undefined;
-        lastCell = [0, 0, 0, 0];
-        cell = [0, index2 + 1, 0, 0];
-        if (afterHeadAwaitingFirstBodyRow) {
-          afterHeadAwaitingFirstBodyRow = false;
-          currentBody = {
-            type: "tableBody",
-            start: Object.assign({}, token.start),
-            end: Object.assign({}, token.end)
-          };
-          map3.add(index2, 0, [["enter", currentBody, context]]);
-        }
-        rowKind = token.type === "tableDelimiterRow" ? 2 : currentBody ? 3 : 1;
-      } else if (rowKind && (token.type === types.data || token.type === "tableDelimiterMarker" || token.type === "tableDelimiterFiller")) {
-        inFirstCellAwaitingPipe = false;
-        if (cell[2] === 0) {
-          if (lastCell[1] !== 0) {
-            cell[0] = cell[1];
-            currentCell = flushCell(map3, context, lastCell, rowKind, undefined, currentCell);
-            lastCell = [0, 0, 0, 0];
-          }
-          cell[2] = index2;
-        }
-      } else if (token.type === "tableCellDivider") {
-        if (inFirstCellAwaitingPipe) {
-          inFirstCellAwaitingPipe = false;
-        } else {
-          if (lastCell[1] !== 0) {
-            cell[0] = cell[1];
-            currentCell = flushCell(map3, context, lastCell, rowKind, undefined, currentCell);
-          }
-          lastCell = cell;
-          cell = [lastCell[1], index2, 0, 0];
-        }
-      }
-    } else if (token.type === "tableHead") {
-      afterHeadAwaitingFirstBodyRow = true;
-      lastTableEnd = index2;
-    } else if (token.type === "tableRow" || token.type === "tableDelimiterRow") {
-      lastTableEnd = index2;
-      if (lastCell[1] !== 0) {
-        cell[0] = cell[1];
-        currentCell = flushCell(map3, context, lastCell, rowKind, index2, currentCell);
-      } else if (cell[1] !== 0) {
-        currentCell = flushCell(map3, context, cell, rowKind, index2, currentCell);
-      }
-      rowKind = 0;
-    } else if (rowKind && (token.type === types.data || token.type === "tableDelimiterMarker" || token.type === "tableDelimiterFiller")) {
-      cell[3] = index2;
-    }
-  }
-  if (lastTableEnd !== 0) {
-    ok(currentTable, "expected table opening");
-    flushTableEnd(map3, context, lastTableEnd, currentTable, currentBody);
-  }
-  map3.consume(context.events);
-  index2 = -1;
-  while (++index2 < context.events.length) {
-    const event = context.events[index2];
-    if (event[0] === "enter" && event[1].type === "table") {
-      event[1]._align = gfmTableAlign(context.events, index2);
-    }
-  }
-  return events;
-}
-function flushCell(map3, context, range, rowKind, rowEnd, previousCell) {
-  const groupName = rowKind === 1 ? "tableHeader" : rowKind === 2 ? "tableDelimiter" : "tableData";
-  const valueName = "tableContent";
-  if (range[0] !== 0) {
-    ok(previousCell, "expected previous cell enter");
-    previousCell.end = Object.assign({}, getPoint(context.events, range[0]));
-    map3.add(range[0], 0, [["exit", previousCell, context]]);
-  }
-  const now = getPoint(context.events, range[1]);
-  previousCell = {
-    type: groupName,
-    start: Object.assign({}, now),
-    end: Object.assign({}, now)
-  };
-  map3.add(range[1], 0, [["enter", previousCell, context]]);
-  if (range[2] !== 0) {
-    const relatedStart = getPoint(context.events, range[2]);
-    const relatedEnd = getPoint(context.events, range[3]);
-    const valueToken = {
-      type: valueName,
-      start: Object.assign({}, relatedStart),
-      end: Object.assign({}, relatedEnd)
-    };
-    map3.add(range[2], 0, [["enter", valueToken, context]]);
-    ok(range[3] !== 0);
-    if (rowKind !== 2) {
-      const start2 = context.events[range[2]];
-      const end = context.events[range[3]];
-      start2[1].end = Object.assign({}, end[1].end);
-      start2[1].type = types.chunkText;
-      start2[1].contentType = constants.contentTypeText;
-      if (range[3] > range[2] + 1) {
-        const a = range[2] + 1;
-        const b = range[3] - range[2] - 1;
-        map3.add(a, b, []);
-      }
-    }
-    map3.add(range[3] + 1, 0, [["exit", valueToken, context]]);
-  }
-  if (rowEnd !== undefined) {
-    previousCell.end = Object.assign({}, getPoint(context.events, rowEnd));
-    map3.add(rowEnd, 0, [["exit", previousCell, context]]);
-    previousCell = undefined;
-  }
-  return previousCell;
-}
-function flushTableEnd(map3, context, index2, table2, tableBody) {
-  const exits = [];
-  const related = getPoint(context.events, index2);
-  if (tableBody) {
-    tableBody.end = Object.assign({}, related);
-    exits.push(["exit", tableBody, context]);
-  }
-  table2.end = Object.assign({}, related);
-  exits.push(["exit", table2, context]);
-  map3.add(index2 + 1, 0, exits);
-}
-function getPoint(events, index2) {
-  const event = events[index2];
-  const side = event[0] === "enter" ? "start" : "end";
-  return event[1][side];
-}
-// node_modules/micromark-extension-gfm-task-list-item/dev/lib/syntax.js
-var tasklistCheck = { name: "tasklistCheck", tokenize: tokenizeTasklistCheck };
-function gfmTaskListItem() {
-  return {
-    text: { [codes.leftSquareBracket]: tasklistCheck }
-  };
-}
-function tokenizeTasklistCheck(effects, ok3, nok) {
-  const self2 = this;
-  return open;
-  function open(code4) {
-    ok(code4 === codes.leftSquareBracket, "expected `[`");
-    if (self2.previous !== codes.eof || !self2._gfmTasklistFirstContentOfListItem) {
-      return nok(code4);
-    }
-    effects.enter("taskListCheck");
-    effects.enter("taskListCheckMarker");
-    effects.consume(code4);
-    effects.exit("taskListCheckMarker");
-    return inside;
-  }
-  function inside(code4) {
-    if (markdownLineEndingOrSpace(code4)) {
-      effects.enter("taskListCheckValueUnchecked");
-      effects.consume(code4);
-      effects.exit("taskListCheckValueUnchecked");
-      return close;
-    }
-    if (code4 === codes.uppercaseX || code4 === codes.lowercaseX) {
-      effects.enter("taskListCheckValueChecked");
-      effects.consume(code4);
-      effects.exit("taskListCheckValueChecked");
-      return close;
-    }
-    return nok(code4);
-  }
-  function close(code4) {
-    if (code4 === codes.rightSquareBracket) {
-      effects.enter("taskListCheckMarker");
-      effects.consume(code4);
-      effects.exit("taskListCheckMarker");
-      effects.exit("taskListCheck");
-      return after;
-    }
-    return nok(code4);
-  }
-  function after(code4) {
-    if (markdownLineEnding(code4)) {
-      return ok3(code4);
-    }
-    if (markdownSpace(code4)) {
-      return effects.check({ tokenize: spaceThenNonSpace }, ok3, nok)(code4);
-    }
-    return nok(code4);
-  }
-}
-function spaceThenNonSpace(effects, ok3, nok) {
-  return factorySpace(effects, after, types.whitespace);
-  function after(code4) {
-    return code4 === codes.eof ? nok(code4) : ok3(code4);
-  }
-}
-// node_modules/micromark-extension-gfm/index.js
-function gfm(options) {
-  return combineExtensions([
-    gfmAutolinkLiteral(),
-    gfmFootnote(),
-    gfmStrikethrough(options),
-    gfmTable(),
-    gfmTaskListItem()
-  ]);
-}
-
-// node_modules/remark-gfm/lib/index.js
-var emptyOptions4 = {};
-function remarkGfm(options) {
-  const self2 = this;
-  const settings = options || emptyOptions4;
-  const data = self2.data();
-  const micromarkExtensions = data.micromarkExtensions || (data.micromarkExtensions = []);
-  const fromMarkdownExtensions = data.fromMarkdownExtensions || (data.fromMarkdownExtensions = []);
-  const toMarkdownExtensions = data.toMarkdownExtensions || (data.toMarkdownExtensions = []);
-  micromarkExtensions.push(gfm(settings));
-  fromMarkdownExtensions.push(gfmFromMarkdown());
-  toMarkdownExtensions.push(gfmToMarkdown(settings));
-}
-// src/components/overview/ProjectCard.tsx
-var jsx_dev_runtime19 = __toESM(require_jsx_dev_runtime(), 1);
-function ProjectCard({ repo }) {
-  return /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("article", {
-    className: "card flex flex-column gap-sm",
-    children: [
-      /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("div", {
-        className: "flex-between",
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("a", {
-            href: repo.html_url,
-            className: "card-title",
-            children: /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("h3", {
-              children: repo.name
-            }, undefined, false, undefined, this)
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("span", {
-            className: "card-visibility muted",
-            children: repo.visibility
-          }, undefined, false, undefined, this)
-        ]
-      }, undefined, true, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("div", {
-        className: "card-text",
-        children: /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("p", {
-          children: repo.description
-        }, undefined, false, undefined, this)
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("span", {
-        className: "card-language flex-left gap-sm",
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("div", {
-            className: "card-language-decorator"
-          }, undefined, false, undefined, this),
-          repo.language
-        ]
-      }, undefined, true, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("ul", {
-        className: "card-topics muted flex gap-sm",
-        children: repo.topics.slice(0, 3).map((topic) => /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("li", {
-          className: "repo-card__topic",
-          children: topic
-        }, topic, false, undefined, this))
-      }, undefined, false, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
-}
-
-// src/components/overview/ProjectSection.tsx
-var jsx_dev_runtime20 = __toESM(require_jsx_dev_runtime(), 1);
-function ProjectSection({ repos }) {
-  return /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("ul", {
-    className: "repo-grid",
-    id: "projects",
-    children: repos.map((repo) => /* @__PURE__ */ jsx_dev_runtime20.jsxDEV("li", {
-      children: /* @__PURE__ */ jsx_dev_runtime20.jsxDEV(ProjectCard, {
-        repo
-      }, undefined, false, undefined, this)
-    }, repo.id, false, undefined, this))
-  }, undefined, false, undefined, this);
-}
-
-// src/components/overview/MainContent.tsx
-var jsx_dev_runtime21 = __toESM(require_jsx_dev_runtime(), 1);
-function MainContent({
-  content: content3,
-  repos
+// src/components/overview/OverviewSection.tsx
+var jsx_dev_runtime27 = __toESM(require_jsx_dev_runtime(), 1);
+function OverviewSection({
+  readme
 }) {
-  if (!content3)
-    return /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(ErrorMessage, {
-      error_message: "content not found..."
-    }, undefined, false, undefined, this);
-  if (!repos) {
-    return /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(ErrorMessage, {
-      error_message: "repositories not found..."
-    }, undefined, false, undefined, this);
-  }
-  const readmeMarkdown = atob(content3.content);
-  return /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(jsx_dev_runtime21.Fragment, {
-    children: [
-      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("section", {
-        className: "markdown-body flex flex-column gap-xl",
-        children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Markdown, {
-          remarkPlugins: [remarkGfm],
-          children: readmeMarkdown
-        }, undefined, false, undefined, this)
-      }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("section", {
-        className: "project-section",
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("div", {
-            className: "section-title",
-            children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("h2", {
-              children: "Latest Projects"
-            }, undefined, false, undefined, this)
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(ProjectSection, {
-            repos
-          }, undefined, false, undefined, this)
-        ]
-      }, undefined, true, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("section", {
-        className: "contact-section",
-        children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(ContactSection, {}, undefined, false, undefined, this)
-      }, undefined, false, undefined, this)
-    ]
-  }, undefined, true, undefined, this);
-}
-
-// src/pages/Overview.tsx
-var jsx_dev_runtime22 = __toESM(require_jsx_dev_runtime(), 1);
-function Overview() {
-  const { github, repos, readme } = useGitHub();
-  if (!github)
-    return /* @__PURE__ */ jsx_dev_runtime22.jsxDEV(Loading, {
-      loading_message: "Loading profile..."
-    }, undefined, false, undefined, this);
   if (!readme)
-    return /* @__PURE__ */ jsx_dev_runtime22.jsxDEV(Loading, {
+    return /* @__PURE__ */ jsx_dev_runtime27.jsxDEV(Loading, {
       loading_message: "Loading data..."
     }, undefined, false, undefined, this);
+  const readmeMarkdown = atob(readme.content);
+  return /* @__PURE__ */ jsx_dev_runtime27.jsxDEV("section", {
+    className: "overview-section flex flex-column gap-xl",
+    children: /* @__PURE__ */ jsx_dev_runtime27.jsxDEV(Markdown, {
+      children: readmeMarkdown
+    }, undefined, false, undefined, this)
+  }, undefined, false, undefined, this);
+}
+// src/components/overview/ProjectSection.tsx
+var jsx_dev_runtime28 = __toESM(require_jsx_dev_runtime(), 1);
+function ProjectSection({ repos }) {
   if (repos.length === 0) {
-    return /* @__PURE__ */ jsx_dev_runtime22.jsxDEV(Loading, {
+    return /* @__PURE__ */ jsx_dev_runtime28.jsxDEV(Loading, {
       loading_message: "No repositories found"
     }, undefined, false, undefined, this);
   }
-  return /* @__PURE__ */ jsx_dev_runtime22.jsxDEV(MainContent, {
-    content: readme,
-    repos
-  }, undefined, false, undefined, this);
+  return /* @__PURE__ */ jsx_dev_runtime28.jsxDEV("section", {
+    className: "project-section",
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime28.jsxDEV("div", {
+        className: "section-title",
+        children: /* @__PURE__ */ jsx_dev_runtime28.jsxDEV("h2", {
+          children: "Latest Projects"
+        }, undefined, false, undefined, this)
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime28.jsxDEV("ul", {
+        className: "grid",
+        children: repos.slice(0, OVERVIEW_FEATURES.featuredReposCount).map((repo) => /* @__PURE__ */ jsx_dev_runtime28.jsxDEV("li", {
+          children: /* @__PURE__ */ jsx_dev_runtime28.jsxDEV(Card, {
+            repo
+          }, undefined, false, undefined, this)
+        }, repo.id, false, undefined, this))
+      }, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
+}
+// src/pages/Overview.tsx
+var jsx_dev_runtime29 = __toESM(require_jsx_dev_runtime(), 1);
+function Overview() {
+  const { repos, readme } = useGitHub();
+  return /* @__PURE__ */ jsx_dev_runtime29.jsxDEV(jsx_dev_runtime29.Fragment, {
+    children: [
+      /* @__PURE__ */ jsx_dev_runtime29.jsxDEV(OverviewSection, {
+        readme
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime29.jsxDEV(ProjectSection, {
+        repos
+      }, undefined, false, undefined, this),
+      /* @__PURE__ */ jsx_dev_runtime29.jsxDEV(ContactSection, {}, undefined, false, undefined, this)
+    ]
+  }, undefined, true, undefined, this);
 }
 
 // src/pages/Projects.tsx
-var jsx_dev_runtime23 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime30 = __toESM(require_jsx_dev_runtime(), 1);
 function Projects() {
-  return /* @__PURE__ */ jsx_dev_runtime23.jsxDEV("h1", {
+  return /* @__PURE__ */ jsx_dev_runtime30.jsxDEV("h1", {
     children: "Projects..."
   }, undefined, false, undefined, this);
 }
 
 // src/App.tsx
-var jsx_dev_runtime24 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime31 = __toESM(require_jsx_dev_runtime(), 1);
 function App() {
-  return /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Router, {
+  return /* @__PURE__ */ jsx_dev_runtime31.jsxDEV(Router, {
     children: [
-      /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Route, {
+      /* @__PURE__ */ jsx_dev_runtime31.jsxDEV(Route, {
         path: "/",
-        element: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(AppLayout, {
-          children: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Overview, {}, undefined, false, undefined, this)
+        element: /* @__PURE__ */ jsx_dev_runtime31.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime31.jsxDEV(Overview, {}, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Route, {
+      /* @__PURE__ */ jsx_dev_runtime31.jsxDEV(Route, {
         path: "/about",
-        element: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(AppLayout, {
-          children: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(About, {}, undefined, false, undefined, this)
+        element: /* @__PURE__ */ jsx_dev_runtime31.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime31.jsxDEV(About, {}, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Route, {
+      /* @__PURE__ */ jsx_dev_runtime31.jsxDEV(Route, {
         path: "/contact",
-        element: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(AppLayout, {
-          children: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Contact, {}, undefined, false, undefined, this)
+        element: /* @__PURE__ */ jsx_dev_runtime31.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime31.jsxDEV(Contact, {}, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Route, {
+      /* @__PURE__ */ jsx_dev_runtime31.jsxDEV(Route, {
         path: "/projects",
-        element: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(AppLayout, {
-          children: /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Projects, {}, undefined, false, undefined, this)
+        element: /* @__PURE__ */ jsx_dev_runtime31.jsxDEV(AppLayout, {
+          children: /* @__PURE__ */ jsx_dev_runtime31.jsxDEV(Projects, {}, undefined, false, undefined, this)
         }, undefined, false, undefined, this)
       }, undefined, false, undefined, this)
     ]
@@ -31025,10 +28293,10 @@ function App() {
 }
 
 // src/index.tsx
-var jsx_dev_runtime25 = __toESM(require_jsx_dev_runtime(), 1);
+var jsx_dev_runtime32 = __toESM(require_jsx_dev_runtime(), 1);
 var rootNode = document.querySelector("#root");
 if (!rootNode)
   throw new Error("cannot find root element");
-import_client.createRoot(rootNode).render(/* @__PURE__ */ jsx_dev_runtime25.jsxDEV(import_react13.StrictMode, {
-  children: /* @__PURE__ */ jsx_dev_runtime25.jsxDEV(App, {}, undefined, false, undefined, this)
+import_client.createRoot(rootNode).render(/* @__PURE__ */ jsx_dev_runtime32.jsxDEV(import_react23.StrictMode, {
+  children: /* @__PURE__ */ jsx_dev_runtime32.jsxDEV(App, {}, undefined, false, undefined, this)
 }, undefined, false, undefined, this));
