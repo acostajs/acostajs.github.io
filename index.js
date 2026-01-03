@@ -18605,7 +18605,7 @@ var CONFIG = {
   },
   github_folder: "portfolio",
   overview_features: {
-    repos_count: 2
+    repos_count: 4
   }
 };
 
@@ -19214,7 +19214,7 @@ function Accordion({ about }) {
 var jsx_dev_runtime22 = __toESM(require_jsx_dev_runtime(), 1);
 function Bio({ headline, story, images }) {
   return /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
-    className: "about-bio flex-center",
+    className: "about-bio section-highlight flex-center",
     children: [
       /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
         className: "section-title",
@@ -28215,7 +28215,7 @@ function ProjectSection({ repos }) {
     }, undefined, false, undefined, this);
   }
   return /* @__PURE__ */ jsx_dev_runtime28.jsxDEV("section", {
-    className: "project-section",
+    className: "project-section section-highlight",
     children: [
       /* @__PURE__ */ jsx_dev_runtime28.jsxDEV("div", {
         className: "section-title",
