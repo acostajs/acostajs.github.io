@@ -9,7 +9,7 @@ type BioProps = {
 
 export function Bio({ headline, story, images }: BioProps): ReactElement {
   return (
-    <section className="about-bio flex-center">
+    <section className="about-bio section-highlight flex-center">
       <div className="section-title">
         <h1>{headline}</h1>
         <p>{story}</p>

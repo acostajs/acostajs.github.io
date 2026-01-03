@@ -113,11 +113,13 @@
     --shadow-soft: 0 8px 24px rgba(1, 4, 9, 0.6);
 
     /* Layout helpers */
-
     --container-width: 95%;
     --container-max-width: 1300px;
 
     /* NavBar Helpers */
     --navbar-container-width: 98%;
+
+    /* Section Helper */
+    --section-margin-bottom: clamp(4rem, 2.5vw, 8rem);
   }
 }

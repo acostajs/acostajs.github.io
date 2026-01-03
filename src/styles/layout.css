@@ -98,7 +98,7 @@
 
   .main-content {
     border: 1px solid var(--color-border);
-    padding: var(--pad-md);
+    padding: var(--pad-xl);
     border-radius: var(--radius-xl);
   }
 
