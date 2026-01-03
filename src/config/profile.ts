@@ -43,7 +43,7 @@ export const CONFIG = {
   github_folder: "portfolio",
   // Amount of projects to show in latest projects in overview page
   overview_features: {
-    repos_count: 2,
+    repos_count: 4,
   },
 };
 

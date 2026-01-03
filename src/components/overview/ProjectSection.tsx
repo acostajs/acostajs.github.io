@@ -13,7 +13,7 @@ export function ProjectSection({ repos }: ProjectSectionProps): ReactElement {
   }
 
   return (
-    <section className="project-section">
+    <section className="project-section section-highlight">
       <div className="section-title">
         <h2>Latest Projects</h2>
       </div>
