@@ -7,3 +7,4 @@ export * from "./GitHubProfileBadge";
 export * from "./Loading";
 export * from "./NavLink";
 export * from "./RepoImg";
+export * from "./SeeDetailsButton";
