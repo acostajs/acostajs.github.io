@@ -18403,15 +18403,36 @@ function Card({ repo }) {
   return /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("article", {
     className: "card flex flex-column gap-sm",
     children: [
+      /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("h3", {
+        className: "card-title",
+        children: repo.name
+      }, undefined, false, undefined, this),
       /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("a", {
         href: repo.html_url,
-        className: "card-title",
-        children: /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("h3", {
-          children: repo.name
-        }, undefined, false, undefined, this)
-      }, undefined, false, undefined, this),
+        className: "card-link",
+        children: [
+          " ",
+          "Go to Repository",
+          " "
+        ]
+      }, undefined, true, undefined, this),
       /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("p", {
         children: repo.description
+      }, undefined, false, undefined, this),
+      repo.language ? /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("span", {
+        className: "card-language flex-left gap-sm",
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("div", {
+            className: "card-language-decorator"
+          }, undefined, false, undefined, this),
+          repo.language
+        ]
+      }, undefined, true, undefined, this) : "",
+      /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("ul", {
+        className: "card-topics muted flex gap-xs",
+        children: repo.topics.slice(0, 3).map((topic) => /* @__PURE__ */ jsx_dev_runtime5.jsxDEV("li", {
+          children: topic
+        }, topic, false, undefined, this))
       }, undefined, false, undefined, this)
     ]
   }, undefined, true, undefined, this);
