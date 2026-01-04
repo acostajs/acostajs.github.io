@@ -58,6 +58,13 @@
     padding: 0;
   }
 
+  summary {
+    list-style: none;
+    outline: none;
+    cursor: pointer;
+    font-size: var(--text-lg);
+  }
+
   /* Section Helpers */
 
   section {

@@ -10,7 +10,7 @@ export function AccordionItem({
   story,
 }: AccordionProps): ReactElement {
   return (
-    <details>
+    <details className="accordion-item">
       <summary>{headline}</summary>
       <p>{story}</p>
     </details>

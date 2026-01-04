@@ -27,6 +27,33 @@
     font-size: var(--text-base);
   }
 
+  /* ACCORDION ITEM */
+
+  .accordion-item {
+    padding: var(--pad-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--gap-sm);
+    background: var(--color-bg-dark);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+
+    & summary {
+      font-weight: var(--weight-semibold);
+    }
+  }
+
+  .accordion-item:hover,
+  .accordion-item:focus-within {
+    border-color: var(--color-hover-light);
+    transform: translateY(-1px);
+  }
+
+  .accordion-item[open] p {
+    animation: expandAni 0.3s ease-in-out;
+    padding-top: var(--pad-md);
+  }
+
   /* LOADING */
 
   .loading-overlay {

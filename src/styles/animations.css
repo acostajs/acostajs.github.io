@@ -28,4 +28,17 @@
       transform: scale3d(1, 1, 1);
     }
   }
+
+  @keyframes expandAni {
+    from {
+      opacity: 0;
+      height: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      height: auto;
+      transform: translateY(0);
+    }
+  }
 }

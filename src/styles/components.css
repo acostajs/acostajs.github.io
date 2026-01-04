@@ -72,12 +72,16 @@
   .about-personality {
     flex-wrap: wrap;
   }
-}
 
-@media (max-width: 768px) {
-  .project-section {
-    & ul {
-      grid-template-columns: 1fr;
+  .accordion-flex {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .project-section {
+      & ul {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }
