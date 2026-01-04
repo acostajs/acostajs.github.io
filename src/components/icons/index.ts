@@ -1,7 +1,14 @@
 export { FaGithub as GitHubIcon } from "react-icons/fa";
+export { FaRegStar as StarIcon } from "react-icons/fa";
+export { FaUserCircle as WatcherIcon } from "react-icons/fa";
 export { FaLocationDot as MapIcon } from "react-icons/fa6";
+export { FaCodeFork as ForkIcon } from "react-icons/fa6";
+export { GoIssueOpened as IssueIcon } from "react-icons/go";
+export { GrFormNext as NextIcon } from "react-icons/gr";
+export { GrFormPrevious as PreviousIcon } from "react-icons/gr";
 export { ImLinkedin as LinkedInIcon } from "react-icons/im";
 export { MdEmail as MailIcon } from "react-icons/md";
 export { MdOutlineConnectWithoutContact as ContactIcon } from "react-icons/md";
 export { RxHamburgerMenu as BurguerIcon } from "react-icons/rx";
+export { TbLicense as LicenseIcon } from "react-icons/tb";
 export { SpinningCircles as LoadingIcon } from "react-loading-icons";

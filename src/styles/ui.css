@@ -97,7 +97,7 @@
     color: var(--color-accent-strong);
   }
 
-  .card-language-decorator {
+  .language-decorator {
     background-color: var(--color-decorator);
     height: 10px;
     width: 10px;
@@ -106,6 +106,31 @@
 
   .card-topics {
     font-size: var(--text-xs);
+  }
+
+  /* PAGINATION */
+
+  .pagination-nav {
+    padding: var(--pad-md);
+  }
+
+  .pagination-btn {
+    border: none;
+    padding: var(--pad-md);
+    border-radius: var(--radius-xl);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .pagination-btn:hover {
+    background-color: var(--color-bg-accent);
+  }
+
+  .pagination-btn:disabled {
+    color: var(--color-accent-soft);
+  }
+
+  .pagination-btn:disabled:hover {
+    background-color: var(--color-hover-dark);
   }
 
   /* See Detail Button */
