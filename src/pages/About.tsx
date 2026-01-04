@@ -1,5 +1,6 @@
 import { Accordion, Bio, Personality } from "@/components/about";
 import { ErrorMessage } from "@/components/layout";
+import { ContactSection } from "@/components/ui";
 import { Loading } from "@/components/ui";
 import { useRepositoryData } from "@/hooks";
 import { GITHUB_USERNAME } from "@/lib/api";
@@ -30,6 +31,8 @@ export function About(): ReactElement {
       />
 
       <Accordion about={about} />
+
+      <ContactSection />
     </>
   );
 }

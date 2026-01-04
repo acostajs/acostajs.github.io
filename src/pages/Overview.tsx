@@ -1,4 +1,5 @@
-import { ContactSection, OverviewSection, ProjectSection } from "@/components/overview";
+import { OverviewSection, ProjectSection } from "@/components/overview";
+import { ContactSection } from "@/components/ui";
 import { useGitHub } from "@/context/GitHubContext";
 import type { ReactElement } from "react";
 
