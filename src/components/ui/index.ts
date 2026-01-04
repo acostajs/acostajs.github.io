@@ -3,6 +3,7 @@ export * from "./AccordionList";
 export * from "./Avatar";
 export * from "./Burger";
 export * from "./Card";
+export * from "./ContactSection";
 export * from "./GitHubProfileBadge";
 export * from "./Loading";
 export * from "./NavLink";

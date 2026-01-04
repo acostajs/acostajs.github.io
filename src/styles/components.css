@@ -30,6 +30,20 @@
     }
   }
 
+  .contact-section {
+    & h2 {
+      font-size: var(--text-giant);
+    }
+    & .section-title {
+      text-align: center;
+    }
+
+    & .text {
+      justify-content: center;
+      flex-wrap: wrap-reverse;
+    }
+  }
+
   /* About Sections */
 
   .about-bio,
