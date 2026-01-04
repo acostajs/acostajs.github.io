@@ -18343,6 +18343,7 @@ function AccordionItem({
   story
 }) {
   return /* @__PURE__ */ jsx_dev_runtime.jsxDEV("details", {
+    className: "accordion-item",
     children: [
       /* @__PURE__ */ jsx_dev_runtime.jsxDEV("summary", {
         children: headline
@@ -19223,11 +19224,13 @@ function CoreSkills({ about }) {
   return /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("div", {
     className: "core-skills",
     children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("details", {
+      className: "accordion-item",
       children: [
         /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("summary", {
           children: about.core_skills.headline
         }, undefined, false, undefined, this),
         /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("div", {
+          className: "accordion-flex flex gap-xl",
           children: [
             /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("div", {
               className: "skill",
@@ -19284,6 +19287,7 @@ function CoreSkills({ about }) {
 var jsx_dev_runtime22 = __toESM(require_jsx_dev_runtime(), 1);
 function Accordion({ about }) {
   return /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
+    className: "accordion",
     children: [
       /* @__PURE__ */ jsx_dev_runtime22.jsxDEV(AccordionItem, {
         headline: about.background.headline,
