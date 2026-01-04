@@ -9,7 +9,7 @@ type AccordionProps = {
 
 export function Accordion({ about }: AccordionProps): ReactElement {
   return (
-    <section>
+    <section className="accordion">
       <AccordionItem
         headline={about.background.headline}
         story={about.background.story}

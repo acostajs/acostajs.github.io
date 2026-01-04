@@ -9,9 +9,9 @@ type CoreSkillsProps = {
 export function CoreSkills({ about }: CoreSkillsProps): ReactElement {
   return (
     <div className="core-skills">
-      <details>
+      <details className="accordion-item">
         <summary>{about.core_skills.headline}</summary>
-        <div>
+        <div className="accordion-flex flex gap-xl">
           <div className="skill">
             <h4>Front-End</h4>
             <AccordionList array={about.core_skills["front-end"]} />
