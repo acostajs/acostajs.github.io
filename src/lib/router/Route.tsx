@@ -9,6 +9,6 @@ export type RouteProps = {
  * Map the `path` to the given `element`, which should be a page
  * component.
  */
-export function Route({ element }: RouteProps) {
+export function Route({ element }: RouteProps): ReactElement {
   return element;
 }

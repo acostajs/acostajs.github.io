@@ -1,8 +1,9 @@
 import { Burger } from "@/components/ui";
+import type { ReactElement } from "react";
 import { FaGithub } from "react-icons/fa";
 import { NavLinks } from "./NavLinks";
 
-export function HiddenMenu() {
+export function HiddenMenu(): ReactElement {
   return (
     <div>
       <Burger />

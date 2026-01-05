@@ -17,3 +17,11 @@ export const PROFILE = {
 export const OVERVIEW_FEATURES = {
   featuredReposCount: CONFIG.overview_features.repos_count,
 } as const;
+
+export const WEB3FORMS = {
+  access_key: CONFIG.web3forms.access_key,
+} as const;
+
+export const PROJECTS_FEATURES = {
+  repository_count_per_page: CONFIG.projects_features.repository_count_per_page,
+} as const;

@@ -45,6 +45,15 @@ export const CONFIG = {
   overview_features: {
     repos_count: 4,
   },
+  projects_features: {
+    repository_count_per_page: 5,
+  },
+
+  // Contact form runs with web3forms
+  web3forms: {
+    // once registered, web3forms gives you an access key, enter it here
+    access_key: "ac899b83-2b9a-4333-afac-7c0048e1782d",
+  },
 };
 
 export type ConfigType = typeof CONFIG;

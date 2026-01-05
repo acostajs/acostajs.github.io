@@ -6,11 +6,12 @@ import { TopicAnchor } from "../ui";
 
 type ProjectItemProps = {
   repo: Repository;
+  key: string;
 };
 
-export function ProjectItem({ repo }: ProjectItemProps): ReactElement {
+export function ProjectItem({ repo, key }: ProjectItemProps): ReactElement {
   return (
-    <li>
+    <li key={key}>
       <article className="project-item">
         <ul className="flex flex-column gap-sm">
           <li className="flex-left flex-wrap gap-md">

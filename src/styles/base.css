@@ -102,7 +102,8 @@
   .flex,
   .flex-between,
   .flex-center,
-  .flex-left {
+  .flex-left,
+  .flex-evenly {
     display: flex;
   }
 
@@ -119,6 +120,11 @@
   .flex-between {
     align-items: center;
     justify-content: space-between;
+  }
+
+  .flex-evenly {
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .flex-column {
@@ -158,5 +164,26 @@
 
   .gap-2xl {
     gap: var(--gap-xl);
+  }
+
+  /* Button Style */
+
+  .btn {
+    border: none;
+    padding: var(--pad-md);
+    border-radius: var(--radius-xl);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .btn:hover {
+    background-color: var(--color-bg-accent);
+  }
+
+  .btn:disabled {
+    color: var(--color-accent-soft);
+  }
+
+  .btn:disabled:hover {
+    background-color: var(--color-hover-dark);
   }
 }

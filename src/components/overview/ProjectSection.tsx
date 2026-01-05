@@ -8,7 +8,8 @@ type ProjectSectionProps = {
 };
 
 export function ProjectSection({ repos }: ProjectSectionProps): ReactElement {
-  if (repos.length === 0) {
+  const startingIndex = 0;
+  if (repos.length === startingIndex) {
     return <Loading loading_message="No repositories found" />;
   }
 
@@ -18,11 +19,13 @@ export function ProjectSection({ repos }: ProjectSectionProps): ReactElement {
         <h2>Latest Projects</h2>
       </div>
       <ul className="grid">
-        {repos.slice(0, OVERVIEW_FEATURES.featuredReposCount).map((repo) => (
-          <li key={repo.id}>
-            <Card repo={repo} />
-          </li>
-        ))}
+        {repos
+          .slice(startingIndex, OVERVIEW_FEATURES.featuredReposCount)
+          .map((repo) => (
+            <li key={repo.id}>
+              <Card repo={repo} />
+            </li>
+          ))}
       </ul>
     </section>
   );

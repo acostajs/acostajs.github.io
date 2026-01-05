@@ -3,7 +3,16 @@ import { GITHUB_PORTFOLIO_FOLDER } from "@/lib/api/github";
 import type { AboutJSON, ProjectItem, ProjectJSON } from "@/types"; // Raw folder items
 import { useEffect, useState } from "react";
 
-export function useRepositoryData(repoName: string) {
+type RepositoryData = {
+  json: AboutJSON | ProjectJSON | null;
+  images: string[];
+  fadeOut: boolean;
+  loadingMessage: string;
+  error: string;
+};
+
+export function useRepositoryData(repoName: string): RepositoryData {
+  const loadingTime = 1000;
   const [json, setJson] = useState<AboutJSON | ProjectJSON | null>(null);
   const [images, setImages] = useState<string[]>([]);
   const [fadeOut, setFadeOut] = useState(false);
@@ -11,7 +20,7 @@ export function useRepositoryData(repoName: string) {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    async function load() {
+    async function load(): Promise<void> {
       try {
         setLoadingMessage("Loading files...");
         const res = await fetch(GITHUB_PORTFOLIO_FOLDER(repoName));
@@ -42,7 +51,7 @@ export function useRepositoryData(repoName: string) {
         setError("Failed to load project");
       } finally {
         setFadeOut(true);
-        setTimeout(() => setLoadingMessage("Ready!"), 1000);
+        setTimeout(() => setLoadingMessage("Ready!"), loadingTime);
       }
     }
 

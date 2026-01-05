@@ -2,7 +2,16 @@ import { GITHUB_README, GITHUB_REPOS, GITHUB_URL } from "@/lib/api";
 import type { File, Repository, User } from "@/types";
 import { useEffect, useState } from "react";
 
-export function useGitHubData() {
+type GitHubData = {
+  profile: User | null;
+  repos: Repository[];
+  readme: File | null;
+  fadeOut: boolean;
+  error: string;
+  loadingMessage: string;
+};
+
+export function useGitHubData(): GitHubData {
   const [profile, setProfile] = useState<User | null>(null);
   const [repos, setRepos] = useState<Repository[]>([]);
   const [readme, setReadme] = useState<File | null>(null);
@@ -10,8 +19,10 @@ export function useGitHubData() {
   const [error, setError] = useState("");
   const [loadingMessage, setLoadingMessage] = useState("Loading profile...");
 
+  const loadingTime = 1000;
+
   useEffect(() => {
-    async function load() {
+    async function load(): Promise<void> {
       try {
         const [userRes, reposRes, readmeRes] = await Promise.all([
           fetch(GITHUB_URL),
@@ -41,7 +52,7 @@ export function useGitHubData() {
         setError("Error fetching GitHub User Profile");
       } finally {
         setFadeOut(true);
-        setTimeout(() => setLoadingMessage("Almost ready..."), 1000);
+        setTimeout(() => setLoadingMessage("Almost ready..."), loadingTime);
       }
     }
 
