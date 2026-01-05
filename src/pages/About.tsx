@@ -1,4 +1,4 @@
-import { Accordion, Bio, Personality } from "@/components/about";
+import { Accordion, Bio } from "@/components/about";
 import { ErrorMessage } from "@/components/layout";
 import { ContactSection } from "@/components/ui";
 import { Loading } from "@/components/ui";
@@ -21,12 +21,6 @@ export function About(): ReactElement {
       <Bio
         headline={about.bio.headline}
         story={about.bio.story}
-        images={images}
-      />
-
-      <Personality
-        headline={about.personality.headline}
-        story={about.personality.story}
         images={images}
       />
 

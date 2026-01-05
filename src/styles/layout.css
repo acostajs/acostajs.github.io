@@ -7,7 +7,7 @@
 
     & .navbar-container {
       width: var(--navbar-container-width);
-      padding-top: var(--pad-md);
+      padding-top: var(--pad-xs);
       padding-bottom: var(--pad-xs);
       margin: 0 auto;
     }
@@ -74,7 +74,7 @@
 
   footer {
     padding: var(--pad-xl) 0;
-    background-color: var(--color-bg-elevated);
+    background-color: var(--color-bg-dark);
     border-top: 1px solid var(--color-border);
   }
 
@@ -99,7 +99,7 @@
   .main-content {
     border: 1px solid var(--color-border);
     padding: var(--pad-xl);
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-md);
   }
 
   @media (max-width: 768px) {

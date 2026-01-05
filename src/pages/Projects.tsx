@@ -21,11 +21,11 @@ export function Projects(): ReactElement {
   return (
     <>
       <section>
-        <div className="section-title">
-          <h1>Projects</h1>
+        <div className="about-title section-title section-highlight-secondary">
+          <h1>Selected Projects</h1>
           <p>
-            In this section you're going to find all my repositories in more detail, you can click on the name to go and
-            see the code, or on "see details..." to see more information related to the project.
+            This page contains a detailed view of my repositories. Each project links directly to its source code, along
+            with additional context around its purpose, features, and implementation.
           </p>
         </div>
         <ul>

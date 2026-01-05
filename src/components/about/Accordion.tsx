@@ -11,6 +11,10 @@ export function Accordion({ about }: AccordionProps): ReactElement {
   return (
     <section className="accordion">
       <AccordionItem
+        headline={about.personality.headline}
+        story={about.personality.story}
+      />
+      <AccordionItem
         headline={about.background.headline}
         story={about.background.story}
       />

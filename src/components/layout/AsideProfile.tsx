@@ -55,7 +55,13 @@ export function AsideProfile({ profile }: AsideProfileProps): ReactElement {
 
           <li className="flex-left gap-md">
             <span className="profile-item">Availability:</span>
-            {profile.hireable ? "Open to work" : "Not available"}
+            {profile.hireable
+              ? "Open to internship opportunities"
+              : "Not available"}
+          </li>
+
+          <li>
+            <button>Download Resume</button>
           </li>
         </ul>
       </div>

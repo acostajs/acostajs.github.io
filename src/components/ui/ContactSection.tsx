@@ -12,19 +12,19 @@ export function ContactSection(): ReactElement {
           <h2>Get in Touch</h2>
         </div>
 
-        <div className="muted">I'll respond within 24-48 hours.</div>
+        <div className="muted">I typically respond within 24–48 hours.</div>
       </div>
 
       <div className="text flex gap-xl">
         <div className="flex flex-column gap-sm">
-          <p>Email me directly:</p>
+          <p>Email me directly</p>
           <a href={"mailto:" + PROFILE.email} className="flex-left">
             <MailIcon size={30} /> {PROFILE.email}
           </a>
         </div>
 
         <div className="flex flex-column gap-sm">
-          <p>Contact me through:</p>
+          <p>Connect with me</p>
           <a href={PROFILE.linkedin.url} className="flex gap-sm">
             <LinkedInIcon size={30} /> LinkedIn
           </a>

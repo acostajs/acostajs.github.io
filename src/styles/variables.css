@@ -3,7 +3,7 @@
     /* Base palette (GitHub‑dark inspired) */
     --color-bg: #1f2831;
     --color-bg-dark: #161b22;
-    --color-bg-light: #7d868f;
+    --color-bg-light: #d0d5df;
     --color-border: #30363d;
     --color-border-hover: #3d4349;
     --color-border-hover-light: #d0d5df;
@@ -63,8 +63,8 @@
 
     /* Heading sizes */
     --page-title: clamp(4rem, 4.5vw + 0.5rem, 8rem);
-    --h1-size: clamp(2rem, 3vw, 2.75rem);
-    --h2-size: clamp(1.5rem, 2.3vw, 2.125rem);
+    --h1-size: clamp(2rem, 3vw, 2.5rem);
+    --h2-size: clamp(1.5rem, 2.3vw, 1.75rem);
     --h3-size: clamp(1.25rem, 1.8vw, 1.5rem);
     --h4-size: clamp(1.125rem, 1.4vw, 1.25rem);
     --h5-size: clamp(1rem, 1.1vw, 1.125rem);
