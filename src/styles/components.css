@@ -107,6 +107,26 @@
     animation: blinkingAni 2s ease 0s 1 normal none;
   }
 
+  /* Contact */
+
+  .contact-form {
+    & label {
+      font-size: var(--text-lg);
+    }
+  }
+
+  .contact-item {
+    & input,
+    textarea {
+      width: 100%;
+    }
+  }
+
+  .contact-success-message {
+    font-size: var(--text-xl);
+    width: 20ch;
+  }
+
   @media (max-width: 768px) {
     .project-section {
       & ul {

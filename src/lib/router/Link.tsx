@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import type { MouseEvent, ReactNode } from "react";
+import type { MouseEvent, ReactElement, ReactNode } from "react";
 import { NavigationContext } from "./context.ts";
 
 type LinkProps = {
@@ -9,7 +9,12 @@ type LinkProps = {
   onClick?: () => void;
 };
 
-export function Link({ classes, to, children, onClick }: LinkProps) {
+export function Link({
+  classes,
+  to,
+  children,
+  onClick,
+}: LinkProps): ReactElement {
   const aClasses = classes?.join(" ") ?? "";
   const { setPathname: navigate } = useContext(NavigationContext);
   function handleClick(e: MouseEvent): void {

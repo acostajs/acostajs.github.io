@@ -9,6 +9,7 @@ export { GrFormPrevious as PreviousIcon } from "react-icons/gr";
 export { ImLinkedin as LinkedInIcon } from "react-icons/im";
 export { MdEmail as MailIcon } from "react-icons/md";
 export { MdOutlineConnectWithoutContact as ContactIcon } from "react-icons/md";
+export { MdContactMail as ContactPageIcon } from "react-icons/md";
 export { RxHamburgerMenu as BurguerIcon } from "react-icons/rx";
 export { TbLicense as LicenseIcon } from "react-icons/tb";
 export { SpinningCircles as LoadingIcon } from "react-loading-icons";

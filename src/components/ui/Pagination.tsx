@@ -7,34 +7,33 @@ type PaginationProps = {
 };
 
 export function Pagination({ pagination }: PaginationProps): ReactElement {
+  const offset = 1;
   const { currentPage, totalPages, goToPage } = pagination;
 
   return (
     <nav className="pagination-nav flex-between">
       <button
-        onClick={() => goToPage(currentPage - 1)}
+        onClick={() => goToPage(currentPage - offset)}
         disabled={!pagination.hasPrev}
-        className="pagination-btn"
+        className="btn"
       >
         <PreviousIcon size={20} />
       </button>
 
       <div className="flex gap-md">
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-          <button
-            key={page}
-            onClick={() => goToPage(page)}
-            className="pagination-btn"
-          >
-            {page}
-          </button>
-        ))}
+        {Array.from({ length: totalPages }, (_, i) => i + offset).map(
+          (page) => (
+            <button key={page} onClick={() => goToPage(page)} className="btn">
+              {page}
+            </button>
+          ),
+        )}
       </div>
 
       <button
-        onClick={() => goToPage(currentPage + 1)}
+        onClick={() => goToPage(currentPage + offset)}
         disabled={!pagination.hasNext}
-        className="pagination-btn"
+        className="btn"
       >
         <NextIcon size={20} />
       </button>

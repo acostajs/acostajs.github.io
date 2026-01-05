@@ -1,3 +1,4 @@
+import type { ReactElement } from "react";
 import { AppLayout } from "./AppLayout";
 import { Router } from "./lib/router";
 import { Route } from "./lib/router";
@@ -6,7 +7,7 @@ import { Contact } from "./pages/Contact";
 import { Overview } from "./pages/Overview";
 import { Projects } from "./pages/Projects";
 
-export default function App() {
+export default function App(): ReactElement {
   return (
     <Router>
       <Route

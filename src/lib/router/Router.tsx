@@ -4,6 +4,11 @@ import { NavigationContext, RouteContext } from "./context.ts";
 import type { RouteProps } from "./Route.tsx";
 import type { Params } from "./types.ts";
 
+const ROUTER_CONSTANTS = {
+  PARAM_PREFIX_LENGTH: 1,
+  EMPTY_STRING_LENGTH: 0,
+};
+
 type RouteConfig = {
   path: string;
   element: ReactElement<RouteProps>;
@@ -19,7 +24,7 @@ type RouterProps = {
  * current pathname. You must use the `Link` component to navigate to
  * another page.
  */
-export function Router({ children }: RouterProps) {
+export function Router({ children }: RouterProps): ReactElement {
   const [pathname, setPathname] = useState(window.location.pathname);
 
   const childrenArray = Array.isArray(children) ? children : [children];
@@ -70,7 +75,9 @@ function match(
  * Split the given path into "/" separated segments.
  */
 function segment(path: string): Array<string> {
-  return path.split("/").filter((segment) => segment.length > 0);
+  return path
+    .split("/")
+    .filter((segment) => segment.length > ROUTER_CONSTANTS.EMPTY_STRING_LENGTH);
 }
 
 /**
@@ -95,7 +102,7 @@ function matchesRoute(
 
     const isParam = routeSegment.startsWith(":");
     if (isParam) {
-      route.params[routeSegment.slice(1)] = pathSegment;
+      route.params[routeSegment.slice(ROUTER_CONSTANTS.PARAM_PREFIX_LENGTH)] = pathSegment;
       continue;
     }
 

@@ -2,13 +2,13 @@ import { AsideProfile, ErrorMessage, Footer, Header } from "@/components/layout"
 import { Loading } from "@/components/ui/Loading";
 import { GitHubProvider } from "@/context";
 import { useGitHubData } from "@/hooks";
-import type { ReactNode } from "react";
+import type { ReactElement, ReactNode } from "react";
 
 type AppLayoutProps = {
   children: ReactNode;
 };
 
-export function AppLayout({ children }: AppLayoutProps) {
+export function AppLayout({ children }: AppLayoutProps): ReactElement {
   const { profile, repos, readme, fadeOut, error, loadingMessage } = useGitHubData();
 
   return (

@@ -1,5 +1,9 @@
 import type { ReactElement } from "react";
 
+const REPO_IMG_CONSTANTS = {
+  EMPTY_ARRAY: 0,
+};
+
 type RepoImgProps = {
   images: Array<string>;
   img_number: number;
@@ -15,7 +19,7 @@ export function RepoImg({
 
   return (
     <figure className={figureClassNames}>
-      {images && images.length > 0
+      {images && images.length > REPO_IMG_CONSTANTS.EMPTY_ARRAY
         ? (
           <img
             src={images[`${img_number}`]}
