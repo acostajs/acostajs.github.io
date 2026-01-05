@@ -6,6 +6,10 @@
     padding: var(--pad-xs) var(--pad-md);
   }
 
+  .navlink:focus {
+    border: 1px solid var(--color-accent-strong);
+  }
+
   .burger {
     padding: var(--pad-xs);
     border: 1px solid var(--color-border);
@@ -112,6 +116,7 @@
 
   .pagination-nav {
     padding: var(--pad-md);
+    border-bottom: 1px solid var(--color-border);
   }
 
   /* See Detail Button */
