@@ -29,7 +29,7 @@ export function Header({
 
           <div>
             <Avatar
-              size={40}
+              size={35}
               className="avatar"
               url={github_img_profile_url}
               alt="avatar image profile"

@@ -8,7 +8,7 @@ type BurgerProps = {
 export function Burger({ onClick }: BurgerProps): ReactElement {
   return (
     <button className="burger" popoverTarget="menu" onClick={onClick}>
-      <BurguerIcon size={20} />
+      <BurguerIcon size={18} />
     </button>
   );
 }

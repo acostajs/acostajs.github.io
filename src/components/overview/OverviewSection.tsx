@@ -15,7 +15,7 @@ export function OverviewSection({
   const readmeMarkdown = atob(readme.content);
 
   return (
-    <section className="overview-section flex flex-column gap-xl">
+    <section className="overview-section flex flex-column gap-sm">
       <ReactMarkdown>{readmeMarkdown}</ReactMarkdown>
     </section>
   );

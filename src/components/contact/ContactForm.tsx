@@ -17,22 +17,22 @@ export function ContactForm(): ReactElement {
         : (
           <form onSubmit={submit} className="flex flex-column gap-md">
             <div className="contact-item">
-              <label htmlFor="name">Enter your name:</label>
+              <label htmlFor="name">Your name</label>
               <input type="text" name="name" required />
             </div>
 
             <div className="contact-item">
-              <label htmlFor="email">Enter your email:</label>
+              <label htmlFor="email">Your email address</label>
               <input type="email" name="email" required />
             </div>
 
             <div className="contact-item">
-              <label htmlFor="message">Write your message:</label>
+              <label htmlFor="message">Your message</label>
               <textarea name="message" required></textarea>
             </div>
 
             <button className="btn" type="submit">
-              Submit
+              Send message
             </button>
           </form>
         )}
