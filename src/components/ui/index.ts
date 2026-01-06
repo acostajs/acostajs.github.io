@@ -1,5 +1,4 @@
 export * from "./AccordionItem";
-export * from "./AccordionList";
 export * from "./Avatar";
 export * from "./Burger";
 export * from "./Card";
