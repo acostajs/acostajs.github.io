@@ -3,6 +3,7 @@ export * from "./Avatar";
 export * from "./Burger";
 export * from "./Card";
 export * from "./ContactSection";
+export * from "./DownloadResume";
 export * from "./GitHubProfileBadge";
 export * from "./Loading";
 export * from "./NavLink";

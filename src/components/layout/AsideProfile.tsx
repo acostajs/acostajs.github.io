@@ -1,6 +1,6 @@
 import { GitHubIcon, LinkedInIcon, MailIcon, MapIcon } from "@/components/icons";
 import { ErrorMessage } from "@/components/layout";
-import { Avatar } from "@/components/ui";
+import { Avatar, DownloadResume } from "@/components/ui";
 import { PROFILE } from "@/lib/api";
 import type { User } from "@/types";
 import type { ReactElement } from "react";
@@ -21,6 +21,7 @@ export function AsideProfile({ profile }: AsideProfileProps): ReactElement {
           url={profile.avatar_url}
           alt="Profile Avatar"
         />
+        <DownloadResume />
       </div>
 
       <div className="profile-text">
@@ -58,10 +59,6 @@ export function AsideProfile({ profile }: AsideProfileProps): ReactElement {
             {profile.hireable
               ? "Open to internship opportunities"
               : "Not available"}
-          </li>
-
-          <li>
-            <button>Download Resume</button>
           </li>
         </ul>
       </div>

@@ -1,4 +1,4 @@
-import { RepoImg } from "@/components/ui";
+import { DownloadResume, RepoImg } from "@/components/ui";
 import type { ReactElement } from "react";
 import { ErrorMessage } from "../layout";
 
@@ -15,9 +15,10 @@ export function Bio({ headline, story, images }: BioProps): ReactElement {
 
   return (
     <section className="about-bio section-highlight flex-center flex-wrap-reverse">
-      <div className="about-bio-banner">
+      <div className="about-bio-banner flex flex-column gap-lg">
         <h1>{headline}</h1>
         <p>{story}</p>
+        <DownloadResume />
       </div>
       <RepoImg images={images} img_number={0} classes={["about-bio-img"]} />
     </section>
