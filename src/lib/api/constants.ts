@@ -12,6 +12,9 @@ export const PROFILE = {
     username: CONFIG.profile.linkedin,
     url: `https://www.linkedin.com/in/${CONFIG.profile.linkedin}/`,
   },
+  resume: {
+    url: `https://github.com/${CONFIG.github.username}/${CONFIG.github.username}/raw/main/portfolio/resume.pdf`,
+  },
 } as const;
 
 export const OVERVIEW_FEATURES = {

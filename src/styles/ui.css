@@ -31,6 +31,18 @@
     font-size: var(--text-base);
   }
 
+  .download-resume {
+    background-color: var(--color-accent-strong);
+    border-radius: var(--radius-xl);
+    padding: var(--pad-2xs) var(--pad-xs);
+    font-weight: var(--weight-bold);
+    font-size: var(--text-sm);
+  }
+
+  .download-resume:hover {
+    text-decoration: underline;
+  }
+
   /* ACCORDION ITEM */
 
   .accordion-item {
@@ -99,17 +111,6 @@
 
   .card-link:hover {
     color: var(--color-accent-strong);
-  }
-
-  .language-decorator {
-    background-color: var(--color-decorator);
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-  }
-
-  .card-topics {
-    font-size: var(--text-xs);
   }
 
   /* PAGINATION */
