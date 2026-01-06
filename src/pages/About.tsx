@@ -1,20 +1,17 @@
 import { Accordion, Bio } from "@/components/about";
 import { ErrorMessage } from "@/components/layout";
 import { ContactSection } from "@/components/ui";
-import { Loading } from "@/components/ui";
-import { useRepositoryData } from "@/hooks";
-import { GITHUB_USERNAME } from "@/lib/api";
-import type { AboutJSON } from "@/types";
+import { useGitHub } from "@/context/GitHubContext";
 import type { ReactElement } from "react";
 
 export function About(): ReactElement {
-  const { json, images, fadeOut, loadingMessage, error } = useRepositoryData(GITHUB_USERNAME);
-  if (error) return <ErrorMessage error_message={error} />;
-  if (!json || !("bio" in json)) {
-    return <Loading loading_message={loadingMessage} fadeOut={fadeOut} />;
+  const { aboutJson, images } = useGitHub();
+
+  if (!aboutJson) {
+    return <ErrorMessage error_message="aboutJSON file has not been created" />;
   }
 
-  const about: AboutJSON = json;
+  const about = aboutJson;
 
   return (
     <>

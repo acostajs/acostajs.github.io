@@ -1,8 +1,4 @@
-export type Project = {
-  files: Array<ProjectItem>;
-};
-
-export type ProjectItem = {
+export type PortfolioItem = {
   name: string;
   download_url: string;
   type: "file";
