@@ -9,7 +9,16 @@ type AppLayoutProps = {
 };
 
 export function AppLayout({ children }: AppLayoutProps): ReactElement {
-  const { profile, repos, readme, fadeOut, error, loadingMessage } = useGitHubData();
+  const {
+    profile,
+    repos,
+    readme,
+    aboutJson,
+    images,
+    fadeOut,
+    error,
+    loadingMessage,
+  } = useGitHubData();
 
   return (
     <>
@@ -21,7 +30,13 @@ export function AppLayout({ children }: AppLayoutProps): ReactElement {
       />
       <main className="container">
         <ErrorMessage error_message={error} />
-        <GitHubProvider github={profile} repos={repos} readme={readme}>
+        <GitHubProvider
+          github={profile}
+          repos={repos}
+          readme={readme}
+          aboutJson={aboutJson}
+          images={images}
+        >
           <div className="page-grid">
             <AsideProfile profile={profile} />
 

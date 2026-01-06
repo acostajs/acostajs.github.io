@@ -1,13 +1,18 @@
 import { RepoImg } from "@/components/ui";
 import type { ReactElement } from "react";
+import { ErrorMessage } from "../layout";
 
 type BioProps = {
   headline: string;
   story: string;
-  images: Array<string>;
+  images: string[] | null;
 };
 
 export function Bio({ headline, story, images }: BioProps): ReactElement {
+  if (!headline || !story || !images) {
+    return <ErrorMessage error_message="Could find Bio section" />;
+  }
+
   return (
     <section className="about-bio section-highlight flex-center flex-wrap-reverse">
       <div className="about-bio-banner">
