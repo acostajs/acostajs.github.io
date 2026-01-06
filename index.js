@@ -18801,6 +18801,30 @@ function RepoImg({
     }, undefined, false, undefined, this)
   }, undefined, false, undefined, this);
 }
+// src/lib/utils/portfolio.ts
+function getPortfolioJson(files) {
+  const jsonFile = files.find((f) => f.name === "portfolio.json");
+  if (!jsonFile) {
+    throw new Error("portfolio.json not found");
+  }
+  return jsonFile.download_url;
+}
+function getPortfolioImages(files) {
+  const images = files.filter((f) => f.name.startsWith("portfolio-img-")).map((f) => f.download_url);
+  if (!images.length) {
+    throw new Error("No images were found");
+  }
+  return images;
+}
+async function fetchAboutPortfolioJson(files) {
+  const url = getPortfolioJson(files);
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error("Failed to load portfolio.json");
+  }
+  const json = await res.json();
+  return json;
+}
 // src/lib/utils/utils.ts
 function formatRelativeDate(dateString) {
   return new Date(dateString).toLocaleDateString("en-CA", {
@@ -19167,10 +19191,12 @@ function GitHubProvider({
   github: github2,
   repos,
   readme,
+  aboutJson,
+  images,
   children
 }) {
   return /* @__PURE__ */ jsx_dev_runtime20.jsxDEV(GitHubContext.Provider, {
-    value: { github: github2, repos, readme },
+    value: { github: github2, repos, readme, aboutJson, images },
     children
   }, undefined, false, undefined, this);
 }
@@ -19217,6 +19243,8 @@ function useGitHubData() {
   const [profile2, setProfile] = import_react21.useState(null);
   const [repos, setRepos] = import_react21.useState([]);
   const [readme, setReadme] = import_react21.useState(null);
+  const [aboutJson, setAboutJson] = import_react21.useState(null);
+  const [images, setImages] = import_react21.useState([]);
   const [fadeOut, setFadeOut] = import_react21.useState(false);
   const [error, setError] = import_react21.useState("");
   const [loadingMessage, setLoadingMessage] = import_react21.useState("Loading profile...");
@@ -19224,13 +19252,14 @@ function useGitHubData() {
   import_react21.useEffect(() => {
     async function load() {
       try {
-        const [userRes, reposRes, readmeRes] = await Promise.all([
+        const [userRes, reposRes, readmeRes, aboutRes] = await Promise.all([
           fetch(GITHUB_URL),
           fetch(GITHUB_REPOS),
-          fetch(GITHUB_README)
+          fetch(GITHUB_README),
+          fetch(GITHUB_PORTFOLIO_FOLDER(PROFILE.github.username))
         ]);
         if (!userRes.ok) {
-          setError("Failed to load profile");
+          setError("Failed to load GitHub Profile");
           return;
         }
         if (!reposRes.ok) {
@@ -19241,12 +19270,20 @@ function useGitHubData() {
           setError("Failed to load README");
           return;
         }
+        if (!aboutRes.ok) {
+          setError("Failed to load About JSON");
+          return;
+        }
         const userData = await userRes.json();
         const reposData = await reposRes.json();
         const readmeData = await readmeRes.json();
+        const aboutData = await aboutRes.json();
+        const json = await fetchAboutPortfolioJson(aboutData);
         setProfile(userData);
         setRepos(reposData);
         setReadme(readmeData);
+        setAboutJson(json);
+        setImages(getPortfolioImages(aboutData));
       } catch {
         setError("Error fetching GitHub User Profile");
       } finally {
@@ -19256,7 +19293,16 @@ function useGitHubData() {
     }
     load();
   }, []);
-  return { profile: profile2, repos, readme, fadeOut, error, loadingMessage };
+  return {
+    profile: profile2,
+    repos,
+    readme,
+    aboutJson,
+    images,
+    fadeOut,
+    error,
+    loadingMessage
+  };
 }
 // src/hooks/usePagination.ts
 var import_react22 = __toESM(require_react(), 1);
@@ -19297,59 +19343,19 @@ function usePagination(totalCount, perPage = PAGINATION_CONSTANTS.DEFAULT_PER_PA
 }
 // src/hooks/useRepositoryData.ts
 var import_react23 = __toESM(require_react(), 1);
-function useRepositoryData(repoName) {
-  const loadingTime = 1000;
-  const [json, setJson] = import_react23.useState(null);
-  const [images, setImages] = import_react23.useState([]);
-  const [fadeOut, setFadeOut] = import_react23.useState(false);
-  const [loadingMessage, setLoadingMessage] = import_react23.useState("Loading...");
-  const [error, setError] = import_react23.useState("");
-  import_react23.useEffect(() => {
-    async function load() {
-      try {
-        setLoadingMessage("Loading files...");
-        const res = await fetch(GITHUB_PORTFOLIO_FOLDER(repoName));
-        if (!res.ok)
-          setError("It was not possible to fetch information");
-        const files = await res.json();
-        if (!files)
-          setError("No Files where found");
-        const jsonFile = files.find((f) => f.name === "portfolio.json");
-        if (!jsonFile)
-          setError("portfolio.json not found");
-        if (!jsonFile?.download_url)
-          throw new Error("No portfolio.json");
-        setLoadingMessage("Loading project details...");
-        const jsonRes = await fetch(jsonFile.download_url);
-        const jsonData = await jsonRes.json();
-        const typedJson = repoName === PROFILE.github.username ? jsonData : jsonData;
-        setJson(typedJson);
-        const images2 = files.filter((f) => f.name.startsWith("portfolio-img-")).map((f) => f.download_url);
-        if (!images2)
-          setError("No images where found");
-        setImages(images2);
-      } catch {
-        setError("Failed to load project");
-      } finally {
-        setFadeOut(true);
-        setTimeout(() => setLoadingMessage("Ready!"), loadingTime);
-      }
-    }
-    if (repoName)
-      load();
-  }, [repoName]);
-  return {
-    json,
-    images,
-    fadeOut,
-    loadingMessage,
-    error
-  };
-}
 // src/AppLayout.tsx
 var jsx_dev_runtime21 = __toESM(require_jsx_dev_runtime(), 1);
 function AppLayout({ children }) {
-  const { profile: profile2, repos, readme, fadeOut, error, loadingMessage } = useGitHubData();
+  const {
+    profile: profile2,
+    repos,
+    readme,
+    aboutJson,
+    images,
+    fadeOut,
+    error,
+    loadingMessage
+  } = useGitHubData();
   return /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(jsx_dev_runtime21.Fragment, {
     children: [
       /* @__PURE__ */ jsx_dev_runtime21.jsxDEV(Loading, {
@@ -19371,6 +19377,8 @@ function AppLayout({ children }) {
             github: profile2,
             repos,
             readme,
+            aboutJson,
+            images,
             children: /* @__PURE__ */ jsx_dev_runtime21.jsxDEV("div", {
               className: "page-grid",
               children: [
@@ -19433,6 +19441,11 @@ function Accordion({ about }) {
 // src/components/about/Bio.tsx
 var jsx_dev_runtime23 = __toESM(require_jsx_dev_runtime(), 1);
 function Bio({ headline, story, images }) {
+  if (!headline || !story || !images) {
+    return /* @__PURE__ */ jsx_dev_runtime23.jsxDEV(ErrorMessage, {
+      error_message: "Could find Bio section"
+    }, undefined, false, undefined, this);
+  }
   return /* @__PURE__ */ jsx_dev_runtime23.jsxDEV("section", {
     className: "about-bio section-highlight flex-center flex-wrap-reverse",
     children: [
@@ -19458,18 +19471,13 @@ function Bio({ headline, story, images }) {
 // src/pages/About.tsx
 var jsx_dev_runtime24 = __toESM(require_jsx_dev_runtime(), 1);
 function About() {
-  const { json, images, fadeOut, loadingMessage, error } = useRepositoryData(GITHUB_USERNAME);
-  if (error)
+  const { aboutJson, images } = useGitHub();
+  if (!aboutJson) {
     return /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(ErrorMessage, {
-      error_message: error
-    }, undefined, false, undefined, this);
-  if (!json || !("bio" in json)) {
-    return /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Loading, {
-      loading_message: loadingMessage,
-      fadeOut
+      error_message: "aboutJSON file has not been created"
     }, undefined, false, undefined, this);
   }
-  const about = json;
+  const about = aboutJson;
   return /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(jsx_dev_runtime24.Fragment, {
     children: [
       /* @__PURE__ */ jsx_dev_runtime24.jsxDEV(Bio, {
