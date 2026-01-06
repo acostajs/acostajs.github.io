@@ -21,17 +21,11 @@ type BioSection = {
 
 export type AboutJSON = {
   bio: BioSection;
-  personality: BioSection;
-  background: BioSection;
+  working_style: BioSection;
+  current_focus: BioSection;
   key_projects: BioSection;
-  core_skills: {
-    headline: string;
-    "front-end": Array<string>;
-    "back-end": Array<string>;
-    tools: Array<string>;
-    databases: Array<string>;
-  };
+  core_skills: BioSection;
   development_process: BioSection;
-  influences: BioSection;
+  motivations: BioSection;
   career_goals: BioSection;
 };
