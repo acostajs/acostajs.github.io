@@ -6,24 +6,32 @@ type LinkProps = {
   classes?: Array<string>;
   to: string;
   children: ReactNode;
-  onClick?: () => void;
+  popOverTarget: string;
 };
 
 export function Link({
   classes,
   to,
   children,
-  onClick,
+  popOverTarget,
 }: LinkProps): ReactElement {
   const aClasses = classes?.join(" ") ?? "";
   const { setPathname: navigate } = useContext(NavigationContext);
   function handleClick(e: MouseEvent): void {
+    if (popOverTarget) {
+      const popover = document.getElementById(popOverTarget);
+      popover?.hidePopover();
+    }
     e.preventDefault();
     navigate(to);
-    onClick?.();
   }
   return (
-    <a className={aClasses} href={to} onClick={handleClick}>
+    <a
+      className={aClasses}
+      href={to}
+      onClick={handleClick}
+      popoverTarget={popOverTarget}
+    >
       {children}
     </a>
   );
