@@ -1,6 +1,5 @@
 import { Accordion, Bio } from "@/components/about";
-import { ErrorMessage } from "@/components/layout";
-import { ContactSection } from "@/components/ui";
+import { ContactSection, ErrorMessage } from "@/components/ui";
 import { useGitHub } from "@/context/GitHubContext";
 import type { ReactElement } from "react";
 

@@ -1,6 +1,5 @@
 import { GitHubIcon, LinkedInIcon, MailIcon, MapIcon } from "@/components/icons";
-import { ErrorMessage } from "@/components/layout";
-import { Avatar, DownloadResume } from "@/components/ui";
+import { Avatar, DownloadResume, ErrorMessage } from "@/components/ui";
 import { PROFILE } from "@/lib/api";
 import type { User } from "@/types";
 import type { ReactElement } from "react";

@@ -1,6 +1,6 @@
 import { DownloadResume, RepoImg } from "@/components/ui";
+import { ErrorMessage } from "@/components/ui";
 import type { ReactElement } from "react";
-import { ErrorMessage } from "../layout";
 
 type BioProps = {
   headline: string;

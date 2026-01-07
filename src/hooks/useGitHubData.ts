@@ -9,9 +9,7 @@ type GitHubData = {
   readme: File | null;
   aboutJson: AboutJSON | null;
   images: Array<string> | null;
-  fadeOut: boolean;
   error: string;
-  loadingMessage: string;
 };
 
 export function useGitHubData(): GitHubData {
@@ -20,11 +18,7 @@ export function useGitHubData(): GitHubData {
   const [readme, setReadme] = useState<File | null>(null);
   const [aboutJson, setAboutJson] = useState<AboutJSON | null>(null);
   const [images, setImages] = useState<Array<string>>([]);
-  const [fadeOut, setFadeOut] = useState(false);
   const [error, setError] = useState("");
-  const [loadingMessage, setLoadingMessage] = useState("Loading profile...");
-
-  const loadingTime = 1000;
 
   useEffect(() => {
     async function load(): Promise<void> {
@@ -65,9 +59,6 @@ export function useGitHubData(): GitHubData {
         setImages(getPortfolioImages(aboutData));
       } catch {
         setError("Error fetching GitHub User Profile");
-      } finally {
-        setFadeOut(true);
-        setTimeout(() => setLoadingMessage("Almost ready..."), loadingTime);
       }
     }
 
@@ -80,8 +71,6 @@ export function useGitHubData(): GitHubData {
     readme,
     aboutJson,
     images,
-    fadeOut,
     error,
-    loadingMessage,
   };
 }

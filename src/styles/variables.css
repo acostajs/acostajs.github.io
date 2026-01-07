@@ -13,8 +13,6 @@
     /* Overlays */
     --overlay-bg: rgba(33, 42, 51, 0.5);
     --overlay-blur: 1px;
-    --loading-bg: #1f2831;
-    --loading-blur: 10px;
 
     /* Text */
     --color-text: #d0d5df;
