@@ -23,16 +23,18 @@
   }
 
   /* HIDDEN MENU */
-
-  .menu-items {
+  #menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    border: none;
     background-color: var(--color-bg);
     box-shadow: var(--shadow-soft);
-    position: fixed;
-    z-index: 10;
     height: 100dvh;
     width: 300px;
     padding: var(--pad-xl);
     color: var(--color-text);
+    animation: menuAni 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 
     & .navlink:hover {
       background-color: var(--color-hover-dark);
@@ -47,6 +49,13 @@
     }
   }
 
+  #menu::backdrop {
+    opacity: 1;
+    background: var(--overlay-bg);
+    backdrop-filter: blur(var(--overlay-blur));
+    pointer-events: auto;
+  }
+
   .menu-top {
     padding: var(--pad-md) 0;
 
@@ -58,16 +67,6 @@
 
   .menu-links {
     padding: var(--pad-md) 0;
-  }
-
-  .overlay {
-    position: fixed;
-    inset: 0;
-    opacity: 1;
-    background: var(--overlay-bg);
-    backdrop-filter: blur(var(--overlay-blur));
-    z-index: 5;
-    transition: opacity 0.3s ease-in-out;
   }
 
   /* FOOTER */

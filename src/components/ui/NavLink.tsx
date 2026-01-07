@@ -5,20 +5,20 @@ type NavLinkProps = {
   text: string;
   to: string;
   children?: ReactNode;
-  onClick?: () => void;
+  popOverTarget?: string;
 };
 
 export function NavLink({
   text,
   to,
   children,
-  onClick,
+  popOverTarget,
 }: NavLinkProps): ReactElement {
   return (
     <Link
       classes={["flex-left", "gap-md", "navlink"]}
       to={to}
-      onClick={onClick}
+      popOverTarget={popOverTarget ? popOverTarget : ""}
     >
       {children}
       {text}
