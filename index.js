@@ -18651,19 +18651,23 @@ function Link({
   classes,
   to,
   children,
-  onClick
+  popOverTarget
 }) {
   const aClasses = classes?.join(" ") ?? "";
   const { setPathname: navigate } = import_react17.useContext(NavigationContext);
   function handleClick(e) {
+    if (popOverTarget) {
+      const popover = document.getElementById(popOverTarget);
+      popover?.hidePopover();
+    }
     e.preventDefault();
     navigate(to);
-    onClick?.();
   }
   return /* @__PURE__ */ jsx_dev_runtime9.jsxDEV("a", {
     className: aClasses,
     href: to,
     onClick: handleClick,
+    popoverTarget: popOverTarget,
     children
   }, undefined, false, undefined, this);
 }
@@ -18742,12 +18746,12 @@ function NavLink({
   text,
   to,
   children,
-  onClick
+  popOverTarget
 }) {
   return /* @__PURE__ */ jsx_dev_runtime11.jsxDEV(Link, {
     classes: ["flex-left", "gap-md", "navlink"],
     to,
-    onClick,
+    popOverTarget: popOverTarget ? popOverTarget : "",
     children: [
       children,
       text
@@ -19055,17 +19059,18 @@ function FiStar(props) {
 var jsx_dev_runtime18 = __toESM(require_jsx_dev_runtime(), 1);
 function NavLinks({
   ul_classes,
-  handleClick
+  popOverTarget
 }) {
   const ulClassName = ul_classes?.join(" ") ?? "";
   return /* @__PURE__ */ jsx_dev_runtime18.jsxDEV("ul", {
     className: ulClassName,
+    popoverTargetAction: "hide",
     children: [
       /* @__PURE__ */ jsx_dev_runtime18.jsxDEV("li", {
         children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(NavLink, {
           text: "Overview",
           to: "/",
-          onClick: handleClick,
+          popOverTarget,
           children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(FiBookOpen, {
             size: 20
           }, undefined, false, undefined, this)
@@ -19075,7 +19080,7 @@ function NavLinks({
         children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(NavLink, {
           text: "Projects",
           to: "/projects",
-          onClick: handleClick,
+          popOverTarget,
           children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(FiFolder, {
             size: 20
           }, undefined, false, undefined, this)
@@ -19085,7 +19090,7 @@ function NavLinks({
         children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(NavLink, {
           text: "About",
           to: "/about",
-          onClick: handleClick,
+          popOverTarget,
           children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(FiBox, {
             size: 20
           }, undefined, false, undefined, this)
@@ -19095,7 +19100,7 @@ function NavLinks({
         children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(NavLink, {
           text: "Contact",
           to: "/contact",
-          onClick: handleClick,
+          popOverTarget,
           children: /* @__PURE__ */ jsx_dev_runtime18.jsxDEV(FiStar, {
             size: 20
           }, undefined, false, undefined, this)
@@ -19114,41 +19119,37 @@ function HiddenMenu() {
       /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("div", {
         id: "menu",
         popover: "auto",
-        children: /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("div", {
-          className: "overlay",
-          children: /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("div", {
-            className: "menu-items",
+        className: "menu-items",
+        children: [
+          /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("div", {
+            className: "flex-between menu-top",
             children: [
-              /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("div", {
-                className: "flex-between menu-top",
-                children: [
-                  /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(FaGithub, {
-                    size: 24
-                  }, undefined, false, undefined, this),
-                  /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("button", {
-                    popoverTarget: "menu",
-                    children: "X"
-                  }, undefined, false, undefined, this)
-                ]
-              }, undefined, true, undefined, this),
-              /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("hr", {}, undefined, false, undefined, this),
-              /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(NavLinks, {
-                ul_classes: ["menu-links"]
+              /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(FaGithub, {
+                size: 24
               }, undefined, false, undefined, this),
-              /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("hr", {}, undefined, false, undefined, this),
-              /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("p", {
-                children: [
-                  "This ",
-                  /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("strong", {
-                    children: "portfolio"
-                  }, undefined, false, undefined, this),
-                  "dynamically pulls all the information directly from my GitHub via the GitHub API, automatically showcasing live repositories, commit activity, and contributions without manual updates. Built with React, TypeScript, and Bun for a static GitHub Pages deployment."
-                ]
-              }, undefined, true, undefined, this)
+              /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("button", {
+                popoverTarget: "menu",
+                children: "X"
+              }, undefined, false, undefined, this)
+            ]
+          }, undefined, true, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("hr", {}, undefined, false, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime19.jsxDEV(NavLinks, {
+            ul_classes: ["menu-links"],
+            popOverTarget: "menu"
+          }, undefined, false, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("hr", {}, undefined, false, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("p", {
+            children: [
+              "This ",
+              /* @__PURE__ */ jsx_dev_runtime19.jsxDEV("strong", {
+                children: "portfolio"
+              }, undefined, false, undefined, this),
+              "dynamically pulls all the information directly from my GitHub via the GitHub API, automatically showcasing live repositories, commit activity, and contributions without manual updates. Built with React, TypeScript, and Bun for a static GitHub Pages deployment."
             ]
           }, undefined, true, undefined, this)
-        }, undefined, false, undefined, this)
-      }, undefined, false, undefined, this)
+        ]
+      }, undefined, true, undefined, this)
     ]
   }, undefined, true, undefined, this);
 }
@@ -28418,8 +28419,8 @@ function OverviewSection({
   readme
 }) {
   if (!readme)
-    return /* @__PURE__ */ jsx_dev_runtime28.jsxDEV(Loading, {
-      loading_message: "Loading data..."
+    return /* @__PURE__ */ jsx_dev_runtime28.jsxDEV(ErrorMessage, {
+      error_message: "Readme File not found"
     }, undefined, false, undefined, this);
   const readmeMarkdown = atob(readme.content);
   return /* @__PURE__ */ jsx_dev_runtime28.jsxDEV("section", {
@@ -28434,8 +28435,8 @@ var jsx_dev_runtime29 = __toESM(require_jsx_dev_runtime(), 1);
 function ProjectSection({ repos }) {
   const startingIndex = 0;
   if (repos.length === startingIndex) {
-    return /* @__PURE__ */ jsx_dev_runtime29.jsxDEV(Loading, {
-      loading_message: "No repositories found"
+    return /* @__PURE__ */ jsx_dev_runtime29.jsxDEV(ErrorMessage, {
+      error_message: "No repositories where found"
     }, undefined, false, undefined, this);
   }
   return /* @__PURE__ */ jsx_dev_runtime29.jsxDEV("section", {
