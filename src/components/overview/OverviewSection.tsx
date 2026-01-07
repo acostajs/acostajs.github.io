@@ -1,8 +1,7 @@
-import { Loading } from "@/components/ui/Loading";
+import { ErrorMessage } from "@/components/ui";
 import type { File } from "@/types";
 import type { ReactElement } from "react";
 import ReactMarkdown from "react-markdown";
-import { ErrorMessage } from "../layout";
 
 type OverviewSectionProps = {
   readme: File | null;

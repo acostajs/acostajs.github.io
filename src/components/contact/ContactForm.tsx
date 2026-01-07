@@ -1,7 +1,7 @@
+import { ContactPageIcon } from "@/components/icons";
+import { ErrorMessage } from "@/components/ui";
 import { useEmailFormSubmit } from "@/hooks";
 import type { ReactElement } from "react";
-import { ContactPageIcon } from "../icons";
-import { ErrorMessage } from "../layout";
 
 export function ContactForm(): ReactElement {
   const { error, result, submit } = useEmailFormSubmit();

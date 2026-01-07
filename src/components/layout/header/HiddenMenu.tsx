@@ -18,10 +18,9 @@ export function HiddenMenu(): ReactElement {
         <NavLinks ul_classes={["menu-links"]} popOverTarget={"menu"} />
         <hr />
         <p>
-          This <strong>portfolio</strong>
-          dynamically pulls all the information directly from my GitHub via the GitHub API, automatically showcasing
-          live repositories, commit activity, and contributions without manual updates. Built with React, TypeScript,
-          and Bun for a static GitHub Pages deployment.
+          This <strong>portfolio</strong>{" "}
+          pulls live data from my GitHub using the GitHub API, automatically displaying repositories, commits, and
+          contributions. Built with React and TypeScript, and deployed to GitHub Pages using Bun.
         </p>
       </div>
     </div>
