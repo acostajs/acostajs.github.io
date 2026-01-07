@@ -138,6 +138,21 @@
     border-radius: 50%;
   }
 
+  /* Project Details */
+
+  #details {
+    position: absolute;
+    border: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 900px;
+    width: 70%;
+    color: var(--color-text);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg-dark);
+  }
+
   /* Contact */
 
   .contact-form {

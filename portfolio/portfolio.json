@@ -1,0 +1,12 @@
+{
+  "title": "TaskFlow Pro",
+  "description": "Full-stack task management app with real-time collaboration, drag-and-drop kanban boards, and GitHub integration for sprint planning. Built for remote dev teams.",
+  "technologies": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Prisma",
+    "TailwindCSS",
+    "Socket.io"
+  ]
+}
