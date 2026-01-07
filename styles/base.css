@@ -187,4 +187,14 @@
   .btn:disabled:hover {
     background-color: var(--color-hover-dark);
   }
+
+  /* Backdrops Style */
+
+  #menu::backdrop,
+  #details::backdrop {
+    opacity: 1;
+    background: var(--overlay-bg);
+    backdrop-filter: blur(var(--overlay-blur));
+    pointer-events: auto;
+  }
 }

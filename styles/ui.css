@@ -97,6 +97,7 @@
   /* CARD */
 
   .card {
+    align-items: flex-start;
     border: 1px solid var(--color-border);
     background-color: var(--color-bg);
     border-radius: var(--radius-lg);
@@ -121,5 +122,15 @@
   }
 
   /* See Detail Button */
+
+  .details-btn {
+    border: none;
+    padding: 0;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .details-btn:hover {
+    color: var(--color-accent-strong);
+  }
   /* .see-details {} */
 }
