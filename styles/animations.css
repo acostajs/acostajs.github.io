@@ -65,4 +65,15 @@
       transform: translateX(0);
     }
   }
+
+  @keyframes loadingAni {
+    0% {
+      opacity: 1;
+      backdrop-filter: blur(50px);
+    }
+    100% {
+      opacity: 0;
+      backdrop-filter: blur(1px);
+    }
+  }
 }
