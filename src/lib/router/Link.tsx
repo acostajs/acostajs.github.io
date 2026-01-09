@@ -6,7 +6,7 @@ type LinkProps = {
   classes?: Array<string>;
   to: string;
   children: ReactNode;
-  popOverTarget: string;
+  popOverTarget?: string;
 };
 
 export function Link({

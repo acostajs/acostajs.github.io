@@ -10,5 +10,4 @@ export * from "./Loading";
 export * from "./NavLink";
 export * from "./Pagination";
 export * from "./RepoImg";
-export * from "./SeeDetailsButton";
 export * from "./TopicAnchor";

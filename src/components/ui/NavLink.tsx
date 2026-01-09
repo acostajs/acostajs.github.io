@@ -18,7 +18,7 @@ export function NavLink({
     <Link
       classes={["flex-left", "gap-md", "navlink"]}
       to={to}
-      popOverTarget={popOverTarget ? popOverTarget : ""}
+      popOverTarget={popOverTarget}
     >
       {children}
       {text}
