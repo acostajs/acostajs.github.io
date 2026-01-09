@@ -1,11 +1,7 @@
+import { Route, Router } from "@/lib/router";
+import { About, Contact, Details, Overview, Projects } from "@/pages";
 import type { ReactElement } from "react";
 import { AppLayout } from "./AppLayout";
-import { Router } from "./lib/router";
-import { Route } from "./lib/router";
-import { About } from "./pages/About";
-import { Contact } from "./pages/Contact";
-import { Overview } from "./pages/Overview";
-import { Projects } from "./pages/Projects";
 
 export default function App(): ReactElement {
   return (
@@ -39,6 +35,14 @@ export default function App(): ReactElement {
         element={
           <AppLayout>
             <Projects />
+          </AppLayout>
+        }
+      />
+      <Route
+        path="/details/:repoName"
+        element={
+          <AppLayout>
+            <Details />
           </AppLayout>
         }
       />

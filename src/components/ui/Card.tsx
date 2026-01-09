@@ -1,4 +1,4 @@
-import { SeeDetailsButton } from "@/components/ui";
+import { Link } from "@/lib/router";
 import type { Repository } from "@/types";
 import type { ReactElement } from "react";
 import { ProjectDetails } from "../projects";
@@ -10,13 +10,11 @@ type CardProp = {
 export function Card({ repo }: CardProp): ReactElement {
   return (
     <article className="card flex flex-column gap-sm">
-      <h3 className="card-title">{repo.name}</h3>
-
       <a href={repo.html_url} className="card-link">
-        Go to Repository
+        <h3 className="card-title">{repo.name}</h3>
       </a>
 
-      <SeeDetailsButton />
+      <Link to={`/details/${repo.name}`}>See Details ...</Link>
       <ProjectDetails repoName={repo.name} />
       <p>{repo.description}</p>
       {repo.language

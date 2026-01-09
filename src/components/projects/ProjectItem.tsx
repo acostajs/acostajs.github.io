@@ -1,4 +1,5 @@
 import { ForkIcon, IssueIcon, LicenseIcon, StarIcon, WatcherIcon } from "@/components/icons";
+import { Link } from "@/lib/router";
 import { formatRelativeDate } from "@/lib/utils";
 import type { Repository } from "@/types";
 import type { ReactElement } from "react";
@@ -66,6 +67,9 @@ export function ProjectItem({ repo, key }: ProjectItemProps): ReactElement {
           <li></li>
           <li>
             <p>{repo.description}</p>
+          </li>
+          <li>
+            <Link to={`/details/${repo.name}`}>See Details ...</Link>
           </li>
           <li>
             <ul className="flex flex-wrap gap-sm">
