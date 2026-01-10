@@ -176,6 +176,83 @@
     width: 20ch;
   }
 
+  /* Details */
+
+  .details-header {
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--pad-md);
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  .details-tags {
+    font-weight: var(--weight-semibold);
+  }
+
+  .details-status {
+    padding: var(--pad-xs) var(--pad-md);
+    background-color: var(--color-bg-accent);
+    border-radius: var(--radius-md);
+  }
+
+  .details-section-title {
+    background-color: var(--color-bg-dark);
+    padding: var(--pad-md);
+    border-radius: var(--radius-md);
+  }
+
+  .details-section-text,
+  .details-features {
+    background-color: var(--color-bg-light);
+    color: var(--color-text-dark);
+    padding: var(--pad-md);
+    border-radius: var(--radius-sm);
+  }
+
+  .details-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .details-list {
+    list-style-type: disc;
+    padding-left: var(--pad-md);
+  }
+
+  .details-link,
+  .details-stack-item {
+    padding: var(--pad-xs) var(--pad-md);
+    background-color: var(--color-bg-accent);
+    color: var(--color-text);
+    border-radius: var(--radius-sm);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .details-link:hover {
+    background-color: var(--color-bg-dark);
+  }
+
+  .carousel {
+    scroll-marker-group: after;
+
+    &::scroll-button(left) {
+      content: "⬅" / "Scroll Left";
+    }
+
+    &::scroll-button(right) {
+      content: "⮕" / "Scroll Right";
+    }
+
+    &::scroll-button(*):focus-visible {
+      outline-offset: 5px;
+    }
+    > li::scroll-marker {
+      content: " ";
+    }
+
+    > li::scroll-marker:target-current {
+      background: var(--accent);
+    }
+  }
+
   @media (max-width: 768px) {
     aside {
       margin-bottom: var(--space-2xl);
@@ -184,6 +261,10 @@
       & ul {
         grid-template-columns: 1fr;
       }
+    }
+
+    .details-grid {
+      grid-template-columns: 1fr;
     }
   }
 }
