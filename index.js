@@ -19297,191 +19297,284 @@ function Details() {
     links
   } = json;
   return /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("article", {
+    className: "details",
     children: [
       /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("header", {
+        className: "details-header flex flex-column gap-md",
         children: [
           /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h1", {
             children: meta.title
           }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("p", {
+          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+            className: "details-header-bottom flex-between flex-wrap",
             children: [
-              meta.type,
-              " · ",
-              meta.role
-            ]
-          }, undefined, true, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("p", {
-            children: [
-              "Status: ",
-              meta.status
+              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+                className: "tag flex gap-md",
+                children: [
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("span", {
+                    children: meta.type
+                  }, undefined, false, undefined, this),
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("span", {
+                    children: meta.role
+                  }, undefined, false, undefined, this)
+                ]
+              }, undefined, true, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("p", {
+                className: "tag",
+                children: [
+                  "Status: ",
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("span", {
+                    className: "details-status",
+                    children: meta.status
+                  }, undefined, false, undefined, this),
+                  " "
+                ]
+              }, undefined, true, undefined, this)
             ]
           }, undefined, true, undefined, this)
         ]
       }, undefined, true, undefined, this),
       /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
+        className: "details-overview",
         children: [
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
-            children: "Overview"
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("p", {
-            children: overview.summary
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h3", {
-            children: "Problem"
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("p", {
-            children: overview.problem
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h3", {
-            children: "Solution"
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("p", {
-            children: overview.solution
-          }, undefined, false, undefined, this)
-        ]
-      }, undefined, true, undefined, this),
-      images.length > 0 && /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
-            children: "Project Preview"
-          }, undefined, false, undefined, this),
-          images.map((src, index) => /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("figure", {
-            children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("img", {
-              src,
-              alt: `${meta.title} screenshot ${index + 1}`
+          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+            className: "details-section-title",
+            children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
+              children: "Overview"
             }, undefined, false, undefined, this)
-          }, src, false, undefined, this))
-        ]
-      }, undefined, true, undefined, this),
-      responsibilities.length > 0 && /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
-            children: "Responsibilities"
           }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
-            children: responsibilities.map((item) => /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
-              children: item
-            }, item, false, undefined, this))
-          }, undefined, false, undefined, this)
-        ]
-      }, undefined, true, undefined, this),
-      key_features.length > 0 && /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
-            children: "Key Features"
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
-            children: key_features.map((feature) => /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
-              children: feature
-            }, feature, false, undefined, this))
-          }, undefined, false, undefined, this)
-        ]
-      }, undefined, true, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
-            children: "Architecture"
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("p", {
+          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+            className: "details-section-text",
             children: [
-              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("strong", {
-                children: "Approach:"
+              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h3", {
+                children: "Quick Summary"
               }, undefined, false, undefined, this),
-              " ",
-              architecture.approach
-            ]
-          }, undefined, true, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("p", {
-            children: [
-              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("strong", {
-                children: "Data flow:"
+              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("p", {
+                children: overview.summary
               }, undefined, false, undefined, this),
-              " ",
-              architecture.data_flow
-            ]
-          }, undefined, true, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("p", {
-            children: [
-              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("strong", {
-                children: "Deployment:"
+              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h3", {
+                children: "Problem"
               }, undefined, false, undefined, this),
-              " ",
-              architecture.deployment
+              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("p", {
+                children: overview.problem
+              }, undefined, false, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h3", {
+                children: "Solution"
+              }, undefined, false, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("p", {
+                children: overview.solution
+              }, undefined, false, undefined, this)
             ]
           }, undefined, true, undefined, this)
         ]
       }, undefined, true, undefined, this),
-      tech_stack.length > 0 && /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
+      /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+        className: "details-grid grid gap-xl",
         children: [
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
-            children: "Tech Stack"
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
-            children: tech_stack.map((tech) => /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
-              children: tech
-            }, tech, false, undefined, this))
-          }, undefined, false, undefined, this)
-        ]
-      }, undefined, true, undefined, this),
-      challenges_and_learnings.length > 0 && /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
-            children: "Challenges & Learnings"
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
-            children: challenges_and_learnings.map((item) => /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
-              children: item
-            }, item, false, undefined, this))
-          }, undefined, false, undefined, this)
-        ]
-      }, undefined, true, undefined, this),
-      skills_demonstrated.length > 0 && /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
-            children: "Skills Demonstrated"
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
-            children: skills_demonstrated.map((skill) => /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
-              children: skill
-            }, skill, false, undefined, this))
-          }, undefined, false, undefined, this)
-        ]
-      }, undefined, true, undefined, this),
-      future_improvements.length > 0 && /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
-            children: "Future Improvements"
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
-            children: future_improvements.map((item) => /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
-              children: item
-            }, item, false, undefined, this))
-          }, undefined, false, undefined, this)
-        ]
-      }, undefined, true, undefined, this),
-      /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("footer", {
-        children: [
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
-            children: "Links"
-          }, undefined, false, undefined, this),
-          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
+          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+            className: "left",
             children: [
-              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
-                children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("a", {
-                  href: links.live_demo,
-                  target: "_blank",
-                  rel: "noopener noreferrer",
-                  children: "Live Demo"
-                }, undefined, false, undefined, this)
-              }, undefined, false, undefined, this),
-              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
-                children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("a", {
-                  href: links.source_code,
-                  target: "_blank",
-                  rel: "noopener noreferrer",
-                  children: "Source Code"
-                }, undefined, false, undefined, this)
-              }, undefined, false, undefined, this)
+              images.length > 0 && /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
+                className: "details-carrousel",
+                children: [
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+                    className: "details-section-title",
+                    children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
+                      children: "Project Preview"
+                    }, undefined, false, undefined, this)
+                  }, undefined, false, undefined, this),
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+                    className: "carousel-container",
+                    children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
+                      className: "carousel",
+                      children: images.map((src, index) => /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
+                        children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("figure", {
+                          children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("img", {
+                            src,
+                            alt: `${meta.title} screenshot ${index + 1}`
+                          }, undefined, false, undefined, this)
+                        }, src, false, undefined, this)
+                      }, undefined, false, undefined, this))
+                    }, undefined, false, undefined, this)
+                  }, undefined, false, undefined, this)
+                ]
+              }, undefined, true, undefined, this),
+              key_features.length > 0 && /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
+                className: "details-features",
+                children: [
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
+                    children: "Key Features"
+                  }, undefined, false, undefined, this),
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
+                    className: "details-list",
+                    children: key_features.map((feature) => /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
+                      children: feature
+                    }, feature, false, undefined, this))
+                  }, undefined, false, undefined, this)
+                ]
+              }, undefined, true, undefined, this),
+              responsibilities.length > 0 && /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
+                className: "details-features",
+                children: [
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
+                    children: "Responsibilities"
+                  }, undefined, false, undefined, this),
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
+                    className: "details-list",
+                    children: responsibilities.map((item) => /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
+                      children: item
+                    }, item, false, undefined, this))
+                  }, undefined, false, undefined, this)
+                ]
+              }, undefined, true, undefined, this),
+              challenges_and_learnings.length > 0 && /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
+                className: "details-features",
+                children: [
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
+                    children: "Challenges & Learnings"
+                  }, undefined, false, undefined, this),
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
+                    className: "details-list",
+                    children: challenges_and_learnings.map((item) => /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
+                      children: item
+                    }, item, false, undefined, this))
+                  }, undefined, false, undefined, this)
+                ]
+              }, undefined, true, undefined, this),
+              future_improvements.length > 0 && /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
+                className: "details-features",
+                children: [
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
+                    children: "Future Improvements"
+                  }, undefined, false, undefined, this),
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
+                    className: "details-list",
+                    children: future_improvements.map((item) => /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
+                      children: item
+                    }, item, false, undefined, this))
+                  }, undefined, false, undefined, this)
+                ]
+              }, undefined, true, undefined, this)
+            ]
+          }, undefined, true, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+            className: "right",
+            children: [
+              tech_stack.length > 0 && /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
+                className: "details-stack",
+                children: [
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+                    className: "details-section-title",
+                    children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
+                      children: "Tech Stack"
+                    }, undefined, false, undefined, this)
+                  }, undefined, false, undefined, this),
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+                    className: "details-section-text",
+                    children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
+                      className: " flex flex-wrap gap-md",
+                      children: tech_stack.map((tech) => /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
+                        className: "details-stack-item tag",
+                        children: tech
+                      }, tech, false, undefined, this))
+                    }, undefined, false, undefined, this)
+                  }, undefined, false, undefined, this)
+                ]
+              }, undefined, true, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
+                className: "details-architecture",
+                children: [
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+                    className: "details-section-title",
+                    children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
+                      children: "Architecture"
+                    }, undefined, false, undefined, this)
+                  }, undefined, false, undefined, this),
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+                    className: "details-section-text",
+                    children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
+                      className: "details-list",
+                      children: [
+                        /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
+                          children: [
+                            /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("strong", {
+                              children: "Approach:"
+                            }, undefined, false, undefined, this),
+                            " ",
+                            architecture.approach
+                          ]
+                        }, undefined, true, undefined, this),
+                        /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
+                          children: [
+                            /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("strong", {
+                              children: "Data flow:"
+                            }, undefined, false, undefined, this),
+                            " ",
+                            architecture.data_flow
+                          ]
+                        }, undefined, true, undefined, this),
+                        /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
+                          children: [
+                            /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("strong", {
+                              children: "Deployment:"
+                            }, undefined, false, undefined, this),
+                            " ",
+                            architecture.deployment
+                          ]
+                        }, undefined, true, undefined, this)
+                      ]
+                    }, undefined, true, undefined, this)
+                  }, undefined, false, undefined, this)
+                ]
+              }, undefined, true, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
+                className: "details-links",
+                children: [
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+                    className: "details-section-title",
+                    children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
+                      children: "Links"
+                    }, undefined, false, undefined, this)
+                  }, undefined, false, undefined, this),
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+                    className: "details-section-text flex flex-column gap-md",
+                    children: [
+                      /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("a", {
+                        className: "tag details-link",
+                        href: links.source_code,
+                        target: "_blank",
+                        children: "Source Code"
+                      }, undefined, false, undefined, this),
+                      /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("a", {
+                        className: "tag details-link",
+                        href: links.live_demo,
+                        target: "_blank",
+                        children: "Live Demo"
+                      }, undefined, false, undefined, this)
+                    ]
+                  }, undefined, true, undefined, this)
+                ]
+              }, undefined, true, undefined, this),
+              skills_demonstrated.length > 0 && /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("section", {
+                className: "details-skills",
+                children: [
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+                    className: "details-section-title",
+                    children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("h2", {
+                      children: "Skills Demonstrated"
+                    }, undefined, false, undefined, this)
+                  }, undefined, false, undefined, this),
+                  /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("div", {
+                    className: "details-section-text",
+                    children: /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("ul", {
+                      className: "details-list",
+                      children: skills_demonstrated.map((skill) => /* @__PURE__ */ jsx_dev_runtime22.jsxDEV("li", {
+                        children: skill
+                      }, skill, false, undefined, this))
+                    }, undefined, false, undefined, this)
+                  }, undefined, false, undefined, this)
+                ]
+              }, undefined, true, undefined, this)
             ]
           }, undefined, true, undefined, this)
         ]
