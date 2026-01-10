@@ -1,7 +1,6 @@
 import { Link } from "@/lib/router";
 import type { Repository } from "@/types";
 import type { ReactElement } from "react";
-import { ProjectDetails } from "../projects";
 
 type CardProp = {
   repo: Repository;
@@ -15,7 +14,7 @@ export function Card({ repo }: CardProp): ReactElement {
       </a>
 
       <Link to={`/details/${repo.name}`}>See Details ...</Link>
-      <ProjectDetails repoName={repo.name} />
+
       <p>{repo.description}</p>
       {repo.language
         ? (

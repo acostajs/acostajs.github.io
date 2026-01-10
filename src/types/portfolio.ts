@@ -5,9 +5,33 @@ export type PortfolioItem = {
 };
 
 export type ProjectJSON = {
-  title: string;
-  description: string;
-  technologies?: string[];
+  meta: {
+    title: string;
+    role: string;
+    type: string;
+    audience: string[];
+    status: string;
+  };
+  overview: {
+    summary: string;
+    problem: string;
+    solution: string;
+  };
+  responsibilities: string[];
+  tech_stack: string[];
+  architecture: {
+    approach: string;
+    data_flow: string;
+    deployment: string;
+  };
+  key_features: string[];
+  challenges_and_learnings: string[];
+  skills_demonstrated: string[];
+  future_improvements: string[];
+  links: {
+    live_demo: string;
+    source_code: string;
+  };
 };
 
 type BioSection = {

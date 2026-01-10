@@ -1,12 +1,70 @@
 {
-  "title": "TaskFlow Pro",
-  "description": "Full-stack task management app with real-time collaboration, drag-and-drop kanban boards, and GitHub integration for sprint planning. Built for remote dev teams.",
-  "technologies": [
+  "meta": {
+    "title": "GitHub-Powered Portfolio",
+    "role": "Developer",
+    "type": "Solo project",
+    "audience": ["Recruiters", "Developers"],
+    "status": "Active"
+  },
+
+  "overview": {
+    "summary": "A personal portfolio that stays automatically up to date by pulling live data from GitHub repositories.",
+    "problem": "Keeping a portfolio current is often manual, repetitive, and easy to neglect as projects evolve.",
+    "solution": "A config-driven portfolio that treats GitHub as a single source of truth, automatically updating project content without manual edits."
+  },
+
+  "responsibilities": [
+    "Designed and built the full application architecture",
+    "Integrated GitHub API for dynamic project data",
+    "Implemented reusable configuration for easy adaptation to other users",
+    "Handled deployment and CI/CD automation"
+  ],
+
+  "tech_stack": [
     "React",
     "TypeScript",
-    "Node.js",
-    "Prisma",
-    "TailwindCSS",
-    "Socket.io"
-  ]
+    "Modern CSS",
+    "Bun",
+    "GitHub API",
+    "Web3Forms",
+    "GitHub Pages"
+  ],
+
+  "architecture": {
+    "approach": "Single Page Application with modular, reusable components",
+    "data_flow": "Live data fetched from the GitHub API and structured through project-specific JSON files",
+    "deployment": "Automated deployment to GitHub Pages using CI/CD workflows"
+  },
+
+  "key_features": [
+    "Automatically syncs projects and repository details from GitHub",
+    "Reusable configuration to adapt the portfolio to any GitHub user",
+    "Serverless contact form integration",
+    "Responsive layout inspired by developer-focused platforms"
+  ],
+
+  "challenges_and_learnings": [
+    "Designing a structure flexible enough to support multiple project types",
+    "Balancing automation with clarity for non-technical visitors",
+    "Building a maintainable system with minimal manual updates"
+  ],
+
+  "skills_demonstrated": [
+    "API integration",
+    "Frontend architecture and state management",
+    "Configuration-driven design",
+    "Deployment automation",
+    "Clear documentation and structure"
+  ],
+
+  "future_improvements": [
+    "Performance optimizations",
+    "Additional layout and theme options",
+    "Expanded customization through configuration files"
+  ],
+
+  "links": {
+    "live_demo": "https://acostajs.github.io",
+    "source_code": "https://github.com/acostajs/acostajs.github.io"
+  }
 }
