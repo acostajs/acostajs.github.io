@@ -98,6 +98,10 @@
     color: var(--color-text-muted);
   }
 
+  .tag {
+    font-family: var(--font-mono);
+  }
+
   /* Flex helpers */
 
   .flex,
