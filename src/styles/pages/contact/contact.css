@@ -1,0 +1,22 @@
+@layer pages {
+  .contact-form {
+    padding: var(--pad-2xl) 0;
+    border-bottom: 1px solid var(--color-border);
+    border-top: 1px solid var(--color-border);
+    & label {
+      font-size: var(--text-lg);
+    }
+  }
+
+  .contact-item {
+    & input,
+    textarea {
+      width: 100%;
+    }
+  }
+
+  .contact-success-message {
+    font-size: var(--text-xl);
+    width: 20ch;
+  }
+}

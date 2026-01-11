@@ -1,0 +1,30 @@
+@layer layout {
+  aside {
+    min-width: 300px;
+
+    & .avatar {
+      animation: avatarAni 2s ease-in-out 5s 1 normal none;
+    }
+  }
+
+  .profile-bio,
+  .profile-item {
+    font-weight: var(--weight-semibold);
+  }
+
+  .profile-img {
+    position: relative;
+
+    & .download-resume {
+      position: absolute;
+      right: 50px;
+      bottom: 10px;
+    }
+  }
+
+  @container (max-width: 768px) {
+    aside {
+      margin-bottom: var(--space-2xl);
+    }
+  }
+}

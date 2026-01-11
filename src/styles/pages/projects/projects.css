@@ -1,0 +1,24 @@
+@layer pages {
+  .project-item {
+    padding-top: var(--pad-sm);
+    padding-bottom: var(--pad-xl);
+    border-bottom: 1px solid var(--color-border);
+    & h2 {
+      font-size: var(--text-xl);
+    }
+  }
+
+  .project-visibility {
+    border: 1px solid var(--color-border);
+    padding: var(--pad-2xs) var(--pad-xs);
+    border-radius: var(--radius-xl);
+    font-size: var(--text-xs);
+  }
+
+  .language-decorator {
+    background-color: var(--color-decorator);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+  }
+}

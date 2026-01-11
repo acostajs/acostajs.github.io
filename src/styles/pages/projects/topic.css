@@ -1,0 +1,13 @@
+@layer pages {
+  .topic {
+    padding: var(--pad-xs);
+    border-radius: var(--radius-xl);
+    background-color: var(--color-bg-accent);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-bold);
+  }
+
+  .topic-item:hover {
+    animation: blinkingAni 2s ease 0s 1 normal none;
+  }
+}

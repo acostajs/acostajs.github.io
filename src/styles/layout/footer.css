@@ -1,0 +1,18 @@
+@layer layout {
+  footer {
+    padding: var(--pad-xl) 0;
+    background-color: var(--color-bg-dark);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @container (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

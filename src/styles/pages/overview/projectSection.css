@@ -1,0 +1,12 @@
+@layer pages {
+  .project-section > ul {
+    gap: var(--gap-md);
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @container (max-width: 768px) {
+    .project-section > ul {
+      grid-template-columns: 1fr;
+    }
+  }
+}

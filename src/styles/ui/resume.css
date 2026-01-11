@@ -1,0 +1,18 @@
+@layer ui {
+  .download-resume {
+    background-color: var(--color-accent-strong);
+    border-radius: var(--radius-xl);
+    padding: var(--pad-2xs) var(--pad-xs);
+    font-weight: var(--weight-bold);
+    font-size: var(--text-sm);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .about-bio-banner .download-resume {
+    font-size: var(--text-lg);
+    padding: var(--pad-xs) var(--pad-md);
+  }
+}

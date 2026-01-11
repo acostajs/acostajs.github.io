@@ -8,16 +8,39 @@
 @import "./base.css" layer(base);
 
 /* Layout */
-@import "./layout.css" layer(layout);
+@import "./layout/layout.css" layer(layout);
+@import "./layout/header.css" layer(layout);
+@import "./layout/footer.css" layer(layout);
+@import "./layout/aside.css" layer(layout);
+@import "./layout/contactSection.css" layer(layout);
+@import "./layout/loading.css" layer(layout);
+@import "./layout/avatar.css" layer(layout);
 
 /* UI */
-@import "./ui.css" layer(ui);
+@import "./ui/burger.css" layer(ui);
+@import "./ui/errormessage.css" layer(ui);
+@import "./ui/resume.css" layer(ui);
+@import "./ui/detailsBtn.css" layer(ui);
 
-/* Sections */
-@import "./components.css" layer(components);
+/* Overview */
+@import "./pages/overview/overview.css" layer(pages);
+@import "./pages/overview/projectSection.css" layer(pages);
+@import "./pages/overview/card.css" layer(pages);
 
-/* Pages */
-@import "./pages.css" layer(pages);
+/* About */
+@import "./pages/about/about.css" layer(pages);
+@import "./pages/about/accordion.css" layer(pages);
+
+/* Contact */
+@import "./pages/contact/contact.css" layer(pages);
+
+/* Projects */
+@import "./pages/projects/projects.css" layer(pages);
+@import "./pages/projects/topic.css" layer(pages);
+
+/* Details */
+@import "./pages/details/carousel.css" layer(pages);
+@import "./pages/details/details.css" layer(pages);
 
 /* Animations */
 @import "./animations.css" layer(animations);

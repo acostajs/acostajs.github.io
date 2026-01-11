@@ -1,0 +1,18 @@
+@layer pages {
+  .overview-section {
+    & h1,
+    h2 {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    & p {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    & ul {
+      list-style-type: disc;
+      padding-left: var(--pad-xl);
+    }
+  }
+}
