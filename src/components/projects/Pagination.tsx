@@ -1,9 +1,10 @@
 import { usePagination } from "@/hooks";
+import type { PaginationState } from "@/hooks";
 import type { ReactElement } from "react";
 import { NextIcon, PreviousIcon } from "../icons";
 
 type PaginationProps = {
-  pagination: ReturnType<typeof usePagination>;
+  pagination: PaginationState;
 };
 
 export function Pagination({ pagination }: PaginationProps): ReactElement {

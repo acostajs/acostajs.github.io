@@ -1,9 +1,20 @@
-import { Pagination, ProjectItem } from "@/components/projects";
+import { PaginatedProjects, Pagination } from "@/components/projects";
 import { useGitHub } from "@/context/GitHubContext";
 import { usePagination } from "@/hooks";
 import { PROJECTS_FEATURES } from "@/lib/api";
-
 import type { ReactElement } from "react";
+
+function ProjectsHeader(): ReactElement {
+  return (
+    <section className="section-title section-highlight-secondary">
+      <h1>Selected Projects</h1>
+      <p>
+        This page contains a detailed view of my repositories. Each project links directly to its source code, along
+        with additional context around its purpose, features, and implementation.
+      </p>
+    </section>
+  );
+}
 
 export function Projects(): ReactElement {
   const { repos } = useGitHub();
@@ -12,27 +23,14 @@ export function Projects(): ReactElement {
     totalCount,
     PROJECTS_FEATURES.repository_count_per_page,
   );
-  const paginatedRepos = repos.slice(
-    pagination.offset,
-    pagination.offset + pagination.perPage,
-  );
 
   return (
     <article>
-      <section>
-        <div className="about-title section-title section-highlight-secondary">
-          <h1>Selected Projects</h1>
-          <p>
-            This page contains a detailed view of my repositories. Each project links directly to its source code, along
-            with additional context around its purpose, features, and implementation.
-          </p>
-        </div>
-        <ul>
-          {paginatedRepos.map((repo) => <ProjectItem repo={repo} key={repo.name} />)}
-        </ul>
+      <ProjectsHeader />
 
-        <Pagination pagination={pagination} />
-      </section>
+      <PaginatedProjects repos={repos} pagination={pagination} />
+
+      <Pagination pagination={pagination} />
     </article>
   );
 }

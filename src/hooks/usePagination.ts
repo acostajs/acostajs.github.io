@@ -6,7 +6,7 @@ const PAGINATION_CONSTANTS = {
   FIRST_PAGE: 1,
 };
 
-type PaginationState = {
+export type PaginationState = {
   currentPage: number;
   totalPages: number;
   totalCount: number;
