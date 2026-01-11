@@ -1,7 +1,6 @@
 import type { ReactElement } from "react";
-
-import { Avatar, GitHubProfileBadge } from "@/components/ui";
-import { HiddenMenu, NavLinks } from "./header/index";
+import { Avatar } from "./Avatar";
+import { GitHubProfileBadge, HiddenMenu, NavLinks } from "./headerComponents";
 
 type HeaderProps = {
   github_user_url: string;

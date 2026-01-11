@@ -1,10 +1,9 @@
 import { ContactForm } from "@/components/contact";
-import { ContactSection } from "@/components/ui";
 import type { ReactElement } from "react";
 
 export function Contact(): ReactElement {
   return (
-    <>
+    <article>
       <section className="section-title section-highlight">
         <h1>Contact</h1>
         <p>
@@ -14,7 +13,6 @@ export function Contact(): ReactElement {
       </section>
 
       <ContactForm />
-      <ContactSection />
-    </>
+    </article>
   );
 }

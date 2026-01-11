@@ -1,6 +1,6 @@
 import type { AboutJSON } from "@/types";
 import type { ReactElement } from "react";
-import { AccordionItem } from "../ui";
+import { AccordionItem } from "./AccordionItem";
 
 type AccordionProps = {
   about: AboutJSON;

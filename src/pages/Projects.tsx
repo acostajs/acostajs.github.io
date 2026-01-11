@@ -1,5 +1,4 @@
-import { ProjectItem } from "@/components/projects";
-import { ContactSection, Pagination } from "@/components/ui";
+import { Pagination, ProjectItem } from "@/components/projects";
 import { useGitHub } from "@/context/GitHubContext";
 import { usePagination } from "@/hooks";
 import { PROJECTS_FEATURES } from "@/lib/api";
@@ -19,7 +18,7 @@ export function Projects(): ReactElement {
   );
 
   return (
-    <>
+    <article>
       <section>
         <div className="about-title section-title section-highlight-secondary">
           <h1>Selected Projects</h1>
@@ -34,8 +33,6 @@ export function Projects(): ReactElement {
 
         <Pagination pagination={pagination} />
       </section>
-
-      <ContactSection />
-    </>
+    </article>
   );
 }
