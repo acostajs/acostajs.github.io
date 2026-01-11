@@ -8,7 +8,7 @@
     "lint": "bun oxlint",
     "fmt": "bun dprint fmt",
     "typecheck": "bun tsc --noEmit",
-    "build": "bun build ./src/index.tsx --outdir ./dist && cp index.html dist/index.html && cp -R src/styles dist/styles",
+    "build": "bun build ./src/index.html --outdir ./dist --target browser --splitting --sourcemap",
     "start": "bunx serve ./dist"
   },
   "dependencies": {
