@@ -1,8 +1,9 @@
 import { GitHubIcon, LinkedInIcon, MailIcon, MapIcon } from "@/components/icons";
-import { Avatar, DownloadResume, ErrorMessage } from "@/components/ui";
+import { DownloadResume, ErrorMessage } from "@/components/ui";
 import { PROFILE } from "@/lib/api";
 import type { User } from "@/types";
 import type { ReactElement } from "react";
+import { Avatar } from "./Avatar";
 
 type AsideProfileProps = {
   profile: User | null;

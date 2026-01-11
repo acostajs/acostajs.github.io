@@ -1,5 +1,5 @@
-import { AsideProfile, Footer, Header } from "@/components/layout";
-import { ErrorMessage, Loading } from "@/components/ui";
+import { AsideProfile, ContactSection, Footer, Header, Loading } from "@/components/layout";
+import { ErrorMessage } from "@/components/ui";
 import { GitHubProvider } from "@/context";
 import { useGitHubData } from "@/hooks";
 import type { ReactElement, ReactNode } from "react";
@@ -35,6 +35,7 @@ export function AppLayout({ children }: AppLayoutProps): ReactElement {
           </div>
         </GitHubProvider>
       </main>
+      <ContactSection />
       <Footer github_user_name={profile?.name || ""} />
     </>
   );

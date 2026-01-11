@@ -3,7 +3,7 @@ import { Link } from "@/lib/router";
 import { formatRelativeDate } from "@/lib/utils";
 import type { Repository } from "@/types";
 import type { ReactElement } from "react";
-import { TopicAnchor } from "../ui";
+import { TopicAnchor } from "./TopicAnchor";
 
 type ProjectItemProps = {
   repo: Repository;

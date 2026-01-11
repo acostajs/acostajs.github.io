@@ -1,8 +1,8 @@
-import { Card } from "@/components/ui";
 import { ErrorMessage } from "@/components/ui";
 import { OVERVIEW_FEATURES } from "@/lib/api";
 import type { Repository } from "@/types";
 import type { ReactElement } from "react";
+import { Card } from "./Card";
 
 type ProjectSectionProps = {
   repos: Repository[];

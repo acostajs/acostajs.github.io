@@ -1,5 +1,5 @@
 import { Accordion, Bio } from "@/components/about";
-import { ContactSection, ErrorMessage } from "@/components/ui";
+import { ErrorMessage } from "@/components/ui";
 import { useGitHub } from "@/context/GitHubContext";
 import type { ReactElement } from "react";
 
@@ -13,7 +13,7 @@ export function About(): ReactElement {
   const about = aboutJson;
 
   return (
-    <>
+    <article>
       <Bio
         headline={about.bio.headline}
         story={about.bio.story}
@@ -21,8 +21,6 @@ export function About(): ReactElement {
       />
 
       <Accordion about={about} />
-
-      <ContactSection />
-    </>
+    </article>
   );
 }
