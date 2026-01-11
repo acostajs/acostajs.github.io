@@ -87,6 +87,7 @@
   /* Layout primitives */
 
   .container {
+    container-type: inline-size;
     max-width: var(--container-max-width);
     width: var(--container-width);
     margin: 0 auto;

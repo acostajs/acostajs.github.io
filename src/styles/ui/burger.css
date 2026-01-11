@@ -1,0 +1,14 @@
+@layer ui {
+  .burger {
+    padding: var(--pad-xs);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover {
+    background-color: var(--color-hover);
+  }
+}

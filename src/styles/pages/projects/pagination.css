@@ -1,0 +1,6 @@
+@layer pages {
+  .pagination-nav {
+    padding: var(--pad-md);
+    border-bottom: 1px solid var(--color-border);
+  }
+}

@@ -1,0 +1,11 @@
+@layer ui {
+  .details-btn {
+    border: none;
+    padding: 0;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .details-btn:hover {
+    color: var(--color-accent-strong);
+  }
+}

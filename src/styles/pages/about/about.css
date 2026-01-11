@@ -1,0 +1,28 @@
+@layer pages {
+  .about-title {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .about-bio {
+    gap: var(--gap-md);
+  }
+
+  .about-bio-banner {
+    flex: 1 1 60%;
+    min-width: 280px;
+    justify-content: center;
+    align-items: flex-start;
+
+    & p {
+      font-size: var(--text-lg);
+    }
+  }
+
+  .about-bio-img {
+    max-height: 300px;
+    flex: 0 0 300px;
+    overflow: hidden;
+    border-radius: var(--radius-sm);
+    margin: 0 auto;
+  }
+}

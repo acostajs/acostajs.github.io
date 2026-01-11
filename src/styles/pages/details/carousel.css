@@ -1,0 +1,54 @@
+@layer pages {
+  .carousel {
+    anchor-name: --anchor-carousel;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    scrollbar-width: none;
+    scroll-marker-group: before;
+
+    > li {
+      flex: 0 0 100%;
+      scroll-snap-align: center;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      border: 10px solid var(--color-border-dark);
+    }
+
+    &::scroll-button(left),
+    &::scroll-button(right) {
+      position: absolute;
+      position-anchor: --anchor-carousel;
+      top: anchor(center);
+      background-color: var(--color-bg-accent);
+      height: 40px;
+      width: 40px;
+      border: none;
+      color: var(--color-text);
+      border-radius: var(--radius-full);
+    }
+
+    &::scroll-button(left) {
+      left: anchor(--anchor-carousel left);
+      content: "⬅" / "Scroll Left";
+    }
+
+    &::scroll-button(right) {
+      right: anchor(--anchor-carousel right);
+      content: "⮕" / "Scroll Right";
+    }
+
+    &::scroll-button(*):focus-visible {
+      outline-offset: 5px;
+    }
+
+    > li::scroll-marker {
+      content: "X";
+    }
+
+    > li::scroll-marker:target-current {
+      background: var(--accent);
+    }
+  }
+}
