@@ -25,6 +25,7 @@
 /* Overview */
 @import "./pages/overview/overview.css" layer(pages);
 @import "./pages/overview/projectSection.css" layer(pages);
+@import "./pages/overview//overviewHeader.css" layer(pages);
 @import "./pages/overview/card.css" layer(pages);
 
 /* About */

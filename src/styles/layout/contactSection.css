@@ -1,15 +1,40 @@
 @layer layout {
   .contact-section {
-    & h2 {
-      font-size: var(--text-giant);
-    }
-    & .section-title {
-      text-align: center;
-    }
+    margin-top: var(--space-xl);
+    background-color: var(--color-bg-light);
+    color: var(--color-text-dark);
+    padding: var(--pad-xl);
 
-    & .text {
-      justify-content: center;
-      flex-wrap: wrap-reverse;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .contact-grid-item-1 {
+    font-size: var(--text-2xl);
+
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .contact-grid-item-2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .contact-grid-item-3 {
+    justify-content: space-between;
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  @container (max-width: 768px) {
+    .contact-section {
+      grid-template-columns: 1fr;
+    }
+    .contact-grid-item-1 {
+      grid-area: 1;
+    }
+    .contact-grid-item-2 {
+      grid-area: 2;
+    }
+    .contact-grid-item-3 {
+      grid-area: 3;
     }
   }
 }

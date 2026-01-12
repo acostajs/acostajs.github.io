@@ -1,0 +1,11 @@
+@layer pages {
+  .overview-header {
+    padding: var(--pad-lg);
+    background-color: var(--color-bg-dark);
+    margin-bottom: var(--space-md);
+
+    & p {
+      font-size: var(--text-2xl);
+    }
+  }
+}
