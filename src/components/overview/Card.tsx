@@ -1,6 +1,6 @@
-import { Link } from "@/lib/router";
 import type { Repository } from "@/types";
 import type { ReactElement } from "react";
+import { DetailsBtn } from "../ui/DetailsBtn";
 
 type CardProp = {
   repo: Repository;
@@ -13,8 +13,6 @@ export function Card({ repo }: CardProp): ReactElement {
         <h3 className="card-title">{repo.name}</h3>
       </a>
 
-      <Link to={`/details/${repo.name}`}>See Details ...</Link>
-
       <p>{repo.description}</p>
       {repo.language
         ? (
@@ -26,6 +24,7 @@ export function Card({ repo }: CardProp): ReactElement {
         : (
           ""
         )}
+      <DetailsBtn repo={repo} />
     </article>
   );
 }

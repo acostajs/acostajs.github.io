@@ -1,10 +1,10 @@
 @layer pages {
   .topic {
-    padding: var(--pad-xs);
+    padding: 0 var(--pad-xs);
     border-radius: var(--radius-xl);
-    background-color: var(--color-bg-accent);
+    background-color: var(--color-bg-light);
+    color: var(--color-text-dark);
     font-size: var(--text-xs);
-    font-weight: var(--weight-bold);
   }
 
   .topic-item:hover {

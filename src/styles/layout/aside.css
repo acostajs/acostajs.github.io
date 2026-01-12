@@ -2,14 +2,13 @@
   aside {
     min-width: 300px;
 
+    & h1 {
+      margin-bottom: var(--space-md);
+    }
+
     & .avatar {
       animation: avatarAni 2s ease-in-out 5s 1 normal none;
     }
-  }
-
-  .profile-bio,
-  .profile-item {
-    font-weight: var(--weight-semibold);
   }
 
   .profile-img {

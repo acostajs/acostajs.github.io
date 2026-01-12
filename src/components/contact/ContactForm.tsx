@@ -1,4 +1,3 @@
-import { ContactPageIcon } from "@/components/icons";
 import { ErrorMessage } from "@/components/ui";
 import { useEmailFormSubmit } from "@/hooks";
 import type { ReactElement } from "react";
@@ -10,8 +9,6 @@ export function ContactForm(): ReactElement {
 
   return (
     <section className="contact-form flex-evenly gap-xl flex-wrap">
-      <ContactPageIcon size={250} />
-
       {result
         ? <p className="contact-success-message">{result}</p>
         : (

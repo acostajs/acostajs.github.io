@@ -1,4 +1,13 @@
 @layer pages {
+  .projects-header {
+    line-height: var(--leading-relaxed);
+    padding-bottom: var(--pad-xl);
+
+    & > h1 {
+      margin-bottom: var(--space-md);
+    }
+  }
+
   .project-item {
     padding-top: var(--pad-sm);
     padding-bottom: var(--pad-xl);

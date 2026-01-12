@@ -6,7 +6,7 @@ import type { ReactElement } from "react";
 
 function ProjectsHeader(): ReactElement {
   return (
-    <section className="section-title section-highlight-secondary">
+    <section className="projects-header section-highlight-secondary">
       <h1>Selected Projects</h1>
       <p>
         This page contains a detailed view of my repositories. Each project links directly to its source code, along

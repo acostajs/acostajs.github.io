@@ -4,6 +4,7 @@
     h2 {
       border-bottom: 1px solid var(--color-border);
       margin-top: var(--space-xl);
+      font-size: var(--text-xl);
     }
 
     & p {

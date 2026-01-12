@@ -39,16 +39,22 @@
       content: "⮕" / "Scroll Right";
     }
 
+    &::scroll-button(*):disabled {
+      opacity: 0.2;
+      background-color: var(--color-bg);
+      color: var(--color-decorator);
+    }
+
     &::scroll-button(*):focus-visible {
       outline-offset: 5px;
     }
 
-    > li::scroll-marker {
-      content: "X";
-    }
+    /* > li::scroll-marker {
+        content: "X";
+      }
 
-    > li::scroll-marker:target-current {
-      background: var(--accent);
-    }
+      > li::scroll-marker:target-current {
+        background: var(--accent);
+      } */
   }
 }
