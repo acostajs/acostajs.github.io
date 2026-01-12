@@ -24,7 +24,7 @@ export function AsideProfile({ profile }: AsideProfileProps): ReactElement {
         <DownloadResume />
       </div>
 
-      <ul className="profile-list flex-column flex gap-md">
+      <ul className="profile-list flex-column flex gap-sm">
         <li>
           <h1>{profile.name}</h1>
         </li>

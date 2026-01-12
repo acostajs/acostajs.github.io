@@ -2,23 +2,24 @@
   aside {
     min-width: 300px;
 
-    & h1 {
-      margin-bottom: var(--space-md);
-    }
-
     & .avatar {
       animation: avatarAni 2s ease-in-out 5s 1 normal none;
     }
   }
 
   .profile-img {
-    position: relative;
+    anchor-name: --profile-img;
 
     & .download-resume {
       position: absolute;
-      right: 50px;
-      bottom: 10px;
+      position-anchor: --profile-img;
+      right: calc(anchor(right) + 50px);
+      bottom: anchor(bottom);
     }
+  }
+
+  .profile-bio {
+    margin-bottom: var(--space-md);
   }
 
   @container (max-width: 768px) {
