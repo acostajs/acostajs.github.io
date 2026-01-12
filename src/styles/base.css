@@ -196,8 +196,7 @@
 
   /* Backdrops Style */
 
-  #menu::backdrop,
-  #details::backdrop {
+  #menu::backdrop {
     opacity: 1;
     background: var(--overlay-bg);
     backdrop-filter: blur(var(--overlay-blur));

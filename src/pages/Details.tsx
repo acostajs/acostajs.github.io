@@ -74,8 +74,8 @@ export function Details(): ReactElement {
               <div className="carousel-container">
                 <ul className="carousel">
                   {images.map((src, index) => (
-                    <li>
-                      <figure key={src}>
+                    <li key={`slide-${index}`}>
+                      <figure>
                         <img
                           src={src}
                           alt={`${meta.title} screenshot ${index + 1}`}

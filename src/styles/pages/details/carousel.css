@@ -1,60 +1,39 @@
 @layer pages {
   .carousel {
-    anchor-name: --anchor-carousel;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
     display: flex;
-    scrollbar-width: none;
-    scroll-marker-group: before;
 
     > li {
       flex: 0 0 100%;
       scroll-snap-align: center;
-      width: 100%;
-      height: 200px;
+      height: 300px;
       overflow: hidden;
       border: 10px solid var(--color-border-dark);
+      cursor: auto;
     }
+  }
+  .carousel::-webkit-scrollbar {
+    height: 20px;
+    background-color: var(--color-bg-dark);
+    border-radius: var(--radius-md);
+  }
 
-    &::scroll-button(left),
-    &::scroll-button(right) {
-      position: absolute;
-      position-anchor: --anchor-carousel;
-      top: anchor(center);
-      background-color: var(--color-bg-accent);
-      height: 40px;
-      width: 40px;
-      border: none;
-      color: var(--color-text);
-      border-radius: var(--radius-full);
-    }
+  .carousel::-webkit-scrollbar-button:horizontal:start,
+  .carousel::-webkit-scrollbar-thumb {
+    background-color: var(--color-bg-light);
+    border: 2px solid var(--color-bg-dark);
+    border-radius: var(--radius-md);
+    transition: 0.3s ease-in-out;
+  }
 
-    &::scroll-button(left) {
-      left: anchor(--anchor-carousel left);
-      content: "⬅" / "Scroll Left";
-    }
+  .carousel::-webkit-scrollbar-button:horizontal:start {
+    width: 30px;
+  }
 
-    &::scroll-button(right) {
-      right: anchor(--anchor-carousel right);
-      content: "⮕" / "Scroll Right";
-    }
-
-    &::scroll-button(*):disabled {
-      opacity: 0.2;
-      background-color: var(--color-bg);
-      color: var(--color-decorator);
-    }
-
-    &::scroll-button(*):focus-visible {
-      outline-offset: 5px;
-    }
-
-    /* > li::scroll-marker {
-        content: "X";
-      }
-
-      > li::scroll-marker:target-current {
-        background: var(--accent);
-      } */
+  .carousel::-webkit-scrollbar-button:horizontal:start:hover,
+  .carousel::-webkit-scrollbar-thumb:hover,
+  .carousel::-webkit-scrollbar-button:horizontal:start:hover {
+    background-color: var(--color-bg-accent);
   }
 }
