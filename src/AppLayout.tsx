@@ -34,8 +34,9 @@ export function AppLayout({ children }: AppLayoutProps): ReactElement {
             <div className="main-content">{children}</div>
           </div>
         </GitHubProvider>
+        <ContactSection />
       </main>
-      <ContactSection />
+
       <Footer github_user_name={profile?.name || ""} />
     </>
   );

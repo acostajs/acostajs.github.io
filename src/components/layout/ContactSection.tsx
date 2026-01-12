@@ -1,4 +1,4 @@
-import { ContactIcon, GitHubIcon, LinkedInIcon, MailIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 import type { ReactElement } from "react";
 
 import { PROFILE } from "@/lib/api";
@@ -6,21 +6,16 @@ import { PROFILE } from "@/lib/api";
 export function ContactSection(): ReactElement {
   return (
     <section className="contact-section">
-      <div className="section-title flex flex-column gap-sm">
-        <div className="flex-center">
-          <ContactIcon size={60} />
-          <h2>Get in Touch</h2>
-        </div>
+      <h2 className="contact-grid-item-1">Get in Touch</h2>
 
-        <div className="muted">I typically respond within 24–48 hours.</div>
-      </div>
+      <p className="contact-grid-item-2">
+        I typically respond within 24–48 hours.
+      </p>
 
-      <div className="text flex gap-xl">
+      <div className="contact-grid-item-3 flex flex-wrap gap-xl ">
         <div className="flex flex-column gap-sm">
           <p>Email me directly</p>
-          <a href={"mailto:" + PROFILE.email} className="flex-left">
-            <MailIcon size={30} /> {PROFILE.email}
-          </a>
+          <a href={"mailto:" + PROFILE.email}>{PROFILE.email}</a>
         </div>
 
         <div className="flex flex-column gap-sm">
