@@ -187,11 +187,11 @@
   }
 
   .btn:disabled {
-    color: var(--color-accent-soft);
+    background-color: var(--color-hover-dark);
   }
 
   .btn:disabled:hover {
-    background-color: var(--color-hover-dark);
+    color: var(--color-accent-soft);
   }
 
   /* Backdrops Style */
