@@ -1,6 +1,6 @@
-import { Link } from "@/lib/router";
 import type { Repository } from "@/types";
 import type { ReactElement } from "react";
+import { DetailsBtn } from "../ui";
 import { TopicAnchor } from "./TopicAnchor";
 
 type ProjectActionsProps = {
@@ -11,7 +11,7 @@ export function ProjectActions({ repo }: ProjectActionsProps): ReactElement {
   return (
     <>
       <li>
-        <Link to={`/details/${repo.name}`}>See Details →</Link>
+        <DetailsBtn repo={repo} />
       </li>
       <li>
         <TopicAnchor repo={repo} />

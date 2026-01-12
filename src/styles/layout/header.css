@@ -4,6 +4,7 @@
   .navbar {
     background-color: var(--color-bg-dark);
     border-bottom: 1px solid var(--color-border);
+    container-type: inline-size;
 
     & .navbar-container {
       width: var(--navbar-container-width);
@@ -16,7 +17,8 @@
       padding: var(--pad-xs);
     }
 
-    & .navlink:hover {
+    & .navlink:hover,
+    .navlink:focus {
       background-color: var(--color-hover);
     }
   }
@@ -26,10 +28,6 @@
     font-weight: var(--weight-semibold);
     font-size: var(--text-sm);
     padding: var(--pad-xs) var(--pad-md);
-  }
-
-  .navlink:focus {
-    border: 1px solid var(--color-accent-strong);
   }
 
   /* HIDDEN MENU */

@@ -11,7 +11,7 @@ export function ProjectStats({ repo }: ProjectStatsProps): ReactElement {
     <ul className="flex gap-sm flex-wrap">
       {repo.forks_count && repo.forks_count > 0
         ? (
-          <li>
+          <li className="flex-center gap-sm">
             <ForkIcon size={20} /> {repo.forks_count}
           </li>
         )
@@ -19,7 +19,7 @@ export function ProjectStats({ repo }: ProjectStatsProps): ReactElement {
 
       {repo.stargazers_count && repo.stargazers_count > 0
         ? (
-          <li>
+          <li className="flex-center gap-sm">
             <StarIcon size={20} /> {repo.stargazers_count}
           </li>
         )
@@ -27,7 +27,7 @@ export function ProjectStats({ repo }: ProjectStatsProps): ReactElement {
 
       {repo.watchers_count && repo.watchers_count > 0
         ? (
-          <li>
+          <li className="flex-center gap-sm">
             <WatcherIcon size={20} /> {repo.watchers_count}
           </li>
         )
@@ -35,7 +35,7 @@ export function ProjectStats({ repo }: ProjectStatsProps): ReactElement {
 
       {repo.open_issues_count && repo.open_issues_count > 0
         ? (
-          <li>
+          <li className="flex-center gap-sm">
             <IssueIcon size={20} /> {repo.open_issues_count}
           </li>
         )

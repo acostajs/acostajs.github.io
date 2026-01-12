@@ -20,7 +20,6 @@
 @import "./ui/burger.css" layer(ui);
 @import "./ui/errormessage.css" layer(ui);
 @import "./ui/resume.css" layer(ui);
-@import "./ui/detailsBtn.css" layer(ui);
 
 /* Overview */
 @import "./pages/overview/overview.css" layer(pages);
