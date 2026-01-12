@@ -1,9 +1,16 @@
 @layer pages {
-  .project-section > ul {
-    gap: var(--gap-md);
-    grid-template-columns: 1fr 1fr;
-  }
+  .project-section {
+    margin-bottom: 0;
 
+    & > h2 {
+      margin-bottom: var(--space-md);
+    }
+
+    & > ul {
+      gap: var(--gap-md);
+      grid-template-columns: 1fr 1fr;
+    }
+  }
   @container (max-width: 768px) {
     .project-section > ul {
       grid-template-columns: 1fr;

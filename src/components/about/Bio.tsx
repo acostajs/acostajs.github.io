@@ -14,8 +14,8 @@ export function Bio({ headline, story, images }: BioProps): ReactElement {
   }
 
   return (
-    <section className="about-bio section-highlight flex-center flex-wrap-reverse">
-      <div className="about-bio-banner flex flex-column gap-lg">
+    <section className="section-highlight flex-center flex-wrap-reverse gap-md">
+      <div className="about-bio-banner flex flex-column gap-md">
         <h1>{headline}</h1>
         <p>{story}</p>
         <DownloadResume />
