@@ -5,10 +5,6 @@
     border-bottom: 2px solid var(--color-border);
   }
 
-  .details-tags {
-    font-weight: var(--weight-semibold);
-  }
-
   .details-status {
     padding: var(--pad-xs) var(--pad-md);
     background-color: var(--color-bg-accent);
@@ -18,15 +14,13 @@
   .details-section-title {
     background-color: var(--color-bg-dark);
     padding: var(--pad-md);
-    border-radius: var(--radius-md);
   }
 
   .details-section-text,
-  .details-features {
+  .details-highlight {
     background-color: var(--color-bg-light);
     color: var(--color-text-dark);
     padding: var(--pad-md);
-    border-radius: var(--radius-sm);
   }
 
   .details-grid {
