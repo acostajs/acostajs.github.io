@@ -1,7 +1,55 @@
+import { Carousel } from "@/components/details";
 import { ErrorMessage } from "@/components/ui";
 import { useRepositoryData } from "@/hooks";
 import { Link, useParams } from "@/lib/router";
 import type { ReactElement } from "react";
+
+type BreadCrumbsProps = {
+  repoName: string;
+};
+
+function BreadCrumbs({ repoName }: BreadCrumbsProps): ReactElement {
+  return (
+    <div>
+      <Link classes={["muted"]} to={"projects/"}>
+        projects
+      </Link>
+      <span className="muted">/ {repoName}</span>
+    </div>
+  );
+}
+
+type DetailsHeaderProps = {
+  title: string;
+  type: string;
+  role: string;
+  status: string;
+};
+
+function DetailsHeader({
+  title,
+  type,
+  role,
+  status,
+}: DetailsHeaderProps): ReactElement {
+  return (
+    <header className="details-header flex flex-column gap-md">
+      <h1>{title}</h1>
+
+      <div className="details-header-bottom flex-between flex-wrap">
+        <div className="tag flex gap-md">
+          <span>{type}</span>
+          <span>{role}</span>
+        </div>
+
+        <p className="tag">
+          Status: <span className="details-status">{status}</span>
+          {" "}
+        </p>
+      </div>
+    </header>
+  );
+}
 
 export function Details(): ReactElement {
   const { repoName } = useParams();
@@ -14,7 +62,9 @@ export function Details(): ReactElement {
     return <ErrorMessage error_message={error} />;
   }
   if (!json) {
-    return <ErrorMessage error_message="Couldn't fetch project data" />;
+    return (
+      <ErrorMessage error_message="The details for this project are currently being uploaded. Please check back soon." />
+    );
   }
 
   const {
@@ -32,27 +82,14 @@ export function Details(): ReactElement {
 
   return (
     <article className="details">
-      <div className="bread-crumbs">
-        <Link classes={["muted"]} to={"projects/"}>
-          projects
-        </Link>
-        <span className="muted">/ {repoName}</span>
-      </div>
-      <header className="details-header flex flex-column gap-md">
-        <h1>{meta.title}</h1>
+      <BreadCrumbs repoName={repoName} />
 
-        <div className="details-header-bottom flex-between flex-wrap">
-          <div className="tag flex gap-md">
-            <span>{meta.type}</span>
-            <span>{meta.role}</span>
-          </div>
-
-          <p className="tag">
-            Status: <span className="details-status">{meta.status}</span>
-            {" "}
-          </p>
-        </div>
-      </header>
+      <DetailsHeader
+        title={meta.title}
+        type={meta.type}
+        role={meta.role}
+        status={meta.status}
+      />
 
       <section className="details-overview">
         <div className="details-section-title">
@@ -71,28 +108,7 @@ export function Details(): ReactElement {
 
       <div className="details-grid grid gap-xl">
         <div className="left">
-          {images.length > 0 && (
-            <section className="details-carrousel">
-              <div className="details-section-title">
-                <h2>Project Preview</h2>
-              </div>
-
-              <div className="carousel-container">
-                <ul className="carousel">
-                  {images.map((src, index) => (
-                    <li key={`slide-${index}`}>
-                      <figure>
-                        <img
-                          src={src}
-                          alt={`${meta.title} screenshot ${index + 1}`}
-                        />
-                      </figure>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </section>
-          )}
+          <Carousel images={images} alt={meta.title} />
 
           {key_features.length > 0 && (
             <section className="details-features">
