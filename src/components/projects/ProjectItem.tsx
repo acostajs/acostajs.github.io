@@ -1,3 +1,4 @@
+import { PROFILE } from "@/lib/api";
 import type { Repository } from "@/types";
 import type { ReactElement } from "react";
 
@@ -7,7 +8,11 @@ type ProjectItemProps = {
   repo: Repository;
 };
 
-export function ProjectItem({ repo }: ProjectItemProps): ReactElement {
+export function ProjectItem({ repo }: ProjectItemProps): ReactElement | null {
+  if (repo.name === PROFILE.github.username) {
+    return null;
+  }
+
   return (
     <li className="project-item">
       <ul className="flex flex-column gap-sm">
