@@ -39,8 +39,8 @@
 @import "./pages/projects/topic.css" layer(pages);
 
 /* Details */
-@import "./pages/details/carousel.css" layer(pages);
 @import "./pages/details/details.css" layer(pages);
+@import "./pages/details/carousel.css" layer(pages);
 
 /* Animations */
 @import "./animations.css" layer(animations);
