@@ -27,7 +27,9 @@ export function useRepositoryData(repoName: string): RepositoryData {
         setJson(portfolioJson);
         setImages(images);
       } catch {
-        setError("Failed to load project");
+        setError(
+          "The details for this project are currently being uploaded. Please check back soon.",
+        );
       }
     }
 
