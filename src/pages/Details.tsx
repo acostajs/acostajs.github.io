@@ -1,6 +1,6 @@
 import { ErrorMessage } from "@/components/ui";
 import { useRepositoryData } from "@/hooks";
-import { useParams } from "@/lib/router";
+import { Link, useParams } from "@/lib/router";
 import type { ReactElement } from "react";
 
 export function Details(): ReactElement {
@@ -32,6 +32,12 @@ export function Details(): ReactElement {
 
   return (
     <article className="details">
+      <div className="bread-crumbs">
+        <Link classes={["muted"]} to={"projects/"}>
+          projects
+        </Link>
+        <span className="muted">/ {repoName}</span>
+      </div>
       <header className="details-header flex flex-column gap-md">
         <h1>{meta.title}</h1>
 
@@ -200,6 +206,10 @@ export function Details(): ReactElement {
           )}
         </div>
       </div>
+
+      <Link classes={["muted"]} to={"projects/"}>
+        ← Back
+      </Link>
     </article>
   );
 }

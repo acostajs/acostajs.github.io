@@ -7,7 +7,7 @@ export function About(): ReactElement {
   const { aboutJson, images } = useGitHub();
 
   if (!aboutJson) {
-    return <ErrorMessage error_message="aboutJSON file has not been created" />;
+    return <ErrorMessage error_message="This section is under construction." />;
   }
 
   const about = aboutJson;
