@@ -16,7 +16,7 @@ export function DetailsOverview({
       <div className="details-section-title">
         <h2>Overview</h2>
       </div>
-      <div className="details-section-text">
+      <div className="details-section-text flex flex-column gap-sm">
         <h3>Quick Summary</h3>
         <p>{summary}</p>
         <h3>Problem</h3>
