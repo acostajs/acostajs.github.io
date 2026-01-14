@@ -935,8 +935,14 @@
     }
 
     .carousel > li > figure {
-      display: flex;
-      place-content:  center;
+      height: 100%;
+    }
+
+    .carousel > li > figure > img {
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      height: 100%;
     }
 
     .carousel::-webkit-scrollbar {
