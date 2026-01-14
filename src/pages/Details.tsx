@@ -27,7 +27,7 @@ function BreadCrumbs({ repoName }: BreadCrumbsProps): ReactElement {
   return (
     <div>
       <Link classes={["muted"]} to={"projects/"}>
-        projects /
+        projects/
       </Link>
       <span className="muted">{repoName}</span>
     </div>
@@ -144,7 +144,7 @@ export function Details(): ReactElement {
       </div>
 
       <Link classes={["muted"]} to={"projects/"}>
-        ← Back
+        ← Back to Projects
       </Link>
     </article>
   );
