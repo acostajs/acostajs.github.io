@@ -44,7 +44,7 @@ function DetailsHeader({
     <header className="details-header flex flex-column gap-md">
       <h1>{title}</h1>
 
-      <div className="flex-between flex-wrap">
+      <div className="flex-between gap-xl flex-wrap">
         <div className="tag flex gap-md">
           <span>{type}</span>
           <span>{role}</span>

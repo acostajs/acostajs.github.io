@@ -4,29 +4,53 @@
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     display: flex;
-    cursor: e-resize;
 
     & > li {
+      position: relative;
       flex: 0 0 100%;
       scroll-snap-align: center;
-      height: 300px;
+      height: 350px;
       overflow: hidden;
       border: 10px solid var(--color-border-dark);
       background-color: var(--color-bg-dark);
-      cursor: e-resize;
-    }
-
-    & > li > figure {
-      height: 100%;
-    }
-
-    & > li > figure > img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      object-position: center;
     }
   }
+
+  .screenshot,
+  .thumbnail,
+  .thumbnail-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .close-zoom,
+  .thumbnail-btn {
+    border: none;
+  }
+
+  .close-zoom {
+    cursor: zoom-out;
+  }
+
+  .thumbnail-btn {
+    height: 100%;
+    width: 100%;
+    cursor: zoom-in;
+  }
+
+  .zoomed-img {
+    position: fixed;
+    margin: auto auto;
+    cursor: zoom-out;
+  }
+
+  .carousel::-webkit-scrollbar,
+  .carousel::-webkit-scrollbar-thumb {
+    cursor: e-resize;
+  }
+
   .carousel::-webkit-scrollbar {
     height: 20px;
     background-color: var(--color-bg-light);
