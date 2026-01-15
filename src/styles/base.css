@@ -196,10 +196,10 @@
 
   /* Backdrops Style */
 
-  #menu::backdrop {
+  #menu::backdrop,
+  .zoomed-img::backdrop {
     opacity: 1;
     background: var(--overlay-bg);
     backdrop-filter: blur(var(--overlay-blur));
-    pointer-events: auto;
   }
 }

@@ -21,8 +21,35 @@ export function Carousel({ images, alt }: CarouselProps): ReactElement {
         <ul className="carousel">
           {images.map((src, index) => (
             <li key={`slide-${index}`}>
-              <figure>
-                <img src={src} alt={`${alt} screenshot ${index + 1}`} />
+              <figure className="thumbnail">
+                <button
+                  popoverTarget={`zoomed-img-${index}`}
+                  className="thumbnail-btn"
+                >
+                  <img
+                    src={src}
+                    alt={`${alt} screenshot ${index + 1}`}
+                    className="thumbnail-img"
+                    loading="lazy"
+                  />
+                </button>
+              </figure>
+              <figure
+                id={`zoomed-img-${index}`}
+                popover="auto"
+                className="zoomed-img"
+              >
+                <button
+                  popoverTarget={`zoomed-img-${index}`}
+                  className="close-zoom"
+                >
+                  <img
+                    src={src}
+                    alt={`${alt} screenshot ${index + 1}`}
+                    className="screenshot"
+                    loading="lazy"
+                  />
+                </button>
               </figure>
             </li>
           ))}
