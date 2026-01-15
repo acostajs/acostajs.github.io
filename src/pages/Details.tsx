@@ -12,27 +12,12 @@ import { useRepositoryData } from "@/hooks";
 import { Link, useParams } from "@/lib/router";
 import type { ReactElement } from "react";
 
-type BreadCrumbsProps = {
-  repoName: string;
-};
-
 type DetailsHeaderProps = {
   title: string;
   type: string;
   role: string;
   status: string;
 };
-
-function BreadCrumbs({ repoName }: BreadCrumbsProps): ReactElement {
-  return (
-    <div>
-      <Link classes={["muted"]} to={"projects/"}>
-        projects/
-      </Link>
-      <span className="muted">{repoName}</span>
-    </div>
-  );
-}
 
 function DetailsHeader({
   title,
@@ -90,7 +75,9 @@ export function Details(): ReactElement {
 
   return (
     <article className="details">
-      <BreadCrumbs repoName={repoName} />
+      <Link classes={["muted"]} to={"projects/"}>
+        ← Back to Projects
+      </Link>
 
       <DetailsHeader
         title={meta.title}
