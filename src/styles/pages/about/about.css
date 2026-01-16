@@ -8,12 +8,13 @@
     & p {
       font-size: var(--text-lg);
       margin-bottom: var(--space-sm);
+      max-width: 50ch;
     }
   }
 
   .about-bio-img {
-    max-height: 300px;
-    flex: 0 0 300px;
+    max-height: 200px;
+    flex: 0 0 200px;
     overflow: hidden;
     border-radius: var(--radius-sm);
     margin: 0 auto;
