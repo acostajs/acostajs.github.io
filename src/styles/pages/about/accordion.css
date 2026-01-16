@@ -9,7 +9,6 @@
     border-radius: var(--radius-md);
     margin-bottom: var(--gap-sm);
     background: var(--color-bg-dark);
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
 
     & summary {
@@ -19,11 +18,9 @@
     &:hover,
     &:focus-within {
       border-color: var(--color-hover-light);
-      transform: translateY(-1px);
     }
 
     &[open] p {
-      animation: expandAni 0.3s ease-in-out;
       padding-top: var(--pad-md);
     }
   }
