@@ -11,7 +11,7 @@ function OverviewHeader(): ReactElement {
         <p>It's good to see you!</p>
       </div>
 
-      <p>I'm Juan, a Montreal-based Colombian-Canadian Junior web developer.</p>
+      <p>I'm Juan, a Montreal-based Colombian-Canadian Web developer.</p>
     </section>
   );
 }

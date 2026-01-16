@@ -16,5 +16,9 @@
       list-style-type: disc;
       padding-left: var(--pad-xl);
     }
+
+    & a {
+      color: var(--color-accent);
+    }
   }
 }
