@@ -43,6 +43,10 @@
     font-size: var(--h6-size);
   }
 
+  p, ul {
+    max-width: 80ch;
+  }
+
   /* Remove default list / link / button styles */
 
   ul,
