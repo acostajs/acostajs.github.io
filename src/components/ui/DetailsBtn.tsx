@@ -1,14 +1,13 @@
 import { Link } from "@/lib/router";
-import type { Repository } from "@/types";
 import type { ReactElement } from "react";
 
 type DetailsBtnProps = {
-  repo: Repository;
+  repoName: string;
 };
 
-export function DetailsBtn({ repo }: DetailsBtnProps): ReactElement {
+export function DetailsBtn({ repoName }: DetailsBtnProps): ReactElement {
   return (
-    <Link to={`/details/${repo.name}`} classes={["btn"]}>
+    <Link to={`/details/${repoName}`} classes={["btn"]}>
       View Details
     </Link>
   );

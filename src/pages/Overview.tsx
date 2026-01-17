@@ -17,13 +17,13 @@ function OverviewHeader(): ReactElement {
 }
 
 export function Overview(): ReactElement {
-  const { repos, readme } = useGitHub();
+  const { pinnedRepos, readme } = useGitHub();
 
   return (
     <article>
       <OverviewHeader />
       <OverviewSection readme={readme} />
-      <ProjectSection repos={repos} />
+      <ProjectSection pinnedRepos={pinnedRepos} />
     </article>
   );
 }
