@@ -11,7 +11,7 @@ export function ProjectActions({ repo }: ProjectActionsProps): ReactElement {
   return (
     <>
       <li className="flex gap-sm">
-        <DetailsBtn repo={repo} />
+        <DetailsBtn repoName={repo.name} />
         <a href={repo.html_url} className="btn">View Code</a>
       </li>
       <li>

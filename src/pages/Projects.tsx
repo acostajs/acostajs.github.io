@@ -7,10 +7,10 @@ import type { ReactElement } from "react";
 function ProjectsHeader(): ReactElement {
   return (
     <section className="projects-header section-highlight-secondary">
-      <h1>Selected Projects</h1>
+      <h1>Project Archive</h1>
       <p>
-        This page contains a detailed view of my repositories. Each project links directly to its source code, along
-        with additional context around its purpose, features, and implementation.
+        A full archive of my development projects. Each project links to its repository and includes context on its
+        purpose, features, and technical decisions.
       </p>
     </section>
   );

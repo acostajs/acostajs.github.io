@@ -9,7 +9,7 @@ type AppLayoutProps = {
 };
 
 export function AppLayout({ children }: AppLayoutProps): ReactElement {
-  const { profile, repos, readme, aboutJson, images, error } = useGitHubData();
+  const { profile, repos, readme, pinnedRepos, aboutJson, images, error } = useGitHubData();
 
   return (
     <>
@@ -25,6 +25,7 @@ export function AppLayout({ children }: AppLayoutProps): ReactElement {
           github={profile}
           repos={repos}
           readme={readme}
+          pinnedRepos={pinnedRepos}
           aboutJson={aboutJson}
           images={images}
         >

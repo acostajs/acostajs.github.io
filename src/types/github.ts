@@ -72,6 +72,16 @@ export type Repository = {
   } | null;
 };
 
+export type PinnedRepository = {
+  author: string;
+  name: string;
+  description: string;
+  language: string;
+  languageColor: string;
+  stars: number;
+  forks: number;
+};
+
 export type File = {
   name: string;
   path: string;

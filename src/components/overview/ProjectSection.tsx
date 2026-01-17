@@ -1,31 +1,28 @@
 import { ErrorMessage } from "@/components/ui";
-import { OVERVIEW_FEATURES } from "@/lib/api";
-import type { Repository } from "@/types";
+import type { PinnedRepository } from "@/types";
 import type { ReactElement } from "react";
 import { Card } from "./Card";
 
 type ProjectSectionProps = {
-  repos: Repository[];
+  pinnedRepos: PinnedRepository[];
 };
 
-export function ProjectSection({ repos }: ProjectSectionProps): ReactElement {
+export function ProjectSection({ pinnedRepos }: ProjectSectionProps): ReactElement {
   const startingIndex = 0;
-  if (repos.length === startingIndex) {
+  if (pinnedRepos.length === startingIndex) {
     return <ErrorMessage error_message="No repositories where found" />;
   }
 
   return (
     <section className="project-section section-highlight">
-      <h2>Latest Projects</h2>
+      <h2>Selected Projects</h2>
 
       <ul className="grid">
-        {repos
-          .slice(startingIndex, OVERVIEW_FEATURES.featuredReposCount)
-          .map((repo) => (
-            <li key={repo.id}>
-              <Card repo={repo} />
-            </li>
-          ))}
+        {pinnedRepos.map((repo) => (
+          <li key={repo.name}>
+            <Card repo={repo} />
+          </li>
+        ))}
       </ul>
     </section>
   );
