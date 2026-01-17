@@ -1,13 +1,5 @@
 @layer pages {
   .topic {
-    padding: 0 var(--pad-xs);
-    border-radius: var(--radius-xl);
-    background-color: var(--color-bg-light);
-    color: var(--color-text-dark);
     font-size: var(--text-xs);
-  }
-
-  .topic-item:hover {
-    animation: blinkingAni 2s ease 0s 1 normal none;
   }
 }
