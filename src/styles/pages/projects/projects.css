@@ -12,9 +12,6 @@
     padding-top: var(--pad-sm);
     padding-bottom: var(--pad-xl);
     border-bottom: 1px solid var(--color-border);
-    & h2 {
-      font-size: var(--text-xl);
-    }
   }
 
   .project-visibility {

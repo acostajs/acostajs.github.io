@@ -10,8 +10,9 @@ type ProjectActionsProps = {
 export function ProjectActions({ repo }: ProjectActionsProps): ReactElement {
   return (
     <>
-      <li>
+      <li className="flex gap-sm">
         <DetailsBtn repo={repo} />
+        <a href={repo.html_url} className="btn">View Code</a>
       </li>
       <li>
         <TopicAnchor repo={repo} />

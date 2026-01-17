@@ -8,9 +8,7 @@ type ProjectHeaderProps = {
 export function ProjectHeader({ repo }: ProjectHeaderProps): ReactElement {
   return (
     <li className="flex-left flex-wrap gap-md">
-      <a href={repo.html_url}>
-        <h2 className="project-title">{repo.name}</h2>
-      </a>
+      <h2 className="project-title">{repo.name}</h2>
       <span className="project-visibility muted">{repo.visibility}</span>
     </li>
   );

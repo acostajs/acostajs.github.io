@@ -12,14 +12,14 @@
   }
 
   .details-section-title {
-    background-color: var(--color-bg-dark);
+    background-color: var(--color-bg-dark-light);
     padding: var(--pad-md);
   }
 
   .details-section-text,
   .details-highlight {
-    background-color: var(--color-bg-light);
-    color: var(--color-text-dark);
+    background-color: var(--color-bg-dark);
+    color: var(--color-text);
     padding: var(--pad-md);
   }
 

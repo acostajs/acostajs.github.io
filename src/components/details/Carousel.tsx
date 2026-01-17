@@ -12,8 +12,8 @@ export function Carousel({ images, alt }: CarouselProps): ReactElement {
   }
 
   return (
-    <section className="details-carrousel">
-      <div className="details-section-title">
+    <section>
+      <div className="details-carousel-title">
         <h2>Project Preview</h2>
       </div>
 
