@@ -1,6 +1,7 @@
 @layer layout {
   main {
-    padding: var(--pad-2xl) 0;
+    padding-top: var(--pad-lg);
+    padding-bottom: var(--pad-2xl);
   }
 
   .page-grid {
@@ -17,6 +18,11 @@
   }
 
   @container (max-width: 768px) {
+    main {
+      padding-top: var(--pad-xs);
+      padding-bottom: var(--pad-lg);
+    }
+
     .main-content {
       padding: 0;
       border-radius: 0;

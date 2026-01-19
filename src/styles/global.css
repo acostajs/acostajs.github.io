@@ -15,6 +15,7 @@
 @import "./layout/contactSection.css" layer(layout);
 @import "./layout/loading.css" layer(layout);
 @import "./layout/avatar.css" layer(layout);
+@import "./layout/breadcrumb.css" layer(layout);
 
 /* UI */
 @import "./ui/burger.css" layer(ui);
