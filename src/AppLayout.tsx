@@ -1,4 +1,4 @@
-import { AsideProfile, ContactSection, Footer, Header, Loading } from "@/components/layout";
+import { AsideProfile, BreadCrumb, ContactSection, Footer, Header, Loading } from "@/components/layout";
 import { ErrorMessage } from "@/components/ui";
 import { GitHubProvider } from "@/context";
 import { useGitHubData } from "@/hooks";
@@ -20,6 +20,7 @@ export function AppLayout({ children }: AppLayoutProps): ReactElement {
         github_img_profile_url={profile?.avatar_url || ""}
       />
       <main className="container">
+        <BreadCrumb />
         <ErrorMessage error_message={error} />
         <GitHubProvider
           github={profile}

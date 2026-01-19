@@ -1,0 +1,10 @@
+@layer layout {
+  .breadcrumb {
+    padding: var(--pad-lg) 0;
+  }
+
+  .breadcrumb-item {
+    font-size: var(--text-sm);
+    font-family: var(--font-mono);
+  }
+}

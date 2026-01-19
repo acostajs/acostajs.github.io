@@ -39,7 +39,7 @@ export default function App(): ReactElement {
         }
       />
       <Route
-        path="/details/:repoName"
+        path="/projects/:repoName"
         element={
           <AppLayout>
             <Details />

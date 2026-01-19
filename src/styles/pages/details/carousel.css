@@ -17,7 +17,7 @@
   }
 
   .details-carousel-title {
-    padding: var(--pad-sm);
+    padding: var(--pad-md);
     background-color: var(--color-bg-accent);
   }
 

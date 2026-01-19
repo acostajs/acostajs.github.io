@@ -110,17 +110,17 @@ export function Details(): ReactElement {
         </div>
 
         <div className="right">
+          <DetailsLinks
+            source_code={links.source_code}
+            live_demo={links.live_demo}
+          />
+
           <DetailsTechStack title="Tech Stack" array={tech_stack} />
 
           <DetailsArchitecture
             approach={architecture.approach}
             data_flow={architecture.data_flow}
             deployment={architecture.deployment}
-          />
-
-          <DetailsLinks
-            source_code={links.source_code}
-            live_demo={links.live_demo}
           />
 
           <DetailsSkills

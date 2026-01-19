@@ -7,7 +7,7 @@ type DetailsBtnProps = {
 
 export function DetailsBtn({ repoName }: DetailsBtnProps): ReactElement {
   return (
-    <Link to={`/details/${repoName}`} classes={["btn"]}>
+    <Link to={`/projects/${repoName}`} classes={["btn"]}>
       View Details
     </Link>
   );
