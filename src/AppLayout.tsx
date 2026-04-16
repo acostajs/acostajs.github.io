@@ -9,11 +9,11 @@ type AppLayoutProps = {
 };
 
 export function AppLayout({ children }: AppLayoutProps): ReactElement {
-  const { profile, repos, readme, pinnedRepos, aboutJson, images, error } = useGitHubData();
+  const { profile, repos, readme, pinnedRepos, aboutJson, images, loading, error } = useGitHubData();
 
   return (
     <>
-      <Loading />
+      {loading && <Loading />}
       <Header
         github_user_url={profile?.html_url || ""}
         github_username={profile?.login || ""}

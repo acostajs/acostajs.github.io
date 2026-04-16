@@ -1,4 +1,3 @@
-import { usePagination } from "@/hooks";
 import type { PaginationState } from "@/hooks";
 import type { ReactElement } from "react";
 import { NextIcon, PreviousIcon } from "../icons";
@@ -17,6 +16,7 @@ export function Pagination({ pagination }: PaginationProps): ReactElement {
         onClick={() => goToPage(currentPage - offset)}
         disabled={!pagination.hasPrev}
         className="btn"
+        aria-label="Previous page"
       >
         <PreviousIcon size={20} />
       </button>
@@ -35,6 +35,7 @@ export function Pagination({ pagination }: PaginationProps): ReactElement {
         onClick={() => goToPage(currentPage + offset)}
         disabled={!pagination.hasNext}
         className="btn"
+        aria-label="Next page"
       >
         <NextIcon size={20} />
       </button>

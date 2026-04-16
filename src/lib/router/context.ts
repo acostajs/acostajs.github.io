@@ -5,4 +5,4 @@ export const NavigationContext = createContext({
   setPathname: (_: string) => {}, // placeholder; will never be called
 });
 
-export const RouteContext = createContext({});
+export const RouteContext = createContext<Record<string, string>>({});

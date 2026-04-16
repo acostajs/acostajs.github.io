@@ -76,7 +76,6 @@
     "typescript/explicit-function-return-type": "warn",
     "typescript/no-explicit-any": "error",
     "unicorn/no-nested-ternary": "error",
-    "unicorn/prefer-add-event-listener ": "error",
 
     "oxc/bad-array-method-on-arguments": "warn",
     "oxc/bad-char-at-comparison": "warn",

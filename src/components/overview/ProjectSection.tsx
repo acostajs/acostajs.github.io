@@ -8,8 +8,7 @@ type ProjectSectionProps = {
 };
 
 export function ProjectSection({ pinnedRepos }: ProjectSectionProps): ReactElement {
-  const startingIndex = 0;
-  if (pinnedRepos.length === startingIndex) {
+  if (pinnedRepos.length === 0) {
     return <ErrorMessage error_message="No repositories where found" />;
   }
 

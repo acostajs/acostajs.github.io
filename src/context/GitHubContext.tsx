@@ -1,5 +1,5 @@
 import type { AboutJSON, File, PinnedRepository, Repository, User } from "@/types";
-import { createContext, useContext } from "react";
+import { createContext, useContext, useMemo } from "react";
 import type { ReactElement, ReactNode } from "react";
 
 type GitHubContextType = {
@@ -32,10 +32,13 @@ export function GitHubProvider({
   images,
   children,
 }: GitHubProviderProps): ReactElement {
+  const value = useMemo(
+    () => ({ github, repos, readme, pinnedRepos, aboutJson, images }),
+    [github, repos, readme, pinnedRepos, aboutJson, images],
+  );
+
   return (
-    <GitHubContext.Provider
-      value={{ github, repos, readme, pinnedRepos, aboutJson, images }}
-    >
+    <GitHubContext.Provider value={value}>
       {children}
     </GitHubContext.Provider>
   );

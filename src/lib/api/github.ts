@@ -10,7 +10,7 @@ export const GITHUB_REPOS =
 export const GITHUB_PINNED_REPOS = `https://pinned.berrysauce.dev/get/${CONFIG.github.username}`;
 
 export function GITHUB_REPO_URL(repoName: string): string {
-  return `https://github.com/acostajs/${repoName}`;
+  return `https://github.com/${CONFIG.github.username}/${repoName}`;
 }
 
 export function GITHUB_PORTFOLIO_FOLDER(repoName: string): string {

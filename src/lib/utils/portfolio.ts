@@ -13,9 +13,6 @@ export function getPortfolioImages(files: PortfolioItem[]): string[] {
     .filter((f) => f.name.startsWith("portfolio-img-"))
     .map((f) => f.download_url);
 
-  if (!images.length) {
-    throw new Error("No images were found");
-  }
   return images;
 }
 

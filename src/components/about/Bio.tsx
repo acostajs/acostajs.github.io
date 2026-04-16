@@ -10,7 +10,7 @@ type BioProps = {
 
 export function Bio({ headline, story, images }: BioProps): ReactElement {
   if (!headline || !story || !images) {
-    return <ErrorMessage error_message="Could find Bio section" />;
+    return <ErrorMessage error_message="Could not find Bio section" />;
   }
 
   return (

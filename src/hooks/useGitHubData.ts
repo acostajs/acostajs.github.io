@@ -17,6 +17,7 @@ type GitHubData = {
   pinnedRepos: PinnedRepository[];
   aboutJson: AboutJSON | null;
   images: Array<string> | null;
+  loading: boolean;
   error: string;
 };
 
@@ -27,6 +28,7 @@ export function useGitHubData(): GitHubData {
   const [pinnedRepos, setPinnedRepos] = useState<PinnedRepository[]>([]);
   const [aboutJson, setAboutJson] = useState<AboutJSON | null>(null);
   const [images, setImages] = useState<Array<string>>([]);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -52,7 +54,7 @@ export function useGitHubData(): GitHubData {
           return;
         }
         if (!pinnedRes.ok) {
-          setError("Failed to load pinned repositores");
+          setError("Failed to load pinned repositories");
           return;
         }
         if (!aboutRes.ok) {
@@ -75,6 +77,8 @@ export function useGitHubData(): GitHubData {
         setImages(getPortfolioImages(aboutData));
       } catch {
         setError("Error fetching GitHub User Profile");
+      } finally {
+        setLoading(false);
       }
     }
 
@@ -88,6 +92,7 @@ export function useGitHubData(): GitHubData {
     pinnedRepos,
     aboutJson,
     images,
+    loading,
     error,
   };
 }

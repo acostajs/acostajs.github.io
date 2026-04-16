@@ -102,7 +102,6 @@ export function Details(): ReactElement {
             title="Challenges & Learnings"
             array={challenges_and_learnings}
           />
-          <DetailsHighlight title="Responsabilities" array={responsibilities} />
           <DetailsHighlight
             title="Future Improvements"
             array={future_improvements}

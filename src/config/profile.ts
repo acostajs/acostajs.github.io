@@ -1,3 +1,5 @@
+import "dotenv";
+
 /**
  * Portfolio Configuration
  * Edit values here → All API endpoints auto-update instantly

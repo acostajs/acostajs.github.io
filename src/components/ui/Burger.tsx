@@ -7,7 +7,7 @@ type BurgerProps = {
 
 export function Burger({ onClick }: BurgerProps): ReactElement {
   return (
-    <button className="burger" popoverTarget="menu" onClick={onClick}>
+    <button className="burger" popoverTarget="menu" onClick={onClick} aria-label="Open navigation menu">
       <BurguerIcon size={18} />
     </button>
   );

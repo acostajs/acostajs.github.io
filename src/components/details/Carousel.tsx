@@ -25,6 +25,7 @@ export function Carousel({ images, alt }: CarouselProps): ReactElement {
                 <button
                   popoverTarget={`zoomed-img-${index}`}
                   className="thumbnail-btn"
+                  aria-label={`View ${alt} screenshot ${index + 1} fullscreen`}
                 >
                   <img
                     src={src}
@@ -42,6 +43,7 @@ export function Carousel({ images, alt }: CarouselProps): ReactElement {
                 <button
                   popoverTarget={`zoomed-img-${index}`}
                   className="close-zoom"
+                  aria-label={`Close ${alt} screenshot ${index + 1}`}
                 >
                   <img
                     src={src}

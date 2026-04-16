@@ -12,6 +12,7 @@ export function OverviewSection({
 }: OverviewSectionProps): ReactElement {
   if (!readme) return <ErrorMessage error_message="Readme File not found" />;
 
+  if (!readme.content) return <ErrorMessage error_message="Readme content not available" />;
   const readmeMarkdown = atob(readme.content);
 
   return (

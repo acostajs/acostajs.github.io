@@ -18,7 +18,10 @@ export function useRepositoryData(repoName: string): RepositoryData {
     async function load(): Promise<void> {
       try {
         const res = await fetch(GITHUB_PORTFOLIO_FOLDER(repoName));
-        if (!res.ok) setError("It was not possible to fetch information");
+        if (!res.ok) {
+          setError("It was not possible to fetch information");
+          return;
+        }
 
         const data = await res.json();
         const portfolioJson = await fetchProjectPortfolioJson(data);

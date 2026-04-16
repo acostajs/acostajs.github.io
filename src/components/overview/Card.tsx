@@ -1,5 +1,5 @@
 import { GITHUB_REPO_URL } from "@/lib/api";
-import type { PinnedRepository, Repository } from "@/types";
+import type { PinnedRepository } from "@/types";
 import type { ReactElement } from "react";
 import { DetailsBtn } from "../ui/DetailsBtn";
 
@@ -20,9 +20,7 @@ export function Card({ repo }: CardProp): ReactElement {
             {repo.language}
           </span>
         )
-        : (
-          ""
-        )}
+        : null}
       <div className="flex gap-sm">
         <DetailsBtn repoName={repo.name} />
         <a href={GITHUB_REPO_URL(repo.name)} className="btn">

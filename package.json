@@ -12,6 +12,7 @@
     "start": "bunx serve ./dist"
   },
   "dependencies": {
+    "dotenv": "^17.4.2",
     "dprint": "^0.50.2",
     "oxlint": "^1.35.0",
     "react": "^19",

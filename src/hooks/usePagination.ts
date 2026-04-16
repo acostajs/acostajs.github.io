@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const PAGINATION_CONSTANTS = {
   DEFAULT_PER_PAGE: 5,
@@ -28,6 +28,10 @@ export function usePagination(
   );
 
   const totalPages = Math.ceil(totalCount / perPage);
+
+  useEffect(() => {
+    setCurrentPage(PAGINATION_CONSTANTS.DEFAULT_PAGE);
+  }, [totalCount]);
   const offset = (currentPage - PAGINATION_CONSTANTS.FIRST_PAGE) * perPage;
 
   function goToPage(page: number): void {
