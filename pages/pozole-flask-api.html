@@ -35,6 +35,13 @@
             <span class="badge muted" id="badge-rt"><span data-i18n="metric-response-time">Avg Response Time</span>: 4 ms</span>
             <span class="badge muted" id="badge-fr"><span data-i18n="metric-failure-rate">Failure Rate</span>: 0.00%</span>
           </div>
+
+          <figure class="stark-hero-placeholder" id="project-hero-placeholder">
+            <div class="stark-placeholder-inner">
+              <div class="stark-placeholder-icon"></div>
+              <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
+            </div>
+          </figure>
         </div>
 
         <div class="action-row" id="project-action-row">
@@ -44,17 +51,24 @@
         <div class="overview-grid" id="project-overview-grid">
           
           <div class="pane-left" id="pane-left">
+            <div class="stark-card stark-card--story" id="card-story">
+              <h3 class="pane-title" id="title-story" data-i18n="project-details-title">Why I Built This</h3>
+              <p id="text-story" data-i18n="pozole-flask-api-the_story">
+                Restaurant scheduling sounds simple until dozens of employees, overlapping shifts, and scheduling rules begin interacting. Instead of focusing only on CRUD operations, I treated the API as a production backend where incorrect data could create operational problems. The objective was to build a testing strategy that verifies business rules, protects database integrity, and ensures every endpoint behaves consistently as the application evolves.
+              </p>
+            </div>
+
             <div class="stark-card" id="card-summary">
               <h3 class="pane-title" id="title-summary" data-i18n="project-details-title">Project Details</h3>
               <p id="text-summary" data-i18n="pozole-flask-api-summary">
-                A REST API built with Flask to manage employee schedules and shift assignments for a restaurant workflow system. The project focuses on backend reliability and demonstrates how structured testing can validate API behavior, data integrity, and system performance.
+                A REST API built to manage employee schedules and shift assignments for a restaurant workflow system. The project demonstrates how automated testing can validate business rules, API reliability, database integrity, and backend performance in a production-style Flask application.
               </p>
             </div>
             
             <div class="stark-card" id="card-role">
               <h3 class="pane-title" id="title-role" data-i18n="role-focus-title">My Role & Focus</h3>
-              <p id="text-role" data-i18n="pozole-flask-api-role-focus">
-                Built and maintained a complete QA strategy for the API, including automated testing, validation of database operations, and performance checks under concurrent usage.
+              <p id="text-role" data-i18n="pozole-flask-api-role_focus">
+                I designed and maintained the complete QA strategy for the API, covering business logic validation, database integrity, automated endpoint testing, smoke testing, performance testing, continuous integration, and code quality enforcement.
               </p>
             </div>
           </div>
@@ -106,43 +120,106 @@
         <section class="achievements-section" id="achievements-section">
           <h2 class="pane-title" id="title-achievements" data-i18n="key-achievements-title">Key Achievements</h2>
           <ul class="achievements-list" id="achievements-list">
-            <li id="ach-1" data-i18n="pozole-flask-api-ach-1">Built an automated API test suite achieving 99% code coverage across core backend functionality.</li>
-            <li id="ach-2" data-i18n="pozole-flask-api-ach-2">Validated CRUD operations and database constraints through structured test cases.</li>
-            <li id="ach-3" data-i18n="pozole-flask-api-ach-3">Performed load testing with Locust, confirming stable performance with a 4ms average response time.</li>
+            <li id="ach-1" data-i18n="pozole-flask-api-ach-1">Achieved 99% automated test coverage across the API's core backend functionality.</li>
+            <li id="ach-2" data-i18n="pozole-flask-api-ach-2">Validated CRUD operations, scheduling rules, and database constraints through automated testing.</li>
+            <li id="ach-3" data-i18n="pozole-flask-api-ach-3">Performed load testing with Locust, confirming a stable 4ms average response time with no failures.</li>
             <li id="ach-4" data-i18n="pozole-flask-api-ach-4">Integrated CI pipelines using GitHub Actions to enforce automated testing on every push.</li>
-            <li id="ach-5" data-i18n="pozole-flask-api-ach-5">Implemented pre-commit quality checks with Lefthook, including linting (Ruff) and test validation.</li>
+            <li id="ach-5" data-i18n="pozole-flask-api-ach-5">Configured Ruff and Lefthook to enforce consistent code quality before every commit.</li>
           </ul>
         </section>
 
         <section class="matrix-section" id="matrix-section">
-          <h2 class="pane-title" id="title-matrix" data-i18n="test-strategy-title">Test Strategy Matrix</h2>
+          <h2 class="pane-title" id="title-matrix" data-i18n="pozole-flask-api-test_strategy_table_label">What I tested — and why it mattered</h2>
           <table class="matrix-table" id="matrix-table">
             <thead>
               <tr>
                 <th data-i18n="table-header-type">Test Type</th>
-                <th data-i18n="table-header-purpose">Purpose</th>
+                <th data-i18n="table_header_tool">Tool</th>
+                <th data-i18n="table_header_what_tested">What I Tested</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td data-i18n="pozole-flask-api-tt-1">Unit Testing</td>
-                <td data-i18n="pozole-flask-api-tp-1">Validates API logic, response codes, and schema rules.</td>
+                <td data-i18n="pozole-flask-api-tt-1">Business Logic</td>
+                <td><span class="badge muted" data-i18n="pozole-flask-api-tool-1">pytest</span></td>
+                <td data-i18n="pozole-flask-api-wt-1">Scheduling rules, employee assignments, validation logic, serialization, and database models to ensure business rules remain consistent under different scenarios.</td>
               </tr>
               <tr>
-                <td data-i18n="pozole-flask-api-tt-2">Integration Testing</td>
-                <td data-i18n="pozole-flask-api-tp-2">Ensures correct interaction between endpoints, business logic, and the database.</td>
+                <td data-i18n="pozole-flask-api-tt-2">API Validation</td>
+                <td><span class="badge muted" data-i18n="pozole-flask-api-tool-2">pytest + Requests</span></td>
+                <td data-i18n="pozole-flask-api-wt-2">REST endpoints, CRUD operations, HTTP status codes, request validation, and response payloads to verify reliable API behavior.</td>
               </tr>
               <tr>
-                <td data-i18n="pozole-flask-api-tt-3">Smoke Testing</td>
-                <td data-i18n="pozole-flask-api-tp-3">Runs quick health checks to confirm the API is running correctly.</td>
+                <td data-i18n="pozole-flask-api-tt-3">Critical API Health</td>
+                <td><span class="badge muted" data-i18n="pozole-flask-api-tool-3">pytest</span></td>
+                <td data-i18n="pozole-flask-api-wt-3">Smoke tests verify that the API starts successfully, core endpoints respond correctly, and critical services remain operational after every deployment.</td>
               </tr>
               <tr>
-                <td data-i18n="pozole-flask-api-tt-4">Performance Testing</td>
-                <td data-i18n="pozole-flask-api-tp-4">Measures system behavior under concurrent requests using Locust.</td>
+                <td data-i18n="pozole-flask-api-tt-4">Backend under load</td>
+                <td><span class="badge muted" data-i18n="pozole-flask-api-tool-4">Locust</span></td>
+                <td data-i18n="pozole-flask-api-wt-4">Concurrent clients perform scheduling operations while measuring response time, stability, and failure rate under sustained traffic.</td>
               </tr>
             </tbody>
           </table>
         </section>
+
+        <section class="evidence-gallery-section" id="evidence-gallery-section">
+          <h2 class="pane-title" id="title-gallery" data-i18n="evidence_gallery_title">Proof, Not Just Claims</h2>
+          <p class="evidence-gallery-intro" data-i18n="evidence_gallery_intro">Screenshots from the actual test runs — the terminal output, the coverage report, and the load test dashboard behind the numbers above.</p>
+          <div class="gallery-grid">
+            <figure class="stark-card stark-card--gallery">
+              <div class="gallery-img-wrapper">
+                <div class="gallery-placeholder-img">
+                  <div class="gallery-placeholder-inner">
+                    <div class="stark-placeholder-icon"></div>
+                    <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
+                  </div>
+                </div>
+              </div>
+              <figcaption data-i18n="pozole-flask-api-gal-1">Terminal output showing the full pytest suite passing with 99% coverage</figcaption>
+            </figure>
+            <figure class="stark-card stark-card--gallery">
+              <div class="gallery-img-wrapper">
+                <div class="gallery-placeholder-img">
+                  <div class="gallery-placeholder-inner">
+                    <div class="stark-placeholder-icon"></div>
+                    <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
+                  </div>
+                </div>
+              </div>
+              <figcaption data-i18n="pozole-flask-api-gal-2">Coverage.py HTML report showing 99% code coverage</figcaption>
+            </figure>
+            <figure class="stark-card stark-card--gallery">
+              <div class="gallery-img-wrapper">
+                <div class="gallery-placeholder-img">
+                  <div class="gallery-placeholder-inner">
+                    <div class="stark-placeholder-icon"></div>
+                    <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
+                  </div>
+                </div>
+              </div>
+              <figcaption data-i18n="pozole-flask-api-gal-3">Locust dashboard showing a 4ms average response time with no failures</figcaption>
+            </figure>
+            <figure class="stark-card stark-card--gallery">
+              <div class="gallery-img-wrapper">
+                <div class="gallery-placeholder-img">
+                  <div class="gallery-placeholder-inner">
+                    <div class="stark-placeholder-icon"></div>
+                    <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
+                  </div>
+                </div>
+              </div>
+              <figcaption data-i18n="pozole-flask-api-gal-4">API test execution validating restaurant scheduling endpoints</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <aside class="stark-callout" id="pride-callout">
+          <span class="stark-callout-label" data-i18n="pride_callout_label">What I'm proud of</span>
+          <p class="stark-callout-content" data-i18n="pozole-flask-api-what_im_proud_of">
+            Designing tests around the scheduling rules instead of only the API endpoints. Validating business logic independently makes the suite faster, easier to maintain, and more effective at catching regressions before they reach production.
+          </p>
+        </aside>
 
       </article>
     </div>

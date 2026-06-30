@@ -35,6 +35,13 @@
             <span class="badge muted" id="badge-rt"><span data-i18n="metric-response-time">Avg Response Time</span>: 41 ms</span>
             <span class="badge muted" id="badge-fr"><span data-i18n="metric-failure-rate">Failure Rate</span>: 0.00%</span>
           </div>
+
+          <figure class="stark-hero-placeholder" id="project-hero-placeholder">
+            <div class="stark-placeholder-inner">
+              <div class="stark-placeholder-icon"></div>
+              <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
+            </div>
+          </figure>
         </div>
 
         <div class="action-row" id="project-action-row">
@@ -44,6 +51,13 @@
         <div class="overview-grid" id="project-overview-grid">
           
           <div class="pane-left" id="pane-left">
+            <div class="stark-card stark-card--story" id="card-story">
+              <h3 class="pane-title" id="title-story" data-i18n="project-details-title">Why I Built This</h3>
+              <p id="text-story" data-i18n="custom-keyboard-collective-the_story">
+                Rather than treating an online store as a simple CRUD application, I approached it as a production system where every purchase, account update, and checkout flow had to behave consistently. The goal was to build a QA showcase that demonstrates how automated testing can validate both the underlying business logic and the complete customer experience—from browsing products to completing an order—while ensuring every change can be deployed with confidence.
+              </p>
+            </div>
+
             <div class="stark-card" id="card-summary">
               <h3 class="pane-title" id="title-summary" data-i18n="project-details-title">Project Details</h3>
               <p id="text-summary" data-i18n="custom-keyboard-collective-summary">
@@ -53,7 +67,7 @@
             
             <div class="stark-card" id="card-role">
               <h3 class="pane-title" id="title-role" data-i18n="role-focus-title">My Role & Focus</h3>
-              <p id="text-role" data-i18n="custom-keyboard-collective-role-focus">
+              <p id="text-role" data-i18n="custom-keyboard-collective-role_focus">
                 Designed and maintained a full QA automation strategy covering multiple layers of testing, including unit, integration, API, UI end-to-end, smoke, and performance testing.
               </p>
             </div>
@@ -114,42 +128,102 @@
         </section>
 
         <section class="matrix-section" id="matrix-section">
-          <h2 class="pane-title" id="title-matrix" data-i18n="test-strategy-title">Test Strategy Matrix</h2>
+          <h2 class="pane-title" id="title-matrix" data-i18n="custom-keyboard-collective-test_strategy_table_label">What I tested — and why it mattered</h2>
           <table class="matrix-table" id="matrix-table">
             <thead>
               <tr>
                 <th data-i18n="table-header-type">Test Type</th>
-                <th data-i18n="table-header-purpose">Purpose</th>
+                <th data-i18n="table_header_tool">Tool</th>
+                <th data-i18n="table_header_what_tested">What I Tested</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td data-i18n="custom-keyboard-collective-tt-1">Unit Testing</td>
-                <td data-i18n="custom-keyboard-collective-tp-1">Validates core business logic, database models, and form handling.</td>
+                <td data-i18n="custom-keyboard-collective-tt-1">Business Logic</td>
+                <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-1">pytest</span></td>
+                <td data-i18n="custom-keyboard-collective-wt-1">Product inventory, pricing calculations, shopping cart behavior, form validation, and database models to ensure business rules remain correct under different scenarios.</td>
               </tr>
               <tr>
-                <td data-i18n="custom-keyboard-collective-tt-2">Integration Testing</td>
-                <td data-i18n="custom-keyboard-collective-tp-2">Ensures correct behavior across multi-step workflows such as cart and checkout processes.</td>
+                <td data-i18n="custom-keyboard-collective-tt-2">API Validation</td>
+                <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-2">pytest + Requests</span></td>
+                <td data-i18n="custom-keyboard-collective-wt-2">REST endpoints, authentication, request validation, and response consistency to verify reliable communication between the frontend and backend.</td>
               </tr>
               <tr>
-                <td data-i18n="custom-keyboard-collective-tt-3">API Testing</td>
-                <td data-i18n="custom-keyboard-collective-tp-3">Tests REST endpoints, authentication, and request/response integrity.</td>
+                <td data-i18n="custom-keyboard-collective-tt-3">End-to-End User Flows</td>
+                <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-3">Playwright (Page Object Model)</span></td>
+                <td data-i18n="custom-keyboard-collective-wt-3">Complete customer journeys including account creation, product browsing, cart management, and checkout through a real browser session.</td>
               </tr>
               <tr>
-                <td data-i18n="custom-keyboard-collective-tt-4">End-to-End Testing</td>
-                <td data-i18n="custom-keyboard-collective-tp-4">Simulates full user journeys in the browser using Playwright.</td>
+                <td data-i18n="custom-keyboard-collective-tt-4">Critical Page Health</td>
+                <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-4">Playwright</span></td>
+                <td data-i18n="custom-keyboard-collective-wt-4">Smoke tests verify that the application's critical pages load successfully and remain accessible after every deployment, providing fast feedback during CI.</td>
               </tr>
               <tr>
-                <td data-i18n="custom-keyboard-collective-tt-5">Smoke Testing</td>
-                <td data-i18n="custom-keyboard-collective-tp-5">Performs fast checks to confirm the main application routes are working correctly.</td>
-              </tr>
-              <tr>
-                <td data-i18n="custom-keyboard-collective-tt-6">Performance Testing</td>
-                <td data-i18n="custom-keyboard-collective-tp-6">Measures system stability and response time under concurrent load using Locust.</td>
+                <td data-i18n="custom-keyboard-collective-tt-5">Backend under load</td>
+                <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-5">Locust</span></td>
+                <td data-i18n="custom-keyboard-collective-wt-5">Concurrent virtual users browsing products and interacting with the store while measuring response times, stability, and failure rates under sustained load.</td>
               </tr>
             </tbody>
           </table>
         </section>
+
+        <section class="evidence-gallery-section" id="evidence-gallery-section">
+          <h2 class="pane-title" id="title-gallery" data-i18n="evidence_gallery_title">Proof, Not Just Claims</h2>
+          <p class="evidence-gallery-intro" data-i18n="evidence_gallery_intro">Screenshots from the actual test runs — the terminal output, the coverage report, and the load test dashboard behind the numbers above.</p>
+          <div class="gallery-grid">
+            <figure class="stark-card stark-card--gallery">
+              <div class="gallery-img-wrapper">
+                <div class="gallery-placeholder-img">
+                  <div class="gallery-placeholder-inner">
+                    <div class="stark-placeholder-icon"></div>
+                    <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
+                  </div>
+                </div>
+              </div>
+              <figcaption data-i18n="custom-keyboard-collective-gal-1">Terminal output showing the complete pytest suite passing with 99% coverage</figcaption>
+            </figure>
+            <figure class="stark-card stark-card--gallery">
+              <div class="gallery-img-wrapper">
+                <div class="gallery-placeholder-img">
+                  <div class="gallery-placeholder-inner">
+                    <div class="stark-placeholder-icon"></div>
+                    <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
+                  </div>
+                </div>
+              </div>
+              <figcaption data-i18n="custom-keyboard-collective-gal-2">Coverage.py HTML report showing 99% coverage</figcaption>
+            </figure>
+            <figure class="stark-card stark-card--gallery">
+              <div class="gallery-img-wrapper">
+                <div class="gallery-placeholder-img">
+                  <div class="gallery-placeholder-inner">
+                    <div class="stark-placeholder-icon"></div>
+                    <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
+                  </div>
+                </div>
+              </div>
+              <figcaption data-i18n="custom-keyboard-collective-gal-3">Locust dashboard showing a 41ms average response time and 0% failures</figcaption>
+            </figure>
+            <figure class="stark-card stark-card--gallery">
+              <div class="gallery-img-wrapper">
+                <div class="gallery-placeholder-img">
+                  <div class="gallery-placeholder-inner">
+                    <div class="stark-placeholder-icon"></div>
+                    <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
+                  </div>
+                </div>
+              </div>
+              <figcaption data-i18n="custom-keyboard-collective-gal-4">Playwright trace viewer showing an automated shopping and checkout journey</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <aside class="stark-callout" id="pride-callout">
+          <span class="stark-callout-label" data-i18n="pride_callout_label">What I'm proud of</span>
+          <p class="stark-callout-content" data-i18n="custom-keyboard-collective-what_im_proud_of">
+            Building a layered testing strategy instead of relying only on end-to-end tests. Each layer validates a different part of the application, making failures easier to diagnose while keeping the test suite fast, reliable, and maintainable.
+          </p>
+        </aside>
 
       </article>
     </div>
