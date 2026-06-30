@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Acosta | QA Automation Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Juan Acosta, QA Automation Engineer. Featuring test automation frameworks, CI/CD pipelines, and web development project highlights.">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="nav-bar" id="navbar">
+        <a href="index.html" class="nav-logo" id="nav-logo" data-i18n="nav-logo">acostajs</a>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#featured-projects" class="nav-link" id="nav-link-projects" data-i18n="nav-projects">Projects</a></li>
+          <li><a href="#how-i-work" class="nav-link" id="nav-link-how-i-work" data-i18n="nav-how-i-work">How I Work</a></li>
+          <li><a href="#what-i-use" class="nav-link" id="nav-link-what-i-use" data-i18n="nav-what-i-use">What I Use</a></li>
+          <li><a href="#experience-education" class="nav-link" id="nav-link-experience" data-i18n="nav-experience">Experience</a></li>
+          <li><a href="#contact-cta" class="nav-link" id="nav-link-contact" data-i18n="nav-contact">Contact</a></li>
+          <li><button class="lang-btn" id="lang-toggle" aria-label="Switch to French">FR</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section id="hero" class="hero-section">
+        <div class="hero-content" id="hero-left-column">
+          <h1 class="hero-title" id="hero-title" data-i18n="hero-title">Hi, I'm Juan 👋</h1>
+          <p class="hero-subtitle" id="hero-subtitle" data-i18n="hero-subtitle">
+            QA Automation Engineer with a strong software development background.
+          </p>
+          <div class="hero-cta-group">
+            <a href="https://github.com/acostajs" target="_blank" rel="noopener" class="stark-btn" id="btn-hero-github" data-i18n="hero-cta-view">View GitHub</a>
+            <a href="mailto:acosta.juan@icloud.com" class="stark-btn" id="btn-hero-contact" style="background-color: var(--clr-muted); color: var(--clr-ink);" data-i18n="hero-cta-contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="mock-ide" id="hero-right-column">
+          <div class="ide-header">
+            <span class="window-dot close"></span>
+            <span class="window-dot minimize"></span>
+            <span class="window-dot expand"></span>
+          </div>
+          <div class="ide-body">
+            <pre class="terminal-code" id="mock-terminal"></pre>
+            
+            <div class="mock-browser-view" id="mock-browser">
+              <div class="mock-browser-header">
+                <span>Playwright Live Automation Preview</span>
+                <span class="hero-badge-success" id="success-badge">✓ 1 passed in 0.41s</span>
+              </div>
+              <div class="mock-search-form">
+                <label for="mock-search-input" class="sr-only">Search</label>
+                <input type="text" id="mock-search-input" class="mock-input" placeholder="Type query..." readonly>
+                <button id="mock-submit-btn" class="mock-btn" disabled>Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured-projects" class="section-container">
+        <h2 class="section-title" id="projects-section-title" data-i18n="section-projects-title">Featured Projects</h2>
+        <div class="projects-grid" id="projects-grid">
+          
+          <div class="stark-card project-card" id="card-project-ceramic">
+            <img src="https://picsum.photos/600/400" alt="Project Placeholder" class="project-img" id="img-project-ceramic" data-i18n="project-img-alt" />
+            <div class="project-card-header">
+              <h3 class="project-title" id="ceramic-project-title" data-i18n="project-ceramic-title">Ceramic Shop E-Commerce</h3>
+              <div class="project-metrics">
+                <span class="badge accent" id="badge-ceramic-cov">100% Coverage</span>
+                <span class="badge muted" id="badge-ceramic-rt">17 ms</span>
+              </div>
+            </div>
+            <p class="project-description" id="ceramic-project-desc" data-i18n="project-ceramic-summary">
+              An online ceramic store built to simulate a real production e-commerce system. It includes user accounts, shopping cart functionality, and Stripe payment integration. The main focus of the project is to demonstrate how quality assurance and automated testing can be applied across critical user journeys like checkout and payments.
+            </p>
+            <div class="project-tags">
+              <span class="badge muted">Django</span>
+              <span class="badge muted">Python</span>
+              <span class="badge muted">pytest</span>
+              <span class="badge muted">Playwright</span>
+              <span class="badge muted">Locust</span>
+            </div>
+            <div class="project-footer">
+              <a href="pages/ceramic-shop-django.html" class="project-link" id="link-ceramic-details" data-i18n="view-project">View Details</a>
+              <a href="https://github.com/acostajs/ceramic-shop-qa-showcase" target="_blank" rel="noopener" class="project-link" id="link-ceramic-repo" data-i18n="view-repository">View Repository</a>
+            </div>
+          </div>
+
+          <div class="stark-card project-card" id="card-project-keyboard">
+            <img src="https://picsum.photos/600/400" alt="Project Placeholder" class="project-img" id="img-project-keyboard" data-i18n="project-img-alt" />
+            <div class="project-card-header">
+              <h3 class="project-title" id="keyboard-project-title" data-i18n="project-keyboard-title">Custom Keyboard Collective</h3>
+              <div class="project-metrics">
+                <span class="badge accent" id="badge-keyboard-cov">99% Coverage</span>
+                <span class="badge muted" id="badge-keyboard-rt">41 ms</span>
+              </div>
+            </div>
+            <p class="project-description" id="keyboard-project-desc" data-i18n="project-keyboard-summary">
+              An e-commerce application built to demonstrate modern QA automation practices in a real-world Django environment. The project focuses on ensuring reliability through automated testing, continuous integration, code quality checks, and performance validation.
+            </p>
+            <div class="project-tags">
+              <span class="badge muted">Django</span>
+              <span class="badge muted">Python</span>
+              <span class="badge muted">pytest</span>
+              <span class="badge muted">Playwright</span>
+              <span class="badge muted">Locust</span>
+            </div>
+            <div class="project-footer">
+              <a href="pages/custom-keyboard-collective.html" class="project-link" id="link-keyboard-details" data-i18n="view-project">View Details</a>
+              <a href="https://github.com/acostajs/keyboard-collective-qa-showcase/" target="_blank" rel="noopener" class="project-link" id="link-keyboard-repo" data-i18n="view-repository">View Repository</a>
+            </div>
+          </div>
+
+          <div class="stark-card project-card" id="card-project-pozole">
+            <img src="https://picsum.photos/600/400" alt="Project Placeholder" class="project-img" id="img-project-pozole" data-i18n="project-img-alt" />
+            <div class="project-card-header">
+              <h3 class="project-title" id="pozole-project-title" data-i18n="project-pozole-title">Pozole</h3>
+              <div class="project-metrics">
+                <span class="badge accent" id="badge-pozole-cov">99% Coverage</span>
+                <span class="badge muted" id="badge-pozole-rt">4 ms</span>
+              </div>
+            </div>
+            <p class="project-description" id="pozole-project-desc" data-i18n="project-pozole-summary">
+              A REST API built with Flask to manage employee schedules and shift assignments for a restaurant workflow system. The project focuses on backend reliability and demonstrates how structured testing can validate API behavior, data integrity, and system performance.
+            </p>
+            <div class="project-tags">
+              <span class="badge muted">Flask</span>
+              <span class="badge muted">Python</span>
+              <span class="badge muted">pytest</span>
+              <span class="badge muted">Locust</span>
+            </div>
+            <div class="project-footer">
+              <a href="pages/pozole-flask-api.html" class="project-link" id="link-pozole-details" data-i18n="view-project">View Details</a>
+              <a href="https://github.com/acostajs/flask-api-qa-showcase" target="_blank" rel="noopener" class="project-link" id="link-pozole-repo" data-i18n="view-repository">View Repository</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="how-i-work" class="section-container">
+        <div class="how-i-work-header">
+          <h2 class="section-title" id="how-i-work-title" data-i18n="how-i-work-title">How I Work</h2>
+          <p class="how-i-work-subtitle" id="how-i-work-subtitle" data-i18n="how-i-work-subtitle">My approach to ensuring software quality and reliability.</p>
+        </div>
+        <div class="work-grid">
+          <div class="stark-item-row" id="work-card-1">
+            <h3 id="work-card-1-title" data-i18n="work-card-1-title">Quality First</h3>
+            <p id="work-card-1-body" data-i18n="work-card-1-body">Integrating testing early in the development lifecycle to catch bugs before they reach production.</p>
+          </div>
+          <div class="stark-item-row" id="work-card-2">
+            <h3 id="work-card-2-title" data-i18n="work-card-2-title">Automate Everything</h3>
+            <p id="work-card-2-body" data-i18n="work-card-2-body">Building reusable, maintainable test frameworks to replace manual repetition with fast, scalable automated suites.</p>
+          </div>
+          <div class="stark-item-row" id="work-card-3">
+            <h3 id="work-card-3-title" data-i18n="work-card-3-title">Continuous Delivery</h3>
+            <p id="work-card-3-body" data-i18n="work-card-3-body">Integrating regression and smoke test suites into CI/CD pipelines to ensure constant code stability.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="what-i-use" class="section-container">
+        <h2 class="section-title" id="what-i-use-title" data-i18n="what-i-use-title">What I Use</h2>
+        <div class="tech-groups">
+          <div class="tech-group" id="tech-group-core">
+            <h3 id="what-i-use-core-title" data-i18n="what-i-use-core-title">Automation Core</h3>
+            <div class="badge-list">
+              <span class="stark-badge">Playwright</span>
+              <span class="stark-badge">Cypress</span>
+              <span class="stark-badge">Selenium</span>
+              <span class="stark-badge">pytest</span>
+              <span class="stark-badge">Locust</span>
+              <span class="stark-badge">Postman</span>
+              <span class="stark-badge">API Testing</span>
+              <span class="stark-badge">E2E Testing</span>
+            </div>
+          </div>
+          <div class="tech-group" id="tech-group-env">
+            <h3 id="what-i-use-env-title" data-i18n="what-i-use-env-title">Environments & Quality</h3>
+            <div class="badge-list">
+              <span class="stark-badge">Python</span>
+              <span class="stark-badge">JavaScript</span>
+              <span class="stark-badge">TypeScript</span>
+              <span class="stark-badge">Django</span>
+              <span class="stark-badge">FastAPI</span>
+              <span class="stark-badge">Node.js</span>
+              <span class="stark-badge">Git</span>
+              <span class="stark-badge">GitHub</span>
+              <span class="stark-badge">CI/CD basics</span>
+              <span class="stark-badge">Astral uv</span>
+              <span class="stark-badge">Ruff</span>
+              <span class="stark-badge">Biome</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience-education" class="section-container">
+        <h2 class="section-title" id="exp-section-title" data-i18n="section-experience-title">Experience & Education</h2>
+        <div class="exp-edu-grid" id="exp-edu-grid">
+          
+          <div class="timeline-column" id="experience-timeline">
+            
+            <div class="stark-card timeline-item" id="exp-item-loriginal">
+              <div class="timeline-header">
+                <h3 class="timeline-role" id="exp-role-loriginal" data-i18n="exp-role-1">Full-Stack Developer (Internship)</h3>
+                <span class="timeline-meta" id="exp-period-loriginal" data-i18n="exp-period-1">Feb 2026 - Apr 2026</span>
+              </div>
+              <div class="timeline-subhead">
+                <span class="timeline-company" id="exp-company-loriginal" data-i18n="exp-company-1">L'Original</span>
+              </div>
+              <ul class="timeline-highlights">
+                <li id="exp-hl-loriginal-1" data-i18n="exp-highlight-1-1">Built a Node.js script to detect and remove duplicate media files, improving storage efficiency.</li>
+                <li id="exp-hl-loriginal-2" data-i18n="exp-highlight-1-2">Developed an end-to-end artist registration feature using React, validation rules, Prisma ORM, and MariaDB.</li>
+                <li id="exp-hl-loriginal-3" data-i18n="exp-highlight-1-3">Improved UI components to enhance navigation and user experience for high-resolution artwork browsing.</li>
+              </ul>
+            </div>
+
+            <div class="stark-card timeline-item" id="exp-item-previous">
+              <div class="timeline-header">
+                <h3 class="timeline-role" id="exp-role-previous" data-i18n="exp-role-2">Previous Professional Experience</h3>
+                <span class="timeline-meta" id="exp-period-previous" data-i18n="exp-period-2">2014 - 2023</span>
+              </div>
+              <div class="timeline-subhead">
+                <span class="timeline-company" id="exp-company-previous" data-i18n="exp-company-2">Hospitality & Operations Management</span>
+              </div>
+              <ul class="timeline-highlights">
+                <li id="exp-hl-previous-1" data-i18n="exp-highlight-2-1">Managed fast-paced teams and daily operations, ensuring quality, efficiency, and on-time delivery.</li>
+                <li id="exp-hl-previous-2" data-i18n="exp-highlight-2-2">Improved workflows and communication processes to increase team performance.</li>
+                <li id="exp-hl-previous-3" data-i18n="exp-highlight-2-3">Worked with large digital media libraries, applying technical standards to deliver consistent results.</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="timeline-column" id="education-timeline">
+            
+            <div class="stark-card timeline-item" id="edu-item-coursera">
+              <div class="timeline-header">
+                <h3 class="timeline-role" id="edu-program-coursera" data-i18n="edu-program-1">Software QA & Test Automation Engineering Specialization</h3>
+                <span class="timeline-meta" id="edu-date-coursera" data-i18n="edu-date-1">Earned June 2026</span>
+              </div>
+              <div class="timeline-subhead">
+                <span class="timeline-school" id="edu-school-coursera" data-i18n="edu-school-1">Coursera</span>
+              </div>
+            </div>
+
+            <div class="stark-card timeline-item" id="edu-item-vanier">
+              <div class="timeline-header">
+                <h3 class="timeline-role" id="edu-program-vanier" data-i18n="edu-program-2">Website Design Specialist</h3>
+                <span class="timeline-meta" id="edu-date-vanier" data-i18n="edu-date-2">Graduated April 2026</span>
+              </div>
+              <div class="timeline-subhead">
+                <span class="timeline-school" id="edu-school-vanier" data-i18n="edu-school-2">Vanier College</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="contact-cta" class="section-container">
+        <div class="contact-cta-card">
+          <h2 class="contact-cta-title" id="cta-title" data-i18n="cta-title">Let's build something reliable together</h2>
+          <p class="contact-cta-desc" id="cta-body" data-i18n="cta-body">Whether you need to scale your testing automation, set up a CI/CD pipeline, or validate a complex REST API, feel free to reach out!</p>
+          <a href="mailto:acosta.juan@icloud.com" class="stark-btn" id="btn-cta-contact" data-i18n="cta-btn-text">Get In Touch</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/juan-acosta-pinilla/" target="_blank" rel="noopener" class="footer-link" id="footer-linkedin-link" data-i18n="linkedin-label">LinkedIn</a>
+          <a href="https://github.com/acostajs" target="_blank" rel="noopener" class="footer-link" id="footer-github-link" data-i18n="github-label">GitHub</a>
+          <a href="mailto:acosta.juan@icloud.com" class="footer-link" id="footer-email-link" data-i18n="email-label">Email</a>
+        </div>
+        <p class="footer-text" id="footer-copyright-text" data-i18n="footer-copyright">
+          &copy; 2026 Juan Acosta. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

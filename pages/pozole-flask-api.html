@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Acosta | Pozole Showcase</title>
+  <meta name="description" content="Detailed QA showcase for Pozole Flask REST API, built with Flask, pytest, and Locust.">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/pozole-flask-api.css">
+  <script type="module" src="../js/main.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="nav-bar" id="navbar">
+        <a href="../index.html" class="nav-logo" id="nav-logo" data-i18n="nav-logo">acostajs</a>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="../index.html" class="nav-link" id="nav-link-home" data-i18n="back-to-home">← Back to Home</a></li>
+          <li><button class="lang-btn" id="lang-toggle" aria-label="Switch to French">FR</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <article class="project-detail" id="project-detail">
+        
+        <div class="project-header-block" id="project-header">
+          <h1 class="project-detail-title" id="project-title" data-i18n="pozole-flask-api-title">Pozole</h1>
+          <p class="project-detail-subtitle" id="project-subtitle" data-i18n="pozole-flask-api-subtitle">Flask REST API QA Automation Showcase</p>
+          <div class="meta-badge-row" id="project-meta-badges">
+            <span class="badge accent" id="badge-cov"><span data-i18n="metric-coverage">Coverage</span>: 99%</span>
+            <span class="badge muted" id="badge-rt"><span data-i18n="metric-response-time">Avg Response Time</span>: 4 ms</span>
+            <span class="badge muted" id="badge-fr"><span data-i18n="metric-failure-rate">Failure Rate</span>: 0.00%</span>
+          </div>
+        </div>
+
+        <div class="action-row" id="project-action-row">
+          <a href="https://github.com/acostajs/flask-api-qa-showcase" target="_blank" rel="noopener" class="stark-btn" id="btn-project-repo" data-i18n="view-repository">View Repository</a>
+        </div>
+
+        <div class="overview-grid" id="project-overview-grid">
+          
+          <div class="pane-left" id="pane-left">
+            <div class="stark-card" id="card-summary">
+              <h3 class="pane-title" id="title-summary" data-i18n="project-details-title">Project Details</h3>
+              <p id="text-summary" data-i18n="pozole-flask-api-summary">
+                A REST API built with Flask to manage employee schedules and shift assignments for a restaurant workflow system. The project focuses on backend reliability and demonstrates how structured testing can validate API behavior, data integrity, and system performance.
+              </p>
+            </div>
+            
+            <div class="stark-card" id="card-role">
+              <h3 class="pane-title" id="title-role" data-i18n="role-focus-title">My Role & Focus</h3>
+              <p id="text-role" data-i18n="pozole-flask-api-role-focus">
+                Built and maintained a complete QA strategy for the API, including automated testing, validation of database operations, and performance checks under concurrent usage.
+              </p>
+            </div>
+          </div>
+
+          <div class="pane-right" id="pane-right">
+            <div class="stark-card tech-stack-card" id="card-tech-stack">
+              <h3 class="pane-title" id="title-tech" data-i18n="tech-stack-title">Tech Stack</h3>
+              
+              <div class="tech-category" id="cat-app">
+                <h4 class="tech-category-title">Application</h4>
+                <div class="tech-badge-list">
+                  <span class="badge muted">Flask</span>
+                  <span class="badge muted">Flask-SQLAlchemy</span>
+                  <span class="badge muted">SQLite</span>
+                  <span class="badge muted">Marshmallow</span>
+                </div>
+              </div>
+
+              <div class="tech-category" id="cat-testing">
+                <h4 class="tech-category-title">Testing</h4>
+                <div class="tech-badge-list">
+                  <span class="badge muted">pytest</span>
+                  <span class="badge muted">Requests</span>
+                  <span class="badge muted">Locust</span>
+                  <span class="badge muted">pytest-cov</span>
+                </div>
+              </div>
+
+              <div class="tech-category" id="cat-ci">
+                <h4 class="tech-category-title">Quality & CI</h4>
+                <div class="tech-badge-list">
+                  <span class="badge muted">Ruff</span>
+                  <span class="badge muted">GitHub Actions</span>
+                  <span class="badge muted">Lefthook</span>
+                </div>
+              </div>
+
+              <div class="tech-category" id="cat-env">
+                <h4 class="tech-category-title">Environment</h4>
+                <div class="tech-badge-list">
+                  <span class="badge muted">Astral uv</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <section class="achievements-section" id="achievements-section">
+          <h2 class="pane-title" id="title-achievements" data-i18n="key-achievements-title">Key Achievements</h2>
+          <ul class="achievements-list" id="achievements-list">
+            <li id="ach-1" data-i18n="pozole-flask-api-ach-1">Built an automated API test suite achieving 99% code coverage across core backend functionality.</li>
+            <li id="ach-2" data-i18n="pozole-flask-api-ach-2">Validated CRUD operations and database constraints through structured test cases.</li>
+            <li id="ach-3" data-i18n="pozole-flask-api-ach-3">Performed load testing with Locust, confirming stable performance with a 4ms average response time.</li>
+            <li id="ach-4" data-i18n="pozole-flask-api-ach-4">Integrated CI pipelines using GitHub Actions to enforce automated testing on every push.</li>
+            <li id="ach-5" data-i18n="pozole-flask-api-ach-5">Implemented pre-commit quality checks with Lefthook, including linting (Ruff) and test validation.</li>
+          </ul>
+        </section>
+
+        <section class="matrix-section" id="matrix-section">
+          <h2 class="pane-title" id="title-matrix" data-i18n="test-strategy-title">Test Strategy Matrix</h2>
+          <table class="matrix-table" id="matrix-table">
+            <thead>
+              <tr>
+                <th data-i18n="table-header-type">Test Type</th>
+                <th data-i18n="table-header-purpose">Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="pozole-flask-api-tt-1">Unit Testing</td>
+                <td data-i18n="pozole-flask-api-tp-1">Validates API logic, response codes, and schema rules.</td>
+              </tr>
+              <tr>
+                <td data-i18n="pozole-flask-api-tt-2">Integration Testing</td>
+                <td data-i18n="pozole-flask-api-tp-2">Ensures correct interaction between endpoints, business logic, and the database.</td>
+              </tr>
+              <tr>
+                <td data-i18n="pozole-flask-api-tt-3">Smoke Testing</td>
+                <td data-i18n="pozole-flask-api-tp-3">Runs quick health checks to confirm the API is running correctly.</td>
+              </tr>
+              <tr>
+                <td data-i18n="pozole-flask-api-tt-4">Performance Testing</td>
+                <td data-i18n="pozole-flask-api-tp-4">Measures system behavior under concurrent requests using Locust.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/juan-acosta-pinilla/" target="_blank" rel="noopener" class="footer-link" id="footer-linkedin-link" data-i18n="linkedin-label">LinkedIn</a>
+          <a href="https://github.com/acostajs" target="_blank" rel="noopener" class="footer-link" id="footer-github-link" data-i18n="github-label">GitHub</a>
+          <a href="mailto:acosta.juan@icloud.com" class="footer-link" id="footer-email-link" data-i18n="email-label">Email</a>
+        </div>
+        <p class="footer-text" id="footer-copyright-text" data-i18n="footer-copyright">
+          &copy; 2026 Juan Acosta. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
