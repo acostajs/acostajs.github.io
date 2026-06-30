@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Acosta | Custom Keyboard Collective Showcase</title>
+  <meta name="description" content="Detailed QA showcase for Custom Keyboard Collective e-commerce application, built with Django, Playwright, and Locust.">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/custom-keyboard-collective.css">
+  <script type="module" src="../js/main.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="nav-bar" id="navbar">
+        <a href="../index.html" class="nav-logo" id="nav-logo" data-i18n="nav-logo">acostajs</a>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="../index.html" class="nav-link" id="nav-link-home" data-i18n="back-to-home">← Back to Home</a></li>
+          <li><button class="lang-btn" id="lang-toggle" aria-label="Switch to French">FR</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <article class="project-detail" id="project-detail">
+        
+        <div class="project-header-block" id="project-header">
+          <h1 class="project-detail-title" id="project-title" data-i18n="custom-keyboard-collective-title">Custom Keyboard Collective</h1>
+          <p class="project-detail-subtitle" id="project-subtitle" data-i18n="custom-keyboard-collective-subtitle">QA Automation Showcase for a Django E-Commerce Application</p>
+          <div class="meta-badge-row" id="project-meta-badges">
+            <span class="badge accent" id="badge-cov"><span data-i18n="metric-coverage">Coverage</span>: 99%</span>
+            <span class="badge muted" id="badge-rt"><span data-i18n="metric-response-time">Avg Response Time</span>: 41 ms</span>
+            <span class="badge muted" id="badge-fr"><span data-i18n="metric-failure-rate">Failure Rate</span>: 0.00%</span>
+          </div>
+        </div>
+
+        <div class="action-row" id="project-action-row">
+          <a href="https://github.com/acostajs/keyboard-collective-qa-showcase/" target="_blank" rel="noopener" class="stark-btn" id="btn-project-repo" data-i18n="view-repository">View Repository</a>
+        </div>
+
+        <div class="overview-grid" id="project-overview-grid">
+          
+          <div class="pane-left" id="pane-left">
+            <div class="stark-card" id="card-summary">
+              <h3 class="pane-title" id="title-summary" data-i18n="project-details-title">Project Details</h3>
+              <p id="text-summary" data-i18n="custom-keyboard-collective-summary">
+                An e-commerce application built to demonstrate modern QA automation practices in a real-world Django environment. The project focuses on ensuring reliability through automated testing, continuous integration, code quality checks, and performance validation.
+              </p>
+            </div>
+            
+            <div class="stark-card" id="card-role">
+              <h3 class="pane-title" id="title-role" data-i18n="role-focus-title">My Role & Focus</h3>
+              <p id="text-role" data-i18n="custom-keyboard-collective-role-focus">
+                Designed and maintained a full QA automation strategy covering multiple layers of testing, including unit, integration, API, UI end-to-end, smoke, and performance testing.
+              </p>
+            </div>
+          </div>
+
+          <div class="pane-right" id="pane-right">
+            <div class="stark-card tech-stack-card" id="card-tech-stack">
+              <h3 class="pane-title" id="title-tech" data-i18n="tech-stack-title">Tech Stack</h3>
+              
+              <div class="tech-category" id="cat-app">
+                <h4 class="tech-category-title">Application</h4>
+                <div class="tech-badge-list">
+                  <span class="badge muted">Django</span>
+                  <span class="badge muted">Python</span>
+                </div>
+              </div>
+
+              <div class="tech-category" id="cat-testing">
+                <h4 class="tech-category-title">Testing</h4>
+                <div class="tech-badge-list">
+                  <span class="badge muted">pytest</span>
+                  <span class="badge muted">Playwright</span>
+                  <span class="badge muted">Requests</span>
+                  <span class="badge muted">Locust</span>
+                  <span class="badge muted">Coverage.py</span>
+                </div>
+              </div>
+
+              <div class="tech-category" id="cat-ci">
+                <h4 class="tech-category-title">Quality & CI</h4>
+                <div class="tech-badge-list">
+                  <span class="badge muted">Ruff</span>
+                  <span class="badge muted">GitHub Actions</span>
+                  <span class="badge muted">Lefthook</span>
+                </div>
+              </div>
+
+              <div class="tech-category" id="cat-env">
+                <h4 class="tech-category-title">Environment</h4>
+                <div class="tech-badge-list">
+                  <span class="badge muted">Astral uv</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <section class="achievements-section" id="achievements-section">
+          <h2 class="pane-title" id="title-achievements" data-i18n="key-achievements-title">Key Achievements</h2>
+          <ul class="achievements-list" id="achievements-list">
+            <li id="ach-1" data-i18n="custom-keyboard-collective-ach-1">Built end-to-end browser automation tests using Playwright with a structured Page Object Model approach.</li>
+            <li id="ach-2" data-i18n="custom-keyboard-collective-ach-2">Achieved 99% test coverage across core e-commerce functionality.</li>
+            <li id="ach-3" data-i18n="custom-keyboard-collective-ach-3">Implemented a CI pipeline with GitHub Actions to run tests, linting, and compatibility checks on every commit.</li>
+            <li id="ach-4" data-i18n="custom-keyboard-collective-ach-4">Performed performance testing with Locust, validating a stable 41ms average response time under load.</li>
+            <li id="ach-5" data-i18n="custom-keyboard-collective-ach-5">Configured Lefthook pre-commit hooks to enforce code quality rules using Ruff and automated test execution.</li>
+          </ul>
+        </section>
+
+        <section class="matrix-section" id="matrix-section">
+          <h2 class="pane-title" id="title-matrix" data-i18n="test-strategy-title">Test Strategy Matrix</h2>
+          <table class="matrix-table" id="matrix-table">
+            <thead>
+              <tr>
+                <th data-i18n="table-header-type">Test Type</th>
+                <th data-i18n="table-header-purpose">Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="custom-keyboard-collective-tt-1">Unit Testing</td>
+                <td data-i18n="custom-keyboard-collective-tp-1">Validates core business logic, database models, and form handling.</td>
+              </tr>
+              <tr>
+                <td data-i18n="custom-keyboard-collective-tt-2">Integration Testing</td>
+                <td data-i18n="custom-keyboard-collective-tp-2">Ensures correct behavior across multi-step workflows such as cart and checkout processes.</td>
+              </tr>
+              <tr>
+                <td data-i18n="custom-keyboard-collective-tt-3">API Testing</td>
+                <td data-i18n="custom-keyboard-collective-tp-3">Tests REST endpoints, authentication, and request/response integrity.</td>
+              </tr>
+              <tr>
+                <td data-i18n="custom-keyboard-collective-tt-4">End-to-End Testing</td>
+                <td data-i18n="custom-keyboard-collective-tp-4">Simulates full user journeys in the browser using Playwright.</td>
+              </tr>
+              <tr>
+                <td data-i18n="custom-keyboard-collective-tt-5">Smoke Testing</td>
+                <td data-i18n="custom-keyboard-collective-tp-5">Performs fast checks to confirm the main application routes are working correctly.</td>
+              </tr>
+              <tr>
+                <td data-i18n="custom-keyboard-collective-tt-6">Performance Testing</td>
+                <td data-i18n="custom-keyboard-collective-tp-6">Measures system stability and response time under concurrent load using Locust.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/juan-acosta-pinilla/" target="_blank" rel="noopener" class="footer-link" id="footer-linkedin-link" data-i18n="linkedin-label">LinkedIn</a>
+          <a href="https://github.com/acostajs" target="_blank" rel="noopener" class="footer-link" id="footer-github-link" data-i18n="github-label">GitHub</a>
+          <a href="mailto:acosta.juan@icloud.com" class="footer-link" id="footer-email-link" data-i18n="email-label">Email</a>
+        </div>
+        <p class="footer-text" id="footer-copyright-text" data-i18n="footer-copyright">
+          &copy; 2026 Juan Acosta. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
