@@ -295,10 +295,10 @@
 
 .timeline-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: flex-start;
-  flex-wrap: wrap;
   gap: var(--space-xs);
+  margin-bottom: var(--space-xs);
 }
 
 .timeline-role {
