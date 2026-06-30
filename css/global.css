@@ -289,7 +289,7 @@ footer {
 
 /* Project Details Page Layout */
 article.project-detail {
-  max-width: 800px;
+  max-width: var(--max-width);
   margin: var(--space-xl) auto;
   padding: 0 var(--space-md);
   display: flex;
@@ -524,12 +524,24 @@ article.project-detail {
 }
 
 /* Matrix Table cell wrapping & styling */
+.matrix-table th:nth-child(1), .matrix-table td:nth-child(1) {
+  width: 25%;
+}
+.matrix-table th:nth-child(2), .matrix-table td:nth-child(2) {
+  width: 25%;
+}
+.matrix-table th:nth-child(3), .matrix-table td:nth-child(3) {
+  width: 50%;
+}
+
 .matrix-table td {
   white-space: normal;
-  word-break: break-word;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 .matrix-table td .badge {
   margin: 0;
+  white-space: nowrap;
 }
 
 /* Evidence Gallery Section */

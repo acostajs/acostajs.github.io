@@ -1,6 +1,6 @@
 export const indexTranslations = {
   en: {
-    "hero-title": "Hi, I'm Juan 👋",
+    "hero-title": "Hi, I'm Juan",
     "hero-subtitle": "QA Automation Engineer with a strong software development background.",
     "hero-cta-view": "View GitHub",
     "hero-cta-contact": "Contact Me",
@@ -46,7 +46,7 @@ export const indexTranslations = {
     "cta-btn-text": "Get In Touch"
   },
   fr: {
-    "hero-title": "Salut, je suis Juan 👋",
+    "hero-title": "Salut, je suis Juan",
     "hero-subtitle": "Ingénieur en automatisation QA avec une solide expérience en développement logiciel.",
     "hero-cta-view": "Voir GitHub",
     "hero-cta-contact": "Me contacter",

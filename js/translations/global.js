@@ -1,6 +1,6 @@
 export const globalTranslations = {
   en: {
-    "nav-logo": "acostajs",
+    "nav-logo": "JuanAcosta",
     "nav-projects": "Projects",
     "nav-how-i-work": "How I Work",
     "nav-what-i-use": "What I Use",
@@ -33,7 +33,7 @@ export const globalTranslations = {
     "table_header_what_tested": "What I Tested"
   },
   fr: {
-    "nav-logo": "acostajs",
+    "nav-logo": "JuanAcosta",
     "nav-projects": "Projets",
     "nav-how-i-work": "Méthode",
     "nav-what-i-use": "Outils",
