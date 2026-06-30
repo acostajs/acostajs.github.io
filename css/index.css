@@ -93,7 +93,7 @@
   overflow: hidden;
 }
 
-.terminal-pane {
+.terminal-code {
   background-color: var(--clr-ink);
   color: var(--clr-canvas);
   font-family: 'Courier New', Courier, monospace;
@@ -102,6 +102,7 @@
   flex: 1.2;
   overflow-y: auto;
   white-space: pre-wrap;
+  word-break: break-all;
   position: relative;
 }
 

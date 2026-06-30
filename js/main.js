@@ -57,6 +57,50 @@ function highlightNav() {
   }
 }
 
+function setupMobileMenu() {
+  const burgerToggle = document.getElementById('burger-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  if (!burgerToggle || !navMenu) {
+    return;
+  }
+
+  function toggleMenu(event) {
+    if (event) {
+      event.stopPropagation();
+    }
+    const isOpen = navMenu.classList.toggle('open');
+    burgerToggle.classList.toggle('open', isOpen);
+    burgerToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
+  function closeMenu() {
+    navMenu.classList.remove('open');
+    burgerToggle.classList.remove('open');
+    burgerToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  burgerToggle.addEventListener('click', toggleMenu);
+
+  const navLinks = navMenu.querySelectorAll('.nav-link');
+  for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', closeMenu);
+  }
+
+  document.addEventListener('click', function (event) {
+    const isClickInside = burgerToggle.contains(event.target) || navMenu.contains(event.target);
+    if (!isClickInside && navMenu.classList.contains('open')) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && navMenu.classList.contains('open')) {
+      closeMenu();
+      burgerToggle.focus();
+    }
+  });
+}
+
 function init() {
   const savedLang = localStorage.getItem('lang');
   const browserLang = navigator.language || navigator.userLanguage;
@@ -69,6 +113,7 @@ function init() {
     langToggle.addEventListener('click', toggleLanguage);
   }
 
+  setupMobileMenu();
   startTerminalSimulation();
   highlightNav();
 }
