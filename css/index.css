@@ -16,6 +16,27 @@
   gap: var(--space-md);
 }
 
+.hero-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.hero-avatar {
+  width: 75px;
+  height: 75px;
+  border: var(--border);
+  box-shadow: 4px 4px 0px var(--clr-ink);
+  object-fit: cover;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-avatar:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--clr-ink);
+}
+
 .hero-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: var(--weight-bold);
