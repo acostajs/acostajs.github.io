@@ -204,6 +204,7 @@
 }
 
 .project-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -248,10 +249,18 @@
 }
 
 .project-metrics {
+  position: absolute;
+  top: 12px;
+  right: 12px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 4px;
+  z-index: 10;
+}
+
+.project-metrics .badge {
+  margin: 0;
 }
 
 .project-description {
