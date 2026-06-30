@@ -437,6 +437,29 @@ article.project-detail {
 }
 
 @media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    height: auto;
+    padding: var(--space-sm) 0;
+    gap: var(--space-xs);
+  }
+  
+  .nav-logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-xs);
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+  }
+
   .overview-grid {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
