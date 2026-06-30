@@ -1,6 +1,6 @@
 export const globalTranslations = {
   en: {
-    "nav-logo": "acostajs",
+    "nav-logo": "JuanAcosta",
     "nav-projects": "Projects",
     "nav-how-i-work": "How I Work",
     "nav-what-i-use": "What I Use",
@@ -24,10 +24,16 @@ export const globalTranslations = {
     "test-strategy-title": "Test Strategy Matrix",
     "project-details-title": "Project Details",
     "role-focus-title": "My Role & Focus",
-    "tech-stack-title": "Tech Stack"
+    "tech-stack-title": "Tech Stack",
+    "media_placeholder_label": "Screenshot coming soon",
+    "evidence_gallery_title": "Proof, Not Just Claims",
+    "evidence_gallery_intro": "Screenshots from the actual test runs — the terminal output, the coverage report, and the load test dashboard behind the numbers above.",
+    "pride_callout_label": "What I'm proud of",
+    "table_header_tool": "Tool",
+    "table_header_what_tested": "What I Tested"
   },
   fr: {
-    "nav-logo": "acostajs",
+    "nav-logo": "JuanAcosta",
     "nav-projects": "Projets",
     "nav-how-i-work": "Méthode",
     "nav-what-i-use": "Outils",
@@ -51,6 +57,12 @@ export const globalTranslations = {
     "test-strategy-title": "Matrice de stratégie de test",
     "project-details-title": "Détails du projet",
     "role-focus-title": "Mon rôle et objectif",
-    "tech-stack-title": "Technologies utilisées"
+    "tech-stack-title": "Technologies utilisées",
+    "media_placeholder_label": "Capture d'écran à venir",
+    "evidence_gallery_title": "Des preuves, pas seulement des affirmations",
+    "evidence_gallery_intro": "Captures d'écran des exécutions réelles des tests — la sortie du terminal, le rapport de couverture et le tableau de bord des tests de charge derrière les chiffres ci-dessus.",
+    "pride_callout_label": "Ce dont je suis fier",
+    "table_header_tool": "Outil",
+    "table_header_what_tested": "Ce que j'ai testé"
   }
 };

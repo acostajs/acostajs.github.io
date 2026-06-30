@@ -16,6 +16,27 @@
   gap: var(--space-md);
 }
 
+.hero-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.hero-avatar {
+  width: 75px;
+  height: 75px;
+  border: var(--border);
+  box-shadow: 4px 4px 0px var(--clr-ink);
+  object-fit: cover;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-avatar:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--clr-ink);
+}
+
 .hero-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: var(--weight-bold);
@@ -183,6 +204,7 @@
 }
 
 .project-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -197,6 +219,19 @@
   height: 200px;
   object-fit: cover;
   border-bottom: var(--border);
+}
+
+.project-img-placeholder {
+  width: calc(100% + 2 * var(--space-md));
+  margin-left: calc(-1 * var(--space-md));
+  margin-top: calc(-1 * var(--space-md));
+  margin-bottom: var(--space-md);
+  height: 200px;
+  background-color: var(--clr-muted);
+  border-bottom: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -214,10 +249,18 @@
 }
 
 .project-metrics {
+  position: absolute;
+  top: 12px;
+  right: 12px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 4px;
+  z-index: 10;
+}
+
+.project-metrics .badge {
+  margin: 0;
 }
 
 .project-description {
@@ -262,7 +305,15 @@
 .timeline-column {
   display: flex;
   flex-direction: column;
-  gap: var(--space-lg);
+}
+
+.timeline-column-title {
+  font-size: 1.4rem;
+  font-weight: var(--weight-bold);
+  margin-bottom: var(--space-md);
+  align-self: flex-start;
+  border-bottom: 3px solid var(--clr-ink);
+  padding-bottom: 0.25rem;
 }
 
 .timeline-item {
@@ -270,14 +321,19 @@
   flex-direction: column;
   gap: var(--space-xs);
   position: relative;
+  margin-bottom: var(--space-lg);
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
 }
 
 .timeline-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: flex-start;
-  flex-wrap: wrap;
   gap: var(--space-xs);
+  margin-bottom: var(--space-xs);
 }
 
 .timeline-role {

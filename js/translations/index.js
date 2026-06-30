@@ -1,6 +1,6 @@
 export const indexTranslations = {
   en: {
-    "hero-title": "Hi, I'm Juan 👋",
+    "hero-title": "Hi, I'm Juan",
     "hero-subtitle": "QA Automation Engineer with a strong software development background.",
     "hero-cta-view": "View GitHub",
     "hero-cta-contact": "Contact Me",
@@ -12,6 +12,8 @@ export const indexTranslations = {
     "project-pozole-title": "Pozole",
     "project-pozole-summary": "A REST API built with Flask to manage employee schedules and shift assignments for a restaurant workflow system. The project focuses on backend reliability and demonstrates how structured testing can validate API behavior, data integrity, and system performance.",
     "section-experience-title": "Experience & Education",
+    "timeline-title-experience": "Experience",
+    "timeline-title-education": "Education",
     "exp-role-1": "Full-Stack Developer (Internship)",
     "exp-company-1": "L'Original",
     "exp-period-1": "Feb 2026 - Apr 2026",
@@ -29,7 +31,7 @@ export const indexTranslations = {
     "edu-date-1": "Earned June 2026",
     "edu-program-2": "Website Design Specialist",
     "edu-school-2": "Vanier College",
-    "edu-date-2": "Graduated April 2026",
+    "edu-date-2": "Oct 2024 - Apr 2026",
     "how-i-work-title": "How I Work",
     "how-i-work-subtitle": "My approach to ensuring software quality and reliability.",
     "work-card-1-title": "Quality First",
@@ -46,7 +48,7 @@ export const indexTranslations = {
     "cta-btn-text": "Get In Touch"
   },
   fr: {
-    "hero-title": "Salut, je suis Juan 👋",
+    "hero-title": "Salut, je suis Juan",
     "hero-subtitle": "Ingénieur en automatisation QA avec une solide expérience en développement logiciel.",
     "hero-cta-view": "Voir GitHub",
     "hero-cta-contact": "Me contacter",
@@ -58,6 +60,8 @@ export const indexTranslations = {
     "project-pozole-title": "Pozole",
     "project-pozole-summary": "Une API REST développée avec Flask pour gérer la planification des employés et l’attribution des quarts de travail dans un système de restauration. Le projet met l’accent sur la fiabilité du backend et démontre comment une stratégie de test structurée permet de valider le comportement de l’API, les données et les performances.",
     "section-experience-title": "Expérience et Éducation",
+    "timeline-title-experience": "Expérience",
+    "timeline-title-education": "Éducation",
     "exp-role-1": "Développeur Full-Stack (Stage)",
     "exp-company-1": "L'Original",
     "exp-period-1": "Fév 2026 - Avr 2026",
@@ -75,7 +79,7 @@ export const indexTranslations = {
     "edu-date-1": "Obtenue en juin 2026",
     "edu-program-2": "Spécialiste en conception de sites Web",
     "edu-school-2": "Vanier College",
-    "edu-date-2": "Diplômé en avril 2026",
+    "edu-date-2": "Oct 2024 - Avr 2026",
     "how-i-work-title": "Ma façon de travailler",
     "how-i-work-subtitle": "Mon approche pour garantir la qualité et la fiabilité des logiciels.",
     "work-card-1-title": "La qualité d'abord",

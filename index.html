@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juan Acosta | QA Automation Engineer Portfolio</title>
   <meta name="description" content="Portfolio of Juan Acosta, QA Automation Engineer. Featuring test automation frameworks, CI/CD pipelines, and web development project highlights.">
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/index.css">
   <script type="module" src="js/main.js"></script>
@@ -14,7 +15,7 @@
   <header>
     <div class="container">
       <nav class="nav-bar" id="navbar">
-        <a href="index.html" class="nav-logo" id="nav-logo" data-i18n="nav-logo">acostajs</a>
+        <a href="index.html" class="nav-logo" id="nav-logo" data-i18n="nav-logo">JuanAcosta</a>
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#featured-projects" class="nav-link" id="nav-link-projects" data-i18n="nav-projects">Projects</a></li>
           <li><a href="#how-i-work" class="nav-link" id="nav-link-how-i-work" data-i18n="nav-how-i-work">How I Work</a></li>
@@ -32,7 +33,10 @@
 
       <section id="hero" class="hero-section">
         <div class="hero-content" id="hero-left-column">
-          <h1 class="hero-title" id="hero-title" data-i18n="hero-title">Hi, I'm Juan 👋</h1>
+          <div class="hero-title-wrapper">
+            <img src="./assets/images/avatar.jpeg" alt="Juan Acosta" class="hero-avatar" />
+            <h1 class="hero-title" id="hero-title" data-i18n="hero-title">Hi, I'm Juan</h1>
+          </div>
           <p class="hero-subtitle" id="hero-subtitle" data-i18n="hero-subtitle">
             QA Automation Engineer with a strong software development background.
           </p>
@@ -71,7 +75,12 @@
         <div class="projects-grid" id="projects-grid">
           
           <div class="stark-card project-card" id="card-project-ceramic">
-            <img src="https://picsum.photos/600/400" alt="Project Placeholder" class="project-img" id="img-project-ceramic" data-i18n="project-img-alt" />
+            <div class="project-img-placeholder">
+              <div class="gallery-placeholder-inner">
+                <div class="stark-placeholder-icon"></div>
+                <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
+              </div>
+            </div>
             <div class="project-card-header">
               <h3 class="project-title" id="ceramic-project-title" data-i18n="project-ceramic-title">Ceramic Shop E-Commerce</h3>
               <div class="project-metrics">
@@ -96,7 +105,12 @@
           </div>
 
           <div class="stark-card project-card" id="card-project-keyboard">
-            <img src="https://picsum.photos/600/400" alt="Project Placeholder" class="project-img" id="img-project-keyboard" data-i18n="project-img-alt" />
+            <div class="project-img-placeholder">
+              <div class="gallery-placeholder-inner">
+                <div class="stark-placeholder-icon"></div>
+                <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
+              </div>
+            </div>
             <div class="project-card-header">
               <h3 class="project-title" id="keyboard-project-title" data-i18n="project-keyboard-title">Custom Keyboard Collective</h3>
               <div class="project-metrics">
@@ -121,7 +135,12 @@
           </div>
 
           <div class="stark-card project-card" id="card-project-pozole">
-            <img src="https://picsum.photos/600/400" alt="Project Placeholder" class="project-img" id="img-project-pozole" data-i18n="project-img-alt" />
+            <div class="project-img-placeholder">
+              <div class="gallery-placeholder-inner">
+                <div class="stark-placeholder-icon"></div>
+                <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
+              </div>
+            </div>
             <div class="project-card-header">
               <h3 class="project-title" id="pozole-project-title" data-i18n="project-pozole-title">Pozole</h3>
               <div class="project-metrics">
@@ -209,6 +228,7 @@
         <div class="exp-edu-grid" id="exp-edu-grid">
           
           <div class="timeline-column" id="experience-timeline">
+            <h3 class="timeline-column-title" data-i18n="timeline-title-experience">Experience</h3>
             
             <div class="stark-card timeline-item" id="exp-item-loriginal">
               <div class="timeline-header">
@@ -243,6 +263,7 @@
           </div>
 
           <div class="timeline-column" id="education-timeline">
+            <h3 class="timeline-column-title" data-i18n="timeline-title-education">Education</h3>
             
             <div class="stark-card timeline-item" id="edu-item-coursera">
               <div class="timeline-header">
@@ -257,7 +278,7 @@
             <div class="stark-card timeline-item" id="edu-item-vanier">
               <div class="timeline-header">
                 <h3 class="timeline-role" id="edu-program-vanier" data-i18n="edu-program-2">Website Design Specialist</h3>
-                <span class="timeline-meta" id="edu-date-vanier" data-i18n="edu-date-2">Graduated April 2026</span>
+                <span class="timeline-meta" id="edu-date-vanier" data-i18n="edu-date-2">Oct 2024 - Apr 2026</span>
               </div>
               <div class="timeline-subhead">
                 <span class="timeline-school" id="edu-school-vanier" data-i18n="edu-school-2">Vanier College</span>
