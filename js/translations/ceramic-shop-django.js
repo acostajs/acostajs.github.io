@@ -42,6 +42,10 @@ export const ceramicShopTranslations = {
     "ceramic-shop-django-gal-2": "Coverage.py HTML report showing 100% coverage across all modules",
     "ceramic-shop-django-gal-3": "Locust load test dashboard showing 17ms average response time and 0% failure rate",
     "ceramic-shop-django-gal-4": "Playwright trace viewer showing the automated checkout flow step by step",
+    "ceramic-shop-django-hero-alt": "Ceramic Shop E-Commerce Showcase Dashboard",
+    "ceramic-shop-django-pytest-alt": "Pytest Test Suite Output Terminal",
+    "ceramic-shop-django-coverage-alt": "Coverage.py HTML Report Dashboard",
+    "ceramic-shop-django-locust-alt": "Locust Load Test Dashboard Metrics",
 
     "ceramic-shop-django-what_im_proud_of": "The Stripe webhook tests. It's the part of this project nobody asks about in a portfolio review, but it's the part that would actually break in production if I got it wrong — and that gap between 'looks done' and 'is actually correct' is the whole point of QA."
   },
@@ -88,6 +92,10 @@ export const ceramicShopTranslations = {
     "ceramic-shop-django-gal-2": "Rapport HTML Coverage.py montrant 100 % de couverture sur tous les modules",
     "ceramic-shop-django-gal-3": "Tableau de bord Locust montrant un temps de réponse moyen de 17 ms et 0 % d'échec",
     "ceramic-shop-django-gal-4": "Visualiseur de traces Playwright montrant le parcours de paiement automatisé étape par étape",
+    "ceramic-shop-django-hero-alt": "Tableau de bord de présentation de Boutique de Céramique E-Commerce",
+    "ceramic-shop-django-pytest-alt": "Terminal de sortie de la suite de tests Pytest",
+    "ceramic-shop-django-coverage-alt": "Tableau de bord du rapport HTML Coverage.py",
+    "ceramic-shop-django-locust-alt": "Métriques du tableau de bord du test de charge Locust",
 
     "ceramic-shop-django-what_im_proud_of": "Les tests des webhooks Stripe. C'est la partie de ce projet dont personne ne parle dans une relecture de portfolio, mais c'est celle qui casserait réellement en production si je m'étais trompé — et cet écart entre « ça a l'air fini » et « c'est réellement correct » est tout l'enjeu de l'assurance qualité."
   }

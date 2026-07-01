@@ -38,6 +38,10 @@ export const customKeyboardTranslations = {
     "custom-keyboard-collective-gal-2": "Coverage.py HTML report showing 99% coverage",
     "custom-keyboard-collective-gal-3": "Locust dashboard showing a 41ms average response time and 0% failures",
     "custom-keyboard-collective-gal-4": "Playwright trace viewer showing an automated shopping and checkout journey",
+    "custom-keyboard-collective-hero-alt": "Custom Keyboard Collective Showcase Dashboard",
+    "custom-keyboard-collective-pytest-alt": "Pytest Test Suite Output Terminal",
+    "custom-keyboard-collective-coverage-alt": "Coverage.py HTML Report Dashboard",
+    "custom-keyboard-collective-locust-alt": "Locust Load Test Dashboard Metrics",
 
     "custom-keyboard-collective-what_im_proud_of": "Building a layered testing strategy instead of relying only on end-to-end tests. Each layer validates a different part of the application, making failures easier to diagnose while keeping the test suite fast, reliable, and maintainable."
   },
@@ -80,6 +84,10 @@ export const customKeyboardTranslations = {
     "custom-keyboard-collective-gal-2": "Rapport HTML Coverage.py montrant 99 % de couverture",
     "custom-keyboard-collective-gal-3": "Tableau de bord Locust montrant un temps de réponse moyen de 41 ms et 0 % d'échec",
     "custom-keyboard-collective-gal-4": "Visualiseur de traces Playwright montrant un parcours d'achat automatisé",
+    "custom-keyboard-collective-hero-alt": "Tableau de bord de présentation de Custom Keyboard Collective",
+    "custom-keyboard-collective-pytest-alt": "Terminal de sortie de la suite de tests Pytest",
+    "custom-keyboard-collective-coverage-alt": "Tableau de bord du rapport HTML Coverage.py",
+    "custom-keyboard-collective-locust-alt": "Métriques du tableau de bord du test de charge Locust",
 
     "custom-keyboard-collective-what_im_proud_of": "La mise en place d'une stratégie de tests multicouche plutôt que de dépendre uniquement des tests end-to-end. Chaque niveau valide une partie différente de l'application, ce qui facilite le diagnostic des erreurs tout en gardant une suite de tests rapide, fiable et facile à maintenir."
   }
