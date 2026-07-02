@@ -45,6 +45,11 @@ export const indexTranslations = {
     "what-i-use-title": "What I Use",
     "what-i-use-core-title": "Automation Core",
     "what-i-use-env-title": "Environments & Quality",
+    "tech-languages-title": "Languages",
+    "tech-e2e-title": "E2E Browser Testing",
+    "tech-unit-title": "Unit & Integration Testing",
+    "tech-perf-title": "Performance Testing",
+    "tech-quality-title": "Quality, Tools & CI/CD",
     "cta-title": "Let's build something reliable together",
     "cta-body": "Whether you need to scale your testing automation, set up a CI/CD pipeline, or validate a complex REST API, feel free to reach out!",
     "cta-btn-text": "Get In Touch"
@@ -95,6 +100,11 @@ export const indexTranslations = {
     "what-i-use-title": "Ce que j'utilise",
     "what-i-use-core-title": "Cœur de l'automatisation",
     "what-i-use-env-title": "Environnements et Qualité",
+    "tech-languages-title": "Langages",
+    "tech-e2e-title": "Tests E2E de navigateur",
+    "tech-unit-title": "Tests unitaires & d'intégration",
+    "tech-perf-title": "Tests de performance",
+    "tech-quality-title": "Qualité, Outils & CI/CD",
     "cta-title": "Bâtissons ensemble quelque chose de fiable",
     "cta-body": "Que vous ayez besoin de faire évoluer votre automatisation des tests, de mettre en place un pipeline CI/CD ou de valider une API REST complexe, n'hésitez pas à me contacter !",
     "cta-btn-text": "Prendre contact"
