@@ -45,7 +45,7 @@ function toggleLanguage() {
 function highlightNav() {
   const currentPath = window.location.pathname;
   const navLinks = document.querySelectorAll('.nav-link');
-  
+
   for (let i = 0; i < navLinks.length; i++) {
     const link = navLinks[i];
     const href = link.getAttribute('href');
@@ -116,6 +116,39 @@ function init() {
   setupMobileMenu();
   startTerminalSimulation();
   highlightNav();
+  setupImagePopup();
+}
+
+function setupImagePopup() {
+  const popup = document.getElementById('imagePopup');
+  const popupImg = document.getElementById('popupImage');
+  if (!popup || !popupImg) {
+    return;
+  }
+
+  // Event delegation: intercept click events on valid project screenshots or gallery images
+  document.addEventListener('click', function (event) {
+    const img = event.target.closest('.stark-hero-image img, .stark-card--gallery img');
+    if (!img) {
+      return;
+    }
+
+    popupImg.src = img.src; // Dynamically grab the same source
+    popupImg.alt = img.alt || 'Enlarged view';
+    popup.classList.add('active');
+  });
+
+  // Close the popup when clicking on the overlay
+  popup.addEventListener('click', function () {
+    popup.classList.remove('active');
+
+    // Clear src after transition to prevent a visual flash next time it opens
+    setTimeout(function () {
+      if (!popup.classList.contains('active')) {
+        popupImg.src = '';
+      }
+    }, 300);
+  });
 }
 
 document.addEventListener('DOMContentLoaded', init);

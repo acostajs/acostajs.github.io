@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juan Acosta | Ceramic Shop Showcase</title>
-  <meta name="description" content="Detailed QA showcase for Ceramic Shop E-Commerce platform, built with Django, Playwright, and Locust.">
+  <meta name="description"
+    content="Detailed QA showcase for Ceramic Shop E-Commerce platform, built with Django, Playwright, and Locust.">
   <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
   <link rel="stylesheet" href="../css/global.css?v=1.1">
-  <link rel="stylesheet" href="../css/project-detail.css">
+  <link rel="stylesheet" href="../css/project-detail.css?v=1.2">
   <script type="module" src="../js/main.js"></script>
 </head>
+
 <body>
 
   <header id="global-header">
@@ -27,25 +30,29 @@
   <main>
     <div class="container">
       <article class="project-detail" id="project-detail">
-        
+
         <header class="project-header-block" id="project-header">
-          <h1 class="project-detail-title" id="project-title" data-i18n="ceramic-shop-django-title">Ceramic Shop E-Commerce</h1>
-          <p class="project-detail-subtitle" id="project-subtitle" data-i18n="ceramic-shop-django-subtitle">QA Automation Showcase for a Django E-Commerce Platform</p>
+          <h1 class="project-detail-title" id="project-title" data-i18n="ceramic-shop-django-title">Ceramic Shop
+            E-Commerce</h1>
+          <p class="project-detail-subtitle" id="project-subtitle" data-i18n="ceramic-shop-django-subtitle">QA
+            Automation Showcase for a Django E-Commerce Platform</p>
           <div class="meta-badge-row" id="project-meta-badges">
             <span class="badge accent" id="badge-cov"><span data-i18n="metric-coverage">Coverage</span>: 100%</span>
-            <span class="badge" id="badge-rt"><span data-i18n="metric-response-time">Avg Response Time</span>: 17 ms</span>
+            <span class="badge" id="badge-rt"><span data-i18n="metric-response-time">Avg Response Time</span>: 17
+              ms</span>
             <span class="badge" id="badge-fr"><span data-i18n="metric-failure-rate">Failure Rate</span>: 0.00%</span>
           </div>
         </header>
 
         <div class="project-media-stack-row">
           <figure class="stark-hero-image" id="project-hero-image">
-            <img src="../assets/images/ceramic-shop-django/ceramic-shop-project.png" alt="Ceramic Shop E-Commerce Showcase Dashboard" data-i18n="ceramic-shop-django-hero-alt" />
+            <img src="../assets/images/ceramic-shop-django/ceramic-shop-project.png"
+              alt="Ceramic Shop E-Commerce Showcase Dashboard" data-i18n="ceramic-shop-django-hero-alt" />
           </figure>
 
           <div class="stark-card tech-stack-card" id="card-tech-stack">
             <h2 class="pane-title" id="title-tech" data-i18n="tech-stack-title">Tech Stack</h2>
-            
+
             <div class="tech-category" id="cat-app">
               <h3 class="tech-category-title">Application</h3>
               <div class="tech-badge-list">
@@ -93,28 +100,39 @@
         </div>
 
         <div class="action-row" id="project-action-row">
-          <a href="https://github.com/acostajs/ceramic-shop-qa-showcase" target="_blank" rel="noopener" class="stark-btn" id="btn-project-repo" data-i18n="view-repository">View Repository</a>
+          <a href="https://github.com/acostajs/ceramic-shop-qa-showcase" target="_blank" rel="noopener"
+            class="stark-btn" id="btn-project-repo" data-i18n="view-repository">View Repository</a>
         </div>
 
         <div class="overview-grid" id="project-overview-grid">
           <div class="stark-card stark-card--story" id="card-story">
             <h2 class="pane-title" id="title-story" data-i18n="project-details-title">Why I Built This</h2>
             <p id="text-story" data-i18n="ceramic-shop-django-the_story">
-              Most QA portfolios stop at testing forms and login pages. I wanted to test something that actually has stakes: real money moving through a real payment flow. So I built a full ceramic e-commerce store, then treated it like a production app a QA team would be accountable for — writing tests for the boring, easy-to-skip parts (does the cart total update correctly when you change quantity?) and the genuinely hard parts (does the app correctly handle a Stripe webhook that arrives out of order, or fails to arrive at all?). The result is a test suite that doesn't just check that pages load — it checks that money handling is correct under realistic and adversarial conditions.
+              Most QA portfolios stop at testing forms and login pages. I wanted to test something that actually has
+              stakes: real money moving through a real payment flow. So I built a full ceramic e-commerce store, then
+              treated it like a production app a QA team would be accountable for — writing tests for the boring,
+              easy-to-skip parts (does the cart total update correctly when you change quantity?) and the genuinely hard
+              parts (does the app correctly handle a Stripe webhook that arrives out of order, or fails to arrive at
+              all?). The result is a test suite that doesn't just check that pages load — it checks that money handling
+              is correct under realistic and adversarial conditions.
             </p>
           </div>
 
           <div class="stark-card" id="card-summary">
             <h2 class="pane-title" id="title-summary" data-i18n="project-details-title">Project Details</h2>
             <p id="text-summary" data-i18n="ceramic-shop-django-summary">
-              An online ceramic store built to simulate a real production e-commerce system. It includes user accounts, shopping cart functionality, and Stripe payment integration. The main focus of the project is to demonstrate how quality assurance and automated testing can be applied across critical user journeys like checkout and payments.
+              An online ceramic store built to simulate a real production e-commerce system. It includes user accounts,
+              shopping cart functionality, and Stripe payment integration. The main focus of the project is to
+              demonstrate how quality assurance and automated testing can be applied across critical user journeys like
+              checkout and payments.
             </p>
           </div>
-          
+
           <div class="stark-card" id="card-role">
             <h2 class="pane-title" id="title-role" data-i18n="role-focus-title">My Role & Focus</h2>
             <p id="text-role" data-i18n="ceramic-shop-django-role_focus">
-              Focused on building a complete QA automation strategy for the application, including test environment setup, external payment simulation, and validation of end-to-end user flows under realistic conditions.
+              Focused on building a complete QA automation strategy for the application, including test environment
+              setup, external payment simulation, and validation of end-to-end user flows under realistic conditions.
             </p>
           </div>
         </div>
@@ -122,16 +140,22 @@
         <section class="achievements-section" id="achievements-section">
           <h2 class="pane-title" id="title-achievements" data-i18n="key-achievements-title">Key Achievements</h2>
           <ul class="achievements-list" id="achievements-list">
-            <li id="ach-1" data-i18n="ceramic-shop-django-ach-1">Reached 100% test coverage across core application logic.</li>
-            <li id="ach-2" data-i18n="ceramic-shop-django-ach-2">Built maintainable end-to-end browser tests using Playwright and the Page Object Model.</li>
-            <li id="ach-3" data-i18n="ceramic-shop-django-ach-3">Validated Stripe payment flows, including asynchronous webhook processing.</li>
-            <li id="ach-4" data-i18n="ceramic-shop-django-ach-4">Performed load testing with Locust, confirming a stable 17ms average response time with no failures.</li>
-            <li id="ach-5" data-i18n="ceramic-shop-django-ach-5">Implemented CI quality checks using GitHub Actions and Lefthook to enforce linting and testing before commits.</li>
+            <li id="ach-1" data-i18n="ceramic-shop-django-ach-1">Reached 100% test coverage across core application
+              logic.</li>
+            <li id="ach-2" data-i18n="ceramic-shop-django-ach-2">Built maintainable end-to-end browser tests using
+              Playwright and the Page Object Model.</li>
+            <li id="ach-3" data-i18n="ceramic-shop-django-ach-3">Validated Stripe payment flows, including asynchronous
+              webhook processing.</li>
+            <li id="ach-4" data-i18n="ceramic-shop-django-ach-4">Performed load testing with Locust, confirming a stable
+              17ms average response time with no failures.</li>
+            <li id="ach-5" data-i18n="ceramic-shop-django-ach-5">Implemented CI quality checks using GitHub Actions and
+              Lefthook to enforce linting and testing before commits.</li>
           </ul>
         </section>
 
         <section class="matrix-section" id="matrix-section">
-          <h2 class="pane-title" id="title-matrix" data-i18n="ceramic-shop-django-test_strategy_table_label">What I tested — and why it mattered</h2>
+          <h2 class="pane-title" id="title-matrix" data-i18n="ceramic-shop-django-test_strategy_table_label">What I
+            tested — and why it mattered</h2>
           <div class="table-responsive">
             <table class="matrix-table" id="matrix-table">
               <thead>
@@ -145,32 +169,46 @@
                 <tr>
                   <td data-i18n="ceramic-shop-django-tt-1">Cart & Pricing Logic</td>
                   <td><span class="badge muted" data-i18n="ceramic-shop-django-tool-1">pytest</span></td>
-                  <td data-i18n="ceramic-shop-django-wt-1">Cart totals recalculate correctly when quantity changes, discount codes apply only once, and the order total matches the Stripe charge amount before any request leaves the app.</td>
+                  <td data-i18n="ceramic-shop-django-wt-1">Cart totals recalculate correctly when quantity changes,
+                    discount codes apply only once, and the order total matches the Stripe charge amount before any
+                    request leaves the app.</td>
                 </tr>
                 <tr>
                   <td data-i18n="ceramic-shop-django-tt-2">Stripe Checkout Session</td>
-                  <td><span class="badge muted" data-i18n="ceramic-shop-django-tool-2">pytest + Stripe test keys</span></td>
-                  <td data-i18n="ceramic-shop-django-wt-2">Checkout sessions are created with the right line items and currency. Cancellation mid-flow leaves no orphaned orders in the database.</td>
+                  <td><span class="badge muted" data-i18n="ceramic-shop-django-tool-2">pytest + Stripe test keys</span>
+                  </td>
+                  <td data-i18n="ceramic-shop-django-wt-2">Checkout sessions are created with the right line items and
+                    currency. Cancellation mid-flow leaves no orphaned orders in the database.</td>
                 </tr>
                 <tr>
                   <td data-i18n="ceramic-shop-django-tt-3">Stripe Webhook Handling</td>
-                  <td><span class="badge muted" data-i18n="ceramic-shop-django-tool-3">pytest + unittest.mock</span></td>
-                  <td data-i18n="ceramic-shop-django-wt-3">payment_intent.succeeded marks the order as paid. A failed payment leaves the order in 'pending'. An invalid webhook signature is rejected — the handler never trusts the payload without verifying the signature first.</td>
+                  <td><span class="badge muted" data-i18n="ceramic-shop-django-tool-3">pytest + unittest.mock</span>
+                  </td>
+                  <td data-i18n="ceramic-shop-django-wt-3">payment_intent.succeeded marks the order as paid. A failed
+                    payment leaves the order in 'pending'. An invalid webhook signature is rejected — the handler never
+                    trusts the payload without verifying the signature first.</td>
                 </tr>
                 <tr>
                   <td data-i18n="ceramic-shop-django-tt-4">User Account Flows</td>
-                  <td><span class="badge muted" data-i18n="ceramic-shop-django-tool-4">Playwright (Page Object Model)</span></td>
-                  <td data-i18n="ceramic-shop-django-wt-4">A new user can register, browse products, add items to the cart, complete checkout with a Stripe test card, and see the confirmed order in their account history — all in a single automated browser session.</td>
+                  <td><span class="badge muted" data-i18n="ceramic-shop-django-tool-4">Playwright (Page Object
+                      Model)</span></td>
+                  <td data-i18n="ceramic-shop-django-wt-4">A new user can register, browse products, add items to the
+                    cart, complete checkout with a Stripe test card, and see the confirmed order in their account
+                    history — all in a single automated browser session.</td>
                 </tr>
                 <tr>
                   <td data-i18n="ceramic-shop-django-tt-5">Critical Page Health</td>
                   <td><span class="badge muted" data-i18n="ceramic-shop-django-tool-5">Playwright</span></td>
-                  <td data-i18n="ceramic-shop-django-wt-5">Smoke tests verify that every critical page loads successfully with no unexpected errors. The suite confirms key user-facing routes remain accessible after each deployment and runs in under 3 seconds on every CI push.</td>
+                  <td data-i18n="ceramic-shop-django-wt-5">Smoke tests verify that every critical page loads
+                    successfully with no unexpected errors. The suite confirms key user-facing routes remain accessible
+                    after each deployment and runs in under 3 seconds on every CI push.</td>
                 </tr>
                 <tr>
                   <td data-i18n="ceramic-shop-django-tt-6">Backend under load</td>
                   <td><span class="badge muted" data-i18n="ceramic-shop-django-tool-6">Locust</span></td>
-                  <td data-i18n="ceramic-shop-django-wt-6">50 concurrent virtual users browsing and adding to cart for 5 minutes. Confirmed 17ms average response time and 0% failure rate — the Stripe session creation endpoint stayed stable under sustained parallel requests.</td>
+                  <td data-i18n="ceramic-shop-django-wt-6">50 concurrent virtual users browsing and adding to cart for 5
+                    minutes. Confirmed 17ms average response time and 0% failure rate — the Stripe session creation
+                    endpoint stayed stable under sustained parallel requests.</td>
                 </tr>
               </tbody>
             </table>
@@ -179,36 +217,45 @@
 
         <section class="evidence-gallery-section" id="evidence-gallery-section">
           <h2 class="pane-title" id="title-gallery" data-i18n="evidence_gallery_title">Proof, Not Just Claims</h2>
-          <p class="evidence-gallery-intro" data-i18n="evidence_gallery_intro">Screenshots from the actual test runs — the terminal output, the coverage report, and the load test dashboard behind the numbers above.</p>
+          <p class="evidence-gallery-intro" data-i18n="evidence_gallery_intro">Screenshots from the actual test runs —
+            the terminal output, the coverage report, and the load test dashboard behind the numbers above.</p>
           <div class="gallery-grid">
             <figure class="stark-card stark-card--gallery">
               <div class="gallery-img-wrapper">
-                <img src="../assets/images/ceramic-shop-django/ceramic-shop-pytest.png" alt="Pytest Test Suite Output Terminal" data-i18n="ceramic-shop-django-pytest-alt" />
+                <img src="../assets/images/ceramic-shop-django/ceramic-shop-pytest.png"
+                  alt="Pytest Test Suite Output Terminal" data-i18n="ceramic-shop-django-pytest-alt" />
               </div>
-              <figcaption data-i18n="ceramic-shop-django-gal-1">Terminal output showing the full pytest suite passing with 100% coverage</figcaption>
+              <figcaption data-i18n="ceramic-shop-django-gal-1">Terminal output showing the full pytest suite passing
+                with 100% coverage</figcaption>
             </figure>
             <figure class="stark-card stark-card--gallery">
               <div class="gallery-img-wrapper">
-                <img src="../assets/images/ceramic-shop-django/ceramic-shop-coverage.png" alt="Coverage.py HTML Report Dashboard" data-i18n="ceramic-shop-django-coverage-alt" />
+                <img src="../assets/images/ceramic-shop-django/ceramic-shop-coverage.png"
+                  alt="Coverage.py HTML Report Dashboard" data-i18n="ceramic-shop-django-coverage-alt" />
               </div>
-              <figcaption data-i18n="ceramic-shop-django-gal-2">Coverage.py HTML report showing 100% coverage across all modules</figcaption>
+              <figcaption data-i18n="ceramic-shop-django-gal-2">Coverage.py HTML report showing 100% coverage across all
+                modules</figcaption>
             </figure>
             <figure class="stark-card stark-card--gallery">
               <div class="gallery-img-wrapper">
-                <img src="../assets/images/ceramic-shop-django/ceramic-shop-locust.png" alt="Locust Load Test Dashboard Metrics" data-i18n="ceramic-shop-django-locust-alt" />
+                <img src="../assets/images/ceramic-shop-django/ceramic-shop-locust.png"
+                  alt="Locust Load Test Dashboard Metrics" data-i18n="ceramic-shop-django-locust-alt" />
               </div>
-              <figcaption data-i18n="ceramic-shop-django-gal-3">Locust load test dashboard showing 17ms average response time and 0% failure rate</figcaption>
+              <figcaption data-i18n="ceramic-shop-django-gal-3">Locust load test dashboard showing 17ms average response
+                time and 0% failure rate</figcaption>
             </figure>
             <figure class="stark-card stark-card--gallery">
               <div class="gallery-img-wrapper">
                 <div class="gallery-placeholder-img">
                   <div class="stark-placeholder stark-placeholder--sm">
                     <div class="stark-placeholder-icon"></div>
-                    <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
+                    <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming
+                      soon</span>
                   </div>
                 </div>
               </div>
-              <figcaption data-i18n="ceramic-shop-django-gal-4">Playwright trace viewer showing the automated checkout flow step by step</figcaption>
+              <figcaption data-i18n="ceramic-shop-django-gal-4">Playwright trace viewer showing the automated checkout
+                flow step by step</figcaption>
             </figure>
           </div>
         </section>
@@ -216,7 +263,9 @@
         <aside class="stark-callout" id="pride-callout">
           <span class="stark-callout-label" data-i18n="pride_callout_label">What I'm proud of</span>
           <p class="stark-callout-content" data-i18n="ceramic-shop-django-what_im_proud_of">
-            The Stripe webhook tests. It's the part of this project nobody asks about in a portfolio review, but it's the part that would actually break in production if I got it wrong — and that gap between 'looks done' and 'is actually correct' is the whole point of QA.
+            The Stripe webhook tests. It's the part of this project nobody asks about in a portfolio review, but it's
+            the part that would actually break in production if I got it wrong — and that gap between 'looks done' and
+            'is actually correct' is the whole point of QA.
           </p>
         </aside>
 
@@ -228,9 +277,12 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-links">
-          <a href="https://www.linkedin.com/in/juan-acosta-pinilla/" target="_blank" rel="noopener" class="footer-link" id="footer-linkedin-link" data-i18n="linkedin-label">LinkedIn</a>
-          <a href="https://github.com/acostajs" target="_blank" rel="noopener" class="footer-link" id="footer-github-link" data-i18n="github-label">GitHub</a>
-          <a href="mailto:acosta.juan@icloud.com" class="footer-link" id="footer-email-link" data-i18n="email-label">Email</a>
+          <a href="https://www.linkedin.com/in/juan-acosta-pinilla/" target="_blank" rel="noopener" class="footer-link"
+            id="footer-linkedin-link" data-i18n="linkedin-label">LinkedIn</a>
+          <a href="https://github.com/acostajs" target="_blank" rel="noopener" class="footer-link"
+            id="footer-github-link" data-i18n="github-label">GitHub</a>
+          <a href="mailto:acosta.juan@icloud.com" class="footer-link" id="footer-email-link"
+            data-i18n="email-label">Email</a>
         </div>
         <p class="footer-text" id="footer-copyright-text" data-i18n="footer-copyright">
           &copy; 2026 Juan Acosta. All rights reserved.
@@ -238,6 +290,12 @@
       </div>
     </div>
   </footer>
+  <!-- Image Popup Modal -->
+  <div id="imagePopup" class="popup-overlay">
+    <span class="close-hint" data-i18n="lightbox-close-hint">Click anywhere to close</span>
+    <img id="popupImage" src="" alt="Enlarged view" class="popup-content">
+  </div>
 
 </body>
+
 </html>
