@@ -2,7 +2,7 @@
 article.project-detail {
   max-width: 1000px;
   margin: var(--space-xl) auto;
-  padding: 0 var(--space-md);
+  /* padding: 0 var(--space-md); */
   display: flex;
   flex-direction: column;
   gap: var(--space-lg);
@@ -193,8 +193,6 @@ article.project-detail {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin-top: var(--space-sm);
-  border: var(--border);
-  box-shadow: var(--shadow);
 }
 
 .matrix-table {

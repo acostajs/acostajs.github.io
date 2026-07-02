@@ -34,6 +34,10 @@ export const pozoleTranslations = {
     "pozole-flask-api-gal-2": "Coverage.py HTML report showing 99% code coverage",
     "pozole-flask-api-gal-3": "Locust dashboard showing a 4ms average response time with no failures",
     "pozole-flask-api-gal-4": "API test execution validating restaurant scheduling endpoints",
+    "pozole-flask-api-hero-alt": "Pozole REST API Showcase Dashboard",
+    "pozole-flask-api-pytest-alt": "Pytest Test Suite Output Terminal",
+    "pozole-flask-api-coverage-alt": "Coverage.py HTML Report Dashboard",
+    "pozole-flask-api-locust-alt": "Locust Load Test Dashboard Metrics",
 
     "pozole-flask-api-what_im_proud_of": "Designing tests around the scheduling rules instead of only the API endpoints. Validating business logic independently makes the suite faster, easier to maintain, and more effective at catching regressions before they reach production."
   },
@@ -72,6 +76,10 @@ export const pozoleTranslations = {
     "pozole-flask-api-gal-2": "Rapport HTML Coverage.py montrant 99 % de couverture du code",
     "pozole-flask-api-gal-3": "Tableau de bord Locust montrant un temps de réponse moyen de 4 ms sans échec",
     "pozole-flask-api-gal-4": "Exécution des tests API validant les endpoints de planification du restaurant",
+    "pozole-flask-api-hero-alt": "Tableau de bord de démonstration de l'API REST Pozole",
+    "pozole-flask-api-pytest-alt": "Terminal de sortie de la suite de tests Pytest",
+    "pozole-flask-api-coverage-alt": "Tableau de bord du rapport HTML Coverage.py",
+    "pozole-flask-api-locust-alt": "Métriques du tableau de bord des tests de charge Locust",
 
     "pozole-flask-api-what_im_proud_of": "Avoir construit les tests au-dessus des règles de planification plutôt que seulement autour des endpoints. Valider la logique métier indépendamment rend la suite plus rapide, plus facile à maintenir et plus efficace pour détecter les régressions avant la mise en production."
   }
