@@ -7,7 +7,7 @@
   <meta name="description" content="Detailed QA showcase for Custom Keyboard Collective e-commerce application, built with Django, Playwright, and Locust.">
   <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
   <link rel="stylesheet" href="../css/global.css?v=1.1">
-  <link rel="stylesheet" href="../css/custom-keyboard-collective.css">
+  <link rel="stylesheet" href="../css/project-detail.css">
   <script type="module" src="../js/main.js"></script>
 </head>
 <body>
@@ -33,13 +33,54 @@
           <p class="project-detail-subtitle" id="project-subtitle" data-i18n="custom-keyboard-collective-subtitle">QA Automation Showcase for a Django E-Commerce Application</p>
           <div class="meta-badge-row" id="project-meta-badges">
             <span class="badge accent" id="badge-cov"><span data-i18n="metric-coverage">Coverage</span>: 99%</span>
-            <span class="badge muted" id="badge-rt"><span data-i18n="metric-response-time">Avg Response Time</span>: 41 ms</span>
-            <span class="badge muted" id="badge-fr"><span data-i18n="metric-failure-rate">Failure Rate</span>: 0.00%</span>
+            <span class="badge" id="badge-rt"><span data-i18n="metric-response-time">Avg Response Time</span>: 41 ms</span>
+            <span class="badge" id="badge-fr"><span data-i18n="metric-failure-rate">Failure Rate</span>: 0.00%</span>
           </div>
+        </div>
 
+        <div class="project-media-stack-row">
           <figure class="stark-hero-image" id="project-hero-image">
             <img src="../assets/images/custom-keyboard-collective/custom-keyboard-project.png" alt="Custom Keyboard Collective Showcase Dashboard" data-i18n="custom-keyboard-collective-hero-alt" />
           </figure>
+
+          <div class="stark-card tech-stack-card" id="card-tech-stack">
+            <h3 class="pane-title" id="title-tech" data-i18n="tech-stack-title">Tech Stack</h3>
+            
+            <div class="tech-category" id="cat-app">
+              <h4 class="tech-category-title">Application</h4>
+              <div class="tech-badge-list">
+                <span class="badge muted">Django</span>
+                <span class="badge muted">Python</span>
+              </div>
+            </div>
+
+            <div class="tech-category" id="cat-testing">
+              <h4 class="tech-category-title">Testing</h4>
+              <div class="tech-badge-list">
+                <span class="badge muted">pytest</span>
+                <span class="badge muted">Playwright</span>
+                <span class="badge muted">Requests</span>
+                <span class="badge muted">Locust</span>
+                <span class="badge muted">Coverage.py</span>
+              </div>
+            </div>
+
+            <div class="tech-category" id="cat-ci">
+              <h4 class="tech-category-title">Quality & CI</h4>
+              <div class="tech-badge-list">
+                <span class="badge muted">Ruff</span>
+                <span class="badge muted">GitHub Actions</span>
+                <span class="badge muted">Lefthook</span>
+              </div>
+            </div>
+
+            <div class="tech-category" id="cat-env">
+              <h4 class="tech-category-title">Environment</h4>
+              <div class="tech-badge-list">
+                <span class="badge muted">Astral uv</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="action-row" id="project-action-row">
@@ -47,70 +88,25 @@
         </div>
 
         <div class="overview-grid" id="project-overview-grid">
-          
-          <div class="pane-left" id="pane-left">
-            <div class="stark-card stark-card--story" id="card-story">
-              <h3 class="pane-title" id="title-story" data-i18n="project-details-title">Why I Built This</h3>
-              <p id="text-story" data-i18n="custom-keyboard-collective-the_story">
-                Rather than treating an online store as a simple CRUD application, I approached it as a production system where every purchase, account update, and checkout flow had to behave consistently. The goal was to build a QA showcase that demonstrates how automated testing can validate both the underlying business logic and the complete customer experience—from browsing products to completing an order—while ensuring every change can be deployed with confidence.
-              </p>
-            </div>
-
-            <div class="stark-card" id="card-summary">
-              <h3 class="pane-title" id="title-summary" data-i18n="project-details-title">Project Details</h3>
-              <p id="text-summary" data-i18n="custom-keyboard-collective-summary">
-                An e-commerce application built to demonstrate modern QA automation practices in a real-world Django environment. The project focuses on ensuring reliability through automated testing, continuous integration, code quality checks, and performance validation.
-              </p>
-            </div>
-            
-            <div class="stark-card" id="card-role">
-              <h3 class="pane-title" id="title-role" data-i18n="role-focus-title">My Role & Focus</h3>
-              <p id="text-role" data-i18n="custom-keyboard-collective-role_focus">
-                Designed and maintained a full QA automation strategy covering multiple layers of testing, including unit, integration, API, UI end-to-end, smoke, and performance testing.
-              </p>
-            </div>
+          <div class="stark-card stark-card--story" id="card-story">
+            <h3 class="pane-title" id="title-story" data-i18n="project-details-title">Why I Built This</h3>
+            <p id="text-story" data-i18n="custom-keyboard-collective-the_story">
+              Rather than treating an online store as a simple CRUD application, I approached it as a production system where every purchase, account update, and checkout flow had to behave consistently. The goal was to build a QA showcase that demonstrates how automated testing can validate both the underlying business logic and the complete customer experience—from browsing products to completing an order—while ensuring every change can be deployed with confidence.
+            </p>
           </div>
 
-          <div class="pane-right" id="pane-right">
-            <div class="stark-card tech-stack-card" id="card-tech-stack">
-              <h3 class="pane-title" id="title-tech" data-i18n="tech-stack-title">Tech Stack</h3>
-              
-              <div class="tech-category" id="cat-app">
-                <h4 class="tech-category-title">Application</h4>
-                <div class="tech-badge-list">
-                  <span class="badge muted">Django</span>
-                  <span class="badge muted">Python</span>
-                </div>
-              </div>
-
-              <div class="tech-category" id="cat-testing">
-                <h4 class="tech-category-title">Testing</h4>
-                <div class="tech-badge-list">
-                  <span class="badge muted">pytest</span>
-                  <span class="badge muted">Playwright</span>
-                  <span class="badge muted">Requests</span>
-                  <span class="badge muted">Locust</span>
-                  <span class="badge muted">Coverage.py</span>
-                </div>
-              </div>
-
-              <div class="tech-category" id="cat-ci">
-                <h4 class="tech-category-title">Quality & CI</h4>
-                <div class="tech-badge-list">
-                  <span class="badge muted">Ruff</span>
-                  <span class="badge muted">GitHub Actions</span>
-                  <span class="badge muted">Lefthook</span>
-                </div>
-              </div>
-
-              <div class="tech-category" id="cat-env">
-                <h4 class="tech-category-title">Environment</h4>
-                <div class="tech-badge-list">
-                  <span class="badge muted">Astral uv</span>
-                </div>
-              </div>
-
-            </div>
+          <div class="stark-card" id="card-summary">
+            <h3 class="pane-title" id="title-summary" data-i18n="project-details-title">Project Details</h3>
+            <p id="text-summary" data-i18n="custom-keyboard-collective-summary">
+              An e-commerce application built to demonstrate modern QA automation practices in a real-world Django environment. The project focuses on ensuring reliability through automated testing, continuous integration, code quality checks, and performance validation.
+            </p>
+          </div>
+          
+          <div class="stark-card" id="card-role">
+            <h3 class="pane-title" id="title-role" data-i18n="role-focus-title">My Role & Focus</h3>
+            <p id="text-role" data-i18n="custom-keyboard-collective-role_focus">
+              Designed and maintained a full QA automation strategy covering multiple layers of testing, including unit, integration, API, UI end-to-end, smoke, and performance testing.
+            </p>
           </div>
         </div>
 
@@ -127,42 +123,44 @@
 
         <section class="matrix-section" id="matrix-section">
           <h2 class="pane-title" id="title-matrix" data-i18n="custom-keyboard-collective-test_strategy_table_label">What I tested — and why it mattered</h2>
-          <table class="matrix-table" id="matrix-table">
-            <thead>
-              <tr>
-                <th data-i18n="table-header-type">Test Type</th>
-                <th data-i18n="table_header_tool">Tool</th>
-                <th data-i18n="table_header_what_tested">What I Tested</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-i18n="custom-keyboard-collective-tt-1">Business Logic</td>
-                <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-1">pytest</span></td>
-                <td data-i18n="custom-keyboard-collective-wt-1">Product inventory, pricing calculations, shopping cart behavior, form validation, and database models to ensure business rules remain correct under different scenarios.</td>
-              </tr>
-              <tr>
-                <td data-i18n="custom-keyboard-collective-tt-2">API Validation</td>
-                <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-2">pytest + Requests</span></td>
-                <td data-i18n="custom-keyboard-collective-wt-2">REST endpoints, authentication, request validation, and response consistency to verify reliable communication between the frontend and backend.</td>
-              </tr>
-              <tr>
-                <td data-i18n="custom-keyboard-collective-tt-3">End-to-End User Flows</td>
-                <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-3">Playwright (Page Object Model)</span></td>
-                <td data-i18n="custom-keyboard-collective-wt-3">Complete customer journeys including account creation, product browsing, cart management, and checkout through a real browser session.</td>
-              </tr>
-              <tr>
-                <td data-i18n="custom-keyboard-collective-tt-4">Critical Page Health</td>
-                <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-4">Playwright</span></td>
-                <td data-i18n="custom-keyboard-collective-wt-4">Smoke tests verify that the application's critical pages load successfully and remain accessible after every deployment, providing fast feedback during CI.</td>
-              </tr>
-              <tr>
-                <td data-i18n="custom-keyboard-collective-tt-5">Backend under load</td>
-                <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-5">Locust</span></td>
-                <td data-i18n="custom-keyboard-collective-wt-5">Concurrent virtual users browsing products and interacting with the store while measuring response times, stability, and failure rates under sustained load.</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="matrix-table" id="matrix-table">
+              <thead>
+                <tr>
+                  <th data-i18n="table-header-type">Test Type</th>
+                  <th data-i18n="table_header_tool">Tool</th>
+                  <th data-i18n="table_header_what_tested">What I Tested</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-i18n="custom-keyboard-collective-tt-1">Business Logic</td>
+                  <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-1">pytest</span></td>
+                  <td data-i18n="custom-keyboard-collective-wt-1">Product inventory, pricing calculations, shopping cart behavior, form validation, and database models to ensure business rules remain correct under different scenarios.</td>
+                </tr>
+                <tr>
+                  <td data-i18n="custom-keyboard-collective-tt-2">API Validation</td>
+                  <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-2">pytest + Requests</span></td>
+                  <td data-i18n="custom-keyboard-collective-wt-2">REST endpoints, authentication, request validation, and response consistency to verify reliable communication between the frontend and backend.</td>
+                </tr>
+                <tr>
+                  <td data-i18n="custom-keyboard-collective-tt-3">End-to-End User Flows</td>
+                  <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-3">Playwright (Page Object Model)</span></td>
+                  <td data-i18n="custom-keyboard-collective-wt-3">Complete customer journeys including account creation, product browsing, cart management, and checkout through a real browser session.</td>
+                </tr>
+                <tr>
+                  <td data-i18n="custom-keyboard-collective-tt-4">Critical Page Health</td>
+                  <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-4">Playwright</span></td>
+                  <td data-i18n="custom-keyboard-collective-wt-4">Smoke tests verify that the application's critical pages load successfully and remain accessible after every deployment, providing fast feedback during CI.</td>
+                </tr>
+                <tr>
+                  <td data-i18n="custom-keyboard-collective-tt-5">Backend under load</td>
+                  <td><span class="badge muted" data-i18n="custom-keyboard-collective-tool-5">Locust</span></td>
+                  <td data-i18n="custom-keyboard-collective-wt-5">Concurrent virtual users browsing products and interacting with the store while measuring response times, stability, and failure rates under sustained load.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
 
         <section class="evidence-gallery-section" id="evidence-gallery-section">

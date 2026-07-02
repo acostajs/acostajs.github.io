@@ -7,7 +7,7 @@
   <meta name="description" content="Detailed QA showcase for Pozole Flask REST API, built with Flask, pytest, and Locust.">
   <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
   <link rel="stylesheet" href="../css/global.css?v=1.1">
-  <link rel="stylesheet" href="../css/pozole-flask-api.css">
+  <link rel="stylesheet" href="../css/project-detail.css">
   <script type="module" src="../js/main.js"></script>
 </head>
 <body>
@@ -33,16 +33,58 @@
           <p class="project-detail-subtitle" id="project-subtitle" data-i18n="pozole-flask-api-subtitle">Flask REST API QA Automation Showcase</p>
           <div class="meta-badge-row" id="project-meta-badges">
             <span class="badge accent" id="badge-cov"><span data-i18n="metric-coverage">Coverage</span>: 99%</span>
-            <span class="badge muted" id="badge-rt"><span data-i18n="metric-response-time">Avg Response Time</span>: 4 ms</span>
-            <span class="badge muted" id="badge-fr"><span data-i18n="metric-failure-rate">Failure Rate</span>: 0.00%</span>
+            <span class="badge" id="badge-rt"><span data-i18n="metric-response-time">Avg Response Time</span>: 4 ms</span>
+            <span class="badge" id="badge-fr"><span data-i18n="metric-failure-rate">Failure Rate</span>: 0.00%</span>
           </div>
+        </div>
 
+        <div class="project-media-stack-row">
           <figure class="stark-hero-placeholder" id="project-hero-placeholder">
             <div class="stark-placeholder-inner">
               <div class="stark-placeholder-icon"></div>
               <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
             </div>
           </figure>
+
+          <div class="stark-card tech-stack-card" id="card-tech-stack">
+            <h3 class="pane-title" id="title-tech" data-i18n="tech-stack-title">Tech Stack</h3>
+            
+            <div class="tech-category" id="cat-app">
+              <h4 class="tech-category-title">Application</h4>
+              <div class="tech-badge-list">
+                <span class="badge muted">Flask</span>
+                <span class="badge muted">Flask-SQLAlchemy</span>
+                <span class="badge muted">SQLite</span>
+                <span class="badge muted">Marshmallow</span>
+              </div>
+            </div>
+
+            <div class="tech-category" id="cat-testing">
+              <h4 class="tech-category-title">Testing</h4>
+              <div class="tech-badge-list">
+                <span class="badge muted">pytest</span>
+                <span class="badge muted">Requests</span>
+                <span class="badge muted">Locust</span>
+                <span class="badge muted">pytest-cov</span>
+              </div>
+            </div>
+
+            <div class="tech-category" id="cat-ci">
+              <h4 class="tech-category-title">Quality & CI</h4>
+              <div class="tech-badge-list">
+                <span class="badge muted">Ruff</span>
+                <span class="badge muted">GitHub Actions</span>
+                <span class="badge muted">Lefthook</span>
+              </div>
+            </div>
+
+            <div class="tech-category" id="cat-env">
+              <h4 class="tech-category-title">Environment</h4>
+              <div class="tech-badge-list">
+                <span class="badge muted">Astral uv</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="action-row" id="project-action-row">
@@ -50,71 +92,25 @@
         </div>
 
         <div class="overview-grid" id="project-overview-grid">
-          
-          <div class="pane-left" id="pane-left">
-            <div class="stark-card stark-card--story" id="card-story">
-              <h3 class="pane-title" id="title-story" data-i18n="project-details-title">Why I Built This</h3>
-              <p id="text-story" data-i18n="pozole-flask-api-the_story">
-                Restaurant scheduling sounds simple until dozens of employees, overlapping shifts, and scheduling rules begin interacting. Instead of focusing only on CRUD operations, I treated the API as a production backend where incorrect data could create operational problems. The objective was to build a testing strategy that verifies business rules, protects database integrity, and ensures every endpoint behaves consistently as the application evolves.
-              </p>
-            </div>
-
-            <div class="stark-card" id="card-summary">
-              <h3 class="pane-title" id="title-summary" data-i18n="project-details-title">Project Details</h3>
-              <p id="text-summary" data-i18n="pozole-flask-api-summary">
-                A REST API built to manage employee schedules and shift assignments for a restaurant workflow system. The project demonstrates how automated testing can validate business rules, API reliability, database integrity, and backend performance in a production-style Flask application.
-              </p>
-            </div>
-            
-            <div class="stark-card" id="card-role">
-              <h3 class="pane-title" id="title-role" data-i18n="role-focus-title">My Role & Focus</h3>
-              <p id="text-role" data-i18n="pozole-flask-api-role_focus">
-                I designed and maintained the complete QA strategy for the API, covering business logic validation, database integrity, automated endpoint testing, smoke testing, performance testing, continuous integration, and code quality enforcement.
-              </p>
-            </div>
+          <div class="stark-card stark-card--story" id="card-story">
+            <h3 class="pane-title" id="title-story" data-i18n="project-details-title">Why I Built This</h3>
+            <p id="text-story" data-i18n="pozole-flask-api-the_story">
+              Restaurant scheduling sounds simple until dozens of employees, overlapping shifts, and scheduling rules begin interacting. Instead of focusing only on CRUD operations, I treated the API as a production backend where incorrect data could create operational problems. The objective was to build a testing strategy that verifies business rules, protects database integrity, and ensures every endpoint behaves consistently as the application evolves.
+            </p>
           </div>
 
-          <div class="pane-right" id="pane-right">
-            <div class="stark-card tech-stack-card" id="card-tech-stack">
-              <h3 class="pane-title" id="title-tech" data-i18n="tech-stack-title">Tech Stack</h3>
-              
-              <div class="tech-category" id="cat-app">
-                <h4 class="tech-category-title">Application</h4>
-                <div class="tech-badge-list">
-                  <span class="badge muted">Flask</span>
-                  <span class="badge muted">Flask-SQLAlchemy</span>
-                  <span class="badge muted">SQLite</span>
-                  <span class="badge muted">Marshmallow</span>
-                </div>
-              </div>
-
-              <div class="tech-category" id="cat-testing">
-                <h4 class="tech-category-title">Testing</h4>
-                <div class="tech-badge-list">
-                  <span class="badge muted">pytest</span>
-                  <span class="badge muted">Requests</span>
-                  <span class="badge muted">Locust</span>
-                  <span class="badge muted">pytest-cov</span>
-                </div>
-              </div>
-
-              <div class="tech-category" id="cat-ci">
-                <h4 class="tech-category-title">Quality & CI</h4>
-                <div class="tech-badge-list">
-                  <span class="badge muted">Ruff</span>
-                  <span class="badge muted">GitHub Actions</span>
-                  <span class="badge muted">Lefthook</span>
-                </div>
-              </div>
-
-              <div class="tech-category" id="cat-env">
-                <h4 class="tech-category-title">Environment</h4>
-                <div class="tech-badge-list">
-                  <span class="badge muted">Astral uv</span>
-                </div>
-              </div>
-
-            </div>
+          <div class="stark-card" id="card-summary">
+            <h3 class="pane-title" id="title-summary" data-i18n="project-details-title">Project Details</h3>
+            <p id="text-summary" data-i18n="pozole-flask-api-summary">
+              A REST API built to manage employee schedules and shift assignments for a restaurant workflow system. The project demonstrates how automated testing can validate business rules, API reliability, database integrity, and backend performance in a production-style Flask application.
+            </p>
+          </div>
+          
+          <div class="stark-card" id="card-role">
+            <h3 class="pane-title" id="title-role" data-i18n="role-focus-title">My Role & Focus</h3>
+            <p id="text-role" data-i18n="pozole-flask-api-role_focus">
+              I designed and maintained the complete QA strategy for the API, covering business logic validation, database integrity, automated endpoint testing, smoke testing, performance testing, continuous integration, and code quality enforcement.
+            </p>
           </div>
         </div>
 
@@ -131,37 +127,39 @@
 
         <section class="matrix-section" id="matrix-section">
           <h2 class="pane-title" id="title-matrix" data-i18n="pozole-flask-api-test_strategy_table_label">What I tested — and why it mattered</h2>
-          <table class="matrix-table" id="matrix-table">
-            <thead>
-              <tr>
-                <th data-i18n="table-header-type">Test Type</th>
-                <th data-i18n="table_header_tool">Tool</th>
-                <th data-i18n="table_header_what_tested">What I Tested</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-i18n="pozole-flask-api-tt-1">Business Logic</td>
-                <td><span class="badge muted" data-i18n="pozole-flask-api-tool-1">pytest</span></td>
-                <td data-i18n="pozole-flask-api-wt-1">Scheduling rules, employee assignments, validation logic, serialization, and database models to ensure business rules remain consistent under different scenarios.</td>
-              </tr>
-              <tr>
-                <td data-i18n="pozole-flask-api-tt-2">API Validation</td>
-                <td><span class="badge muted" data-i18n="pozole-flask-api-tool-2">pytest + Requests</span></td>
-                <td data-i18n="pozole-flask-api-wt-2">REST endpoints, CRUD operations, HTTP status codes, request validation, and response payloads to verify reliable API behavior.</td>
-              </tr>
-              <tr>
-                <td data-i18n="pozole-flask-api-tt-3">Critical API Health</td>
-                <td><span class="badge muted" data-i18n="pozole-flask-api-tool-3">pytest</span></td>
-                <td data-i18n="pozole-flask-api-wt-3">Smoke tests verify that the API starts successfully, core endpoints respond correctly, and critical services remain operational after every deployment.</td>
-              </tr>
-              <tr>
-                <td data-i18n="pozole-flask-api-tt-4">Backend under load</td>
-                <td><span class="badge muted" data-i18n="pozole-flask-api-tool-4">Locust</span></td>
-                <td data-i18n="pozole-flask-api-wt-4">Concurrent clients perform scheduling operations while measuring response time, stability, and failure rate under sustained traffic.</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="matrix-table" id="matrix-table">
+              <thead>
+                <tr>
+                  <th data-i18n="table-header-type">Test Type</th>
+                  <th data-i18n="table_header_tool">Tool</th>
+                  <th data-i18n="table_header_what_tested">What I Tested</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-i18n="pozole-flask-api-tt-1">Business Logic</td>
+                  <td><span class="badge muted" data-i18n="pozole-flask-api-tool-1">pytest</span></td>
+                  <td data-i18n="pozole-flask-api-wt-1">Scheduling rules, employee assignments, validation logic, serialization, and database models to ensure business rules remain consistent under different scenarios.</td>
+                </tr>
+                <tr>
+                  <td data-i18n="pozole-flask-api-tt-2">API Validation</td>
+                  <td><span class="badge muted" data-i18n="pozole-flask-api-tool-2">pytest + Requests</span></td>
+                  <td data-i18n="pozole-flask-api-wt-2">REST endpoints, CRUD operations, HTTP status codes, request validation, and response payloads to verify reliable API behavior.</td>
+                </tr>
+                <tr>
+                  <td data-i18n="pozole-flask-api-tt-3">Critical API Health</td>
+                  <td><span class="badge muted" data-i18n="pozole-flask-api-tool-3">pytest</span></td>
+                  <td data-i18n="pozole-flask-api-wt-3">Smoke tests verify that the API starts successfully, core endpoints respond correctly, and critical services remain operational after every deployment.</td>
+                </tr>
+                <tr>
+                  <td data-i18n="pozole-flask-api-tt-4">Backend under load</td>
+                  <td><span class="badge muted" data-i18n="pozole-flask-api-tool-4">Locust</span></td>
+                  <td data-i18n="pozole-flask-api-wt-4">Concurrent clients perform scheduling operations while measuring response time, stability, and failure rate under sustained traffic.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
 
         <section class="evidence-gallery-section" id="evidence-gallery-section">
