@@ -45,7 +45,8 @@ article.project-detail {
   gap: var(--space-lg);
   margin-top: var(--space-xs);
   margin-bottom: var(--space-md);
-  align-items: stretch; /* Stretch to match height dynamically */
+  align-items: stretch;
+  /* Stretch to match height dynamically */
 }
 
 .project-media-stack-row .stark-hero-image,
@@ -202,7 +203,8 @@ article.project-detail {
   background-color: var(--clr-canvas);
 }
 
-.matrix-table th, .matrix-table td {
+.matrix-table th,
+.matrix-table td {
   border: var(--border);
   padding: var(--space-sm) var(--space-md);
   text-align: left;
@@ -219,13 +221,19 @@ article.project-detail {
 }
 
 @media (min-width: 769px) {
-  .matrix-table th:nth-child(1), .matrix-table td:nth-child(1) {
+
+  .matrix-table th:nth-child(1),
+  .matrix-table td:nth-child(1) {
     width: 25%;
   }
-  .matrix-table th:nth-child(2), .matrix-table td:nth-child(2) {
+
+  .matrix-table th:nth-child(2),
+  .matrix-table td:nth-child(2) {
     width: 25%;
   }
-  .matrix-table th:nth-child(3), .matrix-table td:nth-child(3) {
+
+  .matrix-table th:nth-child(3),
+  .matrix-table td:nth-child(3) {
     width: 50%;
   }
 }
@@ -345,12 +353,15 @@ aside.stark-callout {
     box-shadow: none;
     background-color: transparent;
   }
+
   .matrix-table thead {
     display: none;
   }
+
   .matrix-table tbody {
     display: block;
   }
+
   .matrix-table tr {
     display: flex;
     flex-direction: column;
@@ -359,21 +370,25 @@ aside.stark-callout {
     background-color: var(--clr-canvas);
     margin-bottom: var(--space-md);
   }
+
   .matrix-table td {
     width: 100% !important;
     border: none !important;
     padding: var(--space-sm) var(--space-md);
   }
+
   .matrix-table td:nth-child(1) {
     font-weight: var(--weight-bold);
     border-bottom: var(--border) !important;
     background-color: var(--clr-muted);
   }
+
   .matrix-table td:nth-child(2) {
     border-bottom: 1px dashed var(--clr-muted) !important;
     padding-top: var(--space-xs);
     padding-bottom: var(--space-xs);
   }
+
   .matrix-table td:nth-child(3) {
     font-size: 0.9rem;
   }
@@ -381,4 +396,75 @@ aside.stark-callout {
   .gallery-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Style for trigger images on project detail pages */
+.stark-hero-image img,
+.stark-card--gallery img {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.stark-hero-image img:hover,
+.stark-card--gallery img:hover {
+  transform: scale(1.015);
+}
+
+/* Popup overlay (hidden by default) */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 29, 32, 0.5);
+  /* Semi-transparent dark background */
+  backdrop-filter: blur(8px);
+  /* The backdrop blur effect */
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+/* Class to show the popup */
+.popup-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Style for the enlarged image inside the popup */
+.popup-content {
+  max-width: 90%;
+  max-height: 90%;
+  border: var(--border);
+  box-shadow: var(--shadow);
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+  background-color: var(--clr-canvas);
+  position: relative;
+  z-index: 1;
+}
+
+.popup-overlay.active .popup-content {
+  transform: scale(1);
+}
+
+/* Close button instruction */
+.close-hint {
+  position: absolute;
+  top: 20px;
+  color: var(--clr-canvas);
+  background: rgba(26, 29, 32, 0.8);
+  font-family: var(--font-main), sans-serif;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 2px solid var(--clr-ink);
+  box-shadow: 3px 3px 0px var(--clr-ink);
+  pointer-events: none;
+  z-index: 999;
 }

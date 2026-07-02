@@ -30,7 +30,8 @@ export const globalTranslations = {
     "evidence_gallery_intro": "Screenshots from the actual test runs — the terminal output, the coverage report, and the load test dashboard behind the numbers above.",
     "pride_callout_label": "What I'm proud of",
     "table_header_tool": "Tool",
-    "table_header_what_tested": "What I Tested"
+    "table_header_what_tested": "What I Tested",
+    "lightbox-close-hint": "Click anywhere to close"
   },
   fr: {
     "nav-menu-label": "Menu",
@@ -63,6 +64,7 @@ export const globalTranslations = {
     "evidence_gallery_intro": "Captures d'écran des exécutions réelles des tests — la sortie du terminal, le rapport de couverture et le tableau de bord des tests de charge derrière les chiffres ci-dessus.",
     "pride_callout_label": "Ce dont je suis fier",
     "table_header_tool": "Outil",
-    "table_header_what_tested": "Ce que j'ai testé"
+    "table_header_what_tested": "Ce que j'ai testé",
+    "lightbox-close-hint": "Cliquez n'importe où pour fermer"
   }
 };
