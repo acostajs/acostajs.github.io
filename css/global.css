@@ -169,6 +169,54 @@ header {
   box-shadow: 1px 1px 0px var(--clr-ink);
 }
 
+.stark-btn--secondary {
+  background-color: var(--clr-muted);
+  color: var(--clr-ink);
+}
+
+/* Placeholder components */
+.stark-placeholder {
+  border: 2px dashed var(--clr-ink);
+  background-color: var(--clr-canvas);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: var(--space-md) var(--space-lg);
+}
+
+.stark-placeholder--sm {
+  padding: var(--space-sm) var(--space-md);
+  gap: 4px;
+}
+
+.stark-placeholder-icon {
+  width: 36px;
+  height: 36px;
+  border: 2px dashed var(--clr-ink);
+  border-radius: 4px;
+  position: relative;
+}
+
+.stark-placeholder-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--clr-ink);
+  transform: translate(-50%, -50%);
+}
+
+.stark-placeholder-label {
+  font-size: 0.9rem;
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* Badge System */
 .badge {
   display: inline-flex;

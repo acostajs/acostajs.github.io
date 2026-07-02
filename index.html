@@ -50,7 +50,7 @@
           </p>
           <div class="hero-cta-group">
             <a href="https://github.com/acostajs" target="_blank" rel="noopener" class="stark-btn" id="btn-hero-github" data-i18n="hero-cta-view">View GitHub</a>
-            <a href="mailto:acosta.juan@icloud.com" class="stark-btn" id="btn-hero-contact" style="background-color: var(--clr-muted); color: var(--clr-ink);" data-i18n="hero-cta-contact">Contact Me</a>
+            <a href="mailto:acosta.juan@icloud.com" class="stark-btn stark-btn--secondary" id="btn-hero-contact" data-i18n="hero-cta-contact">Contact Me</a>
           </div>
         </div>
 
@@ -87,7 +87,7 @@
             <div class="project-card-header">
               <h3 class="project-title" id="ceramic-project-title" data-i18n="project-ceramic-title">Ceramic Shop E-Commerce</h3>
               <div class="project-metrics">
-                <span class="badge accent" id="badge-ceramic-cov">100% Coverage</span>
+                <span class="badge accent" id="badge-ceramic-cov"><span data-i18n="metric-coverage">Coverage</span>: 100%</span>
                 <span class="badge muted" id="badge-ceramic-rt">17 ms</span>
               </div>
             </div>
@@ -112,7 +112,7 @@
             <div class="project-card-header">
               <h3 class="project-title" id="keyboard-project-title" data-i18n="project-keyboard-title">Custom Keyboard Collective</h3>
               <div class="project-metrics">
-                <span class="badge accent" id="badge-keyboard-cov">99% Coverage</span>
+                <span class="badge accent" id="badge-keyboard-cov"><span data-i18n="metric-coverage">Coverage</span>: 99%</span>
                 <span class="badge muted" id="badge-keyboard-rt">41 ms</span>
               </div>
             </div>
@@ -134,7 +134,7 @@
 
           <div class="stark-card project-card" id="card-project-pozole">
             <div class="project-img-placeholder">
-              <div class="gallery-placeholder-inner">
+              <div class="stark-placeholder stark-placeholder--sm">
                 <div class="stark-placeholder-icon"></div>
                 <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
               </div>
@@ -142,7 +142,7 @@
             <div class="project-card-header">
               <h3 class="project-title" id="pozole-project-title" data-i18n="project-pozole-title">Pozole</h3>
               <div class="project-metrics">
-                <span class="badge accent" id="badge-pozole-cov">99% Coverage</span>
+                <span class="badge accent" id="badge-pozole-cov"><span data-i18n="metric-coverage">Coverage</span>: 99%</span>
                 <span class="badge muted" id="badge-pozole-rt">4 ms</span>
               </div>
             </div>
@@ -170,15 +170,15 @@
           <p class="how-i-work-subtitle" id="how-i-work-subtitle" data-i18n="how-i-work-subtitle">My approach to ensuring software quality and reliability.</p>
         </div>
         <div class="work-grid">
-          <div class="stark-item-row" id="work-card-1">
+          <div class="stark-card interactive stark-work-card" id="work-card-1">
             <h3 id="work-card-1-title" data-i18n="work-card-1-title">Quality First</h3>
             <p id="work-card-1-body" data-i18n="work-card-1-body">Integrating testing early in the development lifecycle to catch bugs before they reach production.</p>
           </div>
-          <div class="stark-item-row" id="work-card-2">
+          <div class="stark-card interactive stark-work-card" id="work-card-2">
             <h3 id="work-card-2-title" data-i18n="work-card-2-title">Automate Everything</h3>
             <p id="work-card-2-body" data-i18n="work-card-2-body">Building reusable, maintainable test frameworks to replace manual repetition with fast, scalable automated suites.</p>
           </div>
-          <div class="stark-item-row" id="work-card-3">
+          <div class="stark-card interactive stark-work-card" id="work-card-3">
             <h3 id="work-card-3-title" data-i18n="work-card-3-title">Continuous Delivery</h3>
             <p id="work-card-3-body" data-i18n="work-card-3-body">Integrating regression and smoke test suites into CI/CD pipelines to ensure constant code stability.</p>
           </div>
@@ -230,7 +230,7 @@
             
             <div class="stark-card timeline-item" id="exp-item-loriginal">
               <div class="timeline-header">
-                <h3 class="timeline-role" id="exp-role-loriginal" data-i18n="exp-role-1">Full-Stack Developer (Internship)</h3>
+                <h4 class="timeline-role" id="exp-role-loriginal" data-i18n="exp-role-1">Full-Stack Developer (Internship)</h4>
                 <span class="timeline-meta" id="exp-period-loriginal" data-i18n="exp-period-1">Feb 2026 - Apr 2026</span>
               </div>
               <div class="timeline-subhead">
@@ -245,7 +245,7 @@
 
             <div class="stark-card timeline-item" id="exp-item-previous">
               <div class="timeline-header">
-                <h3 class="timeline-role" id="exp-role-previous" data-i18n="exp-role-2">Previous Professional Experience</h3>
+                <h4 class="timeline-role" id="exp-role-previous" data-i18n="exp-role-2">Previous Professional Experience</h4>
                 <span class="timeline-meta" id="exp-period-previous" data-i18n="exp-period-2">2014 - 2023</span>
               </div>
               <div class="timeline-subhead">
@@ -265,7 +265,7 @@
             
             <div class="stark-card timeline-item" id="edu-item-coursera">
               <div class="timeline-header">
-                <h3 class="timeline-role" id="edu-program-coursera" data-i18n="edu-program-1">Software QA & Test Automation Engineering Specialization</h3>
+                <h4 class="timeline-role" id="edu-program-coursera" data-i18n="edu-program-1">Software QA & Test Automation Engineering Specialization</h4>
                 <span class="timeline-meta" id="edu-date-coursera" data-i18n="edu-date-1">Earned June 2026</span>
               </div>
               <div class="timeline-subhead">
@@ -275,7 +275,7 @@
 
             <div class="stark-card timeline-item" id="edu-item-vanier">
               <div class="timeline-header">
-                <h3 class="timeline-role" id="edu-program-vanier" data-i18n="edu-program-2">Website Design Specialist</h3>
+                <h4 class="timeline-role" id="edu-program-vanier" data-i18n="edu-program-2">Website Design Specialist</h4>
                 <span class="timeline-meta" id="edu-date-vanier" data-i18n="edu-date-2">Oct 2024 - Apr 2026</span>
               </div>
               <div class="timeline-subhead">

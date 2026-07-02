@@ -1,19 +1,12 @@
 function typeText(element, text, index, speed, callback) {
   if (index < text.length) {
-    element.textContent += text.charAt(index);
+    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+      element.value += text.charAt(index);
+    } else {
+      element.textContent += text.charAt(index);
+    }
     setTimeout(function () {
       typeText(element, text, index + 1, speed, callback);
-    }, speed);
-  } else if (callback) {
-    callback();
-  }
-}
-
-function typeInput(inputElement, text, index, speed, callback) {
-  if (index < text.length) {
-    inputElement.value += text.charAt(index);
-    setTimeout(function () {
-      typeInput(inputElement, text, index + 1, speed, callback);
     }, speed);
   } else if (callback) {
     callback();
@@ -74,7 +67,7 @@ export function startTerminalSimulation() {
 
       timeoutId = setTimeout(function () {
         const query = 'Juan Acosta';
-        typeInput(mockInput, query, 0, 80, function () {
+        typeText(mockInput, query, 0, 80, function () {
           timeoutId = setTimeout(function () {
             mockBtn.classList.add('active-click');
             
@@ -82,9 +75,9 @@ export function startTerminalSimulation() {
               mockBtn.classList.remove('active-click');
               
               successBadge.classList.add('visible');
-
+ 
               const successLine = document.createElement('div');
-              successLine.style.color = '#2563eb';
+              successLine.className = 'terminal-success';
               successLine.textContent = '✓ 1 passed in 0.41s';
               terminal.appendChild(successLine);
               terminal.appendChild(document.createTextNode('\n'));
