@@ -283,7 +283,8 @@ article.project-detail {
   align-items: flex-start;
 }
 
-.stark-card--gallery img {
+.stark-card--gallery img,
+.stark-card--gallery video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -402,11 +403,17 @@ aside.stark-callout {
 .stark-hero-image img,
 .stark-card--gallery img {
   cursor: pointer;
+}
+
+.stark-hero-image img,
+.stark-card--gallery img,
+.stark-card--gallery video {
   transition: transform 0.2s ease-in-out;
 }
 
 .stark-hero-image img:hover,
-.stark-card--gallery img:hover {
+.stark-card--gallery img:hover,
+.stark-card--gallery video:hover {
   transform: scale(1.015);
 }
 
