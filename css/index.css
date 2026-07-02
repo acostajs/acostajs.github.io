@@ -110,6 +110,10 @@
   color: var(--clr-accent);
 }
 
+.terminal-success {
+  color: var(--clr-accent);
+}
+
 .terminal-cursor {
   display: inline-block;
   width: 8px;
@@ -388,89 +392,60 @@
   50% { opacity: 0; }
 }
 
-/* How I Work Section */
-.how-i-work-header {
-  margin-bottom: var(--space-lg);
+/* Methodology & Stack Section */
+.methodology-and-stack-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.methodology-pane, .tech-stack-pane {
+  display: flex;
+  flex-direction: column;
 }
 
 .how-i-work-subtitle {
   font-size: 1.1rem;
   font-weight: var(--weight-light);
-  margin-top: var(--space-xs);
+  margin-top: calc(-1 * var(--space-sm));
+  margin-bottom: var(--space-lg);
+  opacity: 0.95;
 }
 
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-lg);
-}
-
-.stark-item-row {
+.methodology-items {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
-  padding: var(--space-md);
-  border: var(--border);
-  background-color: var(--clr-canvas);
-  box-shadow: var(--shadow);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  gap: var(--space-md);
 }
 
-.stark-item-row:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: var(--shadow-hover);
-}
-
-.stark-item-row h3 {
+.methodology-item h3 {
   font-size: 1.25rem;
   font-weight: var(--weight-bold);
+  margin-bottom: 0.25rem;
 }
 
-.stark-item-row p {
+.methodology-item p {
   font-size: 0.95rem;
   font-weight: var(--weight-light);
 }
 
-/* What I Use Section */
-.tech-groups {
+.tech-stack-categories {
   display: flex;
   flex-direction: column;
-  gap: var(--space-lg);
+  gap: var(--space-md);
+  margin-top: var(--space-md);
 }
 
-.tech-group {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
-}
-
-.tech-group h3 {
-  font-size: 1.2rem;
+.tech-stack-category h3 {
+  font-size: 1.1rem;
   font-weight: var(--weight-bold);
-  margin-bottom: var(--space-xs);
-}
-
-.badge-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-}
-
-.stark-badge {
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: var(--weight-bold);
-  padding: 0.4rem 0.8rem;
-  background-color: var(--clr-canvas);
-  border: 2px solid var(--clr-ink);
-  margin-right: 0.25rem;
   margin-bottom: 0.25rem;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-.stark-badge:hover {
-  transform: translate(-1px, -1px);
-  box-shadow: 2px 2px 0px var(--clr-ink);
+.tech-stack-category p {
+  font-size: 0.95rem;
+  font-weight: var(--weight-regular);
 }
 
 /* Contact CTA Section */
@@ -502,6 +477,15 @@
   .hero-section {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
+  }
+  
+  .methodology-and-stack-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .tech-stack-categories {
+    margin-top: var(--space-xs);
   }
   
   .exp-edu-grid {

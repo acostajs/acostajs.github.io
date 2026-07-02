@@ -12,14 +12,13 @@
 </head>
 <body>
 
-  <header>
+  <header id="global-header">
     <div class="container">
       <nav class="nav-bar" id="navbar">
         <a href="index.html" class="nav-logo" id="nav-logo" data-i18n="nav-logo">JuanAcosta</a>
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#featured-projects" class="nav-link" id="nav-link-projects" data-i18n="nav-projects">Projects</a></li>
-          <li><a href="#how-i-work" class="nav-link" id="nav-link-how-i-work" data-i18n="nav-how-i-work">How I Work</a></li>
-          <li><a href="#what-i-use" class="nav-link" id="nav-link-what-i-use" data-i18n="nav-what-i-use">What I Use</a></li>
+          <li><a href="#methodology-and-stack" class="nav-link" id="nav-link-methodology" data-i18n="nav-methodology">Methodology</a></li>
           <li><a href="#experience-education" class="nav-link" id="nav-link-experience" data-i18n="nav-experience">Experience</a></li>
           <li><a href="#contact-cta" class="nav-link" id="nav-link-contact" data-i18n="nav-contact">Contact</a></li>
         </ul>
@@ -50,7 +49,7 @@
           </p>
           <div class="hero-cta-group">
             <a href="https://github.com/acostajs" target="_blank" rel="noopener" class="stark-btn" id="btn-hero-github" data-i18n="hero-cta-view">View GitHub</a>
-            <a href="mailto:acosta.juan@icloud.com" class="stark-btn" id="btn-hero-contact" style="background-color: var(--clr-muted); color: var(--clr-ink);" data-i18n="hero-cta-contact">Contact Me</a>
+            <a href="mailto:acosta.juan@icloud.com" class="stark-btn stark-btn--secondary" id="btn-hero-contact" data-i18n="hero-cta-contact">Contact Me</a>
           </div>
         </div>
 
@@ -87,7 +86,7 @@
             <div class="project-card-header">
               <h3 class="project-title" id="ceramic-project-title" data-i18n="project-ceramic-title">Ceramic Shop E-Commerce</h3>
               <div class="project-metrics">
-                <span class="badge accent" id="badge-ceramic-cov">100% Coverage</span>
+                <span class="badge accent" id="badge-ceramic-cov"><span data-i18n="metric-coverage">Coverage</span>: 100%</span>
                 <span class="badge muted" id="badge-ceramic-rt">17 ms</span>
               </div>
             </div>
@@ -112,7 +111,7 @@
             <div class="project-card-header">
               <h3 class="project-title" id="keyboard-project-title" data-i18n="project-keyboard-title">Custom Keyboard Collective</h3>
               <div class="project-metrics">
-                <span class="badge accent" id="badge-keyboard-cov">99% Coverage</span>
+                <span class="badge accent" id="badge-keyboard-cov"><span data-i18n="metric-coverage">Coverage</span>: 99%</span>
                 <span class="badge muted" id="badge-keyboard-rt">41 ms</span>
               </div>
             </div>
@@ -134,7 +133,7 @@
 
           <div class="stark-card project-card" id="card-project-pozole">
             <div class="project-img-placeholder">
-              <div class="gallery-placeholder-inner">
+              <div class="stark-placeholder stark-placeholder--sm">
                 <div class="stark-placeholder-icon"></div>
                 <span class="stark-placeholder-label" data-i18n="media_placeholder_label">Screenshot coming soon</span>
               </div>
@@ -142,7 +141,7 @@
             <div class="project-card-header">
               <h3 class="project-title" id="pozole-project-title" data-i18n="project-pozole-title">Pozole</h3>
               <div class="project-metrics">
-                <span class="badge accent" id="badge-pozole-cov">99% Coverage</span>
+                <span class="badge accent" id="badge-pozole-cov"><span data-i18n="metric-coverage">Coverage</span>: 99%</span>
                 <span class="badge muted" id="badge-pozole-rt">4 ms</span>
               </div>
             </div>
@@ -164,58 +163,49 @@
         </div>
       </section>
 
-      <section id="how-i-work" class="section-container">
-        <div class="how-i-work-header">
-          <h2 class="section-title" id="how-i-work-title" data-i18n="how-i-work-title">How I Work</h2>
-          <p class="how-i-work-subtitle" id="how-i-work-subtitle" data-i18n="how-i-work-subtitle">My approach to ensuring software quality and reliability.</p>
-        </div>
-        <div class="work-grid">
-          <div class="stark-item-row" id="work-card-1">
-            <h3 id="work-card-1-title" data-i18n="work-card-1-title">Quality First</h3>
-            <p id="work-card-1-body" data-i18n="work-card-1-body">Integrating testing early in the development lifecycle to catch bugs before they reach production.</p>
-          </div>
-          <div class="stark-item-row" id="work-card-2">
-            <h3 id="work-card-2-title" data-i18n="work-card-2-title">Automate Everything</h3>
-            <p id="work-card-2-body" data-i18n="work-card-2-body">Building reusable, maintainable test frameworks to replace manual repetition with fast, scalable automated suites.</p>
-          </div>
-          <div class="stark-item-row" id="work-card-3">
-            <h3 id="work-card-3-title" data-i18n="work-card-3-title">Continuous Delivery</h3>
-            <p id="work-card-3-body" data-i18n="work-card-3-body">Integrating regression and smoke test suites into CI/CD pipelines to ensure constant code stability.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="what-i-use" class="section-container">
-        <h2 class="section-title" id="what-i-use-title" data-i18n="what-i-use-title">What I Use</h2>
-        <div class="tech-groups">
-          <div class="tech-group" id="tech-group-core">
-            <h3 id="what-i-use-core-title" data-i18n="what-i-use-core-title">Automation Core</h3>
-            <div class="badge-list">
-              <span class="stark-badge">Playwright</span>
-              <span class="stark-badge">Cypress</span>
-              <span class="stark-badge">Selenium</span>
-              <span class="stark-badge">pytest</span>
-              <span class="stark-badge">Locust</span>
-              <span class="stark-badge">Postman</span>
-              <span class="stark-badge">API Testing</span>
-              <span class="stark-badge">E2E Testing</span>
+      <section id="methodology-and-stack" class="section-container">
+        <div class="methodology-and-stack-grid">
+          <div class="methodology-pane">
+            <h2 class="section-title" id="how-i-work-title" data-i18n="how-i-work-title">How I Work</h2>
+            <p class="how-i-work-subtitle" id="how-i-work-subtitle" data-i18n="how-i-work-subtitle">My approach to ensuring software quality and reliability.</p>
+            <div class="methodology-items">
+              <div class="methodology-item">
+                <h3 id="work-card-1-title" data-i18n="work-card-1-title">Quality First</h3>
+                <p id="work-card-1-body" data-i18n="work-card-1-body">Integrating testing early in the development lifecycle to catch bugs before they reach production.</p>
+              </div>
+              <div class="methodology-item">
+                <h3 id="work-card-2-title" data-i18n="work-card-2-title">Automate Everything</h3>
+                <p id="work-card-2-body" data-i18n="work-card-2-body">Building reusable, maintainable test frameworks to replace manual repetition with fast, scalable automated suites.</p>
+              </div>
+              <div class="methodology-item">
+                <h3 id="work-card-3-title" data-i18n="work-card-3-title">Continuous Delivery</h3>
+                <p id="work-card-3-body" data-i18n="work-card-3-body">Integrating regression and smoke test suites into CI/CD pipelines to ensure constant code stability.</p>
+              </div>
             </div>
           </div>
-          <div class="tech-group" id="tech-group-env">
-            <h3 id="what-i-use-env-title" data-i18n="what-i-use-env-title">Environments & Quality</h3>
-            <div class="badge-list">
-              <span class="stark-badge">Python</span>
-              <span class="stark-badge">JavaScript</span>
-              <span class="stark-badge">TypeScript</span>
-              <span class="stark-badge">Django</span>
-              <span class="stark-badge">FastAPI</span>
-              <span class="stark-badge">Node.js</span>
-              <span class="stark-badge">Git</span>
-              <span class="stark-badge">GitHub</span>
-              <span class="stark-badge">CI/CD basics</span>
-              <span class="stark-badge">Astral uv</span>
-              <span class="stark-badge">Ruff</span>
-              <span class="stark-badge">Biome</span>
+          <div class="tech-stack-pane">
+            <h2 class="section-title" id="what-i-use-title" data-i18n="what-i-use-title">What I Use</h2>
+            <div class="tech-stack-categories">
+              <div class="tech-stack-category">
+                <h3 data-i18n="tech-languages-title">Languages</h3>
+                <p>Python, JavaScript, TypeScript</p>
+              </div>
+              <div class="tech-stack-category">
+                <h3 data-i18n="tech-e2e-title">E2E Browser Testing</h3>
+                <p>Playwright, Cypress, Selenium</p>
+              </div>
+              <div class="tech-stack-category">
+                <h3 data-i18n="tech-unit-title">Unit & Integration Testing</h3>
+                <p>Pytest, Jest</p>
+              </div>
+              <div class="tech-stack-category">
+                <h3 data-i18n="tech-perf-title">Performance Testing</h3>
+                <p>Locust, Jmeter</p>
+              </div>
+              <div class="tech-stack-category">
+                <h3 data-i18n="tech-quality-title">Quality, Tools & CI/CD</h3>
+                <p>GitHub Actions, Lefthook, Husky, Astral uv, Bun, Ruff, Biome</p>
+              </div>
             </div>
           </div>
         </div>
@@ -230,7 +220,7 @@
             
             <div class="stark-card timeline-item" id="exp-item-loriginal">
               <div class="timeline-header">
-                <h3 class="timeline-role" id="exp-role-loriginal" data-i18n="exp-role-1">Full-Stack Developer (Internship)</h3>
+                <h4 class="timeline-role" id="exp-role-loriginal" data-i18n="exp-role-1">Full-Stack Developer (Internship)</h4>
                 <span class="timeline-meta" id="exp-period-loriginal" data-i18n="exp-period-1">Feb 2026 - Apr 2026</span>
               </div>
               <div class="timeline-subhead">
@@ -245,7 +235,7 @@
 
             <div class="stark-card timeline-item" id="exp-item-previous">
               <div class="timeline-header">
-                <h3 class="timeline-role" id="exp-role-previous" data-i18n="exp-role-2">Previous Professional Experience</h3>
+                <h4 class="timeline-role" id="exp-role-previous" data-i18n="exp-role-2">Previous Professional Experience</h4>
                 <span class="timeline-meta" id="exp-period-previous" data-i18n="exp-period-2">2014 - 2023</span>
               </div>
               <div class="timeline-subhead">
@@ -265,7 +255,7 @@
             
             <div class="stark-card timeline-item" id="edu-item-coursera">
               <div class="timeline-header">
-                <h3 class="timeline-role" id="edu-program-coursera" data-i18n="edu-program-1">Software QA & Test Automation Engineering Specialization</h3>
+                <h4 class="timeline-role" id="edu-program-coursera" data-i18n="edu-program-1">Software QA & Test Automation Engineering Specialization</h4>
                 <span class="timeline-meta" id="edu-date-coursera" data-i18n="edu-date-1">Earned June 2026</span>
               </div>
               <div class="timeline-subhead">
@@ -275,7 +265,7 @@
 
             <div class="stark-card timeline-item" id="edu-item-vanier">
               <div class="timeline-header">
-                <h3 class="timeline-role" id="edu-program-vanier" data-i18n="edu-program-2">Website Design Specialist</h3>
+                <h4 class="timeline-role" id="edu-program-vanier" data-i18n="edu-program-2">Website Design Specialist</h4>
                 <span class="timeline-meta" id="edu-date-vanier" data-i18n="edu-date-2">Oct 2024 - Apr 2026</span>
               </div>
               <div class="timeline-subhead">

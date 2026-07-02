@@ -1,0 +1,384 @@
+/* Project Details Page Layout */
+article.project-detail {
+  max-width: 1000px;
+  margin: var(--space-xl) auto;
+  padding: 0 var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.project-header-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  border-bottom: var(--border);
+  padding-bottom: var(--space-md);
+}
+
+.project-detail-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: var(--weight-bold);
+}
+
+.project-detail-subtitle {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  font-weight: var(--weight-light);
+  opacity: 0.9;
+}
+
+.meta-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: var(--space-xs);
+}
+
+.action-row {
+  margin: var(--space-xs) 0;
+}
+
+/* Hero Row (Image + Tech Stack) */
+.project-media-stack-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-lg);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-md);
+  align-items: stretch; /* Stretch to match height dynamically */
+}
+
+.project-media-stack-row .stark-hero-image,
+.project-media-stack-row .stark-hero-placeholder {
+  margin: 0;
+  height: 100%;
+}
+
+.project-media-stack-row .tech-stack-card {
+  margin: 0;
+  height: 100%;
+}
+
+/* Hero Image & Placeholder styling */
+.stark-hero-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: var(--border);
+  box-shadow: var(--shadow);
+  background-color: var(--clr-muted);
+}
+
+.stark-hero-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.stark-hero-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-muted);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+/* Tech Stack Card */
+.tech-stack-card {
+  background-color: var(--clr-muted) !important;
+}
+
+.tech-category {
+  margin-bottom: var(--space-md);
+}
+
+.tech-category:last-of-type {
+  margin-bottom: 0;
+}
+
+.tech-category-title {
+  font-size: 0.95rem;
+  font-weight: var(--weight-bold);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
+}
+
+.tech-stack-card .tech-category-title {
+  color: var(--clr-accent);
+}
+
+.tech-badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+/* Overview Split Grid (1 column stack) */
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.pane-title {
+  font-size: 1.25rem;
+  font-weight: var(--weight-bold);
+  margin-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--clr-ink);
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.stark-card.stark-card--story {
+  padding-top: var(--space-lg);
+}
+
+/* Achievements */
+.achievements-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  border-top: var(--border);
+  padding-top: var(--space-lg);
+}
+
+.achievements-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.achievements-list li {
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.achievements-list li::before {
+  content: "↳";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--clr-accent);
+  font-weight: var(--weight-bold);
+}
+
+/* Matrix Table Block */
+.matrix-section {
+  border-top: var(--border);
+  padding-top: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: var(--space-sm);
+  border: var(--border);
+  box-shadow: var(--shadow);
+}
+
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--clr-canvas);
+}
+
+.matrix-table th, .matrix-table td {
+  border: var(--border);
+  padding: var(--space-sm) var(--space-md);
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.matrix-table th {
+  background-color: var(--clr-muted);
+  font-weight: var(--weight-bold);
+}
+
+.matrix-table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+@media (min-width: 769px) {
+  .matrix-table th:nth-child(1), .matrix-table td:nth-child(1) {
+    width: 25%;
+  }
+  .matrix-table th:nth-child(2), .matrix-table td:nth-child(2) {
+    width: 25%;
+  }
+  .matrix-table th:nth-child(3), .matrix-table td:nth-child(3) {
+    width: 50%;
+  }
+}
+
+.matrix-table td {
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.matrix-table td .badge {
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Evidence Gallery Section */
+.evidence-gallery-section {
+  border-top: var(--border);
+  padding-top: var(--space-lg);
+}
+
+.evidence-gallery-intro {
+  font-size: 0.95rem;
+  margin-bottom: var(--space-md);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+.stark-card--gallery {
+  padding: var(--space-sm) !important;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.stark-card--gallery .gallery-img-wrapper {
+  border: 2px solid var(--clr-ink);
+  background-color: var(--clr-muted);
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+}
+
+.stark-card--gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.stark-card--gallery figcaption {
+  font-family: var(--font-main);
+  font-weight: var(--weight-light);
+  font-size: 0.85rem;
+  color: var(--clr-ink);
+  line-height: 1.4;
+  padding: 0 var(--space-xs);
+}
+
+.gallery-placeholder-img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Pride Callout */
+aside.stark-callout {
+  background-color: var(--clr-canvas);
+  border: var(--border);
+  border-left: 8px solid var(--clr-accent);
+  box-shadow: var(--shadow);
+  padding: var(--space-md);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.stark-callout-label {
+  display: block;
+  font-weight: var(--weight-bold);
+  color: var(--clr-accent);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: var(--space-xs);
+  letter-spacing: 0.05em;
+}
+
+.stark-callout-content {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Mobile Media Queries */
+@media (max-width: 991px) {
+  .project-media-stack-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .project-media-stack-row .stark-hero-image,
+  .project-media-stack-row .stark-hero-placeholder {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .matrix-table {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  .matrix-table thead {
+    display: none;
+  }
+  .matrix-table tbody {
+    display: block;
+  }
+  .matrix-table tr {
+    display: flex;
+    flex-direction: column;
+    border: var(--border);
+    box-shadow: var(--shadow);
+    background-color: var(--clr-canvas);
+    margin-bottom: var(--space-md);
+  }
+  .matrix-table td {
+    width: 100% !important;
+    border: none !important;
+    padding: var(--space-sm) var(--space-md);
+  }
+  .matrix-table td:nth-child(1) {
+    font-weight: var(--weight-bold);
+    border-bottom: var(--border) !important;
+    background-color: var(--clr-muted);
+  }
+  .matrix-table td:nth-child(2) {
+    border-bottom: 1px dashed var(--clr-muted) !important;
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xs);
+  }
+  .matrix-table td:nth-child(3) {
+    font-size: 0.9rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
