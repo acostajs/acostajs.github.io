@@ -9,10 +9,14 @@
   --weight-bold: 700;
 
   /* Palette Constraints */
-  --clr-canvas: #f8f9fa; /* Soft Bone-White */
-  --clr-ink: #1a1d20;    /* Ink Charcoal */
-  --clr-accent: #2563eb; /* Cobalt Blue */
-  --clr-muted: #e5e7eb;  /* Soft Gray */
+  --clr-canvas: #f8f9fa;
+  /* Soft Bone-White */
+  --clr-ink: #1a1d20;
+  /* Ink Charcoal */
+  --clr-accent: #2563eb;
+  /* Cobalt Blue */
+  --clr-muted: #e5e7eb;
+  /* Soft Gray */
 
   /* Neo-brutalism Structural Tokens */
   --border-width: 3px;
@@ -21,7 +25,7 @@
   --shadow-offset-hover: 7px;
   --shadow: var(--shadow-offset) var(--shadow-offset) 0px var(--clr-ink);
   --shadow-hover: var(--shadow-offset-hover) var(--shadow-offset-hover) 0px var(--clr-ink);
-  
+
   /* Layout Spacing */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
@@ -51,7 +55,10 @@ body {
 }
 
 /* Typography Base */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: var(--weight-regular);
   color: var(--clr-ink);
   line-height: 1.2;
@@ -278,7 +285,8 @@ a {
 
 /* Burger Button */
 .burger-btn {
-  display: none; /* Hidden on desktop */
+  display: none;
+  /* Hidden on desktop */
   background-color: var(--clr-canvas);
   border: var(--border);
   width: 42px;
@@ -326,7 +334,8 @@ a {
 }
 
 section {
-  scroll-margin-top: 70px; /* Account for sticky header height */
+  scroll-margin-top: 70px;
+  /* Account for sticky header height */
 }
 
 /* Section Containers */
@@ -401,6 +410,7 @@ footer {
   .nav-menu {
     gap: var(--space-sm);
   }
+
   .nav-link {
     font-size: 0.95rem;
     padding: var(--space-xs) 0.5rem;
@@ -414,10 +424,10 @@ footer {
     align-items: center;
     height: 70px;
   }
-  
+
   .nav-logo {
     font-size: 1.4rem;
-    padding: var(--space-xs) 0;
+    padding: var(--space-xs) var(--space-sm);
   }
 
   .burger-btn {
@@ -428,7 +438,8 @@ footer {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: calc(100% + 5px); /* just below the border of the header */
+    top: calc(100% + 5px);
+    /* just below the border of the header */
     right: var(--space-md);
     background-color: var(--clr-canvas);
     border: var(--border);
@@ -457,7 +468,8 @@ footer {
     padding: var(--space-xs) var(--space-sm);
     text-align: center;
   }
+
+  #nav-link-home {
+    display: none;
+  }
 }
-
-
-
