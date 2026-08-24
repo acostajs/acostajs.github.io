@@ -47,7 +47,7 @@ export const indexTranslations = {
     "edu-date-2": "Oct 2024 - Apr 2026",
     "edu-program-3": "ISTQB® Certified Tester Foundation Level (CTFL)",
     "edu-school-3": "ISTQB®",
-    "edu-date-3": "Scheduled August 19, 2026",
+    "edu-date-3": "Scheduled September 5, 2026",
     "how-i-work-title": "How I Work",
     "how-i-work-subtitle":
       "My approach to ensuring software quality and reliability.",
@@ -124,7 +124,7 @@ export const indexTranslations = {
     "edu-date-2": "Oct 2024 - Apr 2026",
     "edu-program-3": "Testeur certifié ISTQB® – Niveau Fondation (CTFL)",
     "edu-school-3": "ISTQB®",
-    "edu-date-3": "Prévu pour le 19 août 2026",
+    "edu-date-3": "Prévu pour le 5 septembre 2026",
     "how-i-work-title": "Ma façon de travailler",
     "how-i-work-subtitle":
       "Mon approche pour garantir la qualité et la fiabilité des logiciels.",

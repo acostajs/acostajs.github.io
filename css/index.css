@@ -29,7 +29,9 @@
   border: var(--border);
   box-shadow: 4px 4px 0px var(--clr-ink);
   object-fit: cover;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .hero-avatar:hover {
@@ -51,6 +53,8 @@
 
 .hero-cta-group {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: var(--space-md);
   margin-top: var(--space-xs);
 }
@@ -82,9 +86,15 @@
   border-radius: 50%;
 }
 
-.window-dot.close { background-color: #ff5f56; }
-.window-dot.minimize { background-color: #ffbd2e; }
-.window-dot.expand { background-color: #27c93f; }
+.window-dot.close {
+  background-color: #ff5f56;
+}
+.window-dot.minimize {
+  background-color: #ffbd2e;
+}
+.window-dot.expand {
+  background-color: #27c93f;
+}
 
 .ide-body {
   display: flex;
@@ -96,7 +106,7 @@
 .terminal-code {
   background-color: var(--clr-ink);
   color: var(--clr-canvas);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 0.9rem;
   padding: var(--space-sm);
   flex: 1.2;
@@ -193,7 +203,9 @@
   margin-top: var(--space-xs);
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .hero-badge-success.visible {
@@ -238,7 +250,6 @@
   align-items: center;
   justify-content: center;
 }
-
 
 .project-card-header {
   display: flex;
@@ -359,7 +370,8 @@
   opacity: 0.85;
 }
 
-.timeline-company, .timeline-school {
+.timeline-company,
+.timeline-school {
   font-weight: var(--weight-bold);
 }
 
@@ -388,8 +400,13 @@
 
 /* Keyframe animations */
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 /* Methodology & Stack Section */
@@ -400,7 +417,8 @@
   align-items: start;
 }
 
-.methodology-pane, .tech-stack-pane {
+.methodology-pane,
+.tech-stack-pane {
   display: flex;
   flex-direction: column;
 }
@@ -478,7 +496,7 @@
     grid-template-columns: 1fr;
     gap: var(--space-lg);
   }
-  
+
   .methodology-and-stack-grid {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
@@ -487,7 +505,7 @@
   .tech-stack-categories {
     margin-top: var(--space-xs);
   }
-  
+
   .exp-edu-grid {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
